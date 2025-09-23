@@ -1,4 +1,4 @@
-# keymap_drawer.config.yaml for roBa (customized)
+# keymap_drawer.config.yaml for moNa2 (customized)
 draw_config:
   n_columns: 1
   draw_key_sides: true
