@@ -1,3 +1,3 @@
 # zmk-config-moNa2
 
-<img src="keymap-drawer/moNa2.svg" >
+<img src="keymap-drawer/mona2.svg" >
