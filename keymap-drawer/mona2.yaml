@@ -38,7 +38,7 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - {t: '&to_layer_0 INT_MUHENKAN', h: symbols}
-  - {t: ␣, h: scroll}
+  - {t: ␣, h: bluetooth}
   - {t: '&to_layer_0 INT_HENKAN', h: funcs_numpad}
   - ⌫
   - {t: ⏎, h: arrow}
@@ -253,7 +253,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -294,7 +294,7 @@ layers:
   - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
