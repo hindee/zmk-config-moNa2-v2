@@ -52,8 +52,12 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    tapping-term-ms = <250>;
+    quick-tap-ms = <120>;
+    require-prior-idle-ms = <100>;
 };
+
+&mkp_input_listener { input-processors = <&zip_temp_layer 4 5000>; };
 
 &lt {
     quick-tap-ms = <300>;
@@ -126,7 +130,9 @@
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
         };
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
@@ -257,9 +263,9 @@
 
         symbols {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &jis_CRT_TLD  &jis_YEN_PIP
-&trans           &trans             &trans    &trans      &kp CARET                     &kp SQT     &kp AMPERSAND         &trans                 &trans     &jis_AT_BKQ   &jis_CLN_AST
-&trans           &trans             &trans    &trans      &trans       &kp LG(LA(K))    &kp INSERT  &trans                &trans                 &trans     &jis_LBK_LBT  &jis_RBK_RBT
+&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                               &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp MINUS  &jis_CRT_TLD  &jis_YEN_PIP
+&trans           &trans             &trans    &trans      &kp CARET                     &kp CARET     &kp AMPERSAND         &trans                 &trans     &jis_AT_BKQ   &jis_CLN_AST
+&trans           &trans             &trans    &trans      &trans       &kp LG(LA(K))    &kp INSERT  &trans                &trans                 &kp JP_UNDERSCORE &jis_LBK_LBT  &jis_RBK_RBT
 &trans           &trans             &trans    &trans      &trans       &trans           &trans      &trans                                                                &jis_YEN_UNS
             >;
 
@@ -268,8 +274,8 @@
 
         funcs_numpad {
             bindings = <
-&kp F1   &kp F2   &kp F3               &kp F4      &kp F5                             &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERCENT
-&kp F6   &kp F7   &kp F8               &kp F9      &kp F10              &kp ASTERISK  &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COMMA
+&kp F1   &kp F2   &kp F3               &kp F4      &kp F5                                &kp JP_PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERCENT
+&kp F6   &kp F7   &kp F8               &kp F9      &kp F10              &kp JP_ASTERISK  &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COMMA
 &kp F11  &kp F12  &kp PRINTSCREEN      &kp INSERT  &kp HOME  &kp END    &kp SLASH     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
 &trans   &trans   &kp LA(PRINTSCREEN)  &trans      &trans    &trans     &trans        &trans                                                  &trans
             >;
