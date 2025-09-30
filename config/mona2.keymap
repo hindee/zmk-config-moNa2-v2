@@ -57,7 +57,7 @@
     require-prior-idle-ms = <100>;
 };
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 4 5000>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 4 8000>; };
 
 &lt {
     quick-tap-ms = <300>;
