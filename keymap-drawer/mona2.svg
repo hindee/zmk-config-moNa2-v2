@@ -335,7 +335,7 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">INT_MUHEN…</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">LANG_ZENK…</tspan>
 </text>
 <a href="#symbols">
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 86%">symbols</tspan></text>
@@ -344,8 +344,8 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">␣</text>
-<a href="#bluetooth">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
+<a href="#scroll">
+<text x="0" y="24" class="key hold layer-activator">scroll</text>
 </a></g>
 <g transform="translate(308, 196)" class="key keypos-38">
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -387,14 +387,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="168" y="28" class="combo tap">Sft+⇥</text>
 </g>
 <g class="combo combopos-3">
-<path d="M196,196 l-37,0" class="combo"/>
-<path d="M196,196 l37,0" class="combo"/>
-<rect rx="2" ry="2" x="182" y="183" width="28" height="26" class="combo"/>
-<text x="196" y="196" class="combo tap">
-<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LC(LA(B))</tspan>
+<path d="M196,168 l39,-20" class="combo"/>
+<path d="M196,168 l-39,20" class="combo"/>
+<rect rx="2" ry="2" x="182" y="155" width="28" height="26" class="combo"/>
+<text x="196" y="168" class="combo tap">
+<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LA(B)</tspan>
 </text>
 <a href="#bluetooth">
-<text x="196" y="207" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
+<text x="196" y="179" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
 </a></g>
 </g>
 </g>
@@ -628,14 +628,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="168" y="28" class="combo tap">Sft+⇥</text>
 </g>
 <g class="combo combopos-2">
-<path d="M196,196 l-37,0" class="combo"/>
-<path d="M196,196 l37,0" class="combo"/>
-<rect rx="2" ry="2" x="182" y="183" width="28" height="26" class="combo"/>
-<text x="196" y="196" class="combo tap">
-<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LC(LA(B))</tspan>
+<path d="M196,168 l39,-20" class="combo"/>
+<path d="M196,168 l-39,20" class="combo"/>
+<rect rx="2" ry="2" x="182" y="155" width="28" height="26" class="combo"/>
+<text x="196" y="168" class="combo tap">
+<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LA(B)</tspan>
 </text>
 <a href="#bluetooth">
-<text x="196" y="207" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
+<text x="196" y="179" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
 </a></g>
 </g>
 </g>
@@ -862,14 +862,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="168" y="28" class="combo tap">Sft+⇥</text>
 </g>
 <g class="combo combopos-2">
-<path d="M196,196 l-37,0" class="combo"/>
-<path d="M196,196 l37,0" class="combo"/>
-<rect rx="2" ry="2" x="182" y="183" width="28" height="26" class="combo"/>
-<text x="196" y="196" class="combo tap">
-<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LC(LA(B))</tspan>
+<path d="M196,168 l39,-20" class="combo"/>
+<path d="M196,168 l-39,20" class="combo"/>
+<rect rx="2" ry="2" x="182" y="155" width="28" height="26" class="combo"/>
+<text x="196" y="168" class="combo tap">
+<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LA(B)</tspan>
 </text>
 <a href="#bluetooth">
-<text x="196" y="207" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
+<text x="196" y="179" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
 </a></g>
 </g>
 </g>
@@ -1110,14 +1110,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="168" y="28" class="combo tap">Sft+⇥</text>
 </g>
 <g class="combo combopos-2">
-<path d="M196,196 l-37,0" class="combo"/>
-<path d="M196,196 l37,0" class="combo"/>
-<rect rx="2" ry="2" x="182" y="183" width="28" height="26" class="combo"/>
-<text x="196" y="196" class="combo tap">
-<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LC(LA(B))</tspan>
+<path d="M196,168 l39,-20" class="combo"/>
+<path d="M196,168 l-39,20" class="combo"/>
+<rect rx="2" ry="2" x="182" y="155" width="28" height="26" class="combo"/>
+<text x="196" y="168" class="combo tap">
+<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LA(B)</tspan>
 </text>
 <a href="#bluetooth">
-<text x="196" y="207" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
+<text x="196" y="179" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
 </a></g>
 </g>
 </g>
@@ -1350,14 +1350,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="168" y="28" class="combo tap">Sft+⇥</text>
 </g>
 <g class="combo combopos-2">
-<path d="M196,196 l-37,0" class="combo"/>
-<path d="M196,196 l37,0" class="combo"/>
-<rect rx="2" ry="2" x="182" y="183" width="28" height="26" class="combo"/>
-<text x="196" y="196" class="combo tap">
-<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LC(LA(B))</tspan>
+<path d="M196,168 l39,-20" class="combo"/>
+<path d="M196,168 l-39,20" class="combo"/>
+<rect rx="2" ry="2" x="182" y="155" width="28" height="26" class="combo"/>
+<text x="196" y="168" class="combo tap">
+<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LA(B)</tspan>
 </text>
 <a href="#bluetooth">
-<text x="196" y="207" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
+<text x="196" y="179" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
 </a></g>
 </g>
 </g>
@@ -1549,10 +1549,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <text x="0" y="-4" class="key trans tap">▽</text>
 </g>
-<g transform="translate(252, 196)" class="key trans keypos-37">
-<rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<text x="0" y="-4" class="key trans tap">▽</text>
+<g transform="translate(252, 196)" class="key held keypos-37">
+<rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
 <g transform="translate(308, 196)" class="key trans keypos-38">
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1583,14 +1582,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="168" y="28" class="combo tap">Sft+⇥</text>
 </g>
 <g class="combo combopos-2">
-<path d="M196,196 l-37,0" class="combo"/>
-<path d="M196,196 l37,0" class="combo"/>
-<rect rx="2" ry="2" x="182" y="183" width="28" height="26" class="combo"/>
-<text x="196" y="196" class="combo tap">
-<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LC(LA(B))</tspan>
+<path d="M196,168 l39,-20" class="combo"/>
+<path d="M196,168 l-39,20" class="combo"/>
+<rect rx="2" ry="2" x="182" y="155" width="28" height="26" class="combo"/>
+<text x="196" y="168" class="combo tap">
+<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LA(B)</tspan>
 </text>
 <a href="#bluetooth">
-<text x="196" y="207" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
+<text x="196" y="179" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
 </a></g>
 </g>
 </g>
@@ -1727,10 +1726,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">3</text>
 </g>
-<g transform="translate(252, 140)" class="key trans keypos-25">
-<rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<text x="0" y="-4" class="key trans tap">▽</text>
+<g transform="translate(252, 140)" class="key held keypos-25">
+<rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
 <g transform="translate(308, 140)" class="key trans keypos-26">
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1779,19 +1777,19 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <text x="0" y="-4" class="key trans tap">▽</text>
 </g>
-<g transform="translate(140, 196)" class="key trans keypos-35">
-<rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<text x="0" y="-4" class="key trans tap">▽</text>
+<g transform="translate(140, 196)" class="key held keypos-35">
+<rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
 <g transform="translate(196, 196)" class="key trans keypos-36">
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key trans side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <text x="0" y="-4" class="key trans tap">▽</text>
 </g>
-<g transform="translate(252, 196)" class="key held keypos-37">
-<rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key held side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+<g transform="translate(252, 196)" class="key trans keypos-37">
+<rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
+<text x="0" y="-4" class="key trans tap">▽</text>
 </g>
 <g transform="translate(308, 196)" class="key trans keypos-38">
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1824,14 +1822,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="168" y="28" class="combo tap">Sft+⇥</text>
 </g>
 <g class="combo combopos-2">
-<path d="M196,196 l-37,0" class="combo"/>
-<path d="M196,196 l37,0" class="combo"/>
-<rect rx="2" ry="2" x="182" y="183" width="28" height="26" class="combo"/>
-<text x="196" y="196" class="combo tap">
-<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LC(LA(B))</tspan>
+<path d="M196,168 l39,-20" class="combo"/>
+<path d="M196,168 l-39,20" class="combo"/>
+<rect rx="2" ry="2" x="182" y="155" width="28" height="26" class="combo"/>
+<text x="196" y="168" class="combo tap">
+<tspan x="196" dy="-0.6em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="196" dy="1.2em" style="font-size: 60%">LA(B)</tspan>
 </text>
 <a href="#bluetooth">
-<text x="196" y="207" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
+<text x="196" y="179" class="combo hold layer-activator"><tspan style="font-size: 67%">bluetooth</tspan></text>
 </a></g>
 </g>
 </g>

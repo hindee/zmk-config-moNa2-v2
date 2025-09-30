@@ -37,8 +37,8 @@ layers:
   - Ctrl
   - LEFT WIN
   - LEFT ALT
-  - {t: '&to_layer_0 INT_MUHENKAN', h: symbols}
-  - {t: ␣, h: bluetooth}
+  - {t: '&to_layer_0 LANG_ZENKAKUHANKAKU', h: symbols}
+  - {t: ␣, h: scroll}
   - {t: '&to_layer_0 INT_HENKAN', h: funcs_numpad}
   - ⌫
   - {t: ⏎, h: arrow}
@@ -253,7 +253,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -284,7 +284,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - '&bootloader'
   - {t: ▽, type: trans}
@@ -294,9 +294,9 @@ layers:
   - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -309,5 +309,5 @@ combos:
   k: ⇥
 - p: [2, 3]
   k: Sft+⇥
-- p: [35, 37]
-  k: {t: '&to_layer_0 LC(LA(B))', h: bluetooth}
+- p: [25, 35]
+  k: {t: '&to_layer_0 LA(B)', h: bluetooth}
