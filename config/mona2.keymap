@@ -127,9 +127,9 @@
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             tapping-term-ms = <300>;
-            require-prior-idle-ms = <60>;
+            require-prior-idle-ms = <100>;
         };
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
@@ -157,16 +157,26 @@
             tap-ms = <20>;
         };
 
-        // かなと変換を共用
-        td_mt_KANA: tap_dance_mod_tap_KANA {
+        // かな・無変換・FUNCS_NUMPADレイヤー共用
+        td_kana_tapdance: td_kana_tapdance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <
                 &kp LANG1      // 1タップ: かな (LANG1)
                 &kp INT_HENKAN // 2タップ: 無変換 (INT1)
-                &mo 2          // 長押し: NUM_FUNCレイヤー (2)
             >;
+        };
+
+        td_mt_KANA: td_mt_KANA {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TD_MT_KANA";
+            bindings = <&td_kana_tapdance>, <&mo 2>;
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <100>;
         };
 
         // --- JIS Key Mod Morph Behaviors ---
@@ -269,7 +279,7 @@
 
             sensor-bindings = <&scroll_up_down>;
         };
-
+　
         symbols {
             bindings = <
 &kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                               &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp MINUS          &jis_CRT_TLD  &jis_YEN_PIP
