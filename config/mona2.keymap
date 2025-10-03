@@ -283,7 +283,7 @@
 &kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                               &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp MINUS          &jis_CRT_TLD  &jis_YEN_PIP
 &trans           &trans         &trans    &trans      &kp CARET                     &kp CARET   &kp AMPERSAND  &trans                &trans             &jis_AT_BKQ   &jis_CLN_AST
 &trans           &trans         &trans    &trans      &trans       &kp LG(LA(K))    &kp INSERT  &trans         &trans                &kp JP_UNDERSCORE  &jis_LBK_LBT  &jis_RBK_RBT
-&trans           &trans         &trans    &trans      &trans       &kp LANG2        &trans      &trans                                                                &jis_YEN_UNS
+&trans           &trans         &trans    &trans      &trans       &kp LANG1        &trans      &trans                                                                &jis_YEN_UNS
             >;
 
             sensor-bindings = <&scroll_right_left>;
