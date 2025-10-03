@@ -164,9 +164,9 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <
-                &kp LANG1      // 1タップ: かな (LANG1)
-                &kp INT_HENKAN // 2タップ: 無変換 (INT1)
-                &mo 2          // 長押し: SCROLLレイヤー (2)
+                <&kp LANG1>,      // 1タップ: かな (LANG1)
+                <&kp INT_HENKAN>, // 2タップ: 無変換 (INT1)
+                <&mo 2>           // 長押し: NUM_FUNCレイヤー (2)
             >;
         };
 
