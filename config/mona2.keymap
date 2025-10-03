@@ -279,7 +279,6 @@
 
             sensor-bindings = <&scroll_up_down>;
         };
-　
         symbols {
             bindings = <
 &kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                               &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp MINUS          &jis_CRT_TLD  &jis_YEN_PIP
