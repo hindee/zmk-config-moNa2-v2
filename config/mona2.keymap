@@ -171,7 +171,7 @@
         td_mt_KANA: td_mt_KANA {
             compatible = "zmk,behavior-hold-tap";
             label = "TD_MT_KANA";
-            bindings = <&td_kana_tapdance>, <&mo 2>;
+            bindings = <&td_kana_tapdance &mo 2>;
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             flavor = "balanced";
