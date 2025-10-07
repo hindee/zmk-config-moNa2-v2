@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - {t: '&to_layer_0 A', h: symbols}
+  - A
   - S
   - D
   - F
@@ -54,7 +54,7 @@ layers:
   - '-'
   - {t: ^, s: '~'}
   - {t: ¥, s: '|'}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -80,7 +80,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - LANG1
   - {t: ▽, type: trans}
