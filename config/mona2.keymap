@@ -127,9 +127,9 @@
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-            require-prior-idle-ms = <100>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <60>;
         };
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
