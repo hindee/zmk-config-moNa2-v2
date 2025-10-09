@@ -37,7 +37,7 @@ layers:
   - Ctrl
   - LEFT WIN
   - LEFT ALT
-  - {t: '&to_layer_0 LANG2', h: symbols}
+  - {t: '&to_layer_0 GRAVE', h: symbols}
   - {t: '&to_layer_0 SPACE', h: scroll}
   - {t: '&to_layer_0 INT_HENKAN', h: funcs_numpad}
   - ⌫
