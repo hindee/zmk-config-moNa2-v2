@@ -161,6 +161,13 @@
             tap-ms = <20>;
         };
 
+        tab_switcher: tab_switcher {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LC(PAGE_UP)>, <&kp LC(PAGE_DOWN)>;
+            tap-ms = <20>;
+        };
+
         // --- JIS Key Mod Morph Behaviors ---
         jis_CRT_TLD: jis_CRT_TLD {
             compatible = "zmk,behavior-mod-morph";
@@ -301,7 +308,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN>;
+            sensor-bindings = <&tab_switcher>;
         };
 
         bluetooth {
