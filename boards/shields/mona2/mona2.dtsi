@@ -9,7 +9,7 @@
         zmk,physical-layout = &physical_layout0;
     };
 
-    physical_layout0: physical_layout_0 {
+    org_physical_layout0: org_physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "default_layout";
 
@@ -62,11 +62,13 @@
             ;
     };
     
-    mona2_physical_layout: mona2_physical_layout {
+//    mona2_physical_layout: physical_layout_0 {
+    physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
-        display-name = "Default";
-        transform = <&default_transform>;
+        display-name = "default_layout";
+
         kscan = <&kscan0>;
+        transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   37       0     0     0>
@@ -86,7 +88,7 @@
             , <&key_physical_attrs 100 100  200  100       0     0     0>
             , <&key_physical_attrs 100 100  300  112       0     0     0>
             , <&key_physical_attrs 100 100  400  124       0     0     0>
-            
+
             , <&key_physical_attrs 100 100  700  137       0     0     0>
             , <&key_physical_attrs 100 100  800  124       0     0     0>
             , <&key_physical_attrs 100 100  900  112       0     0     0>
