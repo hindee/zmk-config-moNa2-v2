@@ -113,8 +113,9 @@ parse_config:
   # 'Gui+Alt+K': 'MIC' # Display as MIC (no quotes, so it won't split into multiple lines)
     'LG(LA(K))': 'MIC' # Display as MIC
     'LEFT_WIN': '⌘'
-  # JP_HANZEN: '半/全'
-    'GRAVE': '半/全' # Changed from '`' to '半/全' to match the new requirement
+    JP_HANZEN: '半/全'
+    'JP_HANZEN': '半/全'
+    '`': '半/全' # Changed from '`' to '半/全' to match the new requirement
     'INT_HENKAN': '変換'
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
