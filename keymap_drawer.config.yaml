@@ -110,7 +110,10 @@ parse_config:
     'LS(0x89)': '|'
     'LS(0x87)': '_'    # Add more as needed for your layout
     'INSERT': 'INS'
-    'Gui+Alt+K': MIC # Display as MIC (no quotes, so it won't split into multiple lines)
+    'Gui+Alt+K': 'MIC' # Display as MIC (no quotes, so it won't split into multiple lines)
+    'LG(LA(K))': 'MIC' # Display as MIC
+    'LEFT_WIN': '⌘'
+    'JP_HANZEN': '半/全'
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
