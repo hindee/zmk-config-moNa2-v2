@@ -316,9 +316,7 @@ rect.held, rect.combo.held { fill: #ffc; }
 <g transform="translate(84, 196)" class="key keypos-34">
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">LEFT</tspan><tspan x="0" dy="1.2em">WIN</tspan>
-</text>
+<text x="0" y="-4" class="key tap">⌘</text>
 </g>
 <g transform="translate(140, 196)" class="key keypos-35">
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -331,7 +329,7 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">GRAVE</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">INT_HENKAN</tspan>
 </text>
 <a href="#symbols">
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 86%">symbols</tspan></text>
@@ -349,7 +347,7 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">INT_HENKAN</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 60%">&amp;to_layer…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">GRAVE</tspan>
 </text>
 <a href="#funcs_numpad">
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 60%">funcs_num…</tspan></text>
@@ -536,9 +534,7 @@ rect.held, rect.combo.held { fill: #ffc; }
 <g transform="translate(308, 140)" class="key keypos-26">
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">Gui+</tspan><tspan x="0" dy="1.2em">Alt+K</tspan>
-</text>
+<text x="0" y="-4" class="key tap">MIC</text>
 </g>
 <g transform="translate(420, 140)" class="key keypos-27">
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -596,10 +592,10 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <text x="0" y="-4" class="key trans tap">▽</text>
 </g>
-<g transform="translate(308, 196)" class="key keypos-38">
-<rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">LANG1</text>
+<g transform="translate(308, 196)" class="key trans keypos-38">
+<rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
+<text x="0" y="-4" class="key trans tap">▽</text>
 </g>
 <g transform="translate(420, 196)" class="key trans keypos-39">
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key trans side"/>

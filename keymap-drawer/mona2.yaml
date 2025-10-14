@@ -35,11 +35,11 @@ layers:
   - .
   - {t: /, h: RIGHT SHIFT}
   - Ctrl
-  - LEFT WIN
+  - ⌘
   - LEFT ALT
-  - {t: '&to_layer_0 GRAVE', h: symbols}
+  - {t: '&to_layer_0 INT_HENKAN', h: symbols}
   - {t: '&to_layer_0 SPACE', h: scroll}
-  - {t: '&to_layer_0 INT_HENKAN', h: funcs_numpad}
+  - {t: '&to_layer_0 GRAVE', h: funcs_numpad}
   - ⌫
   - {t: ⏎, h: arrow}
   - {t: DEL, h: RIGHT CONTROL}
@@ -70,7 +70,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+Alt+K
+  - MIC
   - INS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -82,7 +82,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - LANG1
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ¥, s: _}
