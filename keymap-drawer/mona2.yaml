@@ -82,7 +82,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - 変換
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ¥, s: _}
@@ -92,7 +92,7 @@ layers:
   - F3
   - F4
   - F5
-  - /
+  - '~'
   - '7'
   - '8'
   - '9'
@@ -160,7 +160,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - END
-  - {t: ▽, type: trans}
+  - ↓
   - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -168,7 +168,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - 変換
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
