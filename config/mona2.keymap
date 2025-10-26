@@ -261,10 +261,10 @@
 
         default_layer {
             bindings = <
-&kp Q                         &kp W         &kp E         &kp R                                      &kp T                                                                             &kp Y                   &kp U  &kp I      &kp O       &kp P
-&lt 1 A                       &kp S         &kp D         &kp F                                      &kp G                                                 &kp ESC                     &kp H                   &kp J  &kp K      &kp L       &lt_to_layer_0 4 SEMICOLON
-&mt_exit_AML_on_tap LSHIFT Z  &kp X         &kp C         &kp V                                      &kp B                   &kp LSHFT                     &kp RSHFT                   &kp N                   &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
-&kp LCTRL                     &kp LEFT_WIN  &kp LEFT_ALT  &mt_exit_AML_on_tap LEFT_ALT INT_MUHENKAN  &lt_to_layer_0 6 SPACE  &lt_to_layer_0 2 LC(SPACE)    &lt_to_layer_0 3 BACKSPACE  &lt_to_layer_0 2 ENTER                                &mt RIGHT_CONTROL DEL
+&kp Q                         &kp W         &kp E         &kp R                                      &kp T                                                                &kp Y                   &kp U  &kp I      &kp O       &kp P
+&lt 1 A                       &kp S         &kp D         &kp F                                      &kp G                                                 &kp ESC        &kp H                   &kp J  &kp K      &kp L       &lt_to_layer_0 4 SEMICOLON
+&mt_exit_AML_on_tap LSHIFT Z  &kp X         &kp C         &kp V                                      &kp B                   &kp LSHFT                     &kp RSHFT      &kp N                   &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
+&kp LCTRL                     &kp LEFT_WIN  &kp LEFT_ALT  &mt_exit_AML_on_tap LEFT_ALT INT_MUHENKAN  &lt_to_layer_0 6 SPACE  &lt_to_layer_0 2 LC(SPACE)    &kp BACKSPACE  &lt_to_layer_0 3 ENTER                                &mt RIGHT_CONTROL DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -283,7 +283,7 @@
 
         funcs_numpad {
             bindings = <
-&kp F1   &kp F2   &kp F3               &kp F4      &kp F5                             &kp JP_PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERCENT
+&kp F1   &kp F2   &kp F3               &kp F4      &kp F5                             &kp JP_PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERCENT
 &kp F6   &kp F7   &kp F8               &kp F9      &kp F10              &kp ASTERISK  &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp JP_COLON
 &kp F11  &kp F12  &kp PRINTSCREEN      &kp INSERT  &kp HOME  &kp END    &kp SLASH     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
 &trans   &trans   &kp LA(PRINTSCREEN)  &trans      &trans    &trans     &trans        &trans                                                  &trans
