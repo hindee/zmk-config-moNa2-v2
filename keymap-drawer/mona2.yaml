@@ -37,11 +37,11 @@ layers:
   - Ctrl
   - ⌘
   - LEFT ALT
-  - {t: '&to_layer_0 INT_MUHENKAN', h: symbols}
+  - {t: '&kp_exit_AML INT_MUHENKAN', h: LEFT ALT}
   - {t: '&to_layer_0 SPACE', h: scroll}
   - {t: '&to_layer_0 LC(SPACE)', h: funcs_numpad}
-  - ⌫
-  - {t: ⏎, h: arrow}
+  - {t: '&to_layer_0 BACKSPACE', h: arrow}
+  - {t: '&to_layer_0 ENTER', h: funcs_numpad}
   - {t: DEL, h: RIGHT CONTROL}
   symbols:
   - '!'
@@ -169,8 +169,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - 変換
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   mouse:
   - {t: ▽, type: trans}
