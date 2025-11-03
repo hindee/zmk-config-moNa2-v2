@@ -717,7 +717,7 @@ rect.held, rect.combo.held { fill: #ffc; }
 <g transform="translate(448, 112)" class="key keypos-15">
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">(</text>
+<text x="0" y="-4" class="key tap">*</text>
 </g>
 <g transform="translate(504, 99)" class="key keypos-16">
 <rect rx="2" ry="2" x="-26" y="-26" width="52" height="52" class="key side"/>
