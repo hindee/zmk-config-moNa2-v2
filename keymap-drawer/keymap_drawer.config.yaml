@@ -17,9 +17,11 @@ draw_config:
   arc_radius: 6.0
   key_side_pars:
     rel_x: 0
-    rel_y: 4
-    rel_w: 2
-    rel_h: 8
+    rel_y: 1
+    rel_w: 12
+    rel_h: 10
+    ry: 4
+    ry: 4
   append_colon_to_layer_header: true
   small_pad: 2.0
   svg_extra_style: |
