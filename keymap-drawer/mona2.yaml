@@ -22,7 +22,7 @@ layers:
   - K
   - L
   - {t: '&to_layer_0 SEMICOLON', h: mouse}
-  - {t: '&kp_exit_AML Z', h: ⇧}
+  - {t: '&kp_exit_AML Z', h: LSHIFT}
   - X
   - C
   - V
@@ -34,49 +34,49 @@ layers:
   - ','
   - .
   - {t: /, h: RIGHT SHIFT}
-  - Ctrl
-  - ⌘
+  - LCTRL
+  - LEFT WIN
   - LEFT ALT
   - {t: '&kp_exit_AML INT_MUHENKAN', h: LEFT ALT}
   - {t: '&to_layer_0 SPACE', h: scroll}
   - {t: '&to_layer_0 LC(SPACE)', h: funcs_numpad}
-  - ⌫
+  - BACKSPACE
   - {t: '&to_layer_0 ENTER', h: arrow}
   - {t: DEL, h: RIGHT CONTROL}
   symbols:
   - '!'
-  - '"'
+  - '@'
   - '#'
   - $
   - '%'
+  - '*'
   - (
-  - )
   - '-'
-  - {t: ^, s: '~'}
-  - {t: ¥, s: '|'}
+  - {t: '=', s: +}
+  - {t: '0x89', s: Sft+0x89}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ^
+  - ^
   - '&'
-  - '&'
-  - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '@', s: '`'}
-  - {t: ':', s: '*'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - MIC
-  - INS
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - _
   - {t: '[', s: '{'}
+  - {t: '''', s: '"'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+Alt+K
+  - INSERT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+0x87
   - {t: ']', s: '}'}
+  - {t: \, s: '|'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -85,14 +85,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ¥, s: _}
+  - {t: '0x89', s: Sft+0x87}
   funcs_numpad:
   - F1
   - F2
   - F3
   - F4
   - F5
-  - +
+  - ':'
   - '7'
   - '8'
   - '9'
@@ -102,16 +102,16 @@ layers:
   - F8
   - F9
   - F10
-  - '*'
+  - '"'
   - '-'
   - '4'
   - '5'
   - '6'
-  - ':'
+  - ''''
   - F11
   - F12
   - PRINTSCREEN
-  - INS
+  - INSERT
   - HOME
   - END
   - /
@@ -131,36 +131,36 @@ layers:
   - {t: ▽, type: trans}
   arrow:
   - {t: ▽, type: trans}
-  - Ctl+Sft+⇥
+  - Ctl+Sft+TAB
   - PRINTSCREEN
-  - Ctl+⇥
+  - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
-  - ↑
+  - UP ARROW
   - PAGE UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+←
-  - Gui+→
-  - Ctl+Gui+←
-  - Ctl+Gui+→
+  - Gui+LEFT ARROW
+  - Gui+RIGHT ARROW
+  - Ctl+Gui+LEFT ARROW
+  - Ctl+Gui+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ←
-  - ↓
-  - →
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT SHIFT
-  - Gui+Sft+←
-  - Gui+Sft+→
+  - Gui+Sft+LEFT ARROW
+  - Gui+Sft+RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - END
-  - ↓
+  - DOWN ARROW
   - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -168,7 +168,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - 変換
+  - INT HENKAN
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -306,8 +306,8 @@ combos:
   k: ESC
   l: [default]
 - p: [1, 2]
-  k: ⇥
+  k: TAB
 - p: [2, 3]
-  k: Sft+⇥
+  k: Sft+TAB
 - p: [25, 35]
   k: {t: '&to_layer_0 LA(B)', h: bluetooth}
