@@ -6,7 +6,7 @@ on:
   push:
     paths:
       - "config/mona2.keymap"
-      - "keymap_drawer.config.yaml"
+      - "keymap-drawer/keymap_drawer.config.yaml"
       - "boards/shields/mona2/mona2.dtsi"
 
 jobs:
