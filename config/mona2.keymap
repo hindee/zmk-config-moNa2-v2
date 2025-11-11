@@ -104,7 +104,7 @@
 
         cpbef {
             bindings = <&copy_before>;
-            key-positions = <16 17>;
+            key-positions = <17 18>;
         };
 
         cpaft {
