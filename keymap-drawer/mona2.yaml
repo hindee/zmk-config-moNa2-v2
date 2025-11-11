@@ -311,3 +311,11 @@ combos:
   k: Sft+⇥
 - p: [25, 35]
   k: {t: '&to_layer_0 LA(B)', h: bluetooth}
+- p: [7, 8]
+  k: '-'
+- p: [6, 7]
+  k: '&copy_line'
+- p: [16, 17]
+  k: '&copy_before'
+- p: [29, 30]
+  k: '&copy_after'

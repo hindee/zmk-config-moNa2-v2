@@ -395,6 +395,22 @@ rect.held, rect.combo.held { fill: #ffc; }
 <a href="#bluetooth">
 <text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-4">
+<rect rx="2" ry="2" x="631" y="22" width="28" height="26" class="combo"/>
+<text x="645" y="35" class="combo tap">-</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="2" ry="2" x="574" y="19" width="28" height="26" class="combo"/>
+<text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
+</g>
+<g class="combo combopos-6">
+<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
+<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+</g>
+<g class="combo combopos-7">
+<rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
+<text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(56, 339)" class="layer-symbols">
@@ -634,6 +650,22 @@ rect.held, rect.combo.held { fill: #ffc; }
 <a href="#bluetooth">
 <text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-3">
+<rect rx="2" ry="2" x="631" y="22" width="28" height="26" class="combo"/>
+<text x="645" y="35" class="combo tap">-</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="2" ry="2" x="574" y="19" width="28" height="26" class="combo"/>
+<text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
+</g>
+<g class="combo combopos-5">
+<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
+<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+</g>
+<g class="combo combopos-6">
+<rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
+<text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(56, 678)" class="layer-funcs_numpad">
@@ -868,6 +900,22 @@ rect.held, rect.combo.held { fill: #ffc; }
 <a href="#bluetooth">
 <text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-3">
+<rect rx="2" ry="2" x="631" y="22" width="28" height="26" class="combo"/>
+<text x="645" y="35" class="combo tap">-</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="2" ry="2" x="574" y="19" width="28" height="26" class="combo"/>
+<text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
+</g>
+<g class="combo combopos-5">
+<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
+<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+</g>
+<g class="combo combopos-6">
+<rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
+<text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(56, 1017)" class="layer-arrow">
@@ -1116,6 +1164,22 @@ rect.held, rect.combo.held { fill: #ffc; }
 <a href="#bluetooth">
 <text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-3">
+<rect rx="2" ry="2" x="631" y="22" width="28" height="26" class="combo"/>
+<text x="645" y="35" class="combo tap">-</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="2" ry="2" x="574" y="19" width="28" height="26" class="combo"/>
+<text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
+</g>
+<g class="combo combopos-5">
+<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
+<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+</g>
+<g class="combo combopos-6">
+<rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
+<text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(56, 1355)" class="layer-mouse">
@@ -1356,6 +1420,22 @@ rect.held, rect.combo.held { fill: #ffc; }
 <a href="#bluetooth">
 <text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-3">
+<rect rx="2" ry="2" x="631" y="22" width="28" height="26" class="combo"/>
+<text x="645" y="35" class="combo tap">-</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="2" ry="2" x="574" y="19" width="28" height="26" class="combo"/>
+<text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
+</g>
+<g class="combo combopos-5">
+<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
+<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+</g>
+<g class="combo combopos-6">
+<rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
+<text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(56, 1694)" class="layer-bluetooth">
@@ -1596,6 +1676,22 @@ rect.held, rect.combo.held { fill: #ffc; }
 <a href="#bluetooth">
 <text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-3">
+<rect rx="2" ry="2" x="631" y="22" width="28" height="26" class="combo"/>
+<text x="645" y="35" class="combo tap">-</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="2" ry="2" x="574" y="19" width="28" height="26" class="combo"/>
+<text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
+</g>
+<g class="combo combopos-5">
+<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
+<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+</g>
+<g class="combo combopos-6">
+<rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
+<text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(56, 2033)" class="layer-scroll">
@@ -1828,6 +1924,22 @@ rect.held, rect.combo.held { fill: #ffc; }
 <a href="#bluetooth">
 <text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-3">
+<rect rx="2" ry="2" x="631" y="22" width="28" height="26" class="combo"/>
+<text x="645" y="35" class="combo tap">-</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="2" ry="2" x="574" y="19" width="28" height="26" class="combo"/>
+<text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
+</g>
+<g class="combo combopos-5">
+<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
+<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+</g>
+<g class="combo combopos-6">
+<rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
+<text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
+</g>
 </g>
 </g>
 </svg>
