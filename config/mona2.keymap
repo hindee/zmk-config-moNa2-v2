@@ -144,7 +144,7 @@
         copy_line: copy_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(L) &kp LC(C)>;
+            bindings = <&kp HOME &kp LS(END) &kp LC(C)>;
             label = "COPY_LINE";
         };
 
