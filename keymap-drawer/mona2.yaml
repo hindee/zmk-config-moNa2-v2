@@ -315,7 +315,7 @@ combos:
   k: '-'
 - p: [6, 7]
   k: '&copy_line'
-- p: [16, 17]
+- p: [17, 18]
   k: '&copy_before'
 - p: [29, 30]
   k: '&copy_after'

@@ -404,8 +404,8 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
 </g>
 <g class="combo combopos-6">
-<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
-<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+<rect rx="2" ry="2" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
 </g>
 <g class="combo combopos-7">
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
@@ -659,8 +659,8 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
 </g>
 <g class="combo combopos-5">
-<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
-<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+<rect rx="2" ry="2" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
@@ -909,8 +909,8 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
 </g>
 <g class="combo combopos-5">
-<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
-<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+<rect rx="2" ry="2" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
@@ -1173,8 +1173,8 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
 </g>
 <g class="combo combopos-5">
-<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
-<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+<rect rx="2" ry="2" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
@@ -1429,8 +1429,8 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
 </g>
 <g class="combo combopos-5">
-<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
-<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+<rect rx="2" ry="2" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
@@ -1685,8 +1685,8 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
 </g>
 <g class="combo combopos-5">
-<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
-<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+<rect rx="2" ry="2" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
@@ -1933,8 +1933,8 @@ rect.held, rect.combo.held { fill: #ffc; }
 <text x="588" y="32" class="combo tap"><tspan style="font-size: 70%">&amp;copy_line</tspan></text>
 </g>
 <g class="combo combopos-5">
-<rect rx="2" ry="2" x="518" y="82" width="28" height="26" class="combo"/>
-<text x="532" y="95" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
+<rect rx="2" ry="2" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 64%">&amp;copy_befo…</tspan></text>
 </g>
 <g class="combo combopos-6">
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
