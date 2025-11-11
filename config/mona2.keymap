@@ -91,6 +91,26 @@
             bindings = <&lt_to 5 LA(B)>;
             key-positions = <25 35>;
         };
+
+        hyphen {
+            bindings = <&kp MINUS>;
+            key-positions = <7 8>;
+        };
+
+        cpline {
+            bindings = <&copy_line>;
+            key-positions = <6 7>;
+        };
+
+        cpbef {
+            bindings = <&copy_before>;
+            key-positions = <16 17>;
+        };
+
+        cpaft {
+            bindings = <&copy_after>;
+            key-positions = <29 30>;
+        };
     };
 
     // -------- Macros --------
@@ -119,6 +139,27 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &exit_AML>;
             label = "KP_exit_AML";
+        };
+
+        copy_line: copy_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(L) &kp LC(C)>;
+            label = "COPY_LINE";
+        };
+
+        copy_before: copy_before {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(HOME) &kp LC(C)>;
+            label = "COPY_BEFORE";
+        };
+
+        copy_after: copy_after {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(END) &kp LC(C)>;
+            label = "COPY_AFTER";
         };
     };
 
@@ -261,9 +302,9 @@
 
         default_layer {
             bindings = <
-&kp Q                         &kp W         &kp E         &kp R                                      &kp T                                                                &kp Y                   &kp U  &kp I      &kp O       &kp P
-&lt 1 A                       &kp S         &kp D         &kp F                                      &kp G                                                 &kp ESC        &kp H                   &kp J  &kp K      &kp L       &lt_to 4 SEMICOLON
-&mt_exit_AML_on_tap LSHIFT Z  &kp X         &kp C         &kp V                                      &kp B                   &kp LSHIFT                    &kp RSHIFT     &kp N                   &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
+&kp Q                         &kp W         &kp E         &kp R                                      &kp T                                                &kp Y           &kp U  &kp I      &kp O       &kp P
+&lt 1 A                       &kp S         &kp D         &kp F                                      &kp G                                 &kp ESC        &kp H           &kp J  &kp K      &kp L       &lt_to 4 SEMICOLON
+&mt_exit_AML_on_tap LSHIFT Z  &kp X         &kp C         &kp V                                      &kp B           &kp LSHIFT            &kp RSHIFT     &kp N           &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
 &kp LCTRL                     &kp LEFT_WIN  &kp LEFT_ALT  &mt_exit_AML_on_tap LEFT_ALT INT_MUHENKAN  &lt_to 6 SPACE  &lt_to 2 LC(SPACE)    &kp BACKSPACE  &lt_to 3 ENTER                                &mt RIGHT_CONTROL DEL
             >;
 
