@@ -89,6 +89,11 @@
             bindings = <&lt_to_layer_0 5 LA(B)>;
             key-positions = <25 35>;
         };
+
+        kana {
+            bindings = <&kp JP_KANA>;
+            key-positions = <37 39>;
+        };
     };
 
     // -------- Macros --------
