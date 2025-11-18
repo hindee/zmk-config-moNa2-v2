@@ -319,5 +319,5 @@ combos:
   k: '&copy_before'
 - p: [29, 30]
   k: '&copy_after'
-- p: [37, 39]
-  k: LANGUAGE 1
+- p: [37, 38]
+  k: INT KANA
