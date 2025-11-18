@@ -39,7 +39,7 @@ layers:
   - LEFT ALT
   - {t: '&kp_exit_AML INT_MUHENKAN', h: LEFT ALT}
   - {t: '&to_layer_0 SPACE', h: scroll}
-  - {t: '&to_layer_0 LC(SPACE)', h: funcs_numpad}
+  - {t: '&to_layer_0 GRAVE', h: funcs_numpad}
   - ⌫
   - {t: '&to_layer_0 ENTER', h: arrow}
   - {t: DEL, h: RIGHT CONTROL}
@@ -122,7 +122,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+PRINTSCREEN
+  - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -243,7 +243,7 @@ layers:
   - '3'
   - {type: held}
   - {t: ▽, type: trans}
-  - '&bootloader'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -319,3 +319,5 @@ combos:
   k: '&copy_before'
 - p: [29, 30]
   k: '&copy_after'
+- p: [37, 39]
+  k: LANGUAGE 1

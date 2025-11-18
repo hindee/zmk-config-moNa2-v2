@@ -348,7 +348,7 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="2" ry="2" x="-27" y="-27" width="54" height="54" class="key side"/>
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key"/>
 <text x="0" y="-1" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;to_layer_0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">LC(</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">SPACE)</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;to_layer_0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">GRAVE</tspan>
 </text>
 <a href="#funcs_numpad">
 <text x="0" y="23" class="key hold layer-activator"><tspan style="font-size: 64%">funcs_nump…</tspan></text>
@@ -410,6 +410,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <g class="combo combopos-7">
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
 <text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
+</g>
+<g class="combo combopos-8">
+<path d="M347,239 l-58,-6" class="combo"/>
+<path d="M347,239 l58,6" class="combo"/>
+<rect rx="2" ry="2" x="333" y="226" width="28" height="26" class="combo"/>
+<text x="347" y="239" class="combo tap">
+<tspan x="347" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="347" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -666,6 +674,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
 <text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
 </g>
+<g class="combo combopos-7">
+<path d="M347,239 l-58,-6" class="combo"/>
+<path d="M347,239 l58,6" class="combo"/>
+<rect rx="2" ry="2" x="333" y="226" width="28" height="26" class="combo"/>
+<text x="347" y="239" class="combo tap">
+<tspan x="347" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="347" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(56, 678)" class="layer-funcs_numpad">
@@ -849,9 +865,7 @@ rect.held, rect.combo.held { fill: #ffc; }
 <g transform="translate(140, 196)" class="key keypos-35">
 <rect rx="2" ry="2" x="-27" y="-27" width="54" height="54" class="key side"/>
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key"/>
-<text x="0" y="-1" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 64%">Alt+</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">PRINTSCREEN</tspan>
-</text>
+<text x="0" y="-1" class="key tap"><tspan style="font-size: 64%">PRINTSCREEN</tspan></text>
 </g>
 <g transform="translate(208, 225)" class="key trans keypos-36">
 <rect rx="2" ry="2" x="-27" y="-27" width="54" height="54" class="key trans side"/>
@@ -915,6 +929,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <g class="combo combopos-6">
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
 <text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
+</g>
+<g class="combo combopos-7">
+<path d="M347,239 l-58,-6" class="combo"/>
+<path d="M347,239 l58,6" class="combo"/>
+<rect rx="2" ry="2" x="333" y="226" width="28" height="26" class="combo"/>
+<text x="347" y="239" class="combo tap">
+<tspan x="347" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="347" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1180,6 +1202,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
 <text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
 </g>
+<g class="combo combopos-7">
+<path d="M347,239 l-58,-6" class="combo"/>
+<path d="M347,239 l58,6" class="combo"/>
+<rect rx="2" ry="2" x="333" y="226" width="28" height="26" class="combo"/>
+<text x="347" y="239" class="combo tap">
+<tspan x="347" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="347" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(56, 1355)" class="layer-mouse">
@@ -1436,6 +1466,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
 <text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
 </g>
+<g class="combo combopos-7">
+<path d="M347,239 l-58,-6" class="combo"/>
+<path d="M347,239 l58,6" class="combo"/>
+<rect rx="2" ry="2" x="333" y="226" width="28" height="26" class="combo"/>
+<text x="347" y="239" class="combo tap">
+<tspan x="347" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="347" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(56, 1694)" class="layer-bluetooth">
@@ -1580,10 +1618,10 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(448, 168)" class="key keypos-27">
-<rect rx="2" ry="2" x="-27" y="-27" width="54" height="54" class="key side"/>
-<rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key"/>
-<text x="0" y="-1" class="key tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+<g transform="translate(448, 168)" class="key trans keypos-27">
+<rect rx="2" ry="2" x="-27" y="-27" width="54" height="54" class="key trans side"/>
+<rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key trans"/>
+<text x="0" y="-1" class="key trans tap">▽</text>
 </g>
 <g transform="translate(504, 155)" class="key trans keypos-28">
 <rect rx="2" ry="2" x="-27" y="-27" width="54" height="54" class="key trans side"/>
@@ -1691,6 +1729,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <g class="combo combopos-6">
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
 <text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
+</g>
+<g class="combo combopos-7">
+<path d="M347,239 l-58,-6" class="combo"/>
+<path d="M347,239 l58,6" class="combo"/>
+<rect rx="2" ry="2" x="333" y="226" width="28" height="26" class="combo"/>
+<text x="347" y="239" class="combo tap">
+<tspan x="347" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="347" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1939,6 +1985,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 <g class="combo combopos-6">
 <rect rx="2" ry="2" x="574" y="131" width="28" height="26" class="combo"/>
 <text x="588" y="144" class="combo tap"><tspan style="font-size: 64%">&amp;copy_after</tspan></text>
+</g>
+<g class="combo combopos-7">
+<path d="M347,239 l-58,-6" class="combo"/>
+<path d="M347,239 l58,6" class="combo"/>
+<rect rx="2" ry="2" x="333" y="226" width="28" height="26" class="combo"/>
+<text x="347" y="239" class="combo tap">
+<tspan x="347" dy="-0.6em" style="font-size: 88%">LANGUAGE</tspan><tspan x="347" dy="1.2em" style="font-size: 88%">1</tspan>
+</text>
 </g>
 </g>
 </g>
