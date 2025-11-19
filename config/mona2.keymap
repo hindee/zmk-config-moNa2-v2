@@ -210,12 +210,26 @@
             tap-ms = <20>;
         };
 
-        td_kana_lt_FN: tap_dance_hold {
-            compatible = "zmk,behavior-tap-dance-hold";
+        /* Tap-dance (kana toggles) + Hold-to-layer implementation
+         * Implemented as two nodes:
+         *  - a standard tap-dance node that handles 1/2/3 taps
+         *  - a hold-tap node that forwards the hold action to &mo (layer) and
+         *    the tap action to the tap-dance node above.
+         */
+        td_kana_td: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            hold-binding = <&mo FUNCS_NUMPAD>;      // 長押しでFUNCS_NUMPADへ移動
             bindings = <&kp JP_HANZEN>, <&kp JP_KANA>, <&kp JP_HANZEN>;
+        };
+
+        td_kana_hold: td_kana_hold {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            /* first binding is the hold behavior (layer modifier), second is the tap behavior (tap-dance node) */
+            bindings = <&mo>, <&td_kana_td>;
         };
 
         // --- JIS Key Mod Morph Behaviors ---
@@ -313,7 +327,7 @@
 &kp Q                         &kp W         &kp E         &kp R                                      &kp T                                                &kp Y           &kp U  &kp I      &kp O       &kp P
 &lt 1 A                       &kp S         &kp D         &kp F                                      &kp G                                 &kp ESC        &kp H           &kp J  &kp K      &kp L       &lt_to 4 SEMICOLON
 &mt_exit_AML_on_tap LSHIFT Z  &kp X         &kp C         &kp V                                      &kp B           &kp LSHIFT            &kp RSHIFT     &kp N           &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
-&kp LCTRL                     &kp LEFT_WIN  &kp LEFT_ALT  &mt_exit_AML_on_tap LEFT_ALT INT_MUHENKAN  &lt_to 6 SPACE  &td_kana_lt_FN    &kp BACKSPACE  &lt_to 3 ENTER                                &mt RIGHT_CONTROL DEL
+&kp LCTRL                     &kp LEFT_WIN  &kp LEFT_ALT  &mt_exit_AML_on_tap LEFT_ALT INT_MUHENKAN  &lt_to 6 SPACE  &td_kana_hold FUNCS_NUMPAD 0    &kp BACKSPACE  &lt_to 3 ENTER                                &mt RIGHT_CONTROL DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
