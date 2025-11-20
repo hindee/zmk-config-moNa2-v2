@@ -347,10 +347,8 @@ rect.held, rect.combo.held { fill: #ffc; }
 <g transform="translate(333, 247) rotate(20.0)" class="key keypos-38">
 <rect rx="2" ry="2" x="-27" y="-27" width="54" height="54" class="key side"/>
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key"/>
-<text x="0" y="-1" class="key tap"><tspan style="font-size: 64%">&amp;td_kana_td</tspan></text>
-<a href="#funcs_numpad">
-<text x="0" y="23" class="key hold layer-activator"><tspan style="font-size: 64%">funcs_nump…</tspan></text>
-</a></g>
+<text x="0" y="-1" class="key tap">半/全/かな</text>
+</g>
 <g transform="translate(423, 247) rotate(-20.0)" class="key keypos-39">
 <rect rx="2" ry="2" x="-27" y="-27" width="54" height="54" class="key side"/>
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key"/>
@@ -859,9 +857,10 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(333, 247) rotate(20.0)" class="key held keypos-38">
-<rect rx="2" ry="2" x="-27" y="-27" width="54" height="54" class="key held side"/>
-<rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key held"/>
+<g transform="translate(333, 247) rotate(20.0)" class="key trans keypos-38">
+<rect rx="2" ry="2" x="-27" y="-27" width="54" height="54" class="key trans side"/>
+<rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key trans"/>
+<text x="0" y="-1" class="key trans tap">▽</text>
 </g>
 <g transform="translate(423, 247) rotate(-20.0)" class="key trans keypos-39">
 <rect rx="2" ry="2" x="-27" y="-27" width="54" height="54" class="key trans side"/>
