@@ -124,7 +124,7 @@ parse_config:
     'JP_HANZEN': '半/全'
     '`': '半/全' # Changed from '`' to '半/全' to match the new requirement
     'INT_HENKAN': '変換'
-    'td_kana_hold': '半/全/かな'
+    '&td_kana_hold': '半/全/かな'
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
