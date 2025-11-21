@@ -128,13 +128,6 @@ parse_config:
     # 'LANGUAGE_1': '全/かな'
   raw_binding_map:
     '&td_kana_hold': {tap: '全/かな',hold: 'funcs_numpad'}
-    '&lt_to': {tap: '␣',hold: 'scroll'}
-    # '&to_layer_0 ENTER': { tap: '⏎', hold: 'arrow' }
-    # '&to_layer_0 LA(B)': 'bluetooth'
-    
-    # '&mt_exit_AML_on_tap RIGHT_SHIFT': { tap: '⇧', hold: '/' }
-    # '&mt_exit_AML_on_tap INT_MUHENKAN': { tap: 'ALT', hold: '無変換' }
-    # '&mt_exit_AML_on_tap Z': { tap: '⇧', hold: 'funcs_numpad' }
     
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
