@@ -124,6 +124,7 @@ parse_config:
     'JP_HANZEN': '半/全'
     '`': '半/全' # Changed from '`' to '半/全' to match the new requirement
     'INT_HENKAN': '変換'
+    'ZENHANKANA': '全/かな'
   # raw_binding_map:
   #   '&td_kana_hold': '半/全/かな\nFUNCS_NUMPAD'
   # You can further customize combo positions, glyphs, etc. below as needed
