@@ -120,14 +120,14 @@ parse_config:
   # 'Gui+Alt+K': 'MIC' # Display as MIC (no quotes, so it won't split into multiple lines)
     'LG(LA(K))': 'MIC' # Display as MIC
     'LEFT_WIN': '⌘'
-    JP_HANZEN: '半/全'
-    'JP_HANZEN': '半/全'
-    '`': '半/全' # Changed from '`' to '半/全' to match the new requirement
-    'INT_HENKAN': '変換'
-    INT_MUHENKAN: '無変換'
-    'LANGUAGE_1': '全/かな'
-  # raw_binding_map:
-  #   '&td_kana_hold': '半/全/かな\nFUNCS_NUMPAD'
+    # JP_HANZEN: '半/全'
+    # 'JP_HANZEN': '半/全'
+    # '`': '半/全' # Changed from '`' to '半/全' to match the new requirement
+    # 'INT_HENKAN': '変換'
+    # 'INT_MUHENKAN': '無変換'
+    # 'LANGUAGE_1': '全/かな'
+  raw_binding_map:
+    '&td_kana_hold': {tap: '全/かな',hold: 'FUNCS_NUMPAD'}
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
