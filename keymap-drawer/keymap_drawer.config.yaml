@@ -7,8 +7,8 @@ draw_config:
   split_gap: 30.0
   combo_w: 28.0
   combo_h: 26.0
-  key_rx: 2.0 # from 6.0 to 2.0
-  key_ry: 2.0 # from 6.0 to 2.0
+  key_rx: 5.0 # from 6.0 to 2.0
+  key_ry: 5.0 # from 6.0 to 2.0
   inner_pad_w: 1.0
   inner_pad_h: 1.0
   outer_pad_w: 56.0 # from 40.0 to 56.0
@@ -127,7 +127,8 @@ parse_config:
     # 'INT_MUHENKAN': '無変換'
     # 'LANGUAGE_1': '全/かな'
   raw_binding_map:
-    '&td_kana_hold': {tap: '全/かな',hold: 'FUNCS_NUMPAD'}
+    '&td_kana_hold': {tap: '全/かな',}
+    '&lt_to_layer_0': {}
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
