@@ -130,7 +130,7 @@ parse_config:
     '&td_kana_hold': {tap: '全/かな',hold: 'funcs_numpad'}
     # '&to_layer_0': { tap: '␣', hold: 'scroll' }
     # '&to_layer_0 ENTER': { tap: '⏎', hold: 'arrow' }
-    '&to_layer_0 SEMICOLON': { tap: ';', hold: 'mouse' }
+    '&to_layer_0': { tap: ';', hold: 'mouse' }
     # '&to_layer_0 LA(B)': 'bluetooth'
     
     # '&mt_exit_AML_on_tap RIGHT_SHIFT': { tap: '⇧', hold: '/' }
