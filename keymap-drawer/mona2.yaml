@@ -22,7 +22,7 @@ layers:
   - K
   - L
   - {t: '&to_layer_0 SEMICOLON', h: mouse}
-  - {t: '&kp_exit_AML Z', h: ⇧}
+  - {t: ⇧, h: ⇧}
   - X
   - C
   - V
@@ -37,7 +37,7 @@ layers:
   - Ctrl
   - ⌘
   - LEFT ALT
-  - {t: '&kp_exit_AML INT_MUHENKAN', h: LEFT ALT}
+  - {t: ALT, h: LEFT ALT}
   - {t: ␣, h: scroll}
   - {t: 全/かな, h: funcs_numpad}
   - ⌫
