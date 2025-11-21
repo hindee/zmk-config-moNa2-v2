@@ -41,7 +41,7 @@ layers:
   - {t: ␣, h: scroll}
   - {t: 全/かな, h: funcs_numpad}
   - ⌫
-  - {t: '&to_layer_0 ENTER', h: arrow}
+  - {t: ⏎, h: arrow}
   - {t: DEL, h: RIGHT CONTROL}
   symbols:
   - '!'
@@ -170,7 +170,7 @@ layers:
   - {t: ▽, type: trans}
   - INT HENKAN
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   mouse:
   - {t: ▽, type: trans}
@@ -241,7 +241,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -251,7 +251,7 @@ layers:
   - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -310,7 +310,7 @@ combos:
 - p: [2, 3]
   k: Sft+⇥
 - p: [25, 35]
-  k: {t: '&to_layer_0 LA(B)', h: bluetooth}
+  k: bluetooth
 - p: [7, 8]
   k: '-'
 - p: [6, 7]
