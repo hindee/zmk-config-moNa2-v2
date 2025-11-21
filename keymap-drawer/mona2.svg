@@ -247,7 +247,7 @@ rect.held, rect.combo.held { fill: #ffc; }
 <g transform="translate(28, 175)" class="key keypos-21">
 <rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key side"/>
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key"/>
-<text x="0" y="-1" class="key tap">⇧</text>
+<text x="0" y="-1" class="key tap">Z</text>
 <text x="0" y="23" class="key hold">⇧</text>
 </g>
 <g transform="translate(84, 154)" class="key keypos-22">
@@ -319,15 +319,13 @@ rect.held, rect.combo.held { fill: #ffc; }
 <g transform="translate(140, 196)" class="key keypos-35">
 <rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key side"/>
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key"/>
-<text x="0" y="-1" class="key tap">
-<tspan x="0" dy="-0.6em">LEFT</tspan><tspan x="0" dy="1.2em">ALT</tspan>
-</text>
+<text x="0" y="-1" class="key tap">Alt</text>
 </g>
 <g transform="translate(208, 225)" class="key keypos-36">
 <rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key side"/>
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key"/>
-<text x="0" y="-1" class="key tap">ALT</text>
-<text x="0" y="23" class="key hold"><tspan style="font-size: 88%">LEFT ALT</tspan></text>
+<text x="0" y="-1" class="key tap">無変換</text>
+<text x="0" y="23" class="key hold">Alt</text>
 </g>
 <g transform="translate(271, 231) rotate(9.0)" class="key keypos-37">
 <rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key side"/>
