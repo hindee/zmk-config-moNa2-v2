@@ -240,9 +240,7 @@ rect.held, rect.combo.held { fill: #ffc; }
 <g transform="translate(729, 119)" class="key keypos-20">
 <rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key side"/>
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key"/>
-<text x="0" y="-1" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;to_layer_0</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">SEMICOLON</tspan>
-</text>
+<text x="0" y="-1" class="key tap">;</text>
 <a href="#mouse">
 <text x="0" y="23" class="key hold layer-activator">mouse</text>
 </a></g>
@@ -379,8 +377,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <path d="M196,176 l39,-14" class="combo"/>
 <path d="M196,176 l-39,14" class="combo"/>
 <rect rx="5" ry="5" x="182" y="163" width="28" height="26" class="combo"/>
+<text x="196" y="176" class="combo tap">Alt+B</text>
 <a href="#bluetooth">
-<text x="196" y="176" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
+<text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-4">
 <rect rx="5" ry="5" x="631" y="22" width="28" height="26" class="combo"/>
@@ -631,8 +630,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <path d="M196,176 l39,-14" class="combo"/>
 <path d="M196,176 l-39,14" class="combo"/>
 <rect rx="5" ry="5" x="182" y="163" width="28" height="26" class="combo"/>
+<text x="196" y="176" class="combo tap">Alt+B</text>
 <a href="#bluetooth">
-<text x="196" y="176" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
+<text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-3">
 <rect rx="5" ry="5" x="631" y="22" width="28" height="26" class="combo"/>
@@ -877,8 +877,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <path d="M196,176 l39,-14" class="combo"/>
 <path d="M196,176 l-39,14" class="combo"/>
 <rect rx="5" ry="5" x="182" y="163" width="28" height="26" class="combo"/>
+<text x="196" y="176" class="combo tap">Alt+B</text>
 <a href="#bluetooth">
-<text x="196" y="176" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
+<text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-3">
 <rect rx="5" ry="5" x="631" y="22" width="28" height="26" class="combo"/>
@@ -1119,10 +1120,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(485, 230) rotate(-10.0)" class="key trans keypos-40">
-<rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key trans side"/>
-<rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key trans"/>
-<text x="0" y="-1" class="key trans tap">▽</text>
+<g transform="translate(485, 230) rotate(-10.0)" class="key held keypos-40">
+<rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key held side"/>
+<rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key held"/>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-41">
 <rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key trans side"/>
@@ -1141,8 +1141,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <path d="M196,176 l39,-14" class="combo"/>
 <path d="M196,176 l-39,14" class="combo"/>
 <rect rx="5" ry="5" x="182" y="163" width="28" height="26" class="combo"/>
+<text x="196" y="176" class="combo tap">Alt+B</text>
 <a href="#bluetooth">
-<text x="196" y="176" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
+<text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-3">
 <rect rx="5" ry="5" x="631" y="22" width="28" height="26" class="combo"/>
@@ -1394,8 +1395,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <path d="M196,176 l39,-14" class="combo"/>
 <path d="M196,176 l-39,14" class="combo"/>
 <rect rx="5" ry="5" x="182" y="163" width="28" height="26" class="combo"/>
+<text x="196" y="176" class="combo tap">Alt+B</text>
 <a href="#bluetooth">
-<text x="196" y="176" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
+<text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-3">
 <rect rx="5" ry="5" x="631" y="22" width="28" height="26" class="combo"/>
@@ -1548,10 +1550,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key"/>
 <text x="0" y="-1" class="key tap">3</text>
 </g>
-<g transform="translate(253, 155)" class="key trans keypos-25">
-<rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key trans side"/>
-<rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key trans"/>
-<text x="0" y="-1" class="key trans tap">▽</text>
+<g transform="translate(253, 155)" class="key held keypos-25">
+<rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key held side"/>
+<rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key held"/>
 </g>
 <g transform="translate(309, 168)" class="key trans keypos-26">
 <rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key trans side"/>
@@ -1600,10 +1601,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(140, 196)" class="key trans keypos-35">
-<rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key trans side"/>
-<rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key trans"/>
-<text x="0" y="-1" class="key trans tap">▽</text>
+<g transform="translate(140, 196)" class="key held keypos-35">
+<rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key held side"/>
+<rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key held"/>
 </g>
 <g transform="translate(208, 225)" class="key trans keypos-36">
 <rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key trans side"/>
@@ -1649,8 +1649,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <path d="M196,176 l39,-14" class="combo"/>
 <path d="M196,176 l-39,14" class="combo"/>
 <rect rx="5" ry="5" x="182" y="163" width="28" height="26" class="combo"/>
+<text x="196" y="176" class="combo tap">Alt+B</text>
 <a href="#bluetooth">
-<text x="196" y="176" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
+<text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-3">
 <rect rx="5" ry="5" x="631" y="22" width="28" height="26" class="combo"/>
@@ -1858,10 +1859,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(271, 231) rotate(9.0)" class="key trans keypos-37">
-<rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key trans side"/>
-<rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key trans"/>
-<text x="0" y="-1" class="key trans tap">▽</text>
+<g transform="translate(271, 231) rotate(9.0)" class="key held keypos-37">
+<rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key held side"/>
+<rect rx="4" ry="4" x="-21" y="-23" width="42" height="44" class="key held"/>
 </g>
 <g transform="translate(333, 247) rotate(20.0)" class="key trans keypos-38">
 <rect rx="5" ry="5" x="-27" y="-27" width="54" height="54" class="key trans side"/>
@@ -1895,8 +1895,9 @@ rect.held, rect.combo.held { fill: #ffc; }
 <path d="M196,176 l39,-14" class="combo"/>
 <path d="M196,176 l-39,14" class="combo"/>
 <rect rx="5" ry="5" x="182" y="163" width="28" height="26" class="combo"/>
+<text x="196" y="176" class="combo tap">Alt+B</text>
 <a href="#bluetooth">
-<text x="196" y="176" class="combo tap layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
+<text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-3">
 <rect rx="5" ry="5" x="631" y="22" width="28" height="26" class="combo"/>

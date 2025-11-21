@@ -21,7 +21,7 @@ layers:
   - J
   - K
   - L
-  - {t: '&to_layer_0 SEMICOLON', h: mouse}
+  - {t: ;, h: mouse}
   - {t: ⇧, h: ⇧}
   - X
   - C
@@ -170,7 +170,7 @@ layers:
   - {t: ▽, type: trans}
   - INT HENKAN
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   mouse:
   - {t: ▽, type: trans}
@@ -241,7 +241,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -251,7 +251,7 @@ layers:
   - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -296,7 +296,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -310,7 +310,7 @@ combos:
 - p: [2, 3]
   k: Sft+⇥
 - p: [25, 35]
-  k: bluetooth
+  k: {t: Alt+B, h: bluetooth}
 - p: [7, 8]
   k: '-'
 - p: [6, 7]
