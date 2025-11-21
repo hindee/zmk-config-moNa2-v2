@@ -128,7 +128,7 @@ parse_config:
     # 'LANGUAGE_1': '全/かな'
   raw_binding_map:
     '&td_kana_hold': {tap: '全/かな',hold: 'funcs_numpad'}
-    '&lt_to 6 SPACE': { tap: '␣', hold: 'scroll' }
+    '&lt_to': {tap: '␣',hold: 'scroll'}
     # '&to_layer_0 ENTER': { tap: '⏎', hold: 'arrow' }
     # '&to_layer_0 LA(B)': 'bluetooth'
     
