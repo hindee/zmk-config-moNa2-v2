@@ -120,17 +120,12 @@ parse_config:
   # 'Gui+Alt+K': 'MIC' # Display as MIC (no quotes, so it won't split into multiple lines)
     'LG(LA(K))': 'MIC' # Display as MIC
     'LEFT_WIN': '⌘'
-    # JP_HANZEN: '半/全'
-    # 'JP_HANZEN': '半/全'
-    # '`': '半/全' # Changed from '`' to '半/全' to match the new requirement
-    # 'INT_HENKAN': '変換'
-    # 'INT_MUHENKAN': '無変換'
-    # 'LANGUAGE_1': '全/かな'
   raw_binding_map:
     '&td_kana_hold': {tap: '全/かな',hold: 'funcs_numpad'}
-    '&lt_to 6 SPACE': {tap: '␣',hold: 'scroll'}
-    '&lt_to 3 ENTER': { tap: '⏎', hold: 'arrow' }
-    '&lt_to 5 LA(B)': 'bluetooth'
+    # '&lt_to 3 ENTER': { tap: '⏎', hold: 'arrow' }
+    # '&lt_to 4 SEMICOLON': {tap: ';',hold: 'mouse'}
+    # '&lt_to 5 LA(B)': 'bluetooth'
+    # '&lt_to 6 SPACE': {tap: '␣',hold: 'scroll'}
     
     '&kp_exit_AML RIGHT_SHIFT': { tap: '⇧', hold: '/' }
     '&kp_exit_AML INT_MUHENKAN': { tap: 'ALT', hold: '無変換' }
