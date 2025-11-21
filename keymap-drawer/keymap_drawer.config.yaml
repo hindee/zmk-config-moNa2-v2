@@ -132,7 +132,7 @@ parse_config:
     # '&to_layer_0 ENTER': { tap: '⏎', hold: 'arrow' }
     # '&to_layer_0 LA(B)': 'bluetooth'
     
-    '&mt_exit_AML_on_tap RIGHT_SHIFT': { tap: '⇧', hold: '/' }
+    '&mt_exit_AML_on_tap': { tap: '⇧', hold: '/' }
     # '&mt_exit_AML_on_tap INT_MUHENKAN': { tap: 'ALT', hold: '無変換' }
     # '&mt_exit_AML_on_tap Z': { tap: '⇧', hold: 'funcs_numpad' }
     
