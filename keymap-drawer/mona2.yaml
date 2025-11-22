@@ -59,10 +59,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&'
-  - '&'
   - ''''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - '|'
   - {t: '@', s: '`'}
   - {t: ':', s: '*'}
   - {t: ▽, type: trans}
@@ -70,10 +70,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DEL
   - INS
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '{'
+  - '}'
   - _
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
@@ -92,34 +92,34 @@ layers:
   - F3
   - F4
   - F5
-  - +
+  - '*'
   - '7'
   - '8'
   - '9'
-  - {t: ▽, type: trans}
+  - +
   - F6
   - F7
   - F8
   - F9
   - F10
-  - trans
-  - '*'
+  - {t: ▽, type: trans}
+  - /
   - '4'
   - '5'
   - '6'
-  - '0'
+  - '-'
   - F11
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - MIC
-  - trans
+  - {t: ▽, type: trans}
   - '0'
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PRINTSCREEN
