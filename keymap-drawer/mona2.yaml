@@ -70,7 +70,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - MIC
+  - {t: ▽, type: trans}
   - INS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -87,34 +87,34 @@ layers:
   - {t: ▽, type: trans}
   - {t: ¥, s: _}
   funcs_numpad:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
   - F1
   - F2
   - F3
   - F4
   - F5
-  - (
-  - '~'
-  - '4'
-  - '5'
-  - '6'
-  - '-'
+  - +
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
   - F6
   - F7
   - F8
   - F9
   - F10
+  - trans
+  - '*'
+  - '4'
+  - '5'
+  - '6'
+  - '0'
   - F11
   - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - MIC
+  - trans
   - '0'
   - '1'
   - '2'
@@ -226,6 +226,7 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -236,8 +237,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR ALL
   - '1'
   - '2'
   - '3'
@@ -248,7 +248,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -257,7 +257,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR ALL
+  - {t: ▽, type: trans}
   scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -307,15 +307,22 @@ combos:
   l: [default]
 - p: [1, 2]
   k: ⇥
+  l: [default]
 - p: [2, 3]
   k: Sft+⇥
+  l: [default]
 - p: [25, 35]
   k: {t: Alt+B, h: bluetooth}
+  l: [default]
 - p: [7, 8]
   k: '-'
+  l: [default]
 - p: [6, 7]
   k: '&copy_line'
+  l: [default]
 - p: [17, 18]
   k: '&copy_before'
+  l: [default]
 - p: [29, 30]
   k: '&copy_after'
+  l: [default]
