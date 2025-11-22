@@ -324,10 +324,10 @@
 
         symbols {
             bindings = <
-&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                                  &kp JP_LPAREN   &kp JP_RPAREN   &kp MINUS          &jis_CRT_TLD  &jis_YEN_PIP
-&trans           &trans         &trans    &trans      &kp JP_AMPERSAND                &kp JP_QUOTE &kp JP_LBRACKET &kp JP_RBRACKET &kp JP_PIPE        &jis_AT_BKQ   &jis_CLN_AST
-&trans           &trans         &trans    &trans      &trans           &kp DEL        &kp INSERT   &kp JP_LBRACE   &kp JP_RBRACE   &kp JP_UNDERSCORE  &jis_LBK_LBT  &jis_RBK_RBT
-&trans           &trans         &trans    &trans      &trans           &trans         &trans       &trans                                                           &jis_YEN_UNS
+&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH          &kp DOLLAR  &kp PERCENT                                  &kp JP_LPAREN   &kp JP_RPAREN   &kp MINUS          &jis_CRT_TLD  &jis_YEN_PIP
+&trans           &kp JP_TILDE   &kp JP_BACKQUOTE  &trans      &kp JP_AMPERSAND                &kp JP_QUOTE &kp JP_LBRACKET &kp JP_RBRACKET &kp JP_PIPE        &jis_AT_BKQ   &jis_CLN_AST
+&trans           &trans         &trans            &trans      &trans           &kp DEL        &kp INSERT   &kp JP_LBRACE   &kp JP_RBRACE   &kp JP_UNDERSCORE  &jis_LBK_LBT  &jis_RBK_RBT
+&trans           &trans         &trans            &trans      &trans           &trans         &trans       &trans                                                           &jis_YEN_UNS
             >;
 
             sensor-bindings = <&scroll_right_left>;
