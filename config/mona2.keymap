@@ -205,6 +205,7 @@
          *  - a hold-tap node that forwards the hold action to &mo (layer) and
          *    the tap action to the tap-dance node above.
          */
+
         td_kana_td: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -217,7 +218,9 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
+
             /* first binding is the hold behavior (layer modifier), second is the tap behavior (tap-dance node) */
+
             bindings = <&mo>, <&td_kana_td>;
         };
 
@@ -313,10 +316,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W         &kp E         &kp R                               &kp T                                                &kp Y           &kp U  &kp I      &kp O       &kp P
-&lt 1 A                &kp S         &kp D         &kp F                               &kp G                                 &kp ESC        &kp H           &kp J  &kp K      &kp L       &lt 4 SEMICOLON
-&mt_exit_AML LSHIFT Z  &kp X         &kp C         &kp V                               &kp B        &kp LSHIFT               &kp RSHIFT     &kp N           &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
-&kp LCTRL              &kp LEFT_WIN  &kp LEFT_ALT  &mt_exit_AML LEFT_ALT INT_MUHENKAN  &lt 6 SPACE  &td_kana_hold 2 JP_KANA  &kp BACKSPACE  &lt 3 ENTER                                   &mt RIGHT_CONTROL DEL
+&kp Q                  &kp W         &kp E         &kp R                               &kp T                                                  &kp Y        &kp U  &kp I      &kp O       &kp P
+&lt 1 A                &kp S         &kp D         &kp F                               &kp G                                   &kp ESC        &kp H        &kp J  &kp K      &kp L       &lt 4 SEMICOLON
+&mt_exit_AML LSHIFT Z  &kp X         &kp C         &kp V                               &kp B        &kp LSHIFT                 &kp RSHIFT     &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
+&kp LCTRL              &kp LEFT_WIN  &kp LEFT_ALT  &mt_exit_AML LEFT_ALT INT_MUHENKAN  &lt 6 SPACE  &td_kana_hold 2 JP_KANA    &kp BACKSPACE  &lt 3 ENTER                                &mt RIGHT_CONTROL DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -324,10 +327,10 @@
 
         symbols {
             bindings = <
-&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                                  &kp JP_LPAREN  &kp JP_RPAREN   &kp MINUS          &jis_CRT_TLD  &jis_YEN_PIP
-&trans           &trans         &trans    &trans      &kp JP_AMPERSAND                &kp JP_QUOTE &jis_LBK_LBT   &jis_RBK_RBT    &kp JP_PLUS        &jis_AT_BKQ   &jis_CLN_AST
-&trans           &trans         &trans    &trans      &trans           &kp DEL        &kp INSERT   &trans         &trans          &kp JP_UNDERSCORE  &trans        &trans
-&trans           &trans         &trans    &trans      &trans           &trans         &trans       &trans                                                          &trans
+&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                                &kp JP_LPAREN  &kp JP_RPAREN  &kp MINUS          &jis_CRT_TLD  &jis_YEN_PIP
+&trans           &trans         &trans    &trans      &kp JP_AMPERSAND             &kp JP_QUOTE  &jis_LBK_LBT   &jis_RBK_RBT   &kp JP_PLUS        &jis_AT_BKQ   &jis_CLN_AST
+&trans           &trans         &trans    &trans      &trans            &kp DEL    &kp INSERT    &trans         &trans         &kp JP_UNDERSCORE  &trans        &trans
+&trans           &trans         &trans    &trans      &trans            &trans     &trans        &trans                                                         &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -335,10 +338,10 @@
 
         funcs_numpad {
             bindings = <
-&kp F1  &kp F2  &kp F3           &kp F4  &kp F5                         &kp JP_ASTERISK &kp N7  &kp N8  &kp N9  &kp JP_PLUS
-&kp F6  &kp F7  &kp F8           &kp F9  &kp F10                 &trans &kp SLASH       &kp N4  &kp N5  &kp N6  &kp MINUS
-&kp F11 &kp F12 &trans           &trans  &trans  &kp LG(LA(K))   &trans &kp NUMBER_0    &kp N1  &kp N2  &kp N3  &kp N0
-&trans  &trans  &kp PRINTSCREEN  &trans  &trans  &trans          &trans &trans                                  &trans
+&kp F1   &kp F2   &kp F3           &kp F4  &kp F5                            &kp JP_ASTERISK  &kp N7  &kp N8  &kp N9  &kp JP_PLUS
+&kp F6   &kp F7   &kp F8           &kp F9  &kp F10                   &trans  &kp SLASH        &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp F11  &kp F12  &trans           &trans  &trans   &kp LG(LA(K))    &trans  &kp NUMBER_0     &kp N1  &kp N2  &kp N3  &kp N0
+&trans   &trans   &kp PRINTSCREEN  &trans  &trans   &trans           &trans  &trans                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -346,10 +349,10 @@
 
         arrow {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                             &trans  &kp HOME        &kp UP_ARROW    &kp PAGE_UP      &trans
-&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))                    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans            &trans  &trans  &kp END         &kp DOWN_ARROW  &kp PAGE_DOWN    &trans
-&trans  &trans              &trans                  &trans                   &trans                   &kp INT_HENKAN    &trans  &trans                                                   &trans
+&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                     &trans  &kp HOME        &kp UP_ARROW    &kp PAGE_UP      &trans
+&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &trans  &trans  &kp END         &kp DOWN_ARROW  &kp PAGE_DOWN    &trans
+&trans  &trans              &trans                  &trans                   &trans                   &trans    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -368,10 +371,10 @@
 
         bluetooth {
             bindings = <
-&trans         &trans        &trans        &trans        &trans            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&bt BT_CLR     &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans        &trans
-&bt BT_CLR_ALL &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans    &trans        &trans        &trans        &trans        &trans        &trans
-&trans         &trans        &trans        &trans        &trans  &trans    &trans        &trans                                                  &trans
+&trans          &trans        &trans        &trans        &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&bt BT_CLR      &trans        &trans        &trans        &trans            &trans  &trans        &trans        &trans        &trans        &trans
+&bt BT_CLR_ALL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans    &trans  &trans        &trans        &trans        &trans        &trans
+&trans          &trans        &trans        &trans        &trans  &trans    &trans  &trans                                                  &trans
             >;
         };
 
