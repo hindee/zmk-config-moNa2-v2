@@ -39,7 +39,7 @@ layers:
   - Alt
   - {t: 無変換, h: Alt}
   - {t: ␣, h: scroll}
-  - {t: 全/かな, h: funcs_numpad}
+  - {t: 半/全, h: funcs_numpad}
   - ⌫
   - {t: ⏎, h: arrow}
   - {t: DEL, h: RIGHT CONTROL}
@@ -125,7 +125,7 @@ layers:
   - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
