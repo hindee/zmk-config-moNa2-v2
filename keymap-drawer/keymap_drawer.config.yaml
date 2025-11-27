@@ -121,7 +121,7 @@ parse_config:
     'LG(LA(K))': 'MIC' # Display as MIC
     'LEFT_WIN': '⌘'
   raw_binding_map:
-    '&td_kana_hold': {tap: '全/かな',hold: 'funcs_numpad'}
+    # '&td_kana_hold': {tap: '全/かな',hold: 'funcs_numpad'}
     # '&lt_to 3 ENTER': { tap: '⏎', hold: 'arrow' }
     # '&lt_to 4 SEMICOLON': {tap: ';',hold: 'mouse'}
     # '&lt_to 5 LA(B)': 'bluetooth'
