@@ -146,10 +146,7 @@ parse_config:
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
 
     # 既存のものを維持＋トラックボールバインディング追加
-    "&scroll_up_down": "SC↑↓"
-    "&tb_down": "TB↓"
-    "&tb_left": "TB←"
-    "&tb_right": "TB→"
+    '&scroll_up_down': 'SC↑↓'
     
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
