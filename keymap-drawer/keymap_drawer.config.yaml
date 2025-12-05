@@ -25,12 +25,11 @@ draw_config:
   append_colon_to_layer_header: true
   small_pad: 4.0
  key_positions:
-    # moNa2 右手トラックボール位置（分割キーボード右側）
     trackball:
-      x: 14.5    # 右端列+α
-      y: 4.5     # 中央行付近
-      w: 2.0     # 幅（25mmボール相当）
-      h: 2.0     # 高さ
+      x: 14.5
+      y: 4.5
+      w: 2.0
+      h: 2.0
   svg_extra_style: |
     svg.keymap {
       font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
@@ -44,7 +43,6 @@ draw_config:
   glyph_hold_size: 15
   glyph_shifted_size: 15
   glyphs:
-    # トラックボール用アイコン（シンプル円）
     trackball:
       type: "circle"
       r: 0.4
