@@ -24,12 +24,6 @@ draw_config:
     ry: 4
   append_colon_to_layer_header: true
   small_pad: 4.0
- key_positions:
-    trackball:
-      x: 14.5
-      y: 4.5
-      w: 2.0
-      h: 2.0
   svg_extra_style: |
     svg.keymap {
       font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
@@ -42,13 +36,7 @@ draw_config:
   glyph_tap_size: 18
   glyph_hold_size: 15
   glyph_shifted_size: 15
-  glyphs:
-    trackball:
-      type: "circle"
-      r: 0.4
-      fill: "#4A90E2"
-      stroke: "#000"
-      stroke-width: 0.02
+  glyphs: {}
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
     tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
@@ -142,9 +130,6 @@ parse_config:
     '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
-
-    # 既存のものを維持＋トラックボールバインディング追加
-    '&scroll_up_down': 'SC↑↓'
     
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
