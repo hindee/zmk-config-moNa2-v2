@@ -97,7 +97,7 @@
     };
 
     //right hand trackball
-   trackball_central_listener: trackball_central_listener {
+    trackball_central_listener: trackball_central_listener {
         compatible = "zmk,pointing-device-listener";
         status = "disabled";
         //sensors = <&trackball_central>;
