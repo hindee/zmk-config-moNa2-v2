@@ -100,7 +100,7 @@
     trackball_central_listener: trackball_central_listener {
         compatible = "zmk,pointing-device-listener";
         status = "okay";
-        sensors = <&trackball_central>;
+        //sensors = <&trackball_central>;
 
         input-processors = 
             <&zip_temp_layer 4 10000>;                // オートマウスレイヤー
