@@ -75,7 +75,7 @@
 };
 
 // Overrides for the input listener node
-&trackball_central_listener {
+/*&trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
 
@@ -91,7 +91,7 @@
             <&zip_scroll_scaler 1 12>;                          //スクロール量を1/11倍
     };
 
-};
+};*/
 
 /* Optional: configure zip_scroll_snap parameters (override defaults). Adjust as needed. */
 &zip_scroll_snap {
