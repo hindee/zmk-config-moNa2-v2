@@ -57,6 +57,13 @@
         //swap-xy;
         invert-x; //COROPIT版ではコメントアウトを外す
         //invert-y; //COROPIT版ではコメントアウトを外す
+        // Zephyr 4.1必須：axis定義を追加
+        trackball_central_axis_x: axis_x {
+            zephyr,input-event-axis = <INPUT_AXIS_X>;
+        };
+        trackball_central_axis_y: axis_y {
+            zephyr,input-event-axis = <INPUT_AXIS_Y>;
+        };
     };
 };
 
