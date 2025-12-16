@@ -1,0 +1,9 @@
+menu "moNa2 shield options"
+
+config PMW3610
+    bool "Enable PMW3610 trackball sensor"
+    default y
+    help
+      Enable the PMW3610 trackball/optical sensor driver (pixart,pmw3610).
+
+endmenu
