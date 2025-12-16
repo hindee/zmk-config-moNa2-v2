@@ -99,8 +99,8 @@
     //right hand trackball
    trackball_central_listener: trackball_central_listener {
         compatible = "zmk,pointing-device-listener";
-        status = "okay";
-        sensors = <&trackball_central>;
+        status = "disabled";
+        //sensors = <&trackball_central>;
         scroller {
         layers = <6>;
         input-processors = 
