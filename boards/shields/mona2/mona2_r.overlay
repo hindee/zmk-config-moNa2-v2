@@ -47,20 +47,17 @@
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;  //P0.09を指定(CS)
 
-/*    trackball_central: trackball_central@0 {
+    trackball_central: trackball_central@0 {
         status = "okay";
         compatible = "pixart,pmw3610";  //トラボセンサ用のドライバとバインド
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //P0.02を指定(MOTION)
-        cpi = <400>;
+        motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //P0.02を指定(MOTION)
+        res-cpi = <400>;
         //swap-xy;
         invert-x; //COROPIT版ではコメントアウトを外す
         //invert-y; //COROPIT版ではコメントアウトを外す
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-    };*/
+    };
 };
 
 &zip_temp_layer {
@@ -75,7 +72,7 @@
 };
 
 // Overrides for the input listener node
-/*&trackball_central_listener {
+&trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
 
@@ -91,7 +88,7 @@
             <&zip_scroll_scaler 1 12>;                          //スクロール量を1/11倍
     };
 
-};*/
+};
 
 /* Optional: configure zip_scroll_snap parameters (override defaults). Adjust as needed. */
 &zip_scroll_snap {
