@@ -56,13 +56,9 @@
         res-cpi = <400>;
         invert-x;
         
-        // Z4.1必須：axis子ノード
-        trackball_central_axis_x: axis_x {
-            zephyr,input-event-axis = <INPUT_AXIS_X>;
-        };
-        trackball_central_axis_y: axis_y {
-            zephyr,input-event-axis = <INPUT_AXIS_Y>;
-        };
+        // Z4.1正しい形式：プロパティ直書き
+        zephyr,axis-x = <INPUT_REL_X>;  // INPUT_AXIS_X → INPUT_REL_X
+        zephyr,axis-y = <INPUT_REL_Y>;  // INPUT_AXIS_Y → INPUT_REL_Y
     };
 };
 
