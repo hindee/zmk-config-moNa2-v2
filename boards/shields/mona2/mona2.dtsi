@@ -3,6 +3,10 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <physical_layouts.dtsi>
 
+&uicr {
+  nfct-pins-as-gpios;
+};
+
 / {
     chosen {
         zmk,physical-layout = &physical_layout0;
@@ -98,11 +102,12 @@
 
     //right hand trackball
     trackball_central_listener: trackball_central_listener {
-        compatible = "zmk,pointing-device-listener";
-        status = "okay";
-        //sensors = <&trackball_central>;
-
+        compatible = "zmk,input-listener";
+        status = "disabled";
         input-processors = 
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,         //Y軸反転
+            //<&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
+            //<&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             <&zip_temp_layer 4 10000>;                // オートマウスレイヤー
     };
 
