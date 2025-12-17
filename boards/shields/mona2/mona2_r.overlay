@@ -52,7 +52,7 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        motion-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+        motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         res-cpi = <400>;
         invert-x;
         
@@ -73,21 +73,6 @@
     >;
 };
 
-
-/* Optional: configure zip_scroll_snap parameters (override defaults). Adjust as needed. */
-&zip_scroll_snap {
-    x-threshold = <5 8>;
-    y-threshold = <8 5>;
-    xy-threshold = <5 8>;
-
-    require-n-samples = <10>;
-    immediate-snap-threshold = <1500>;
-
-    lock-duration-ms = <200>;
-    lock-for-next-n-events = <10>;
-    idle-reset-timeout-ms = <200>;
-};
-
 // Overrides for the input listener node
 &trackball_central_listener {
     status = "okay";
@@ -105,4 +90,18 @@
             <&zip_scroll_scaler 1 12>;                          //スクロール量を1/11倍
     };
 
+};
+
+/* Optional: configure zip_scroll_snap parameters (override defaults). Adjust as needed. */
+&zip_scroll_snap {
+    x-threshold = <5 8>;
+    y-threshold = <8 5>;
+    xy-threshold = <5 8>;
+
+    require-n-samples = <10>;
+    immediate-snap-threshold = <1500>;
+
+    lock-duration-ms = <200>;
+    lock-for-next-n-events = <10>;
+    idle-reset-timeout-ms = <200>;
 };
