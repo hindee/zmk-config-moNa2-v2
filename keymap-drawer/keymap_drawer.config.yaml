@@ -7,25 +7,44 @@ draw_config:
   split_gap: 30.0
   combo_w: 28.0
   combo_h: 26.0
-  key_rx: 2.0 # from 6.0 to 2.0
-  key_ry: 2.0 # from 6.0 to 2.0
-  inner_pad_w: 2.0
-  inner_pad_h: 2.0
+  key_rx: 9.0 # from 6.0 to 2.0
+  key_ry: 9.0 # from 6.0 to 2.0
+  inner_pad_w: 0.5
+  inner_pad_h: 0.2
   outer_pad_w: 56.0 # from 40.0 to 56.0
   outer_pad_h: 56.0
   line_spacing: 1.2
-  arc_radius: 6.0
+  arc_radius: 10.0
+  key_side_pars:
+    rel_x: 0
+    rel_y: 1
+    rel_w: 10
+    rel_h: 8
+    rx: 2
+    ry: 2
   append_colon_to_layer_header: true
-  small_pad: 2.0
+  small_pad: 4.0
   svg_extra_style: |
     svg.keymap {
       font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: bold;
       text-rendering: optimizeLegibility;
     }
     rect.held, rect.combo.held { fill: #ffc; }
-  shrink_wide_legends: 6
+
+    /* キーキャップの色と枠線 */
+    rect.key {
+      fill: #D3FF89;        /* マットアップルグリーン */
+      stroke: #C3EF79;      /* 少し濃い縁取り */
+      stroke-width: 1.5;
+    }
+
+    /* 側面を少し暗くして立体感を出す */
+    rect.key_side {
+      fill: #B3DF69;
+    }
+  shrink_wide_legends: 7
   glyph_tap_size: 18
   glyph_hold_size: 15
   glyph_shifted_size: 15
@@ -80,7 +99,7 @@ parse_config:
     TILDE: '~'
     SPACE: '␣'
     BACKSPACE: '⌫'
-    DELETE: '⌦'
+    # DEL: '⌦'
     ENTER: '⏎'
     TAB: '⇥'
     ESCAPE: '⎋'
@@ -88,8 +107,8 @@ parse_config:
     RSHIFT: '⇧'
     LCTRL: 'Ctrl'
     RCTRL: 'Ctrl'
-    LALT: 'Alt'
-    RALT: 'Alt'
+    LEFT_ALT: 'Alt'
+    RIGHT_ALT: 'Alt'
     LGUI: '⌘'
     RGUI: '⌘'
     UP_ARROW: '↑'
@@ -113,10 +132,17 @@ parse_config:
   # 'Gui+Alt+K': 'MIC' # Display as MIC (no quotes, so it won't split into multiple lines)
     'LG(LA(K))': 'MIC' # Display as MIC
     'LEFT_WIN': '⌘'
-    JP_HANZEN: '半/全'
-    'JP_HANZEN': '半/全'
-    '`': '半/全' # Changed from '`' to '半/全' to match the new requirement
-    'INT_HENKAN': '変換'
+  raw_binding_map:
+    # '&td_kana_hold': {tap: '全/かな',hold: 'funcs_numpad'}
+    # '&lt_to 3 ENTER': { tap: '⏎', hold: 'arrow' }
+    # '&lt_to 4 SEMICOLON': {tap: ';',hold: 'mouse'}
+    # '&lt_to 5 LA(B)': 'bluetooth'
+    # '&lt_to 6 SPACE': {tap: '␣',hold: 'scroll'}
+    
+    '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
+    '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
+    '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
+    
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }

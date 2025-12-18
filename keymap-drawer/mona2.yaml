@@ -22,7 +22,7 @@ layers:
   - K
   - L
   - {t: ;, h: scroll}
-  - {t: '&kp_exit_AML Z', h: ⇧}
+  - {t: Z, h: ⇧}
   - X
   - C
   - V
@@ -36,8 +36,8 @@ layers:
   - {t: /, h: RIGHT SHIFT}
   - Ctrl
   - ⌘
-  - LEFT ALT
-  - {t: '&kp_exit_AML INT_MUHENKAN', h: LEFT ALT}
+  - Alt
+  - {t: 無変換, h: Alt}
   - {t: ␣, h: scroll}
   - {t: 半/全, h: funcs_numpad}
   - ⌫
