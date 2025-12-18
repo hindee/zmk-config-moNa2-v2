@@ -134,14 +134,14 @@ rect.held, rect.combo.held { fill: #ffc; }
 
 /* キーキャップの色と枠線 */
 rect.key {
-  fill: #C2E189;        /* マット寄りアップルグリーン */
-  stroke: #B2D179;      /* 少し濃い縁取り */
+  fill: #BAF446;        /* マット寄りアップルグリーン */
+  stroke: #AAE436;      /* 少し濃い縁取り */
   stroke-width: 1.5;
 }
 
 /* 側面を少し暗くして立体感を出す */
 rect.key_side {
-  fill: #A2C169;
+  fill: #9AD426;
 }
 </style>
 <g transform="translate(56, 0)" class="layer-default">
