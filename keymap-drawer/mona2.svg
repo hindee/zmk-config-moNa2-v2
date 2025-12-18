@@ -134,7 +134,7 @@ rect.held, rect.combo.held { fill: #ffc; }
 
 /* キーキャップの色と枠線 */
 rect.key {
-  fill: #BAF446;        /* マット寄りアップルグリーン */
+  fill: #D3FF89;        /* マットアップルグリーン */
   stroke: #AAE436;      /* 少し濃い縁取り */
   stroke-width: 1.5;
 }
