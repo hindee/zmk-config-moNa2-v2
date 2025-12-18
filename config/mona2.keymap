@@ -11,7 +11,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 // Layer Indexes
-
 #define DEFAULT 0
 #define SYMBOLS 1
 #define FUNCS_NUMPAD 2
@@ -172,6 +171,15 @@
 
             tap-ms = <20>;
         };
+
+        //        scroll_up_down: mouse_wheel_up_down {
+        //            compatible = "zmk,behavior-sensor-rotate";
+        //            #sensor-binding-cells = <0>;
+        //            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        //
+        //
+        //            tap-ms = <20>;
+        //        };
 
         scroll_right_left: mouse_wheel_right_left {
             compatible = "zmk,behavior-sensor-rotate";
