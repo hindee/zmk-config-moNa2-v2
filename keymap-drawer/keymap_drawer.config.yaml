@@ -7,21 +7,21 @@ draw_config:
   split_gap: 30.0
   combo_w: 28.0
   combo_h: 26.0
-  key_rx: 5.0 # from 6.0 to 2.0
-  key_ry: 5.0 # from 6.0 to 2.0
+  key_rx: 9.0 # from 6.0 to 2.0
+  key_ry: 9.0 # from 6.0 to 2.0
   inner_pad_w: 1.0
   inner_pad_h: 1.0
   outer_pad_w: 56.0 # from 40.0 to 56.0
   outer_pad_h: 56.0
   line_spacing: 1.2
-  arc_radius: 6.0
+  arc_radius: 10.0
   key_side_pars:
     rel_x: 0
-    rel_y: 1
-    rel_w: 12
-    rel_h: 10
-    rx: 4
-    ry: 4
+    rel_y: 2
+    rel_w: 14
+    rel_h: 12
+    rx: 3
+    ry: 3
   append_colon_to_layer_header: true
   small_pad: 4.0
   svg_extra_style: |
@@ -32,6 +32,18 @@ draw_config:
       text-rendering: optimizeLegibility;
     }
     rect.held, rect.combo.held { fill: #ffc; }
+
+    /* キーキャップの色と枠線 */
+    rect.key {
+      fill: #8fd694;        /* マット寄りアップルグリーン */
+      stroke: #5a9a60;      /* 少し濃い縁取り */
+      stroke-width: 1.5;
+    }
+
+    /* 側面を少し暗くして立体感を出す */
+    rect.key_side {
+      fill: #76b87c;
+    }
   shrink_wide_legends: 7
   glyph_tap_size: 18
   glyph_hold_size: 15
