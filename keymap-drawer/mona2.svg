@@ -124,12 +124,14 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 
-svg.keymap text {
-  font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace !important;
-  font-size: 14px !important;
-  font-weight: bold !important;
+svg.keymap {
+  font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 14px;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  fill: #000000;
 }
-
+/* キーキャップの色と枠線 */
 rect.key {
   /* fill: #D3FF89;         /* マットアップルグリーン */
   /* stroke: #C3EF79;       /* 少し濃い縁取り */
@@ -176,11 +178,13 @@ fill: #D3FF89 !important;
 .keypos-38 text,
 .keypos-39 text,
 .keypos-40 text {
-  font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace !important;
-  font-size: 14px !important;
-  font-weight: bold !important;
+  font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 14px;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
   fill: #000000 !important;
 }
+</style>
 <g transform="translate(56, 0)" class="layer-default">
 <text x="0" y="28" class="label" id="default">default:</text>
 <g transform="translate(0, 56)">
