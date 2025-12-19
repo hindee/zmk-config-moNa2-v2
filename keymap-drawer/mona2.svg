@@ -132,20 +132,42 @@ svg.keymap {
 }
 /* キーキャップの色と枠線 */
 rect.key {
-  fill: #D3FF89;        /* マットアップルグリーン */
-  stroke: #C3EF79;      /* 少し濃い縁取り */
+  /* fill: #D3FF89;         /* マットアップルグリーン */
+  /* stroke: #C3EF79;       /* 少し濃い縁取り */
+  fill: #FFFFFF;         /* ベース白 */
+  stroke: #CCCCCC;        /* 薄いグレー枠線 */
   stroke-width: 1.5;
 }
-
+/* 押下時の色 */
 rect.held, rect.combo.held {
-  fill: #FF9500 !important; 
-  stroke: #E68900 !important; 
+  fill: #4FBF8F !important; 
+  stroke: #C3EF79 !important; 
   stroke-width: 2.0;
 }
 
 /* 側面を少し暗くして立体感を出す */
 rect.key_side {
-  fill: #B3DF69;
+  /* fill: #B3DF69; */
+  fill: #E0E0E0;
+}
+/* 最下段中央5キーだけアップルグリーン */
+rect.key.row-3.col-3,
+rect.key.row-3.col-4,
+rect.key.row-3.col-5,
+rect.key.row-3.col-6,
+rect.key.row-3.col-7 {
+  fill: #D3FF89;
+  stroke: #C3EF79;
+}
+/* 最下段中央5キー押下時 */
+rect.key.row-3.col-3.held,
+rect.key.row-3.col-4.held,
+rect.key.row-3.col-5.held,
+rect.key.row-3.col-6.held,
+rect.key.row-3.col-7.held {
+  fill: #4FBF8F !important; 
+  stroke: #C3EF79 !important; 
+  stroke-width: 2.0;
 }
 </style>
 <g transform="translate(56, 0)" class="layer-default">
