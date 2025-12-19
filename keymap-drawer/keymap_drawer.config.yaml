@@ -42,7 +42,7 @@ draw_config:
     /* 押下時の色 */
     rect.held, rect.combo.held {
       fill: #4FBF8F !important; 
-      stroke: #C3EF79 !important; 
+      stroke: #93BF49 !important; 
       stroke-width: 2.0;
     }
 
@@ -52,7 +52,6 @@ draw_config:
       fill: #E0E0E0;
     }
     /* 最下段中央5キーだけアップルグリーン */
-    /* 最下段中央5キー（keypos番号を実際のSVGで確認） */
     .keypos-36 .key,
     .keypos-37 .key,
     .keypos-38 .key,
@@ -70,7 +69,7 @@ draw_config:
     .keypos-39 .key.held,
     .keypos-40 .key.held {
       fill: #4FBF8F !important; 
-      stroke: #C3EF79 !important; 
+      stroke: #93BF49 !important; 
       stroke-width: 2.0;
     }
 
