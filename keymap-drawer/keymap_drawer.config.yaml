@@ -85,6 +85,24 @@ draw_config:
       text-rendering: optimizeLegibility !important;
       fill: #000000 !important;
     }
+    /* 最下段5キーtrans textを黒に強制 */
+    .keypos-36 text[class*="trans"],
+    .keypos-36 text[class*="tap"],
+    .keypos-36 text[class*="hold"],
+    .keypos-37 text[class*="trans"],
+    .keypos-37 text[class*="tap"],
+    .keypos-37 text[class*="hold"],
+    .keypos-38 text[class*="trans"],
+    .keypos-38 text[class*="tap"],
+    .keypos-38 text[class*="hold"],
+    .keypos-39 text[class*="trans"],
+    .keypos-39 text[class*="tap"],
+    .keypos-39 text[class*="hold"],
+    .keypos-40 text[class*="trans"],
+    .keypos-40 text[class*="tap"],
+    .keypos-40 text[class*="hold"] {
+      fill: #000000 !important !important;
+    }
 
   shrink_wide_legends: 7
   glyph_tap_size: 18
