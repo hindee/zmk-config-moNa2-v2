@@ -154,10 +154,11 @@ rect.key_side {
 .keypos-38 .key,
 .keypos-39 .key,
 .keypos-40 .key {
-  fill: #D3FF89 !important;
-  stroke: #C3EF79 !important;
-  stroke-width: 2.0;
+  fill: #D0F0C0; 
+  stroke: #93BF49; 
+  stroke-width: 1.5;
 }
+
 /* 最下段中央5キー押下時 */
 .keypos-36 .key.held,
 .keypos-37 .key.held,
