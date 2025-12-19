@@ -180,6 +180,26 @@ rect.key_side {
   stroke: #93BF49 !important; 
   stroke-width: 2.0;
 }
+/* 最下段中央5キーだけアップルグリーン（回転対応） */
+.keypos-36 rect.key,
+.keypos-37 rect.key,
+.keypos-38 rect.key,
+.keypos-39 rect.key,
+.keypos-40 rect.key {
+  fill: #D3FF89 !important;
+  stroke: #C3EF79 !important;
+  stroke-width: 2.0;
+}
+/* 回転キーの押下時もアップルグリーン系 */
+.keypos-36 rect.key.held,
+.keypos-37 rect.key.held,
+.keypos-38 rect.key.held,
+.keypos-39 rect.key.held,
+.keypos-40 rect.key.held {
+  fill: #4FBF8F !important; 
+  stroke: #93BF49 !important; 
+  stroke-width: 2.0;
+}
 </style>
 <g transform="translate(56, 0)" class="layer-default">
 <text x="0" y="28" class="label" id="default">default:</text>
