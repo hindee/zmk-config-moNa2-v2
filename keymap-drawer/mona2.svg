@@ -129,6 +129,7 @@ svg.keymap {
   font-size: 14px;
   font-weight: bold;
   text-rendering: optimizeLegibility;
+  fill: #000000;
 }
 /* キーキャップの色と枠線 */
 rect.key {
@@ -172,6 +173,7 @@ fill: #D3FF89 !important;
   stroke-width: 2.0;
 }
 /* 最下段中央5キーのレジェンドを確実に黒く（tap/hold両方） */
+/*
 .keypos-36 text,
 .keypos-37 text,
 .keypos-38 text,
@@ -182,7 +184,7 @@ fill: #D3FF89 !important;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   fill: #000000 !important;
-}
+}*/
 </style>
 <g transform="translate(56, 0)" class="layer-default">
 <text x="0" y="28" class="label" id="default">default:</text>
