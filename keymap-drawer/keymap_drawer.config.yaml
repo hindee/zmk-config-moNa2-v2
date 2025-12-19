@@ -52,20 +52,23 @@ draw_config:
       fill: #E0E0E0;
     }
     /* 最下段中央5キーだけアップルグリーン */
-    rect.key.keypos-36,
-    rect.key.keypos-37,
-    rect.key.keypos-38,
-    rect.key.keypos-39,
-    rect.key.keypos-40 {
-      fill: #D3FF89;
-      stroke: #C3EF79;
+    /* 最下段中央5キー（keypos番号を実際のSVGで確認） */
+    .keypos-36 .key,
+    .keypos-37 .key,
+    .keypos-38 .key,
+    .keypos-39 .key,
+    .keypos-40 .key {
+    fill: #D3FF89 !important;
+      stroke: #C3EF79 !important;
+      stroke-width: 2.0;
     }
+
     /* 最下段中央5キー押下時 */
-    rect.key.keypos-36.held,
-    rect.key.keypos-37.held,
-    rect.key.keypos-38.held,
-    rect.key.keypos-39.held,
-    rect.key.keypos-40.held {
+    .keypos-36 .key.held,
+    .keypos-37 .key.held,
+    .keypos-38 .key.held,
+    .keypos-39 .key.held,
+    .keypos-40 .key.held {
       fill: #4FBF8F !important; 
       stroke: #C3EF79 !important; 
       stroke-width: 2.0;
