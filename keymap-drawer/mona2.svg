@@ -177,10 +177,11 @@ fill: #D3FF89 !important;
 .keypos-38 text,
 .keypos-39 text,
 .keypos-40 text {
-  fill: #222222 !important;
-  font-weight: 900 !important;
-  text-shadow: 0.5px 0.5px 0.5px #000 !important;
-  font-size: 13px !important;
+  font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 14px;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  fill: #000000 !important;
 }
 </style>
 <g transform="translate(56, 0)" class="layer-default">
