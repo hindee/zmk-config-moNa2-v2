@@ -184,6 +184,24 @@ fill: #D3FF89 !important;
   text-rendering: optimizeLegibility !important;
   fill: #000000 !important;
 }
+/* 最下段5キーtrans textを黒に強制 */
+.keypos-36 text[class*="trans"],
+.keypos-36 text[class*="tap"],
+.keypos-36 text[class*="hold"],
+.keypos-37 text[class*="trans"],
+.keypos-37 text[class*="tap"],
+.keypos-37 text[class*="hold"],
+.keypos-38 text[class*="trans"],
+.keypos-38 text[class*="tap"],
+.keypos-38 text[class*="hold"],
+.keypos-39 text[class*="trans"],
+.keypos-39 text[class*="tap"],
+.keypos-39 text[class*="hold"],
+.keypos-40 text[class*="trans"],
+.keypos-40 text[class*="tap"],
+.keypos-40 text[class*="hold"] {
+  fill: #000000 !important !important;
+}
 </style>
 <g transform="translate(56, 0)" class="layer-default">
 <text x="0" y="28" class="label" id="default">default:</text>
