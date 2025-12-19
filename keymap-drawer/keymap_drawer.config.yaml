@@ -74,7 +74,6 @@ draw_config:
       stroke-width: 2.0;
     }
     /* 最下段中央5キーのレジェンドを確実に黒く（tap/hold両方） */
-    /*
     .keypos-36 text,
     .keypos-37 text,
     .keypos-38 text,
@@ -85,7 +84,7 @@ draw_config:
       font-weight: bold;
       text-rendering: optimizeLegibility;
       fill: #000000 !important;
-    }*/
+    }
 
   shrink_wide_legends: 7
   glyph_tap_size: 18
