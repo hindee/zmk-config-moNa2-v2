@@ -171,6 +171,16 @@ fill: #D3FF89 !important;
   stroke: #93BF49 !important; 
   stroke-width: 2.0;
 }
+/* 最下段中央5キーのレジェンドを黒く太く（視認性向上） */
+.keypos-36 text.key,
+.keypos-37 text.key,
+.keypos-38 text.key,
+.keypos-39 text.key,
+.keypos-40 text.key {
+  fill: #333333 !important;
+  font-weight: bold;
+  font-size: 13px;
+}
 </style>
 <g transform="translate(56, 0)" class="layer-default">
 <text x="0" y="28" class="label" id="default">default:</text>
