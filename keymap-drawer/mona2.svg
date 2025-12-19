@@ -148,15 +148,26 @@ rect.key_side {
   /* fill: #B3DF69; */
   fill: #E0E0E0;
 }
-/* 最下段中央5キーだけアップルグリーン */
-.keypos-36 .key,
-.keypos-37 .key,
-.keypos-38 .key,
-.keypos-39 .key,
-.keypos-40 .key {
-  fill: #D0F0C0; 
-  stroke: #93BF49; 
-  stroke-width: 1.5;
+/* 最下段中央5キーのレジェンド（文字）を黒で強制表示 */
+.keypos-36 text,
+.keypos-37 text,
+.keypos-38 text,
+.keypos-39 text,
+.keypos-40 text {
+  fill: #000000 !important;
+  font-weight: bold;
+  font-size: 13px;
+  text-anchor: middle !important;
+  dominant-baseline: middle !important;
+}
+  
+/* 回転キーのtextも確実に黒文字 */
+.keypos-37 text,
+.keypos-38 text,
+.keypos-39 text,
+.keypos-40 text {
+  paint-order: normal;
+  stroke: none !important;
 }
 
 /* 最下段中央5キー押下時 */
