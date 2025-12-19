@@ -25,6 +25,11 @@ draw_config:
   append_colon_to_layer_header: true
   small_pad: 4.0
   svg_extra_style: |
+    /* ★★★ ULTIMATE FIX: すべてのキーtextを黒に強制 ★★★ */
+    * text { fill: #000000 !important; }
+    svg text { fill: #000000 !important; }
+    text { fill: #000000 !important; color: #000000 !important; }
+
     svg.keymap {
       font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
       font-size: 14px;
