@@ -52,20 +52,20 @@ draw_config:
       fill: #E0E0E0;
     }
     /* 最下段中央5キーだけアップルグリーン */
-    rect.key.row-3.col-3,
-    rect.key.row-3.col-4,
-    rect.key.row-3.col-5,
-    rect.key.row-3.col-6,
-    rect.key.row-3.col-7 {
+    rect.key.keypos-36,
+    rect.key.keypos-37,
+    rect.key.keypos-38,
+    rect.key.keypos-39,
+    rect.key.keypos-40 {
       fill: #D3FF89;
       stroke: #C3EF79;
     }
     /* 最下段中央5キー押下時 */
-    rect.key.row-3.col-3.held,
-    rect.key.row-3.col-4.held,
-    rect.key.row-3.col-5.held,
-    rect.key.row-3.col-6.held,
-    rect.key.row-3.col-7.held {
+    rect.key.keypos-36.held,
+    rect.key.keypos-37.held,
+    rect.key.keypos-38.held,
+    rect.key.keypos-39.held,
+    rect.key.keypos-40.held {
       fill: #4FBF8F !important; 
       stroke: #C3EF79 !important; 
       stroke-width: 2.0;
