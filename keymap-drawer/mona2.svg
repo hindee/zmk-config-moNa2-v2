@@ -178,10 +178,10 @@ fill: #D3FF89 !important;
 .keypos-38 text,
 .keypos-39 text,
 .keypos-40 text {
-  font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
-  font-size: 14px;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
+  font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  text-rendering: optimizeLegibility !important;
   fill: #000000 !important;
 }
 </style>
