@@ -124,19 +124,6 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 
-/* ★★★ transクラスの色だけ黒く（▽は残る）★★★ */
-text.trans {
-  fill: #000000 !important;
-  opacity: 1 !important;
-  color: #000000 !important;
-}
-.key text.trans,
-text.key.trans,
-text.trans.tap,
-text.trans.hold {
-  fill: #000000 !important;
-}
-
 svg.keymap {
   font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
   font-size: 14px;
@@ -146,10 +133,8 @@ svg.keymap {
 }
 /* キーキャップの色と枠線 */
 rect.key {
-  /* fill: #D3FF89;         /* マットアップルグリーン */
-  /* stroke: #C3EF79;       /* 少し濃い縁取り */
   fill: #FFFFFF;         /* ベース白 */
-  stroke: #CCCCCC;       /* 薄いグレー枠線 */
+  stroke: #DDDDDD  /* 薄いグレー枠線 */
   stroke-width: 1.5;
 }
 /* 押下時の色 */
