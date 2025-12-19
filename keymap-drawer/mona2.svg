@@ -124,10 +124,18 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 
-/* ★★★ ULTIMATE FIX: すべてのキーtextを黒に強制 ★★★ */
-* text { fill: #000000 !important; }
-svg text { fill: #000000 !important; }
-text { fill: #000000 !important; color: #000000 !important; }
+/* ★★★ transクラスの色だけ黒く（▽は残る）★★★ */
+text.trans {
+  fill: #000000 !important;
+  opacity: 1 !important;
+  color: #000000 !important;
+}
+.key text.trans,
+text.key.trans,
+text.trans.tap,
+text.trans.hold {
+  fill: #000000 !important;
+}
 
 svg.keymap {
   font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
@@ -141,7 +149,7 @@ rect.key {
   /* fill: #D3FF89;         /* マットアップルグリーン */
   /* stroke: #C3EF79;       /* 少し濃い縁取り */
   fill: #FFFFFF;         /* ベース白 */
-  stroke: #CCCCCC;        /* 薄いグレー枠線 */
+  stroke: #CCCCCC;       /* 薄いグレー枠線 */
   stroke-width: 1.5;
 }
 /* 押下時の色 */
@@ -150,7 +158,6 @@ rect.held, rect.combo.held {
   stroke: #93BF49 !important; 
   stroke-width: 2.0;
 }
-
 /* 側面を少し暗くして立体感を出す */
 rect.key_side {
   /* fill: #B3DF69; */
@@ -162,11 +169,10 @@ rect.key_side {
 .keypos-38 .key,
 .keypos-39 .key,
 .keypos-40 .key {
-fill: #D3FF89 !important;
+  fill: #D3FF89 !important;
   stroke: #C3EF79 !important;
   stroke-width: 2.0;
 }
-
 /* 最下段中央5キー押下時 */
 .keypos-36 .key.held,
 .keypos-37 .key.held,
@@ -176,23 +182,6 @@ fill: #D3FF89 !important;
   fill: #4FBF8F !important; 
   stroke: #93BF49 !important; 
   stroke-width: 2.0;
-}
-
-/* === 最終兵器：最下段5キーtextを絶対黒く === */
-svg.keymap .layer-default .keypos-36 text,
-svg.keymap .layer-default .keypos-37 text,
-svg.keypos-38 text,
-svg.keypos-39 text,
-svg.keypos-40 text,
-.keypos-36 text.key,
-.keypos-37 text.key,
-.keypos-38 text.key,
-.keypos-39 text.key,
-.keypos-40 text.key {
-  fill: #000000 !important;
-  color: #000000 !important;
-  opacity: 1 !important;
-  filter: none !important;
 }
 </style>
 <g transform="translate(56, 0)" class="layer-default">
