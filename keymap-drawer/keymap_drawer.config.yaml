@@ -72,6 +72,16 @@ draw_config:
       stroke: #93BF49 !important; 
       stroke-width: 2.0;
     }
+    /* 最下段中央5キーのレジェンドを黒く太く（視認性向上） */
+    .keypos-36 text.key,
+    .keypos-37 text.key,
+    .keypos-38 text.key,
+    .keypos-39 text.key,
+    .keypos-40 text.key {
+      fill: #333333 !important;
+      font-weight: bold;
+      font-size: 13px;
+    }
 
   shrink_wide_legends: 7
   glyph_tap_size: 18
