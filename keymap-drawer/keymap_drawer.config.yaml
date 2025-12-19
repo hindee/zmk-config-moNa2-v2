@@ -25,19 +25,6 @@ draw_config:
   append_colon_to_layer_header: true
   small_pad: 4.0
   svg_extra_style: |
-    /* ★★★ transクラスの色だけ黒く（▽は残る）★★★ */
-    text.trans {
-      fill: #000000 !important;
-      opacity: 1 !important;
-      color: #000000 !important;
-    }
-    .key text.trans,
-    text.key.trans,
-    text.trans.tap,
-    text.trans.hold {
-      fill: #000000 !important;
-    }
-
     svg.keymap {
       font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
       font-size: 14px;
@@ -47,10 +34,8 @@ draw_config:
     }
     /* キーキャップの色と枠線 */
     rect.key {
-      /* fill: #D3FF89;         /* マットアップルグリーン */
-      /* stroke: #C3EF79;       /* 少し濃い縁取り */
       fill: #FFFFFF;         /* ベース白 */
-      stroke: #CCCCCC;       /* 薄いグレー枠線 */
+      stroke: #DDDDDD  /* 薄いグレー枠線 */
       stroke-width: 1.5;
     }
     /* 押下時の色 */
@@ -174,16 +159,9 @@ parse_config:
     'LG(LA(K))': 'MIC' # Display as MIC
     'LEFT_WIN': '⌘'
   raw_binding_map:
-    # '&td_kana_hold': {tap: '全/かな',hold: 'funcs_numpad'}
-    # '&lt_to 3 ENTER': { tap: '⏎', hold: 'arrow' }
-    # '&lt_to 4 SEMICOLON': {tap: ';',hold: 'mouse'}
-    # '&lt_to 5 LA(B)': 'bluetooth'
-    # '&lt_to 6 SPACE': {tap: '␣',hold: 'scroll'}
-    
     '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
-    
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
