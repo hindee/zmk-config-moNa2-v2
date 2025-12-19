@@ -200,19 +200,6 @@ rect.key_side {
   stroke: #93BF49 !important; 
   stroke-width: 2.0;
 }
-rect.held, rect.combo.held { fill: #ffc; }
-
-/* キーキャップの色と枠線 */
-rect.key {
-  fill: #D3FF89;        /* マットアップルグリーン */
-  stroke: #C3EF79;      /* 少し濃い縁取り */
-  stroke-width: 1.5;
-}
-
-/* 側面を少し暗くして立体感を出す */
-rect.key_side {
-  fill: #B3DF69;
-}
 </style>
 <g transform="translate(56, 0)" class="layer-default">
 <text x="0" y="28" class="label" id="default">default:</text>
