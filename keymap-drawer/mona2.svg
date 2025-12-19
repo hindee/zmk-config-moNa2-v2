@@ -129,6 +129,76 @@ svg.keymap {
   font-size: 14px;
   font-weight: bold;
   text-rendering: optimizeLegibility;
+  fill: #000000;
+}
+/* キーキャップの色と枠線 */
+rect.key {
+  fill: #FFFFFF;         /* ベース白 */
+  stroke: #DDDDDD  /* 薄いグレー枠線 */
+  stroke-width: 1.5;
+}
+/* 押下時の色 */
+rect.held, rect.combo.held {
+  fill: #4FBF8F !important; 
+  stroke: #93BF49 !important; 
+  stroke-width: 2.0;
+}
+/* 側面を少し暗くして立体感を出す */
+rect.key_side {
+  /* fill: #B3DF69; */
+  fill: #E0E0E0;
+}
+/* 最下段中央5キーのレジェンド（文字）を黒で強制表示 */
+.keypos-36 text,
+.keypos-37 text,
+.keypos-38 text,
+.keypos-39 text,
+.keypos-40 text {
+  fill: #000000 !important;
+  font-weight: bold;
+  font-size: 13px;
+  text-anchor: middle !important;
+  dominant-baseline: middle !important;
+}
+  
+/* 回転キーのtextも確実に黒文字 */
+.keypos-37 text,
+.keypos-38 text,
+.keypos-39 text,
+.keypos-40 text {
+  paint-order: normal;
+  stroke: none !important;
+}
+
+/* 最下段中央5キー押下時 */
+.keypos-36 .key.held,
+.keypos-37 .key.held,
+.keypos-38 .key.held,
+.keypos-39 .key.held,
+.keypos-40 .key.held {
+  fill: #4FBF8F !important; 
+  stroke: #93BF49 !important; 
+  stroke-width: 2.0;
+}
+/* 最下段中央5キーだけアップルグリーン（回転対応） */
+.keypos-36 rect.key,
+.keypos-37 rect.key,
+.keypos-38 rect.key,
+.keypos-39 rect.key,
+.keypos-40 rect.key {
+  fill: #D3FF89 !important;
+  stroke: #C3EF79 !important;
+  stroke-width: 2.0;
+}
+/* 回転キーの押下時もアップルグリーン系 */
+.keypos-36 rect.key.held,
+.keypos-37 rect.key.held,
+.keypos-38 rect.key.held,
+.keypos-39 rect.key.held,
+.keypos-40 rect.key.held {
+  fill: #4FBF8F !important; 
+  stroke: #93BF49 !important; 
+  stroke-width: 2.0;
 }
 rect.held, rect.combo.held { fill: #ffc; }
 

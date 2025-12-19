@@ -30,20 +30,103 @@ draw_config:
       font-size: 14px;
       font-weight: bold;
       text-rendering: optimizeLegibility;
+      fill: #000000;
     }
-    rect.held, rect.combo.held { fill: #ffc; }
-
     /* キーキャップの色と枠線 */
     rect.key {
-      fill: #D3FF89;        /* マットアップルグリーン */
-      stroke: #C3EF79;      /* 少し濃い縁取り */
+      fill: #FFFFFF;         /* ベース白 */
+      stroke: #DDDDDD  /* 薄いグレー枠線 */
       stroke-width: 1.5;
     }
-
+    /* 押下時の色 */
+    rect.held, rect.combo.held {
+      fill: #4FBF8F !important; 
+      stroke: #93BF49 !important; 
+      stroke-width: 2.0;
+    }
     /* 側面を少し暗くして立体感を出す */
     rect.key_side {
-      fill: #B3DF69;
+      /* fill: #B3DF69; */
+      fill: #E0E0E0;
     }
+    /* 最下段中央5キーのレジェンド（文字）を黒で強制表示 */
+    .keypos-36 text,
+    .keypos-37 text,
+    .keypos-38 text,
+    .keypos-39 text,
+    .keypos-40 text {
+      fill: #000000 !important;
+      font-weight: bold;
+      font-size: 13px;
+      text-anchor: middle !important;
+      dominant-baseline: middle !important;
+    }
+      
+    /* 回転キーのtextも確実に黒文字 */
+    .keypos-37 text,
+    .keypos-38 text,
+    .keypos-39 text,
+    .keypos-40 text {
+      paint-order: normal;
+      stroke: none !important;
+    }
+
+    /* 最下段中央5キー押下時 */
+    .keypos-36 .key.held,
+    .keypos-37 .key.held,
+    .keypos-38 .key.held,
+    .keypos-39 .key.held,
+    .keypos-40 .key.held {
+      fill: #4FBF8F !important; 
+      stroke: #93BF49 !important; 
+      stroke-width: 2.0;
+    }
+    /* 最下段中央5キーだけアップルグリーン（回転対応） */
+    .keypos-36 rect.key,
+    .keypos-37 rect.key,
+    .keypos-38 rect.key,
+    .keypos-39 rect.key,
+    .keypos-40 rect.key {
+      fill: #D3FF89 !important;
+      stroke: #C3EF79 !important;
+      stroke-width: 2.0;
+    }
+    /* 回転キーの押下時もアップルグリーン系 */
+    .keypos-36 rect.key.held,
+    .keypos-37 rect.key.held,
+    .keypos-38 rect.key.held,
+    .keypos-39 rect.key.held,
+    .keypos-40 rect.key.held {
+      fill: #4FBF8F !important; 
+      stroke: #93BF49 !important; 
+      stroke-width: 2.0;
+    }
+
+  legend_font_size: 12
+  legend_hold_font_size: 10
+  legend_shifted_font_size: 10
+  legend_tap_offset_y: -6 # from -4 to -6
+  legend_hold_offset_y: 10
+  legend_shifted_offset_y: 4
+  legend_max_width_ratio: 0.9
+  legend_max_height_ratio: 0.35
+  legend_line_spacing: 1.1
+  combo_legend_font_size: 10
+  combo_legend_offset_y: 0
+  combo_legend_max_width_ratio: 0.9
+  combo_legend_max_height_ratio: 0.5
+  combo_legend_line_spacing: 1.0
+  glyph_font_size: 20
+  glyph_hold_font_size: 16
+  glyph_shifted_font_size: 16
+  glyph_tap_offset_y: -4
+  glyph_hold_offset_y: 6
+  glyph_shifted_offset_y: 2
+  glyph_max_width_ratio: 0.8
+  glyph_max_height_ratio: 0.5
+  glyph_line_spacing: 1.1
+  shrink_wide_legends: 5
+
   shrink_wide_legends: 7
   glyph_tap_size: 18
   glyph_hold_size: 15
@@ -56,6 +139,7 @@ draw_config:
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
   use_local_cache: true
+
 parse_config:
   preprocess: true
   skip_binding_parsing: false
@@ -133,16 +217,9 @@ parse_config:
     'LG(LA(K))': 'MIC' # Display as MIC
     'LEFT_WIN': '⌘'
   raw_binding_map:
-    # '&td_kana_hold': {tap: '全/かな',hold: 'funcs_numpad'}
-    # '&lt_to 3 ENTER': { tap: '⏎', hold: 'arrow' }
-    # '&lt_to 4 SEMICOLON': {tap: ';',hold: 'mouse'}
-    # '&lt_to 5 LA(B)': 'bluetooth'
-    # '&lt_to 6 SPACE': {tap: '␣',hold: 'scroll'}
-    
     '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
-    
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
