@@ -25,10 +25,18 @@ draw_config:
   append_colon_to_layer_header: true
   small_pad: 4.0
   svg_extra_style: |
-    /* ★★★ ULTIMATE FIX: すべてのキーtextを黒に強制 ★★★ */
-    * text { fill: #000000 !important; }
-    svg text { fill: #000000 !important; }
-    text { fill: #000000 !important; color: #000000 !important; }
+    /* ★★★ transクラスの色だけ黒く（▽は残る）★★★ */
+    text.trans {
+      fill: #000000 !important;
+      opacity: 1 !important;
+      color: #000000 !important;
+    }
+    .key text.trans,
+    text.key.trans,
+    text.trans.tap,
+    text.trans.hold {
+      fill: #000000 !important;
+    }
 
     svg.keymap {
       font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
@@ -42,7 +50,7 @@ draw_config:
       /* fill: #D3FF89;         /* マットアップルグリーン */
       /* stroke: #C3EF79;       /* 少し濃い縁取り */
       fill: #FFFFFF;         /* ベース白 */
-      stroke: #CCCCCC;        /* 薄いグレー枠線 */
+      stroke: #CCCCCC;       /* 薄いグレー枠線 */
       stroke-width: 1.5;
     }
     /* 押下時の色 */
@@ -51,7 +59,6 @@ draw_config:
       stroke: #93BF49 !important; 
       stroke-width: 2.0;
     }
-
     /* 側面を少し暗くして立体感を出す */
     rect.key_side {
       /* fill: #B3DF69; */
@@ -63,11 +70,10 @@ draw_config:
     .keypos-38 .key,
     .keypos-39 .key,
     .keypos-40 .key {
-    fill: #D3FF89 !important;
+      fill: #D3FF89 !important;
       stroke: #C3EF79 !important;
       stroke-width: 2.0;
     }
-
     /* 最下段中央5キー押下時 */
     .keypos-36 .key.held,
     .keypos-37 .key.held,
@@ -78,24 +84,6 @@ draw_config:
       stroke: #93BF49 !important; 
       stroke-width: 2.0;
     }
-
-    /* === 最終兵器：最下段5キーtextを絶対黒く === */
-    svg.keymap .layer-default .keypos-36 text,
-    svg.keymap .layer-default .keypos-37 text,
-    svg.keypos-38 text,
-    svg.keypos-39 text,
-    svg.keypos-40 text,
-    .keypos-36 text.key,
-    .keypos-37 text.key,
-    .keypos-38 text.key,
-    .keypos-39 text.key,
-    .keypos-40 text.key {
-      fill: #000000 !important;
-      color: #000000 !important;
-      opacity: 1 !important;
-      filter: none !important;
-    }
-
   shrink_wide_legends: 7
   glyph_tap_size: 18
   glyph_hold_size: 15
@@ -108,6 +96,7 @@ draw_config:
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
   use_local_cache: true
+
 parse_config:
   preprocess: true
   skip_binding_parsing: false
