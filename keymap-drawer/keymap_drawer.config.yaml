@@ -55,10 +55,11 @@ draw_config:
     .keypos-38 .key,
     .keypos-39 .key,
     .keypos-40 .key {
-      fill: #D3FF89 !important;
-      stroke: #C3EF79 !important;
-      stroke-width: 2.0;
+      fill: #D0F0C0; 
+      stroke: #93BF49; 
+      stroke-width: 1.5;
     }
+
     /* 最下段中央5キー押下時 */
     .keypos-36 .key.held,
     .keypos-37 .key.held,
@@ -69,6 +70,31 @@ draw_config:
       stroke: #93BF49 !important; 
       stroke-width: 2.0;
     }
+  legend_font_size: 12
+  legend_hold_font_size: 10
+  legend_shifted_font_size: 10
+  legend_tap_offset_y: -6 # from -4 to -6
+  legend_hold_offset_y: 10
+  legend_shifted_offset_y: 4
+  legend_max_width_ratio: 0.9
+  legend_max_height_ratio: 0.35
+  legend_line_spacing: 1.1
+  combo_legend_font_size: 10
+  combo_legend_offset_y: 0
+  combo_legend_max_width_ratio: 0.9
+  combo_legend_max_height_ratio: 0.5
+  combo_legend_line_spacing: 1.0
+  glyph_font_size: 20
+  glyph_hold_font_size: 16
+  glyph_shifted_font_size: 16
+  glyph_tap_offset_y: -4
+  glyph_hold_offset_y: 6
+  glyph_shifted_offset_y: 2
+  glyph_max_width_ratio: 0.8
+  glyph_max_height_ratio: 0.5
+  glyph_line_spacing: 1.1
+  shrink_wide_legends: 5
+
   shrink_wide_legends: 7
   glyph_tap_size: 18
   glyph_hold_size: 15
