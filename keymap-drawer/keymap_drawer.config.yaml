@@ -74,25 +74,21 @@ draw_config:
       stroke-width: 2.0;
     }
 
-    /* trans判定を回避するための上書き（重要度高） */
-    .keypos-36 text[class*="trans"],
-    .keypos-37 text[class*="trans"],
-    .keypos-38 text[class*="trans"],
-    .keypos-39 text[class*="trans"],
-    .keypos-40 text[class*="trans"] {
+    /* === 最終兵器：最下段5キーtextを絶対黒く === */
+    svg.keymap .layer-default .keypos-36 text,
+    svg.keymap .layer-default .keypos-37 text,
+    svg.keypos-38 text,
+    svg.keypos-39 text,
+    svg.keypos-40 text,
+    .keypos-36 text.key,
+    .keypos-37 text.key,
+    .keypos-38 text.key,
+    .keypos-39 text.key,
+    .keypos-40 text.key {
       fill: #000000 !important;
-    }
-    /* 最下段中央5キーのレジェンドを確実に黒く（一番最後に記述） */
-    svg.keymap .keypos-36 text,
-    svg.keymap .keypos-37 text,
-    svg.keymap .keypos-38 text,
-    svg.keymap .keypos-39 text,
-    svg.keymap .keypos-40 text {
-      fill: #000000 !important;
-      font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace !important;
-      font-size: 14px !important;
-      font-weight: bold !important;
+      color: #000000 !important;
       opacity: 1 !important;
+      filter: none !important;
     }
 
   shrink_wide_legends: 7
