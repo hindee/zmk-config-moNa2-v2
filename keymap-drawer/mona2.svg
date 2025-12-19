@@ -180,9 +180,9 @@ fill: #D3FF89 !important;
 .keypos-39 text,
 .keypos-40 text {
   font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
-  font-size: 14px;
+  font-size: 13x;
   font-weight: bold;
-  text-rendering: optimizeLegibility;
+  <!-- text-rendering: optimizeLegibility; -->
   fill: #000000 !important;
 }*/
 </style>
