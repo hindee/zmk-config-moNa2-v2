@@ -72,17 +72,17 @@ draw_config:
       stroke: #93BF49 !important; 
       stroke-width: 2.0;
     }
-    /* 最下段中央5キーのレジェンドを黒く太く（視認性向上） */
-    .keypos-36 text.key,
-    .keypos-37 text.key,
-    .keypos-38 text.key,
-    .keypos-39 text.key,
-    .keypos-40 text.key {
-      fill: #333333 !important;
-      font-weight: bold;
-      font-size: 13px;
+    /* 最下段中央5キーのレジェンドを確実に黒く（tap/hold両方） */
+    .keypos-36 text,
+    .keypos-37 text,
+    .keypos-38 text,
+    .keypos-39 text,
+    .keypos-40 text {
+      fill: #222222 !important;
+      font-weight: 900 !important;
+      text-shadow: 0.5px 0.5px 0.5px #000 !important;
+      font-size: 13px !important;
     }
-
   shrink_wide_legends: 7
   glyph_tap_size: 18
   glyph_hold_size: 15
