@@ -140,7 +140,6 @@ draw_config:
   glyph_line_spacing: 1.1
   shrink_wide_legends: 5
 
-  shrink_wide_legends: 7
   glyph_tap_size: 18
   glyph_hold_size: 15
   glyph_shifted_size: 15
