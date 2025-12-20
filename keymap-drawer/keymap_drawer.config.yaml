@@ -101,7 +101,20 @@ draw_config:
       stroke: #93BF49 !important; 
       stroke-width: 2.0;
     }
-
+    /* --- トラックボール用の設定 --- */
+    /* moNa2の物理配列（dtsi）に1個追加した場合、キーの総数は恐らく42枚目(0から数えて41番) */
+    /* .keypos-XX の番号は、生成された mona2.yaml の keys: リストの順番に対応します */
+    .keypos-41 rect.key {
+      rx: 50% !important;   /* 強制的に円にする */
+      ry: 50% !important;
+      fill: #444444 !important; /* ボールの色（濃いグレー） */
+      stroke: #222222 !important;
+    }
+    /* トラックボール用のキー（例：41番）の「四角い枠」と「側面」を消す */
+    .keypos-41 rect.key, 
+    .keypos-41 rect.key_side {
+      display: none !important;
+    }
   legend_font_size: 12
   legend_hold_font_size: 10
   legend_shifted_font_size: 10
@@ -131,7 +144,17 @@ draw_config:
   glyph_tap_size: 18
   glyph_hold_size: 15
   glyph_shifted_size: 15
-  glyphs: {}
+  glyphs: 
+    # グラデーションを効かせた立体的な円の定義
+    ball: |
+      <defs>
+        <radialGradient id="ballGrad" cx="35%" cy="35%" r="50%">
+          <stop offset="0%" stop-color="#E9FFC1"/>   /* 光が当たっている明るい色 */
+          <stop offset="70%" stop-color="#D3FF89"/>  /* メインのアップルグリーン */
+          <stop offset="100%" stop-color="#A5C966"/> /* 影になる暗い色 */
+        </radialGradient>
+      </defs>
+      <circle cx="12" cy="12" r="14" fill="url(#ballGrad)" stroke="#C3EF79" stroke-width="0.5" />
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
     tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
@@ -220,6 +243,7 @@ parse_config:
     '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
+    '&none': '$$glyph:ball$$
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
