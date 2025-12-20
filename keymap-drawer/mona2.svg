@@ -134,8 +134,8 @@ svg.keymap {
 /* キーキャップの色と枠線 */
 rect.key {
   fill: #FFFFFF;         /* ベース白 */
-  stroke: #DDDDDD  /* 薄いグレー枠線 */
-  stroke-width: 1.5;
+  stroke: #F9F9F9 !important; /* 薄いグレー枠線 */
+  stroke-width: 2.0;
 }
 /* 押下時の色 */
 rect.held, rect.combo.held {
@@ -146,7 +146,7 @@ rect.held, rect.combo.held {
 /* 側面を少し暗くして立体感を出す */
 rect.key_side {
   /* fill: #B3DF69; */
-  fill: #E0E0E0;
+  /* fill: #E0E0E0; */
 }
 /* 最下段中央5キーのレジェンド（文字）を黒で強制表示 */
 .keypos-36 text,
@@ -199,19 +199,6 @@ rect.key_side {
   fill: #4FBF8F !important; 
   stroke: #93BF49 !important; 
   stroke-width: 2.0;
-}
-rect.held, rect.combo.held { fill: #ffc; }
-
-/* キーキャップの色と枠線 */
-rect.key {
-  fill: #D3FF89;        /* マットアップルグリーン */
-  stroke: #C3EF79;      /* 少し濃い縁取り */
-  stroke-width: 1.5;
-}
-
-/* 側面を少し暗くして立体感を出す */
-rect.key_side {
-  fill: #B3DF69;
 }
 </style>
 <g transform="translate(56, 0)" class="layer-default">
