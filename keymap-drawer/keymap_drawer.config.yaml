@@ -119,9 +119,7 @@ draw_config:
     
     /* keypos-41専用（トラックボール位置） */
     .keypos-41 use[href="#trackball"] {
-      x: -24px !important;
-      y: -22px !important;
-      width: 52px !important;
+      width: 102px !important;
       height: 48px !important;
     }
   legend_font_size: 12
