@@ -144,7 +144,32 @@ draw_config:
   glyph_shifted_size: 15
   glyphs: 
     trackball: |
-      <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="141px" height="81px" viewBox="-0.5 -0.5 141 81" content="&lt;mxfile&gt;&lt;diagram id=&quot;IzWpLS8StjbBiPwjM_Oz&quot; name=&quot;ページ1&quot;&gt;vZRNT8MwDIZ/TSU4IG3J2MZ13QcHOO3AOWqyNiKtozRbO349DnHXVgONA0KVKvuxncSvoyQ8LdudE7Z4BalMwiayTfg6YWw5meE/gHMEj4t5BLnTMqJpD/b6QxGcED1qqepRogcwXtsxzKCqVOZHTDgHzTjtAGa8qxW5ugL7TJhr+qalL6gttuj5s9J50e08nT/FSCm6ZOqkLoSEZoD4JuGpA/DRKttUmaBdp0us2/4QvRzMqcr/poDFgpMwR+qNzuXPXbNYgLqis2oK7dXeiixEGpwsssKXBr0pmqK2UeyDbhWuvzpoY1Iw4JCZIMeDFO79LmF8zbfbJWqSor1Zh+8e868PT/2clPOqHSBqZqegVN6dMYWifEHC0s1ic/KbwZwIFYMRdUzQzcgvK/fioUH6fa8lv60ljtsG0wDYF11qf1tVqR2qqqFCv4ZjaOIvhJrxfxMK3f5Cf8UGrwLffAI=&lt;/diagram&gt;&lt;/mxfile&gt;"><defs/><g><g><ellipse cx="40" cy="40" rx="40" ry="40" fill="#d3ff89" stroke="#000000" pointer-events="all" style="fill: light-dark(rgb(211, 255, 137), rgb(237, 237, 237)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 80 0 L 120 0 L 140 16 L 140 80 L 60 80 L 60 16 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,100,40)" pointer-events="all" style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="141px" height="81px" viewBox="-0.5 -0.5 141 81">
+        <defs/>
+        <g>
+          <!-- 立体感：ハイライト（上部左側） -->
+          <ellipse cx="38" cy="32" rx="28" ry="20" fill="rgba(255,255,255,0.6)" opacity="0.8"/>
+          
+          <!-- ベースカラー -->
+          <ellipse cx="40" cy="40" rx="40" ry="40" fill="#d3ff89" stroke="#000000" stroke-width="1.5" pointer-events="all"/>
+          
+          <!-- 立体感：影（下部右側） -->
+          <ellipse cx="48" cy="48" rx="22" ry="16" fill="rgba(0,0,0,0.25)" opacity="0.7"/>
+          
+          <!-- 追加ハイライト（球体表面の光沢） -->
+          <ellipse cx="35" cy="28" rx="12" ry="8" fill="rgba(255,255,255,0.9)" opacity="0.9"/>
+          
+          <!-- ボタン部分（白） -->
+          <g>
+            <path d="M 80 0 L 120 0 L 140 16 L 140 80 L 60 80 L 60 16 Z" fill="#f8f8f8" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10" transform="rotate(90,100,40)" pointer-events="all"/>
+            <!-- ボタン陰影 -->
+            <path d="M 85 5 L 115 5 L 130 15 L 130 70 L 65 70 L 65 15 Z" fill="rgba(0,0,0,0.15)" transform="rotate(90,100,40)"/>
+          </g>
+          
+          <!-- 外周の微細な光沢ライン -->
+          <ellipse cx="40" cy="40" rx="38" ry="38" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+        </g>
+      </svg>
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
     tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
