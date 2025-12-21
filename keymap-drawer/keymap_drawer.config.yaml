@@ -108,9 +108,9 @@ draw_config:
     }
     .keypos-41 use[href="#trackball"] {
       width: 105px !important;
-      height: 68px !important;
+      height: 88px !important;
       x: 0px !important;   /* 左から中央へ */
-      y: -10px !important;   /* 上から中央へ */
+      y: -18px !important;   /* 上から中央へ */
 
       transform: translate(-2px, 1px) scale(2.1) !important;
     }
