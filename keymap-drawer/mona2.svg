@@ -224,9 +224,11 @@ rect.key_side {
 .keypos-41 use[href="#trackball"] {
   width: 70px !important;
   height: 50px !important;
-  transform: scale(2.2) !important;
-  transform-origin: center !important;
-}    
+  /* 位置をキー中央に固定 */
+  x: -35px !important;   /* 左から中央へ */
+  y: -25px !important;   /* 上から中央へ */
+  transform: none !important;  /* transform完全無効 */
+}
 </style>
 <g transform="translate(56, 0)" class="layer-default">
 <text x="0" y="28" class="label" id="default">default:</text>
