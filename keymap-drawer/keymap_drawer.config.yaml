@@ -107,16 +107,7 @@ draw_config:
     .keypos-41 rect.key_side {
       display: none !important;
     }
-    /* トラックボールglyphをキーいっぱいに拡大 */
-    use[href="#trackball"],
-    .glyph-trackball {
-      font-size: 48px !important;
-      width: 108px !important;
-      height: 44px !important;
-      transform: scale(2.2) !important;
-      transform-origin: center !important;
-    }
-    
+
   legend_font_size: 12
   legend_hold_font_size: 10
   legend_shifted_font_size: 10
