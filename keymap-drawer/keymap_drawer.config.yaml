@@ -145,14 +145,16 @@ draw_config:
   glyph_shifted_size: 15
   glyphs: 
     ball: |
-      <defs>
-        <radialGradient id="ballGrad" cx="35%" cy="35%" r="50%">
-          <stop offset="0%" stop-color="#E9FFC1"/>   <!-- 光が当たっている明るい色 -->
-          <stop offset="70%" stop-color="#D3FF89"/>  <!-- メインのアップルグリーン -->
-          <stop offset="100%" stop-color="#A5C966"/> <!-- 影になる暗い色 -->
-        </radialGradient>
-      </defs>
-      <circle cx="12" cy="12" r="14" fill="url(#ballGrad)" stroke="#C3EF79" stroke-width="0.5" />
+      <svg viewBox="0 0 24 24">
+        <defs>
+          <radialGradient id="ballGrad" cx="35%" cy="35%" r="50%">
+            <stop offset="0%" stop-color="#E9FFC1"/>
+            <stop offset="70%" stop-color="#D3FF89"/>
+            <stop offset="100%" stop-color="#A5C966"/>
+          </radialGradient>
+        </defs>
+        <circle cx="12" cy="12" r="11" fill="url(#ballGrad)" stroke="#C3EF79" stroke-width="0.5"/>
+      </svg>
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
     tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
