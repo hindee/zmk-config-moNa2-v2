@@ -42,7 +42,7 @@ layers:
   - {t: 半/全, h: funcs_numpad}
   - ⌫
   - {t: ⏎, h: arrow}
-  - $$glyphs:ball$$
+  - $$ball$$
   - {t: DEL, h: RIGHT CONTROL}
   symbols:
   - '!'
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$glyphs:ball$$
+  - $$ball$$
   - {t: ▽, type: trans}
   funcs_numpad:
   - F1
@@ -130,7 +130,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$glyphs:ball$$
+  - $$ball$$
   - {t: ▽, type: trans}
   arrow:
   - {t: ▽, type: trans}
@@ -174,7 +174,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - $$glyphs:ball$$
+  - $$ball$$
   - {t: ▽, type: trans}
   mouse:
   - {t: ▽, type: trans}
@@ -218,7 +218,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$glyphs:ball$$
+  - $$ball$$
   - {t: ▽, type: trans}
   bluetooth:
   - {t: ▽, type: trans}
@@ -262,7 +262,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$glyphs:ball$$
+  - $$ball$$
   - {t: ▽, type: trans}
   scroll:
   - {t: ▽, type: trans}
@@ -306,7 +306,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$glyphs:ball$$
+  - $$ball$$
   - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
