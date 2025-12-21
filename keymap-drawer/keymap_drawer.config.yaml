@@ -144,7 +144,7 @@ draw_config:
   glyph_hold_size: 15
   glyph_shifted_size: 15
   glyphs: 
-    ball: |
+    ball:
       <svg viewBox="0 0 24 24">
         <defs>
           <radialGradient id="ballGrad" cx="35%" cy="35%" r="50%">
