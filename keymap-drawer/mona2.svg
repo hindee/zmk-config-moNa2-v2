@@ -222,10 +222,10 @@ rect.key_side {
   display: none !important;
 }
 .keypos-41 use[href="#trackball"] {
-  width: 65px !important;
-  height: 48px !important;
+  width: 85px !important;
+  height: 68px !important;
   x: 0px !important;   /* 左から中央へ */
-  y: 0px !important;   /* 上から中央へ */
+  y: -30px !important;   /* 上から中央へ */
 
   transform: translate(-2px, 1px) scale(2.1) !important;
 }
