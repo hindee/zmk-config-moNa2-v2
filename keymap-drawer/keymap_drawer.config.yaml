@@ -138,14 +138,16 @@ draw_config:
   glyph_shifted_size: 15
   glyphs: 
     trackball: |
-      <svg viewBox="0 0 60 56" xmlns="http://www.w3.org/2000/svg">
-        <!-- ボール（キーサイズ60x56に合わせる） -->
-        <ellipse cx="30" cy="28" rx="25" ry="25" fill="#d3ff89" stroke="#000000" stroke-width="1"/>
-        <!-- ボタン部分（キー中央基準で調整） -->
-        <path d="M 42 10 L 48 10 L 50 16 L 50 32 L 34 32 L 34 16 Z" 
-              fill="#ffffff" stroke="#000000" stroke-width="1" 
-              transform="rotate(90 42 28)"/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="131px" height="81px" viewBox="-0.5 -0.5 131 81" content="&lt;mxfile&gt;&lt;diagram id=&quot;IzWpLS8StjbBiPwjM_Oz&quot; name=&quot;ページ1&quot;&gt;rZSxbsIwEEC/JlI7VCI2JXQlQDu0E0NnKzaxVSdnOaYJ/fqea4ckoggGhITunu8S37OVhOZV92qZkR/AhU7IjHcJXSeELGdz/PfgGMBztgigtIoHlA5gp35EhLNID4qLZlLoALRTZgoLqGtRuAlj1kI7LduDnr7VsFKcgV3B9Dn9VNzJOBbJBv4mVCn7N6eLl7BSsb44TtJIxqEdIbpJaG4BXIiqLhfau+u9hL7thdXTxqyo3S0NJDR8M32Is8V9uWM/LDagV0xWrVRO7Awr/EqLJ4tMukpjlmLIGhNk71Un8PmrvdI6Bw0WmfY6njizXw8JoWu63S7RSY7xZu1/j1gf9yKsE93FedKTJbxdAirh7BFLYgPNoth4s8gi5u3onCKSoyPqGYs3ozw9eZCHQfT3v0t63SUet/GhBjDvqlLuulWuLFpVUGPewMEPcQ9Rc3pdVHYfUZgOF/pvbfRVoJtf&lt;/diagram&gt;&lt;/mxfile&gt;">
+        <defs/>
+          <g>
+            <g>
+              <ellipse cx="40" cy="40" rx="40" ry="40" fill="#d3ff89" stroke="#000000" pointer-events="all" style="fill: light-dark(rgb(211, 255, 137), rgb(237, 237, 237)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+            </g>
+          <g>
+            <path d="M 75 5 L 115 5 L 135 21 L 135 75 L 55 75 L 55 21 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,95,40)" pointer-events="all" style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+          </g>
+        </g>
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
     tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
