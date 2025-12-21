@@ -101,18 +101,10 @@ draw_config:
       stroke: #93BF49 !important; 
       stroke-width: 2.0;
     }
-    /* --- トラックボール用の設定 --- */
-    /* moNa2の物理配列（dtsi）に1個追加した場合、キーの総数は恐らく42枚目(0から数えて41番) */
-    /* .keypos-XX の番号は、生成された mona2.yaml の keys: リストの順番に対応します */
-    .keypos-42 rect.key {
-      rx: 50% !important;   /* 強制的に円にする */
-      ry: 50% !important;
-      fill: #444444 !important; /* ボールの色（濃いグレー） */
-      stroke: #222222 !important;
-    }
+
     /* トラックボール用のキー（例：41番）の「四角い枠」と「側面」を消す */
-    .keypos-42 rect.key, 
-    .keypos-42 rect.key_side {
+    .keypos-41 rect.key, 
+    .keypos-41 rect.key_side {
       display: none !important;
     }
   legend_font_size: 12
