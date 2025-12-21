@@ -112,7 +112,7 @@ draw_config:
       x: 0px !important;   /* 左から中央へ */
       y: -15px !important;   /* 上から中央へ */
 
-      transform: translate(15px, 20px) scale(4.2) !important;
+      transform: translate(-8px, 30px) scale(6.0) !important;
     }
   legend_font_size: 12
   legend_hold_font_size: 10
