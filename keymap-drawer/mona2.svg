@@ -219,6 +219,23 @@ rect.key_side {
 .keypos-41 rect.key_side {
   display: none !important;
 }
+/* トラックボールglyphをキーいっぱいに拡大 */
+use[href="#trackball"],
+.glyph-trackball {
+  font-size: 48px !important;
+  width: 48px !important;
+  height: 44px !important;
+  transform: scale(2.2) !important;
+  transform-origin: center !important;
+}
+
+/* keypos-41専用（トラックボール位置） */
+.keypos-41 use[href="#trackball"] {
+  x: -24px !important;
+  y: -22px !important;
+  width: 52px !important;
+  height: 48px !important;
+}
 </style>
 <g transform="translate(56, 0)" class="layer-default">
 <text x="0" y="28" class="label" id="default">default:</text>
