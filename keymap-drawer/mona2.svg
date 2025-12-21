@@ -216,14 +216,18 @@ rect.key_side {
   stroke-width: 2.0;
 }
 
-/* トラックボール用のキー（例：41番）の「四角い枠」と「側面」を消す */
+/* トラックボール専用：キー枠非表示 + use要素直接拡大 */
 .keypos-41 rect.key, 
 .keypos-41 rect.key_side {
   display: none !important;
 }
-.keypos-41 svg {
-  transform: scale(3);  /* 3倍拡大 */
-  transform-origin: center center;
+  
+/* これだけでOK！他のキーには一切影響なし */
+.keypos-41 use[href="#trackball"] {
+  width: 70px !important;
+  height: 50px !important;
+  transform: scale(2.2) !important;
+  transform-origin: center !important;
 }
 </style>
 <g transform="translate(56, 0)" class="layer-default">
