@@ -221,6 +221,12 @@ rect.key_side {
 .keypos-41 rect.key_side {
   display: none !important;
 }
+.keypos-41 use[href="#trackball"] {
+  width: 70px !important;
+  height: 50px !important;
+  transform: scale(2.2) !important;
+  transform-origin: center !important;
+}    
 </style>
 <g transform="translate(56, 0)" class="layer-default">
 <text x="0" y="28" class="label" id="default">default:</text>
