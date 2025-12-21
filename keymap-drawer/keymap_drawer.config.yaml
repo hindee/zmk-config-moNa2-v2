@@ -101,21 +101,20 @@ draw_config:
       stroke: #93BF49 !important; 
       stroke-width: 2.0;
     }
-
-    /* トラックボール専用：キー枠非表示 + use要素直接拡大 */
-    .keypos-41 rect.key, 
-    .keypos-41 rect.key_side {
+    /* --- トラックボール用の設定 --- */
+    /* moNa2の物理配列（dtsi）に1個追加した場合、キーの総数は恐らく42枚目(0から数えて41番) */
+    /* .keypos-XX の番号は、生成された mona2.yaml の keys: リストの順番に対応します */
+    .keypos-42 rect.key {
+      rx: 50% !important;   /* 強制的に円にする */
+      ry: 50% !important;
+      fill: #444444 !important; /* ボールの色（濃いグレー） */
+      stroke: #222222 !important;
+    }
+    /* トラックボール用のキー（例：41番）の「四角い枠」と「側面」を消す */
+    .keypos-42 rect.key, 
+    .keypos-42 rect.key_side {
       display: none !important;
     }
-      
-    /* これだけでOK！他のキーには一切影響なし */
-    .keypos-41 use[href="#trackball"] {
-      width: 70px !important;
-      height: 50px !important;
-      transform: scale(2.2) !important;
-      transform-origin: center !important;
-    }
-
   legend_font_size: 12
   legend_hold_font_size: 10
   legend_shifted_font_size: 10
@@ -156,6 +155,7 @@ draw_config:
             <path d="M 75 5 L 115 5 L 135 21 L 135 75 L 55 75 L 55 21 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(90,95,40)" pointer-events="all" style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
           </g>
         </g>
+      </svg>
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
     tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
