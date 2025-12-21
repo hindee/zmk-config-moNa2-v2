@@ -221,6 +221,10 @@ rect.key_side {
 .keypos-41 rect.key_side {
   display: none !important;
 }
+.keypos-41 svg {
+  transform: scale(3);  /* 3倍拡大 */
+  transform-origin: center center;
+}
 </style>
 <g transform="translate(56, 0)" class="layer-default">
 <text x="0" y="28" class="label" id="default">default:</text>
