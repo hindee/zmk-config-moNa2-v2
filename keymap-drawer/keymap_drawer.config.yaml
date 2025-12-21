@@ -147,9 +147,9 @@ draw_config:
     ball: |
       <defs>
         <radialGradient id="ballGrad" cx="35%" cy="35%" r="50%">
-          <stop offset="0%" stop-color="#E9FFC1"/>   /* 光が当たっている明るい色 */
-          <stop offset="70%" stop-color="#D3FF89"/>  /* メインのアップルグリーン */
-          <stop offset="100%" stop-color="#A5C966"/> /* 影になる暗い色 */
+          <stop offset="0%" stop-color="#E9FFC1"/>   <!-- 光が当たっている明るい色 -->
+          <stop offset="70%" stop-color="#D3FF89"/>  <!-- メインのアップルグリーン -->
+          <stop offset="100%" stop-color="#A5C966"/> <!-- 影になる暗い色 -->
         </radialGradient>
       </defs>
       <circle cx="12" cy="12" r="14" fill="url(#ballGrad)" stroke="#C3EF79" stroke-width="0.5" />
