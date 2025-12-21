@@ -144,7 +144,6 @@ draw_config:
   glyph_hold_size: 15
   glyph_shifted_size: 15
   glyphs: 
-    # グラデーションを効かせた立体的な円の定義
     ball: |
       <defs>
         <radialGradient id="ballGrad" cx="35%" cy="35%" r="50%">
