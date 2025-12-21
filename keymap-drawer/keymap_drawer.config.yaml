@@ -126,8 +126,8 @@ draw_config:
   glyph_tap_offset_y: -4
   glyph_hold_offset_y: 6
   glyph_shifted_offset_y: 2
-  glyph_max_width_ratio: 0.8
-  glyph_max_height_ratio: 0.5
+  glyph_max_width_ratio: 2.5 # 0.8
+  glyph_max_height_ratio: 2.5 # 0.5
   glyph_line_spacing: 1.1
   shrink_wide_legends: 5
 
