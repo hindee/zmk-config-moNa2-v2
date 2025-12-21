@@ -223,16 +223,10 @@ rect.key_side {
 use[href="#trackball"],
 .glyph-trackball {
   font-size: 48px !important;
-  width: 48px !important;
+  width: 108px !important;
   height: 44px !important;
   transform: scale(2.2) !important;
   transform-origin: center !important;
-}
-
-/* keypos-41専用（トラックボール位置） */
-.keypos-41 use[href="#trackball"] {
-  width: 102px !important;
-  height: 48px !important;
 }
 </style>
 <g transform="translate(56, 0)" class="layer-default">
