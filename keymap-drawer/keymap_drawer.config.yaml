@@ -104,10 +104,12 @@ draw_config:
       stroke-width: 2.0;
     }
     /* トラックボール専用：キー枠非表示 + use要素直接拡大 */
-    /*.keypos-42 rect.key, 
+    .keypos-15 rect.key, 
+    .keypos-15 rect.key_side,
+    .keypos-42 rect.key, 
     .keypos-42 rect.key_side {
       display: none !important;
-    }*/
+    }
     .keypos-42 use[href="#trackball"] {
       width: 185px !important;
       height: 158px !important;
@@ -266,6 +268,8 @@ parse_config:
     '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
+    '&trackball':  '$$trackball$$'
+    'rotaryencoder':  '$$rotaryencoder$$'
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
