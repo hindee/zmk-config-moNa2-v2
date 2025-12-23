@@ -150,11 +150,11 @@ rect.key_side {
   /* fill: #E0E0E0; */
 }
 /* 最下段中央5キーのレジェンド（文字）を黒で強制表示 */
-.keypos-36 text,
 .keypos-37 text,
 .keypos-38 text,
 .keypos-39 text,
-.keypos-40 text {
+.keypos-40 text,
+.keypos-41 text {
   fill: #000000 !important;
   font-weight: bold;
   font-size: 13px;
@@ -166,47 +166,48 @@ rect.key_side {
 .keypos-37 text,
 .keypos-38 text,
 .keypos-39 text,
-.keypos-40 text {
+.keypos-40 text,
+.keypos-41 text {
   paint-order: normal;
   stroke: none !important;
 }
 
 /* 最下段中央5キー押下時 */
-.keypos-36 .key.held,
 .keypos-37 .key.held,
 .keypos-38 .key.held,
 .keypos-39 .key.held,
-.keypos-40 .key.held {
+.keypos-40 .key.held,
+.keypos-41 .key.held {
   fill: #4FBF8F !important; 
   stroke: #93BF49 !important; 
   stroke-width: 2.0;
 }
 /* 最下段中央5キーだけアップルグリーン（回転対応） */
-.keypos-36 rect.key,
 .keypos-37 rect.key,
 .keypos-38 rect.key,
 .keypos-39 rect.key,
-.keypos-40 rect.key {
+.keypos-40 rect.key,
+.keypos-41 rect.key {
   fill: #D3FF89 !important;
   stroke: #C3EF79 !important;
   stroke-width: 2.0;
 }
 /* 回転キーの押下時もアップルグリーン系 */
-.keypos-36 rect.key.held,
 .keypos-37 rect.key.held,
 .keypos-38 rect.key.held,
 .keypos-39 rect.key.held,
-.keypos-40 rect.key.held {
+.keypos-40 rect.key.held,
+.keypos-41 rect.key.held {
   fill: #4FBF8F !important; 
   stroke: #93BF49 !important; 
   stroke-width: 2.0;
 }
 /* トラックボール専用：キー枠非表示 + use要素直接拡大 */
-.keypos-41 rect.key, 
-.keypos-41 rect.key_side {
+.keypos-42 rect.key, 
+.keypos-42 rect.key_side {
   display: none !important;
 }
-.keypos-41 use[href="#trackball"] {
+.keypos-42 use[href="#trackball"] {
   width: 185px !important;
   height: 158px !important;
   x: 0px !important;   /* 左から中央へ */
