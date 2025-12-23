@@ -254,8 +254,8 @@ parse_config:
     '&RE_scroll': {glyph: 'rotaryencoder', t: "↑↓"}
     '&RE_alttab': {glyph: 'rotaryencoder', t: "AltTab"}
     '&RE_volume': {glyph: 'rotaryencoder', t: "Volume"}
-    '&RE_ctltab': {glyph: 'rotaryencoder'. t: "CtlTab"}
-    '&RE_sidesc': {glyph: 'rotaryencoder'. t: "←→"}
+    '&RE_ctltab': {glyph: 'rotaryencoder', t: "CtlTab"}
+    '&RE_sidesc': {glyph: 'rotaryencoder', t: "←→"}
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
