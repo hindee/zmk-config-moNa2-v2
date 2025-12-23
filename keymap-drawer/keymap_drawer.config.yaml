@@ -161,29 +161,31 @@ draw_config:
       glyph: trackball
     renc::
       glyph: rotaryencoder
-
-  layer_labels:
-    0:
-      renc: "↑↓"
-      trackball: "-"
-    1:
-      renc: "↑↓"
-      trackball: "-"
-    2:
-      renc: "AltTab"
-      trackball: "-"
-    3:
-      renc: "Volume"
-      trackball: "-"
-    4:
-      renc: "CtrlTab"
-      trackball: "Mouse"
-    5:
-      renc: "Media"
-      trackball: "-"
-    6:
-      renc: "←→"
-      trackball: "Scroll"
+custom_keycodes:
+  TB_none:
+    glyph: trackball
+    label: ""
+  TB_mouse: 
+    glyph: trackball
+    label: "Pointing"
+  TB_scroll:
+    glyph: trackball
+    label: "Scroll"
+  RE_scroll:
+    glyph: rotaryencoder
+    label: "↑↓"
+  RE_alttab:
+    glyph: rotaryencoder
+    label: "AltTab"
+  RE_volume:
+    glyph: rotaryencoder
+    label: "Volume"
+  RE_ctltab:
+    glyph: rotaryencoder
+    label: "CtlTab"
+  RE_sidesc:
+    glyph: rotaryencoder
+    label: "←→"
 parse_config:
   preprocess: true
   skip_binding_parsing: false
