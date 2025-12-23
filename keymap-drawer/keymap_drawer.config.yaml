@@ -104,27 +104,20 @@ draw_config:
       stroke-width: 2.0;
     }
     /* トラックボール専用：キー枠非表示 + use要素直接拡大 */
-    /*.keypos-15 rect.key, 
-    .keypos-15 rect.key_side,*/
+    .keypos-15 rect.key, 
+    .keypos-15 rect.key_side,
     .keypos-42 rect.key, 
     .keypos-42 rect.key_side {
       display: none !important;
     }
-    /*.keypos-42 use[href="#trackball"] {
+    .keypos-42 use[href="#trackball"] {
       width: 185px !important;
       height: 158px !important;
       x: 0px !important;   /* 左から中央へ */
       y: -15px !important;   /* 上から中央へ */
-
       transform: translate(-8px, 30px) scale(6.0) !important;
-    }*/
-    .keypos-42 use[href="#trackball"] {
-      width: 100% !important;       /* キー枠にフィット */
-      height: 100% !important;
-      x: 0 !important;
-      y: 0 !important;
-      transform: none !important;   /* 変形なし */
     }
+   
   legend_font_size: 12
   legend_hold_font_size: 10
   legend_shifted_font_size: 10
@@ -170,31 +163,7 @@ draw_config:
       glyph: trackball
     renc:
       glyph: rotaryencoder
-  custom_keycodes:
-    &TB_none:
-      glyph: trackball
-      label: ""
-    &TB_mouse: 
-      glyph: trackball
-      label: "Pointing"
-    &TB_scroll:
-      glyph: trackball
-      label: "Scroll"
-    &RE_scroll:
-      glyph: rotaryencoder
-      label: "↑↓"
-    &RE_alttab:
-      glyph: rotaryencoder
-      label: "AltTab"
-    &RE_volume:
-      glyph: rotaryencoder
-      label: "Volume"
-    &RE_ctltab:
-      glyph: rotaryencoder
-      label: "CtlTab"
-    &RE_sidesc:
-      glyph: rotaryencoder
-      label: "←→"
+  
 parse_config:
   preprocess: false
   skip_binding_parsing: false
@@ -266,7 +235,7 @@ parse_config:
     JIS_UNDERSCORE: '_'
     '0x89': '¥'
     'LS(0x89)': '|'
-    'LS(0x87)': '_'    # Add more as needed for your layout
+    'LS(0x87)': '_' 
     'INSERT': 'INS'
   # 'Gui+Alt+K': 'MIC' # Display as MIC (no quotes, so it won't split into multiple lines)
     'LG(LA(K))': 'MIC' # Display as MIC
@@ -275,8 +244,18 @@ parse_config:
     '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
-  #  '&trackball': "$$trackball$$"
-  #  '&rotaryencoder': "$$rotaryencoder$$"
+    #'&RE_scroll': {glyph: "rotaryencoder", t: "↑↓"}
+    #'&RE_alttab': {glyph: "rotaryencoder", t: "AltTab"}
+    #'&TB_mouse': {glyph: "trackball", t: "Pointing"}
+
+    '&TB_none': {glyph: 'trackball', t: ""}
+    '&TB_mouse': {glyph: 'trackball', t: "Pointing"}
+    '&TB_scroll': {glyph: 'trackball', t: "Scroll"}
+    '&RE_scroll': {glyph: 'rotaryencoder', t: "↑↓"}
+    '&RE_alttab': {glyph: 'rotaryencoder', t: "AltTab"}
+    '&RE_volume': {glyph: 'rotaryencoder', t: "Volume"}
+    '&RE_ctltab': {glyph: 'rotaryencoder'. t: "CtlTab"}
+    '&RE_sidesc': {glyph: 'rotaryencoder'. t: "←→"}
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
