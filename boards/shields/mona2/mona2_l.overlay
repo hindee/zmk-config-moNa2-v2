@@ -14,3 +14,42 @@
 &left_encoder {
     status = "okay";
 };
+
+/* トラボとエンコーダー用のダミー */
+/ {
+    behaviors {
+        TB_none: TB_none {
+            compatible = "zmk,behavior-none";
+            #binding-cells = <0>;
+        };
+        TB_mouse: TB_mouse {
+            compatible = "zmk,behavior-none";
+            #binding-cells = <0>;
+        };
+        TB_scroll: TB_scroll {
+            compatible = "zmk,behavior-none";
+            #binding-cells = <0>;
+        };
+
+        RE_scroll: RE_scroll {
+            compatible = "zmk,behavior-none";
+            #binding-cells = <0>;
+        };
+        RE_alttab: RE_alttab {
+            compatible = "zmk,behavior-none";
+            #binding-cells = <0>;
+        };
+        RE_volume: RE_volume {
+            compatible = "zmk,behavior-none";
+            #binding-cells = <0>;
+        };
+        RE_ctltab: RE_ctltab {
+            compatible = "zmk,behavior-none";
+            #binding-cells = <0>;
+        };
+        RE_sidesc: RE_sidesc {
+            compatible = "zmk,behavior-none";
+            #binding-cells = <0>;
+        };
+    };
+};
