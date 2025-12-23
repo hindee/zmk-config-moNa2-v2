@@ -106,3 +106,16 @@
     lock-for-next-n-events = <10>;
     idle-reset-timeout-ms = <200>;
 };
+
+/* トラボとエンコーダー用のダミー */
+aliases {
+  TB_none = &trackball;
+  TB_mouse = &trackball;
+  TB_scroll = &trackball;
+  RE_scroll = &renc;
+  RE_alttab = &renc;
+  RE_volume = &renc;
+  RE_ctltab = &renc;
+  RE_sidesc = &renc;
+ };
+
