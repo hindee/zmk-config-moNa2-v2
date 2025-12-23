@@ -164,28 +164,28 @@ draw_config:
     renc:
       glyph: rotaryencoder
   custom_keycodes:
-    TB_none:
+    &TB_none:
       glyph: trackball
       label: ""
-    TB_mouse: 
+    &TB_mouse: 
       glyph: trackball
       label: "Pointing"
-    TB_scroll:
+    &TB_scroll:
       glyph: trackball
       label: "Scroll"
-    RE_scroll:
+    &RE_scroll:
       glyph: rotaryencoder
       label: "↑↓"
-    RE_alttab:
+    &RE_alttab:
       glyph: rotaryencoder
       label: "AltTab"
-    RE_volume:
+    &RE_volume:
       glyph: rotaryencoder
       label: "Volume"
-    RE_ctltab:
+    &RE_ctltab:
       glyph: rotaryencoder
       label: "CtlTab"
-    RE_sidesc:
+    &RE_sidesc:
       glyph: rotaryencoder
       label: "←→"
 parse_config:
@@ -268,8 +268,8 @@ parse_config:
     '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
-    '&trackball': "$$trackball$$"
-    '&rotaryencoder': "$$rotaryencoder$$"
+  #  '&trackball': "$$trackball$$"
+  #  '&rotaryencoder': "$$rotaryencoder$$"
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
