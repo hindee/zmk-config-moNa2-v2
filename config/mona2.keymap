@@ -292,10 +292,12 @@
         trackball: trackball_behavior {
             compatible = "zmk,behavior-none";
             label = "TrackBall";
+            #binding-cells = <0>;
         };
         renc: renc_behavior {
             compatible = "zmk,behavior-none";
             label = "TrackBall";
+            #binding-cells = <0>;
         };
     };
 
