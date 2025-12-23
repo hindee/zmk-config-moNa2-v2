@@ -161,31 +161,31 @@ draw_config:
       glyph: trackball
     renc::
       glyph: rotaryencoder
-custom_keycodes:
-  TB_none:
-    glyph: trackball
-    label: ""
-  TB_mouse: 
-    glyph: trackball
-    label: "Pointing"
-  TB_scroll:
-    glyph: trackball
-    label: "Scroll"
-  RE_scroll:
-    glyph: rotaryencoder
-    label: "↑↓"
-  RE_alttab:
-    glyph: rotaryencoder
-    label: "AltTab"
-  RE_volume:
-    glyph: rotaryencoder
-    label: "Volume"
-  RE_ctltab:
-    glyph: rotaryencoder
-    label: "CtlTab"
-  RE_sidesc:
-    glyph: rotaryencoder
-    label: "←→"
+  custom_keycodes:
+    TB_none:
+      glyph: trackball
+      label: ""
+    TB_mouse: 
+      glyph: trackball
+      label: "Pointing"
+    TB_scroll:
+      glyph: trackball
+      label: "Scroll"
+    RE_scroll:
+      glyph: rotaryencoder
+      label: "↑↓"
+    RE_alttab:
+      glyph: rotaryencoder
+      label: "AltTab"
+    RE_volume:
+      glyph: rotaryencoder
+      label: "Volume"
+    RE_ctltab:
+      glyph: rotaryencoder
+      label: "CtlTab"
+    RE_sidesc:
+      glyph: rotaryencoder
+      label: "←→"
 parse_config:
   preprocess: false
   skip_binding_parsing: false
