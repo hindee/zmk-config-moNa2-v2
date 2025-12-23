@@ -113,9 +113,8 @@ draw_config:
   /*.keypos-42 use[href="#trackball"] {
       width: 185px !important;
       height: 158px !important;
-      x: 0px !important;   /* 左から中央へ */
-      y: -15px !important;   /* 上から中央へ */
-
+      x: 0px !important;
+      y: -15px !important;
       transform: translate(-8px, 30px) scale(6.0) !important;
     }*/
     .keypos-42 use[href="#trackball"] {
