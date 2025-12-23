@@ -110,7 +110,7 @@ draw_config:
     .keypos-42 rect.key_side {
       display: none !important;
     }
-  /*.keypos-42 use[href="#trackball"] {
+    /*.keypos-42 use[href="#trackball"] {
       width: 185px !important;
       height: 158px !important;
       x: 0px !important;   /* 左から中央へ */
