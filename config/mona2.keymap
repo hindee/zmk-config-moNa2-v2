@@ -293,7 +293,7 @@
             compatible = "zmk,behavior-none";
             label = "TrackBall";
         };
-        rotaryEncoder: renc {
+        renc: renc_behavior {
             compatible = "zmk,behavior-none";
             label = "TrackBall";
         };
