@@ -16,7 +16,7 @@
 };
 
 /* トラボとエンコーダー用のダミー */
-/ {
+/* {
     behaviors {
         TB_none: TB_none {
             compatible = "zmk,behavior-none";
@@ -51,5 +51,5 @@
             compatible = "zmk,behavior-none";
             #binding-cells = <0>;
         };
-    };
+    };*/
 };
