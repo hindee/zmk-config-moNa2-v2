@@ -138,12 +138,12 @@ draw_config:
   glyph_tap_offset_y: -4
   glyph_hold_offset_y: 6
   glyph_shifted_offset_y: 2
-  glyph_max_width_ratio: 2.5 # 0.8
-  glyph_max_height_ratio: 2.5 # 0.5
+  glyph_max_width_ratio: 1.2 # 0.8
+  glyph_max_height_ratio: 1.2 # 0.5
   glyph_line_spacing: 1.1
   shrink_wide_legends: 5
 
-  glyph_tap_size: 18
+  glyph_tap_size: 22
   glyph_hold_size: 15
   glyph_shifted_size: 15
   glyphs: 
@@ -179,7 +179,7 @@ draw_config:
       <svg xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           width="25" height="27"
-          viewBox="-0.5 -0.5 25 27">
+          viewBox="-0.5 -0.5 60 56">
         <g>
           <g style="filter: drop-shadow(light-dark(rgba(0, 0, 0, 0.25), rgba(237, 237, 237, 0.25)) 2px 3px 2px);">
             <image x="3.5" y="3.5" width="15" height="15"
@@ -196,38 +196,6 @@ draw_config:
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
   use_local_cache: true
-  # behaviors:
-  #   RE_scroll:
-  #     glyph: rotaryencoder
-  #     # tap: "↑↓"
-
-  #   RE_alttab:
-  #     glyph: rotaryencoder
-  #     # tap: "AltTab"
-
-  #   RE_volume:
-  #     glyph: rotaryencoder
-  #     # tap: "Volume"
-
-  #   RE_ctltab:
-  #     glyph: rotaryencoder
-  #     # tap: "CtlTab"
-
-  #   RE_sidesc:
-  #     glyph: rotaryencoder
-  #     # tap: "←→"
-  #   TB_none:
-  #     glyph: trackball
-  #     # tap: ""
-
-  #   TB_mouse:
-  #     glyph: trackball
-  #     # tap: "Pointing"
-
-  #   TB_scroll:
-  #     glyph: trackball
-  #     # tap: "Scroll"
-  
 parse_config:
   preprocess: false
   skip_binding_parsing: true
@@ -301,7 +269,6 @@ parse_config:
     'LS(0x89)': '|'
     'LS(0x87)': '_' 
     'INSERT': 'INS'
-  # 'Gui+Alt+K': 'MIC' # Display as MIC (no quotes, so it won't split into multiple lines)
     'LG(LA(K))': 'MIC' # Display as MIC
     'LEFT_WIN': '⌘'
   raw_binding_map:
@@ -318,14 +285,6 @@ parse_config:
     '&RE_volume':  { tap: '$$rotaryencoder$$', hold: 'Volume' }
     '&RE_ctltab':  { tap: '$$rotaryencoder$$', hold: 'CtlTab' }
     '&RE_sidesc':  { tap: '$$rotaryencoder$$', hold: '←→' }
-    # '&TB_none': {glyph: 'trackball', t: ""}
-    # '&TB_mouse': {glyph: 'trackball', t: "Pointing"}
-    # '&TB_scroll': {glyph: 'trackball', t: "Scroll"}
-    # '&RE_scroll': {glyph: rotaryencoder, t: "↑↓"}
-    # '&RE_alttab': {glyph: rotaryencoder, t: "AltTab"}
-    # '&RE_volume': {glyph: rotaryencoder, t: "Volume"}
-    # '&RE_ctltab': {glyph: rotaryencoder, t: "CtlTab"}
-    # '&RE_sidesc': {glyph: rotaryencoder, t: "←→"}
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
