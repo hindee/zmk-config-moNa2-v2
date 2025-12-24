@@ -280,11 +280,11 @@ parse_config:
     '&TB_none': {glyph: 'trackball', t: ""}
     '&TB_mouse': {glyph: 'trackball', t: "Pointing"}
     '&TB_scroll': {glyph: 'trackball', t: "Scroll"}
-    '&RE_scroll': {glyph: renc, t: "↑↓"}
-    '&RE_alttab': {glyph: renc, t: "AltTab"}
-    '&RE_volume': {glyph: renc, t: "Volume"}
-    '&RE_ctltab': {glyph: renc, t: "CtlTab"}
-    '&RE_sidesc': {glyph: renc, t: "←→"}
+    '&RE_scroll': {glyph: rotaryencoder, t: "↑↓"}
+    '&RE_alttab': {glyph: rotaryencoder, t: "AltTab"}
+    '&RE_volume': {glyph: rotaryencoder, t: "Volume"}
+    '&RE_ctltab': {glyph: rotaryencoder, t: "CtlTab"}
+    '&RE_sidesc': {glyph: rotaryencoder, t: "←→"}
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
