@@ -112,7 +112,7 @@ draw_config:
     }
     .keypos-15 use[href="#rotaryencoder"] {
       x: 0px !important;
-      y: -150px !important;
+      y: 0px !important;
       transform: translate(0px, 0px) scale(1.0) !important;
     }
     .keypos-42 use[href="#trackball"] {
