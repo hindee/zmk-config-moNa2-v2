@@ -187,37 +187,37 @@ draw_config:
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
   use_local_cache: true
-  behaviors:
-    RE_scroll:
-      glyph: rotaryencoder
-      # tap: "↑↓"
+  # behaviors:
+  #   RE_scroll:
+  #     glyph: rotaryencoder
+  #     # tap: "↑↓"
 
-    RE_alttab:
-      glyph: rotaryencoder
-      # tap: "AltTab"
+  #   RE_alttab:
+  #     glyph: rotaryencoder
+  #     # tap: "AltTab"
 
-    RE_volume:
-      glyph: rotaryencoder
-      # tap: "Volume"
+  #   RE_volume:
+  #     glyph: rotaryencoder
+  #     # tap: "Volume"
 
-    RE_ctltab:
-      glyph: rotaryencoder
-      # tap: "CtlTab"
+  #   RE_ctltab:
+  #     glyph: rotaryencoder
+  #     # tap: "CtlTab"
 
-    RE_sidesc:
-      glyph: rotaryencoder
-      # tap: "←→"
-    TB_none:
-      glyph: trackball
-      # tap: ""
+  #   RE_sidesc:
+  #     glyph: rotaryencoder
+  #     # tap: "←→"
+  #   TB_none:
+  #     glyph: trackball
+  #     # tap: ""
 
-    TB_mouse:
-      glyph: trackball
-      # tap: "Pointing"
+  #   TB_mouse:
+  #     glyph: trackball
+  #     # tap: "Pointing"
 
-    TB_scroll:
-      glyph: trackball
-      # tap: "Scroll"
+  #   TB_scroll:
+  #     glyph: trackball
+  #     # tap: "Scroll"
   
 parse_config:
   preprocess: false
@@ -299,10 +299,16 @@ parse_config:
     '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
-    #'&RE_scroll': {glyph: "rotaryencoder", t: "↑↓"}
-    #'&RE_alttab': {glyph: "rotaryencoder", t: "AltTab"}
-    #'&TB_mouse': {glyph: "trackball", t: "Pointing"}
 
+    '&TB_none':   { tap: '$$trackball$$' }
+    '&TB_mouse':  { tap: '$$trackball$$', hold: 'Pointing' }
+    '&TB_scroll': { tap: '$$trackball$$', hold: 'Scroll' }
+
+    '&RE_scroll':  { tap: '$$rotaryencoder$$', hold: '↑↓' }
+    '&RE_alttab':  { tap: '$$rotaryencoder$$', hold: 'AltTab' }
+    '&RE_volume':  { tap: '$$rotaryencoder$$', hold: 'Volume' }
+    '&RE_ctltab':  { tap: '$$rotaryencoder$$', hold: 'CtlTab' }
+    '&RE_sidesc':  { tap: '$$rotaryencoder$$', hold: '←→' }
     # '&TB_none': {glyph: 'trackball', t: ""}
     # '&TB_mouse': {glyph: 'trackball', t: "Pointing"}
     # '&TB_scroll': {glyph: 'trackball', t: "Scroll"}
