@@ -190,34 +190,34 @@ draw_config:
   behaviors:
     RE_scroll:
       glyph: rotaryencoder
-      tap: "↑↓"
+      # tap: "↑↓"
 
     RE_alttab:
       glyph: rotaryencoder
-      tap: "AltTab"
+      # tap: "AltTab"
 
     RE_volume:
       glyph: rotaryencoder
-      tap: "Volume"
+      # tap: "Volume"
 
     RE_ctltab:
       glyph: rotaryencoder
-      tap: "CtlTab"
+      # tap: "CtlTab"
 
     RE_sidesc:
       glyph: rotaryencoder
-      tap: "←→"
+      # tap: "←→"
     TB_none:
       glyph: trackball
-      tap: ""
+      # tap: ""
 
     TB_mouse:
       glyph: trackball
-      tap: "Pointing"
+      # tap: "Pointing"
 
     TB_scroll:
       glyph: trackball
-      tap: "Scroll"
+      # tap: "Scroll"
   
 parse_config:
   preprocess: false
