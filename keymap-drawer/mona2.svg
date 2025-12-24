@@ -4,11 +4,11 @@
 <svg xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
    
-    viewBox="0 0 60  80">
+    viewBox="0 0 60 60" preserveAspectRatio="xMidYMid meet">
   <g>
     <g style="filter: drop-shadow(light-dark(rgba(0, 0, 0, 0.25), rgba(237, 237, 237, 0.25)) 2px 3px 2px);">
-      <image x="3.5" y="3.5"
-            xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii00NSAtNDUgOTAgOTAiIGhlaWdodD0iMTVtbSIgd2lkdGg9IjE1bW0iPgoKICAKICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMC4yIiBzdHJva2U9IiNGREZERkQiIGZpbGw9IiNGREZERkQiIHI9IjMwIiBjeT0iMCIgY3g9IjAiLz4KCiAgCiAgPGcgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlPSIjRkRGREZEIj4KCiAgICAKICAgIAogICAgPGxpbmUgdHJhbnNmb3JtPSJyb3RhdGUoMCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgxMCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgyMCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgzMCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSg0MCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSg1MCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSg2MCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSg3MCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSg4MCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSg5MCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgxMDApIiB5Mj0iMi4xMjEzIiB4Mj0iMzIuMTIxMyIgeTE9IjAiIHgxPSIzMCIvPgogICAgPGxpbmUgdHJhbnNmb3JtPSJyb3RhdGUoMTEwKSIgeTI9IjIuMTIxMyIgeDI9IjMyLjEyMTMiIHkxPSIwIiB4MT0iMzAiLz4KICAgIDxsaW5lIHRyYW5zZm9ybT0icm90YXRlKDEyMCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgxMzApIiB5Mj0iMi4xMjEzIiB4Mj0iMzIuMTIxMyIgeTE9IjAiIHgxPSIzMCIvPgogICAgPGxpbmUgdHJhbnNmb3JtPSJyb3RhdGUoMTQwKSIgeTI9IjIuMTIxMyIgeDI9IjMyLjEyMTMiIHkxPSIwIiB4MT0iMzAiLz4KICAgIDxsaW5lIHRyYW5zZm9ybT0icm90YXRlKDE1MCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgxNjApIiB5Mj0iMi4xMjEzIiB4Mj0iMzIuMTIxMyIgeTE9IjAiIHgxPSIzMCIvPgogICAgPGxpbmUgdHJhbnNmb3JtPSJyb3RhdGUoMTcwKSIgeTI9IjIuMTIxMyIgeDI9IjMyLjEyMTMiIHkxPSIwIiB4MT0iMzAiLz4KICAgIDxsaW5lIHRyYW5zZm9ybT0icm90YXRlKDE4MCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgxOTApIiB5Mj0iMi4xMjEzIiB4Mj0iMzIuMTIxMyIgeTE9IjAiIHgxPSIzMCIvPgogICAgPGxpbmUgdHJhbnNmb3JtPSJyb3RhdGUoMjAwKSIgeTI9IjIuMTIxMyIgeDI9IjMyLjEyMTMiIHkxPSIwIiB4MT0iMzAiLz4KICAgIDxsaW5lIHRyYW5zZm9ybT0icm90YXRlKDIxMCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgyMjApIiB5Mj0iMi4xMjEzIiB4Mj0iMzIuMTIxMyIgeTE9IjAiIHgxPSIzMCIvPgogICAgPGxpbmUgdHJhbnNmb3JtPSJyb3RhdGUoMjMwKSIgeTI9IjIuMTIxMyIgeDI9IjMyLjEyMTMiIHkxPSIwIiB4MT0iMzAiLz4KICAgIDxsaW5lIHRyYW5zZm9ybT0icm90YXRlKDI0MCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgyNTApIiB5Mj0iMi4xMjEzIiB4Mj0iMzIuMTIxMyIgeTE9IjAiIHgxPSIzMCIvPgogICAgPGxpbmUgdHJhbnNmb3JtPSJyb3RhdGUoMjYwKSIgeTI9IjIuMTIxMyIgeDI9IjMyLjEyMTMiIHkxPSIwIiB4MT0iMzAiLz4KICAgIDxsaW5lIHRyYW5zZm9ybT0icm90YXRlKDI3MCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgyODApIiB5Mj0iMi4xMjEzIiB4Mj0iMzIuMTIxMyIgeTE9IjAiIHgxPSIzMCIvPgogICAgPGxpbmUgdHJhbnNmb3JtPSJyb3RhdGUoMjkwKSIgeTI9IjIuMTIxMyIgeDI9IjMyLjEyMTMiIHkxPSIwIiB4MT0iMzAiLz4KICAgIDxsaW5lIHRyYW5zZm9ybT0icm90YXRlKDMwMCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgzMTApIiB5Mj0iMi4xMjEzIiB4Mj0iMzIuMTIxMyIgeTE9IjAiIHgxPSIzMCIvPgogICAgPGxpbmUgdHJhbnNmb3JtPSJyb3RhdGUoMzIwKSIgeTI9IjIuMTIxMyIgeDI9IjMyLjEyMTMiIHkxPSIwIiB4MT0iMzAiLz4KICAgIDxsaW5lIHRyYW5zZm9ybT0icm90YXRlKDMzMCkiIHkyPSIyLjEyMTMiIHgyPSIzMi4xMjEzIiB5MT0iMCIgeDE9IjMwIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgzNDApIiB5Mj0iMi4xMjEzIiB4Mj0iMzIuMTIxMyIgeTE9IjAiIHgxPSIzMCIvPgogICAgPGxpbmUgdHJhbnNmb3JtPSJyb3RhdGUoMzUwKSIgeTI9IjIuMTIxMyIgeDI9IjMyLjEyMTMiIHkxPSIwIiB4MT0iMzAiLz4KICA8L2c+Cjwvc3ZnPg=="
+      <image x="5" y="5"
+            xlink:href="data:image/svg+xml;base64,...（base64はそのまま）"
             preserveAspectRatio="none"/>
     </g>
   </g>
@@ -262,6 +262,10 @@ rect.key_side {
   y: -15px !important;   /* 上から中央へ */
   transform: translate(-8px, 30px) scale(6.0) !important;
 }
+.glyph.rotaryencoder svg {
+  transform: scale(1.5);  /* 1.5倍に拡大、必要に応じて調整 */
+  transform-origin: center;
+}  
 </style>
 <g transform="translate(56, 0)" class="layer-default">
 <text x="0" y="28" class="label" id="default">default:</text>
@@ -374,7 +378,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-20" y="-21" height="40" width="40.0" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold">↑↓</text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -562,7 +566,7 @@ rect.key_side {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-15" y="-12" height="22" width="30.49122807017544" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-28" y="-21" height="40" width="55.43859649122807" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
@@ -716,7 +720,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-20" y="-21" height="40" width="40.0" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 83%">CtlTab</tspan></text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -862,7 +866,7 @@ rect.key_side {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-15" y="-12" height="22" width="30.49122807017544" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-28" y="-21" height="40" width="55.43859649122807" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
@@ -982,7 +986,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-20" y="-21" height="40" width="40.0" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 83%">AltTab</tspan></text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -1146,7 +1150,7 @@ rect.key_side {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-15" y="-12" height="22" width="30.49122807017544" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-28" y="-21" height="40" width="55.43859649122807" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
@@ -1256,7 +1260,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-20" y="-21" height="40" width="40.0" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 83%">Volume</tspan></text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -1410,7 +1414,7 @@ rect.key_side {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-15" y="-12" height="22" width="30.49122807017544" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-28" y="-21" height="40" width="55.43859649122807" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
@@ -1500,7 +1504,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-20" y="-21" height="40" width="40.0" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 83%">CtlTab</tspan></text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -1642,7 +1646,7 @@ rect.key_side {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-15" y="-12" height="22" width="30.49122807017544" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-28" y="-21" height="40" width="55.43859649122807" class="key tap glyph trackball"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 62%">Pointing</tspan></text>
 </g>
 <g transform="translate(729, 231)" class="key keypos-43">
@@ -1745,7 +1749,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-20" y="-21" height="40" width="40.0" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold">←→</text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -1889,7 +1893,7 @@ rect.key_side {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-15" y="-12" height="22" width="30.49122807017544" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-28" y="-21" height="40" width="55.43859649122807" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
@@ -1979,7 +1983,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-20" y="-21" height="40" width="40.0" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold">←→</text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -2115,7 +2119,7 @@ rect.key_side {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-15" y="-12" height="22" width="30.49122807017544" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-28" y="-21" height="40" width="55.43859649122807" class="key tap glyph trackball"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 83%">Scroll</tspan></text>
 </g>
 <g transform="translate(729, 231)" class="key keypos-43">
