@@ -1,335 +1,46 @@
 layout: {zmk_keyboard: mona2}
 layers:
-  default:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: A, h: symbols}
-  - S
-  - D
-  - F
-  - G
-  - '&RE_scroll'
-  - ESC
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, h: scroll}
-  - {t: Z, h: ⇧}
-  - X
-  - C
-  - V
-  - B
-  - ⇧
-  - ⇧
-  - N
-  - M
-  - ','
-  - .
-  - {t: /, h: RIGHT SHIFT}
-  - Ctrl
-  - ⌘
-  - Alt
-  - {t: 無変換, h: Alt}
-  - {t: ␣, h: scroll}
-  - {t: JP HANZEN, h: funcs_numpad}
-  - ⌫
-  - {t: ⏎, h: arrow}
-  - '&TB_none'
-  - {t: DEL, h: RIGHT CONTROL}
-  symbols:
-  - '!'
-  - JP DQUOTE
-  - '#'
-  - $
-  - '%'
-  - JP LPAREN
-  - JP RPAREN
-  - '-'
-  - {t: JP CARET, s: JP TILDE}
-  - {t: ¥, s: JP PIPE}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - JP AMPERSAND
-  - '&RE_ctltab'
-  - JP QUOTE
-  - {t: JP LBRACKET, s: JP LBRACE}
-  - {t: JP RBRACKET, s: JP RBRACE}
-  - JP PLUS
-  - {t: JP AT, s: JP BACKQUOTE}
-  - {t: JP COLON, s: JP ASTERISK}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - DEL
-  - INS
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - JP UNDERSCORE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&TB_none'
-  - {t: ▽, type: trans}
-  funcs_numpad:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - JP ASTERISK
-  - '7'
-  - '8'
-  - '9'
-  - JP PLUS
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - '&RE_alttab'
-  - {t: ▽, type: trans}
-  - /
-  - '4'
-  - '5'
-  - '6'
-  - '-'
-  - F11
-  - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - MIC
-  - {t: ▽, type: trans}
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PRINTSCREEN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&TB_none'
-  - {t: ▽, type: trans}
-  arrow:
-  - {t: ▽, type: trans}
-  - Ctl+Sft+⇥
-  - PRINTSCREEN
-  - Ctl+⇥
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - ↑
-  - PAGE UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+←
-  - Gui+→
-  - Ctl+Gui+←
-  - Ctl+Gui+→
-  - '&RE_volume'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ←
-  - ↓
-  - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - Gui+Sft+←
-  - Gui+Sft+→
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - END
-  - ↓
-  - PAGE DOWN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - '&TB_none'
-  - {t: ▽, type: trans}
-  mouse:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&RE_ctltab'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB3'
-  - '&mkp MB2'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&TB_mouse'
-  - {t: ▽, type: trans}
-  bluetooth:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&RE_sidesc'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR ALL
-  - '1'
-  - '2'
-  - {t: '3', type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&TB_none'
-  - {t: ▽, type: trans}
-  scroll:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&RE_sidesc'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&TB_scroll'
-  - {t: ▽, type: trans}
+  default: ['&kp Q', '&kp W', '&kp E', '&kp R', '&kp T', '&kp Y', '&kp U', '&kp I', '&kp O', '&kp P', '&lt 1 A', '&kp S', '&kp D', '&kp F', '&kp G', '&RE_scroll',
+    '&kp ESC', '&kp H', '&kp J', '&kp K', '&kp L', '&lt 6 SEMICOLON', '&mt_exit_AML LSHIFT Z', '&kp X', '&kp C', '&kp V', '&kp B', '&kp LSHIFT', '&kp RSHIFT', '&kp
+      N', '&kp M', '&kp COMMA', '&kp PERIOD', '&mt RIGHT_SHIFT SLASH', '&kp LCTRL', '&kp LEFT_WIN', '&kp LEFT_ALT', '&mt_exit_AML LEFT_ALT INT_MUHENKAN', '&lt 6 SPACE',
+    '&lt 2 JP_HANZEN', '&kp BACKSPACE', '&lt 3 ENTER', '&TB_none', '&mt RIGHT_CONTROL DEL']
+  symbols: ['&kp EXCLAMATION', '&kp JP_DQUOTE', '&kp HASH', '&kp DOLLAR', '&kp PERCENT', '&kp JP_LPAREN', '&kp JP_RPAREN', '&kp MINUS', '&jis_CRT_TLD', '&jis_YEN_PIP',
+    '&trans', '&trans', '&trans', '&trans', '&kp JP_AMPERSAND', '&RE_ctltab', '&kp JP_QUOTE', '&jis_LBK_LBT', '&jis_RBK_RBT', '&kp JP_PLUS', '&jis_AT_BKQ', '&jis_CLN_AST',
+    '&trans', '&trans', '&trans', '&trans', '&trans', '&kp DEL', '&kp INSERT', '&trans', '&trans', '&kp JP_UNDERSCORE', '&trans', '&trans', '&trans', '&trans', '&trans',
+    '&trans', '&trans', '&trans', '&trans', '&trans', '&TB_none', '&trans']
+  funcs_numpad: ['&kp F1', '&kp F2', '&kp F3', '&kp F4', '&kp F5', '&kp JP_ASTERISK', '&kp N7', '&kp N8', '&kp N9', '&kp JP_PLUS', '&kp F6', '&kp F7', '&kp F8', '&kp
+      F9', '&kp F10', '&RE_alttab', '&trans', '&kp SLASH', '&kp N4', '&kp N5', '&kp N6', '&kp MINUS', '&kp F11', '&kp F12', '&trans', '&trans', '&trans', '&kp LG(LA(K))',
+    '&trans', '&kp N0', '&kp N1', '&kp N2', '&kp N3', '&kp N0', '&trans', '&trans', '&kp PRINTSCREEN', '&trans', '&trans', '&trans', '&trans', '&trans', '&TB_none',
+    '&trans']
+  arrow: ['&trans', '&kp LC(LS(TAB))', '&kp PRINTSCREEN', '&kp LC(TAB)', '&trans', '&trans', '&kp HOME', '&kp UP_ARROW', '&kp PAGE_UP', '&trans', '&trans', '&kp LG(LEFT_ARROW)',
+    '&kp LG(RIGHT_ARROW)', '&kp LC(LG(LEFT_ARROW))', '&kp LC(LG(RIGHT_ARROW))', '&RE_volume', '&trans', '&trans', '&kp LEFT_ARROW', '&kp DOWN_ARROW', '&kp RIGHT_ARROW',
+    '&trans', '&trans', '&kp LEFT_SHIFT', '&kp LG(LS(LEFT_ARROW))', '&kp LG(LS(RIGHT_ARROW))', '&trans', '&trans', '&trans', '&trans', '&kp END', '&kp DOWN_ARROW',
+    '&kp PAGE_DOWN', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&TB_none', '&trans']
+  mouse: ['&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&RE_ctltab',
+    '&trans', '&trans', '&mkp MB1', '&mkp MB3', '&mkp MB2', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans',
+    '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&TB_mouse', '&trans']
+  bluetooth: ['&trans', '&trans', '&trans', '&trans', '&trans', '&bt BT_SEL 0', '&bt BT_SEL 1', '&bt BT_SEL 2', '&bt BT_SEL 3', '&bt BT_SEL 4', '&bt BT_CLR', '&trans',
+    '&trans', '&trans', '&trans', '&RE_sidesc', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&bt BT_CLR_ALL', '&kp N1', '&kp N2', '&kp N3', '&trans',
+    '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&TB_none',
+    '&trans']
+  scroll: ['&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&RE_sidesc',
+    '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans',
+    '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&trans', '&TB_scroll', '&trans']
 combos:
 - p: [0, 1]
-  k: ESC
+  k: '&kp ESC'
   l: [default]
 - p: [1, 2]
-  k: ⇥
+  k: '&kp TAB'
   l: [default]
 - p: [2, 3]
-  k: Sft+⇥
+  k: '&kp LS(TAB)'
   l: [default]
 - p: [25, 35]
-  k: {t: Alt+B, h: bluetooth}
+  k: '&lt 5 LA(B)'
   l: [default]
 - p: [7, 8]
-  k: '-'
+  k: '&kp MINUS'
   l: [default]
 - p: [6, 7]
   k: '&copy_line'
