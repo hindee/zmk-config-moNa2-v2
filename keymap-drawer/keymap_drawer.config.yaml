@@ -188,10 +188,36 @@ draw_config:
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
   use_local_cache: true
   behaviors:
-    trackball:
-      glyph: trackball
-    renc:
+    RE_scroll:
       glyph: rotaryencoder
+      tap: "↑↓"
+
+    RE_alttab:
+      glyph: rotaryencoder
+      tap: "AltTab"
+
+    RE_volume:
+      glyph: rotaryencoder
+      tap: "Volume"
+
+    RE_ctltab:
+      glyph: rotaryencoder
+      tap: "CtlTab"
+
+    RE_sidesc:
+      glyph: rotaryencoder
+      tap: "←→"
+    TB_none:
+      glyph: trackball
+      tap: ""
+
+    TB_mouse:
+      glyph: trackball
+      tap: "Pointing"
+
+    TB_scroll:
+      glyph: trackball
+      tap: "Scroll"
   
 parse_config:
   preprocess: false
@@ -277,14 +303,14 @@ parse_config:
     #'&RE_alttab': {glyph: "rotaryencoder", t: "AltTab"}
     #'&TB_mouse': {glyph: "trackball", t: "Pointing"}
 
-    '&TB_none': {glyph: 'trackball', t: ""}
-    '&TB_mouse': {glyph: 'trackball', t: "Pointing"}
-    '&TB_scroll': {glyph: 'trackball', t: "Scroll"}
-    '&RE_scroll': {glyph: rotaryencoder, t: "↑↓"}
-    '&RE_alttab': {glyph: rotaryencoder, t: "AltTab"}
-    '&RE_volume': {glyph: rotaryencoder, t: "Volume"}
-    '&RE_ctltab': {glyph: rotaryencoder, t: "CtlTab"}
-    '&RE_sidesc': {glyph: rotaryencoder, t: "←→"}
+    # '&TB_none': {glyph: 'trackball', t: ""}
+    # '&TB_mouse': {glyph: 'trackball', t: "Pointing"}
+    # '&TB_scroll': {glyph: 'trackball', t: "Scroll"}
+    # '&RE_scroll': {glyph: rotaryencoder, t: "↑↓"}
+    # '&RE_alttab': {glyph: rotaryencoder, t: "AltTab"}
+    # '&RE_volume': {glyph: rotaryencoder, t: "Volume"}
+    # '&RE_ctltab': {glyph: rotaryencoder, t: "CtlTab"}
+    # '&RE_sidesc': {glyph: rotaryencoder, t: "←→"}
   # You can further customize combo positions, glyphs, etc. below as needed
   # zmk_combos: {}
   # Example: combo_tab: { align: top, o: 0.1, arc_scale: 1.03 }
