@@ -221,7 +221,7 @@ draw_config:
   
 parse_config:
   preprocess: false
-  skip_binding_parsing: false
+  skip_binding_parsing: true
   sticky_label: sticky
   toggle_label: $$mdi:toggle-switch$$
   trans_legend:
