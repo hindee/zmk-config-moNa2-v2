@@ -203,26 +203,18 @@ rect.key_side {
   stroke-width: 2.0;
 }
 /* トラックボール専用：キー枠非表示 + use要素直接拡大 */
-/*.keypos-15 rect.key, 
-.keypos-15 rect.key_side,*/
+.keypos-15 rect.key, 
+.keypos-15 rect.key_side,
 .keypos-42 rect.key, 
 .keypos-42 rect.key_side {
   display: none !important;
 }
-/*.keypos-42 use[href="#trackball"] {
+.keypos-42 use[href="#trackball"] {
   width: 185px !important;
   height: 158px !important;
   x: 0px !important;   /* 左から中央へ */
   y: -15px !important;   /* 上から中央へ */
-
   transform: translate(-8px, 30px) scale(6.0) !important;
-}*/
-.keypos-42 use[href="#trackball"] {
-  width: 100% !important;       /* キー枠にフィット */
-  height: 100% !important;
-  x: 0 !important;
-  y: 0 !important;
-  transform: none !important;   /* 変形なし */
 }
 </style>
 <g transform="translate(56, 0)" class="layer-default">
