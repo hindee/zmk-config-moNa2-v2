@@ -4,7 +4,7 @@
 <svg xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
    
-    viewBox="-0.5 -1.5 60 60">
+    viewBox="0 0 60  80">
   <g>
     <g style="filter: drop-shadow(light-dark(rgba(0, 0, 0, 0.25), rgba(237, 237, 237, 0.25)) 2px 3px 2px);">
       <image x="3.5" y="3.5"
@@ -374,7 +374,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-11" y="-12" height="22" width="22.0" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold">↑↓</text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -716,7 +716,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-11" y="-12" height="22" width="22.0" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 83%">CtlTab</tspan></text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -982,7 +982,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-11" y="-12" height="22" width="22.0" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 83%">AltTab</tspan></text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -1256,7 +1256,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-11" y="-12" height="22" width="22.0" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 83%">Volume</tspan></text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -1500,7 +1500,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-11" y="-12" height="22" width="22.0" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 83%">CtlTab</tspan></text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -1745,7 +1745,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-11" y="-12" height="22" width="22.0" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold">←→</text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
@@ -1979,7 +1979,7 @@ rect.key_side {
 <g transform="translate(309, 112)" class="key keypos-15">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-11" y="-12" height="22" width="22.0" class="key tap glyph rotaryencoder"/>
+<use href="#rotaryencoder" xlink:href="#rotaryencoder" x="-8" y="-12" height="22" width="16.5" class="key tap glyph rotaryencoder"/>
 <text x="0" y="24" class="key hold">←→</text>
 </g>
 <g transform="translate(448, 112)" class="key keypos-16">
