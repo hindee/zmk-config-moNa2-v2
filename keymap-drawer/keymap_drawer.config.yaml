@@ -148,8 +148,8 @@ draw_config:
   shrink_wide_legends: 5
 
   glyph_tap_size: 40
-  glyph_hold_size: 30
-  glyph_shifted_size: 30
+  glyph_hold_size: 20
+  glyph_shifted_size: 15
   glyphs: 
     trackball: |
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="158" height="114" viewBox="-0.5 -0.5 158 114">
