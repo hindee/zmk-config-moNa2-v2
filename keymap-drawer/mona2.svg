@@ -255,6 +255,11 @@ rect.key_side {
 .keypos-42 rect.key_side {
   display: none !important;
 }
+.keypos-15 use[href="#rotaryencoder"] {
+  x: 0px !important;
+  y: 0px !important;
+  transform: translate(-8px, 30px) scale(1.0) !important;
+}
 .keypos-42 use[href="#trackball"] {
   width: 185px !important;
   height: 158px !important;
