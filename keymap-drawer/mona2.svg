@@ -271,11 +271,11 @@ rect.key_side {
   width: 185px !important;
   height: 158px !important;
   x: 5px !important;   /* 左から中央へ */
-  y: -65px !important;   /* 上から中央へ */
+  y: -35px !important;   /* 上から中央へ */
   transform: translate(-8px, 30px) scale(1.8) !important;
 }
 .glyph.rotaryencoder svg {
-  x: -25px !important;
+  x: -30px !important;
   y: -15px !important;
   transform: scale(1.0) !important;  /* 1.5倍に拡大、必要に応じて調整 */
   transform-origin: center;
