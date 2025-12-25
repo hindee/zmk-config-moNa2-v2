@@ -117,6 +117,11 @@ draw_config:
       y: -15px !important;   /* 上から中央へ */
       transform: translate(-8px, 30px) scale(2.0) !important;
     }
+    /* トラックボール内のパスと円にはCSSのfillを適用せず、SVG内のfill属性を優先させる */
+    .keypos-42 use[href="#trackball"] path,
+    .keypos-42 use[href="#trackball"] ellipse {
+      fill: inherit !important;
+    }
     .glyph.rotaryencoder svg {
       x: -5px !important;
       transform: scale(2.0);  /* 1.5倍に拡大、必要に応じて調整 */
