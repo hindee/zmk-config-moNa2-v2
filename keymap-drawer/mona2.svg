@@ -290,9 +290,10 @@ rect.key_side {
 
 /* トラックボール(42)のレジェンド位置調整 */
 .keypos-42 text.hold {
+  fill: #FF0000 !important;
   display: block !important;
-  transform: translateX(25px) !important; /* 画像に被るよう上に移動 */
-  transform: translateY(25px) !important; /* 画像に被るよう上に移動 */
+  transform: translateX(0px) !important; /* 画像に被るよう上に移動 */
+  transform: translateY(0px) !important; /* 画像に被るよう上に移動 */
 }
 
 /* ロータリーエンコーダーのレジェンド位置調整 */
