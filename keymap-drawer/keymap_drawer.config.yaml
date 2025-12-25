@@ -154,7 +154,7 @@ draw_config:
 
     /* ロータリーエンコーダーのレジェンド位置調整 */
     .keypos-15 text.hold {
-      transform: translateY(-20px) !important; /* 「下すぎる」のを解消するため上に持ち上げる */
+      transform: translateY(-23px) !important; /* 「下すぎる」のを解消するため上に持ち上げる */
     }
 
   legend_font_size: 12
