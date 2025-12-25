@@ -125,7 +125,7 @@ draw_config:
       x: 0px !important;
       y: 0px !important;
       transform:
-        translate(-10px, -10px) !important;
+        translate(-20px, -15px) !important;
         scale(0.7) !important;
       transform-origin: center !important;
     }    
