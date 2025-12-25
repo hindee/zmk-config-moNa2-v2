@@ -215,8 +215,8 @@ draw_config:
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
   use_local_cache: true
 parse_config:
-  preprocess: false
-  skip_binding_parsing: true
+  preprocess: true
+  skip_binding_parsing: false
   sticky_label: sticky
   toggle_label: $$mdi:toggle-switch$$
   trans_legend:
