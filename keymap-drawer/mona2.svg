@@ -321,7 +321,7 @@ rect.key_side {
   x: 0px !important;
   y: 0px !important;
   transform:
-    translate(10px, 30px);
+    translate(0px, 0px);
     scale(1.0) !important;
   transform-origin: center !important;
 }    
