@@ -3,10 +3,10 @@
 <svg id="rotaryencoder">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 60 60">
   <!-- 外円（金色） -->
-  <circle cx="30" cy="30" r="29.8" fill="#FFDF80" stroke="#FDD667" stroke-width="0.4"/>
+  <circle cx="30" cy="30" r="29.8" fill="#FFDF80" stroke="#FDFDFD" stroke-width="0.4"/>
 
   <!-- 36本の回転ライン -->
-  <g stroke-linecap="round" stroke-width="1.5" stroke="#FDD667" stroke-linejoin="round">
+  <g stroke-linecap="round" stroke-width="1.5" stroke="#FDFDFD" stroke-linejoin="round">
     <line transform="rotate(0 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
     <line transform="rotate(10 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
     <line transform="rotate(20 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
@@ -350,7 +350,7 @@ svg.keymap .keypos-15 rect.key_side {
 
 /* ロータリーエンコーダーのレジェンド位置調整 */
 .keypos-15 text.hold {
-  transform: translateY(-23px) !important; /* 「下すぎる」のを解消するため上に持ち上げる */
+  transform: translateY(-26px) !important; /* 「下すぎる」のを解消するため上に持ち上げる */
 }
 </style>
 <g transform="translate(56, 0)" class="layer-default">
