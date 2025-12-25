@@ -124,6 +124,7 @@ draw_config:
     }
     .glyph.rotaryencoder svg {
       x: -15px !important;
+      y: -10px !important;
       transform: scale(1.5) !important;  /* 1.5倍に拡大、必要に応じて調整 */
       transform-origin: center;
     }  
@@ -153,8 +154,8 @@ draw_config:
   glyph_line_spacing: 1.1
   shrink_wide_legends: 5
 
-  glyph_tap_size: 40
-  glyph_hold_size: 20
+  glyph_tap_size: 60
+  glyph_hold_size: 60
   glyph_shifted_size: 15
   glyphs: 
     trackball: |
