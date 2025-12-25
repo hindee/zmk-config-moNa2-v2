@@ -159,30 +159,19 @@ draw_config:
   glyphs: 
     trackball: |
       <svg xmlns="www.w3.org" width="158" height="114" viewBox="-0.5 -0.5 158 114">
-        <defs>
-          <linearGradient id="tbgrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#33CC33"/>
-            <stop offset="100%" stop-color="#B3FF66"/>
-          </linearGradient>
-          <linearGradient id="tbgrad2" x1="100%" y1="0%" x2="0%" y2="0%">
-            <stop offset="0%" stop-color="#DADADA"/>
-            <stop offset="100%" stop-color="#FDFDFD"/>
-          </linearGradient>
-          <linearGradient id="tbgrad3" x1="0%" y1="100%" x2="0%" y2="0%">
-            <stop offset="0%" stop-color="#DADADA"/>
-            <stop offset="100%" stop-color="#FFFFFF"/>
-          </linearGradient>
-          <linearGradient id="tbgrad4" x1="100%" y1="0%" x2="0%" y2="0%">
-            <stop offset="0%" stop-color="#DADADA"/>
-            <stop offset="100%" stop-color="#FFFFFF"/>
-          </linearGradient>
-        </defs>
         <g>
-          <!-- すべての fill を style="..." !important に書き換えています -->
-          <ellipse cx="56" cy="56" rx="40" ry="40" style="fill:url(#tbgrad1) !important;" transform="rotate(225,56,56)"/>
-          <path d="M 101 21 L 141 21 L 161 37 L 161 91 L 81 91 L 81 37 Z" style="fill:url(#tbgrad2) !important; stroke:#fcfcfc !important;" transform="rotate(90,121,56)"/>
-          <path d="M 87 15 L 107 15 Q 67 55 107 95 L 87 95 Q 47 55 87 15 Z" style="fill:url(#tbgrad3) !important;"/>
-          <path d="M 86 26 L 126 26 L 126 26 L 126 86 L 86 86 L 86 26 Z" style="fill:url(#tbgrad4) !important;" transform="rotate(90,106,56)"/>
+          <!-- 左側のボール：鮮やかな緑 -->
+          <ellipse cx="56" cy="56" rx="40" ry="40" fill="#7ed321" stroke="none" transform="rotate(225,56,56)"/>
+          
+          <!-- 右側のパーツ：グラデーションの代わりに明るいグレー（#f0f0f0）を使用 -->
+          <!-- ここが黒くなるのを防ぐため、fill属性で直接指定 -->
+          <path d="M 101 21 L 141 21 L 161 37 L 161 91 L 81 91 L 81 37 Z" fill="#e0e0e0" stroke="#cccccc" transform="rotate(90,121,56)"/>
+          
+          <!-- 中央のハイライト：少し明るいグレー -->
+          <path d="M 87 15 L 107 15 Q 67 55 107 95 L 87 95 Q 47 55 87 15 Z" fill="#f5f5f5" stroke="none"/>
+          
+          <!-- 重なりパーツ：中間のグレー -->
+          <path d="M 86 26 L 126 26 L 126 26 L 126 86 L 86 86 L 86 26 Z" fill="#d0d0d0" stroke="none" transform="rotate(90,106,56)"/>
         </g>
       </svg>
     rotaryencoder: |
