@@ -292,8 +292,8 @@ rect.key_side {
 .keypos-42 text.hold {
   fill: #FF0000 !important;
   display: block !important;
-  transform: translateX(0px) !important; /* 画像に被るよう上に移動 */
-  transform: translateY(0px) !important; /* 画像に被るよう上に移動 */
+  transform: translateX(-50px) !important; /* 画像に被るよう上に移動 */
+  transform: translateY(-50px) !important; /* 画像に被るよう上に移動 */
 }
 
 /* ロータリーエンコーダーのレジェンド位置調整 */
