@@ -123,7 +123,27 @@ draw_config:
       transform: scale(1.0) !important;  /* 1.5倍に拡大、必要に応じて調整 */
       transform-origin: center;
     }  
-   
+    /* トラックボール(42)とエンコーダー(37-41)のレジェンド共通設定 */
+    .keypos-37 text.hold, .keypos-38 text.hold, .keypos-39 text.hold, 
+    .keypos-40 text.hold, .keypos-41 text.hold, .keypos-42 text.hold {
+      fill: #FFFFFF !important;    /* 背景が暗いので白文字に設定（必要に応じて変更） */
+      font-size: 16px !important;  /* 見やすい大きさに */
+      font-weight: bold !important;
+      pointer-events: none;        /* 画像のクリックを邪魔しない */
+    }
+
+    /* トラックボール(42)のレジェンド位置調整 */
+    .keypos-42 text.hold {
+      display: block !important;
+      transform: translateY(-25px) !important; /* 画像に被らないよう上に移動 */
+    }
+
+    /* ロータリーエンコーダー(37-41)のレジェンド位置調整 */
+    .keypos-37 text.hold, .keypos-38 text.hold, .keypos-39 text.hold, 
+    .keypos-40 text.hold, .keypos-41 text.hold {
+      transform: translateY(-20px) !important; /* 「下すぎる」のを解消するため上に持ち上げる */
+    }
+
   legend_font_size: 12
   legend_hold_font_size: 10
   legend_shifted_font_size: 10
