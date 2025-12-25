@@ -314,8 +314,8 @@ rect.key_side {
 
 /* ロータリーエンコーダー完全制御（SVG構造対応版） */
 .keypos-15 use[href="#rotaryencoder"] {
-  x: 0px !important;      /* -30 → 0で右30px移動 */
-  y: 0px !important;      /* -31 → 0で下31px移動 */
+  x: -10px !important;      /* -30 → 0で右30px移動 */
+  y: -10px !important;      /* -31 → 0で下31px移動 */
   width: 58px !important; /* キーぴったり */
   height: 54px !important;
   transform: scale(1.0) !important; /* 中央配置 */
