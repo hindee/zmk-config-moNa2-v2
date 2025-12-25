@@ -116,28 +116,28 @@ draw_config:
       transform: translate(-8px, 30px) scale(1.8) !important;
     }
   
-/* ロータリーエンコーダー完全制御（SVG構造対応版） */
-.keypos-15 use[href="#rotaryencoder"] {
-  x: 0px !important;      /* -30 → 0で右30px移動 */
-  y: 0px !important;      /* -31 → 0で下31px移動 */
-  width: 58px !important; /* キーぴったり */
-  height: 54px !important;
-  transform: scale(1.0) !important; /* 中央配置 */
-}
+    /* ロータリーエンコーダー完全制御（SVG構造対応版） */
+    .keypos-15 use[href="#rotaryencoder"] {
+      x: 0px !important;      /* -30 → 0で右30px移動 */
+      y: 0px !important;      /* -31 → 0で下31px移動 */
+      width: 58px !important; /* キーぴったり */
+      height: 54px !important;
+      transform: scale(1.0) !important; /* 中央配置 */
+    }
 
-/* キー枠非表示 */
-.keypos-15 rect.key,
-.keypos-15 rect.key_side {
-  display: none !important;
-}
+    /* キー枠非表示 */
+    .keypos-15 rect.key,
+    .keypos-15 rect.key_side {
+      display: none !important;
+    }
 
-/* キー枠完全非表示 */
-svg.keymap g.key.keypos-15 rect.key,
-svg.keymap .keypos-15 rect.key,
-svg.keymap g.key.keypos-15 rect.key_side,
-svg.keymap .keypos-15 rect.key_side {
-  display: none !important;
-}
+    /* キー枠完全非表示 */
+    svg.keymap g.key.keypos-15 rect.key,
+    svg.keymap .keypos-15 rect.key,
+    svg.keymap g.key.keypos-15 rect.key_side,
+    svg.keymap .keypos-15 rect.key_side {
+      display: none !important;
+    }
     /* トラックボールとエンコーダーのレジェンド共通設定 */
     .keypos-15 text.hold, .keypos-42 text.hold {
       fill: #000000 !important;
