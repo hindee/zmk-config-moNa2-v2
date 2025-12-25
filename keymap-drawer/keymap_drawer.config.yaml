@@ -122,8 +122,8 @@ draw_config:
     .keypos-15 use[href="#rotaryencoder"] {
       width: 60px !important;
       height: 56px !important;
-      x: 10px !important;
-      y: 30px !important;
+      x: 50px !important;
+      y: 130px !important;
       transform: scale(1.0) !important;
       transform-origin: center !important;
     }    
