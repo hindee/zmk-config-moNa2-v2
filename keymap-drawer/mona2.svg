@@ -350,7 +350,7 @@ svg.keymap .keypos-15 rect.key_side {
 
 /* ロータリーエンコーダーのレジェンド位置調整 */
 .keypos-15 text.hold {
-  transform: translateY(-20px) !important; /* 「下すぎる」のを解消するため上に持ち上げる */
+  transform: translateY(-23px) !important; /* 「下すぎる」のを解消するため上に持ち上げる */
 }
 </style>
 <g transform="translate(56, 0)" class="layer-default">
