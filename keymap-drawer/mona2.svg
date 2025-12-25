@@ -312,15 +312,27 @@ rect.key_side {
   transform: translate(-8px, 30px) scale(1.8) !important;
 }
 
-/* ロータリーエンコーダー(keypos-15)をキーサイズに拡大・中央配置 */
-.keypos-15 rect.key, .keypos-15 rect.key_side { display: none !important; }
+/* ロータリーエンコーダー完全制御（SVG構造対応版） */
 .keypos-15 use[href="#rotaryencoder"] {
-  width: 60px !important;
-  height: 56px !important;
-  x: 0 !important;
-  y: 0 !important;
-  transform: translate(0px, 0px) scale(0.8) !important;  /* 1行必須！左上微調整 */
-  transform-origin: center !important;
+  x: 0px !important;      /* -30 → 0で右30px移動 */
+  y: 0px !important;      /* -31 → 0で下31px移動 */
+  width: 58px !important; /* キーぴったり */
+  height: 54px !important;
+  transform: scale(1.0) !important; /* 中央配置 */
+}
+
+/* キー枠非表示 */
+.keypos-15 rect.key,
+.keypos-15 rect.key_side {
+  display: none !important;
+}
+
+/* キー枠完全非表示 */
+svg.keymap g.key.keypos-15 rect.key,
+svg.keymap .keypos-15 rect.key,
+svg.keymap g.key.keypos-15 rect.key_side,
+svg.keymap .keypos-15 rect.key_side {
+  display: none !important;
 }
 /* トラックボールとエンコーダーのレジェンド共通設定 */
 .keypos-15 text.hold, .keypos-42 text.hold {
