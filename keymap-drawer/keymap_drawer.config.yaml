@@ -114,7 +114,7 @@ draw_config:
       width: 185px !important;
       height: 158px !important;
       x: 5px !important;   /* 左から中央へ */
-      y: -40px !important;   /* 上から中央へ */
+      y: -45px !important;   /* 上から中央へ */
       transform: translate(-8px, 30px) scale(1.8) !important;
     }
     .glyph.rotaryencoder svg {
