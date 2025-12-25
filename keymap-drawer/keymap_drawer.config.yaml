@@ -122,9 +122,11 @@ draw_config:
     .keypos-15 use[href="#rotaryencoder"] {
       width: 60px !important;
       height: 56px !important;
-      x: 50px !important;
-      y: 130px !important;
-      transform: scale(1.0) !important;
+      x: 0px !important;
+      y: 0px !important;
+      transform:
+        translate(20px, 40px);
+        scale(1.0) !important;
       transform-origin: center !important;
     }    
     /* トラックボール(42)とエンコーダー(37-41)のレジェンド共通設定 */
