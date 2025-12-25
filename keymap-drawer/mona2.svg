@@ -300,8 +300,6 @@ rect.key_side {
   stroke-width: 2.0;
 }
 /* トラックボール専用：キー枠非表示 + use要素直接拡大 */
-.keypos-15 rect.key, 
-.keypos-15 rect.key_side,
 .keypos-42 rect.key, 
 .keypos-42 rect.key_side {
   display: none !important;
@@ -315,6 +313,7 @@ rect.key_side {
 }
 
 /* ロータリーエンコーダー(keypos-15)をキーサイズに拡大・中央配置 */
+.keypos-15 rect.key, .keypos-15 rect.key_side { display: none !important; }
 .keypos-15 use[href="#rotaryencoder"] {
   width: 60px !important;
   height: 56px !important;
