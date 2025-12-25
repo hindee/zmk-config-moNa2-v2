@@ -176,7 +176,7 @@ svg.keymap {
   font-size: 14px;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  fill: #000000;
+  text { fill: #000000; }
 }
 /* キーキャップの色と枠線 */
 rect.key {
