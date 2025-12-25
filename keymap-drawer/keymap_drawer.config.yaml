@@ -119,13 +119,12 @@ draw_config:
     }
   
     /* ロータリーエンコーダー(keypos-15)をキーサイズに拡大・中央配置 */
-    .keypos-15 rect.key, .keypos-15 rect.key_side { display: none !important; }
     .keypos-15 use[href="#rotaryencoder"] {
       width: 60px !important;
       height: 56px !important;
-      x: 0px !important;
-      y: -2px !important;
-      transform: scale(1.1) !important;
+      x: 10px !important;
+      y: 30px !important;
+      transform: scale(1.0) !important;
       transform-origin: center !important;
     }    
     /* トラックボール(42)とエンコーダー(37-41)のレジェンド共通設定 */
