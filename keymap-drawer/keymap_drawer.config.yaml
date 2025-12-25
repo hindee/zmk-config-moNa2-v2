@@ -125,8 +125,8 @@ draw_config:
       x: 0px !important;
       y: 0px !important;
       transform:
-        translate(-5px, -5px) !important;
-        scale(0.8) !important;
+        translate(-10px, -10px) !important;
+        scale(0.7) !important;
       transform-origin: center !important;
     }    
     /* トラックボール(42)とエンコーダー(37-41)のレジェンド共通設定 */
