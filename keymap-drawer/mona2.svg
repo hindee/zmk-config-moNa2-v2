@@ -235,7 +235,7 @@ rect.key_side {
   height: 158px !important;
   x: 0px !important;   /* 左から中央へ */
   y: -35px !important;   /* 上から中央へ */
-  transform: translate(-8px, 30px) scale(2.5) !important;
+  transform: translate(-8px, 30px) scale(2.8) !important;
 }
 /* トラックボール内のパスと円にはCSSのfillを適用せず、SVG内のfill属性を優先させる */
 .keypos-42 use[href="#trackball"] path,
@@ -243,8 +243,8 @@ rect.key_side {
   fill: inherit !important;
 }
 .glyph.rotaryencoder svg {
-  x: -5px !important;
-  transform: scale(2.0);  /* 1.5倍に拡大、必要に応じて調整 */
+  x: -15px !important;
+  transform: scale(2.5);  /* 1.5倍に拡大、必要に応じて調整 */
   transform-origin: center;
 }  
 </style>
