@@ -16,30 +16,31 @@
 
 </svg>
 <svg id="trackball">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-0.5 -0.5 158 114">
+<svg xmlns="www.w3.org" viewBox="-0.5 -0.5 158 114">
   <defs>
-    <linearGradient id="tbgrad1-unique" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="tbgrad1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#33CC33"/>
       <stop offset="100%" stop-color="#B3FF66"/>
     </linearGradient>
-    <linearGradient id="tbgrad2-unique" x1="100%" y1="0%" x2="0%" y2="0%">
+    <linearGradient id="tbgrad2" x1="100%" y1="0%" x2="0%" y2="0%">
       <stop offset="0%" stop-color="#DADADA"/>
       <stop offset="100%" stop-color="#FDFDFD"/>
     </linearGradient>
-    <linearGradient id="tbgrad3-unique" x1="0%" y1="100%" x2="0%" y2="0%">
+    <linearGradient id="tbgrad3" x1="0%" y1="100%" x2="0%" y2="0%">
       <stop offset="0%" stop-color="#DADADA"/>
       <stop offset="100%" stop-color="#FFFFFF"/>
     </linearGradient>
-    <linearGradient id="tbgrad4-unique" x1="100%" y1="0%" x2="0%" y2="0%">
+    <linearGradient id="tbgrad4" x1="100%" y1="0%" x2="0%" y2="0%">
       <stop offset="0%" stop-color="#DADADA"/>
       <stop offset="100%" stop-color="#FFFFFF"/>
     </linearGradient>
   </defs>
   <g>
-    <ellipse cx="56" cy="56" rx="40" ry="40" fill="url(#tbgrad1-unique)" stroke="none" transform="rotate(225,56,56)"/>
-    <path d="M 101 21 L 141 21 L 161 37 L 161 91 L 81 91 L 81 37 Z" fill="url(#tbgrad2-unique)" stroke="#fcfcfc" stroke-miterlimit="10" transform="rotate(90,121,56)"/>
-    <path d="M 87 15 L 107 15 Q 67 55 107 95 L 87 95 Q 47 55 87 15 Z" fill="url(#tbgrad3-unique)" stroke="none"/>
-    <path d="M 86 26 L 126 26 L 126 26 L 126 86 L 86 86 L 86 26 Z" fill="url(#tbgrad4-unique)" stroke="none" transform="rotate(90,106,56)"/>
+    <!-- すべての fill を style="..." !important に書き換えています -->
+    <ellipse cx="56" cy="56" rx="40" ry="40" style="fill:url(#tbgrad1) !important;" transform="rotate(225,56,56)"/>
+    <path d="M 101 21 L 141 21 L 161 37 L 161 91 L 81 91 L 81 37 Z" style="fill:url(#tbgrad2) !important; stroke:#fcfcfc !important;" transform="rotate(90,121,56)"/>
+    <path d="M 87 15 L 107 15 Q 67 55 107 95 L 87 95 Q 47 55 87 15 Z" style="fill:url(#tbgrad3) !important;"/>
+    <path d="M 86 26 L 126 26 L 126 26 L 126 86 L 86 86 L 86 26 Z" style="fill:url(#tbgrad4) !important;" transform="rotate(90,106,56)"/>
   </g>
 </svg>
 
@@ -259,8 +260,8 @@ rect.key_side {
   width: 185px !important;
   height: 158px !important;
   x: 0px !important;   /* 左から中央へ */
-  y: -15px !important;   /* 上から中央へ */
-  transform: translate(-8px, 30px) scale(2.0) !important;
+  y: -35px !important;   /* 上から中央へ */
+  transform: translate(-8px, 30px) scale(2.5) !important;
 }
 /* トラックボール内のパスと円にはCSSのfillを適用せず、SVG内のfill属性を優先させる */
 .keypos-42 use[href="#trackball"] path,
