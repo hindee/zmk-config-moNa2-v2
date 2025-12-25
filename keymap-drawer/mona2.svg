@@ -319,7 +319,7 @@ rect.key_side {
   height: 56px !important;
   x: 0 !important;
   y: 0 !important;
-  transform: translate(0px, 0px) scale(0.8) !important;  /* 1行必須！左上微調整 */
+  transform: translate(5px, 5px) scale(0.8) !important;  /* 1行必須！左上微調整 */
   transform-origin: center !important;
 }
 /* トラックボールとエンコーダーのレジェンド共通設定 */
