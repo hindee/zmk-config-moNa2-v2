@@ -126,7 +126,7 @@ draw_config:
     /* トラックボール(42)とエンコーダー(37-41)のレジェンド共通設定 */
     .keypos-15 text.hold, .keypos-42 text.hold {
       fill: #000000 !important;
-      font-size: 16px !important;
+      font-size: 12px !important;
       font-weight: bold !important;
       pointer-events: none;
     }
@@ -134,7 +134,7 @@ draw_config:
     /* トラックボール(42)のレジェンド位置調整 */
     .keypos-42 text.hold {
       display: block !important;
-      transform: translateY(-25px) !important; /* 画像に被らないよう上に移動 */
+      transform: translateY(-45px) !important; /* 画像に被るよう上に移動 */
     }
 
     /* ロータリーエンコーダーのレジェンド位置調整 */
