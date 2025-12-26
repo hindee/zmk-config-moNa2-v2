@@ -157,11 +157,8 @@ draw_config:
   # ----- Embedded glyphs -----
   glyphs:
     trackball: |
-      <svg xmlns="http://www.w3.org/2000/svg"
-           xmlns:xlink="http://www.w3.org/1999/xlink"
-           version="1.1"
-           width="158px" height="114px"
-           viewBox="-0.5 -0.5 158 114">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1" width="158px" height="114px" viewBox="-0.5 -0.5 158 114">
         <defs>
           <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stop-color="#33CC33"/>
@@ -180,17 +177,16 @@ draw_config:
             <stop offset="100%" stop-color="#FFFFFF"/>
           </linearGradient>
         </defs>
-
         <g>
           <ellipse cx="56" cy="56" rx="40" ry="40"
-                   fill="url(#grad1)" stroke="none" transform="rotate(225,56,56)"/>
+            fill="url(#grad1)" stroke="none" transform="rotate(225,56,56)"/>
           <path d="M101 21 L141 21 L161 37 L161 91 L81 91 L81 37 Z"
-                fill="url(#grad2)" stroke="#fcfcfc" stroke-miterlimit="10"
-                transform="rotate(90,121,56)"/>
+            fill="url(#grad2)" stroke="#fcfcfc" stroke-miterlimit="10"
+            transform="rotate(90,121,56)"/>
           <path d="M87 15 L107 15 Q67 55 107 95 L87 95 Q47 55 87 15 Z"
-                fill="url(#grad3)" stroke="none"/>
-          <path d="M86 26 L126 26 L126 26 L126 86 L86 86 L86 26 Z"
-                fill="url(#grad4)" stroke="none" transform="rotate(90,106,56)"/>
+            fill="url(#grad3)" stroke="none"/>
+          <path d="M86 26 L126 26 L126 86 L86 86 Z"
+            fill="url(#grad4)" stroke="none" transform="rotate(90,106,56)"/>
         </g>
       </svg>
 
