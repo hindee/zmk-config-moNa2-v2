@@ -162,7 +162,8 @@ draw_config:
         xmlns:xlink="http://www.w3.org/1999/xlink"
         version="1.1"
         width="158px" height="114px"
-        viewBox="-0.5 -0.5 158 114">
+        viewBox="-0.5 -0.5 158 114"
+        content="&lt;mxfile&gt;&lt;diagram id=&quot;IzWpLS8StjbBiPwjM_Oz&quot; name=&quot;ページ1&quot;&gt;tZbBbqMwEIafBqk9rBQwIe2xgdA9tKcc9mzFDlg1DDJOIX36HYPdQAhKKqWxFNn/eMD+P48Tj8RF+6polb8D49ILFqz1SOIFwdMixG8jHHthuYp6IVOC9ZJ/Erbii1txYdWDYLweTdQAUotqLO6gLPlOjzSqFDTjaXuQ47dWNOMTYbujcqr+E0zndlvB6qT/5SLL3Zv96LmPFNRNtjupc8qgGUhk45FYAei+V7Qxl8Y750ufl85EvxemeKlvSQj6hE8qD3Zvdl366DaLCegrDtZNLjTfVnRnIg2SRS3XhcSRj11aV73Ze9FyfP56L6SMQYJCTRo7/jCqPh68gBASx4R4QYz9TWLaI87PFGUCF+5yMLgmaRpFGKu1gg/uIiWUfJCQCIVvFlBiiNMa17BmA6nhnaRAU6uESxxPvbL2fXKleTuQrHevHAqu1RGn2ChZWY72IAeRHTeDY2GlfHAinEbtQcy+n3xihR2L6zI6ch0dnq7KdCVA9SYKoa9DHPpWw8Fs4sx7pJLGpp0RRj15Me0yyTQxbQaaJXQHImF4ncjql4i46+kWJIxqutWgupvmGpSuoOw16M8Vw09YdJ8ZFiWojvqM8xf4zMNwKQ7G8nkCI/wtGP7tMO5aH3fGYUuj7ukv7gSGnFXJ07RKogtgwp+DweHp56yLDf4TkM1/&lt;/diagram&gt;&lt;/mxfile&gt;">
         <defs>
           <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stop-color="#33CC33"/>
