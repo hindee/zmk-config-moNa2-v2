@@ -16,6 +16,7 @@ layers:
   - D
   - F
   - G
+  - {t: $$rotaryencoder$$, h: ↑↓}
   - ESC
   - H
   - J
@@ -60,6 +61,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&'
+  - {t: $$rotaryencoder$$, h: CtlTab}
   - ''''
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
@@ -104,6 +106,7 @@ layers:
   - F8
   - F9
   - F10
+  - {t: $$rotaryencoder$$, h: AltTab}
   - {t: ▽, type: trans}
   - /
   - '4'
@@ -148,6 +151,7 @@ layers:
   - Gui+→
   - Ctl+Gui+←
   - Ctl+Gui+→
+  - {t: $$rotaryencoder$$, h: Volume}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ←
@@ -192,6 +196,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: $$rotaryencoder$$, h: CtlTab}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
@@ -218,7 +223,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$trackball$$
+  - {t: $$trackball$$, h: Pointing}
   - {t: ▽, type: trans}
   bluetooth:
   - {t: ▽, type: trans}
@@ -236,6 +241,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: $$rotaryencoder$$, h: ←→}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -245,8 +251,7 @@ layers:
   - BT CLR ALL
   - '1'
   - '2'
-  - '3'
-  - {type: held}
+  - {t: '3', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -257,6 +262,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -280,6 +286,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: $$rotaryencoder$$, h: ←→}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -306,7 +313,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$trackball$$
+  - {t: $$trackball$$, h: Scroll}
   - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
