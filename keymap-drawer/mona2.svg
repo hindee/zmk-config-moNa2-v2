@@ -46,8 +46,12 @@
 
 </svg>
 <svg id="trackball">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  version="1.1" viewBox="-0.5 -0.5 158 114">
+<svg xmlns="http://www.w3.org/2000/svg"
+  style="background: transparent; background-color: transparent;"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="1.1"
+ 
+  viewBox="-0.5 -0.5 158 114">
   <defs>
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#33CC33"/>
