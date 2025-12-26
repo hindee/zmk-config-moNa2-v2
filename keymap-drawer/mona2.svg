@@ -46,56 +46,45 @@
 
 </svg>
 <svg id="trackball">
-<svg xmlns="http://www.w3.org/2000/svg" 
-     xmlns:xlink="http://www.w3.org/1999/xlink" 
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
      version="1.1"
     
      viewBox="-0.5 -0.5 158 114">
   <defs>
-    <!-- メイングラデーション（緑系） -->
+    <!-- 緑のメイングラデーション -->
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#33CC33" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#B3FF66" stop-opacity="1"/>
+      <stop offset="0%" stop-color="#33CC33"/>   <!-- 明るめ緑 -->
+      <stop offset="100%" stop-color="#B3FF66"/>  <!-- 黄緑 -->
     </linearGradient>
-    
-    <!-- 白色系グラデーション1 -->
+    <!-- 薄灰グラデーション -->
     <linearGradient id="grad2" x1="100%" y1="0%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#DADADA" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#FDFDFD" stop-opacity="1"/>
+      <stop offset="0%" stop-color="#DADADA"/>
+      <stop offset="100%" stop-color="#FDFDFD"/>
     </linearGradient>
-    
-    <!-- 白色系グラデーション2 -->
+    <!-- 垂直白グラデーション -->
     <linearGradient id="grad3" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#DADADA" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="0%" stop-color="#DADADA"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
     </linearGradient>
-    
-    <!-- 白色系グラデーション3 -->
+    <!-- 水平白グラデーション -->
     <linearGradient id="grad4" x1="100%" y1="0%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#DADADA" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="0%" stop-color="#DADADA"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
     </linearGradient>
   </defs>
-  
+
+  <!-- トラックボール -->
   <g>
-    <!-- トラックボール本体 -->
     <ellipse cx="56" cy="56" rx="40" ry="40" 
-             fill="url(#grad1)" stroke="none" 
-             transform="rotate(225,56,56)"/>
-             
-    <!-- 外枠部品1 -->
-    <path d="M 101 21 L 141 21 L 161 37 L 161 91 L 81 91 L 81 37 Z" 
-          fill="url(#grad2)" stroke="#fcfcfc" stroke-miterlimit="10" 
+             fill="url(#grad1)" stroke="none" transform="rotate(225,56,56)"/>
+    <path d="M 101 21 L 141 21 L 161 37 L 161 91 L 81 91 L 81 37 Z"
+          fill="url(#grad2)" stroke="#fcfcfc" stroke-miterlimit="10"
           transform="rotate(90,121,56)"/>
-    
-    <!-- 中央部品 -->
     <path d="M 87 15 L 107 15 Q 67 55 107 95 L 87 95 Q 47 55 87 15 Z" 
           fill="url(#grad3)" stroke="none"/>
-    
-    <!-- 内枠部品 -->
-    <path d="M 86 26 L 126 26 L 126 26 L 126 86 L 86 86 L 86 26 Z" 
-          fill="url(#grad4)" stroke="none" 
-          transform="rotate(90,106,56)"/>
+    <path d="M 86 26 L 126 26 L 126 26 L 126 86 L 86 86 L 86 26 Z"
+          fill="url(#grad4)" stroke="none" transform="rotate(90,106,56)"/>
   </g>
 </svg>
 
