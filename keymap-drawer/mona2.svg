@@ -2,7 +2,7 @@
 <defs>/* start glyphs */
 <svg id="rotaryencoder">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 60 60">
-  <!-- 外円（白系グラデーション） -->
+  <!-- 外円（白系ラジアルグラデーション） -->
   <defs>
     <radialGradient id="wheelgrad" cx="50%" cy="50%" r="60%">
       <stop offset="0%" stop-color="#FAFAFA"/>
@@ -10,46 +10,37 @@
       <stop offset="100%" stop-color="#E8E8E8"/>
     </radialGradient>
   </defs>
+  
+  <!-- 外円 -->
   <circle cx="30" cy="30" r="29.5" fill="url(#wheelgrad)" stroke="#D8D8D8" stroke-width="0.5"/>
-
-  <!-- 36本の回転ライン（薄グレー） -->
+  
+  <!-- 24本の等間隔回転ライン（15度間隔） -->
   <g stroke-linecap="round" stroke-width="1.3" stroke="#C8C8C8" stroke-linejoin="round">
-    <line transform="rotate(0 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(10 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(20 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(30 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(40 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(50 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(60 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(70 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(80 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(90 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(100 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(110 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(120 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(130 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(140 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(150 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(160 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(170 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(180 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(190 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(200 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(210 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(220 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(230 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(240 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(250 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(260 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(270 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(280 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(290 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(300 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(310 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(320 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(330 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(340 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
-    <line transform="rotate(350 30 30)" y2="2.12" x2="32.12" y1="0" x1="30"/>
+    <!-- 0°から345°まで15°刻みで24本 -->
+    <line transform="rotate(0 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(15 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(30 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(45 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(60 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(75 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(90 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(105 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(120 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(135 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(150 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(165 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(180 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(195 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(210 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(225 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(240 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(255 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(270 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(285 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(300 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(315 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(330 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(345 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
   </g>
 </svg>
 
@@ -60,8 +51,7 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   version="1.1"
  
-  viewBox="-0.5 -0.5 158 114"
-  content="&lt;mxfile&gt;&lt;diagram id=&quot;IzWpLS8StjbBiPwjM_Oz&quot; name=&quot;ページ1&quot;&gt;tZbBbqMwEIafBqk9rBQwIe2xgdA9tKcc9mzFDlg1DDJOIX36HYPdQAhKKqWxFNn/eMD+P48Tj8RF+6polb8D49ILFqz1SOIFwdMixG8jHHthuYp6IVOC9ZJ/Erbii1txYdWDYLweTdQAUotqLO6gLPlOjzSqFDTjaXuQ47dWNOMTYbujcqr+E0zndlvB6qT/5SLL3Zv96LmPFNRNtjupc8qgGUhk45FYAei+V7Qxl8Y750ufl85EvxemeKlvSQj6hE8qD3Zvdl366DaLCegrDtZNLjTfVnRnIg2SRS3XhcSRj11aV73Ze9FyfP56L6SMQYJCTRo7/jCqPh68gBASx4R4QYz9TWLaI87PFGUCF+5yMLgmaRpFGKu1gg/uIiWUfJCQCIVvFlBiiNMa17BmA6nhnaRAU6uESxxPvbL2fXKleTuQrHevHAqu1RGn2ChZWY72IAeRHTeDY2GlfHAinEbtQcy+n3xihR2L6zI6ch0dnq7KdCVA9SYKoa9DHPpWw8Fs4sx7pJLGpp0RRj15Me0yyTQxbQaaJXQHImF4ncjql4i46+kWJIxqutWgupvmGpSuoOw16M8Vw09YdJ8ZFiWojvqM8xf4zMNwKQ7G8nkCI/wtGP7tMO5aH3fGYUuj7ukv7gSGnFXJ07RKogtgwp+DweHp56yLDf4TkM1/&lt;/diagram&gt;&lt;/mxfile&gt;">
+  viewBox="-0.5 -0.5 158 114">
   <defs>
     <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_33cc33_ededed_-1-light-dark_b3ff66_004100_-1-e-0"><stop offset="0%" stop-color="#33CC33" stop-opacity="1" style="stop-color: light-dark(rgb(51, 204, 51), rgb(237, 237, 237)); stop-opacity: 1;"/>
       <stop offset="100%" stop-color="#B3FF66" stop-opacity="1" style="stop-color: light-dark(rgb(179, 255, 102), rgb(0, 65, 0)); stop-opacity: 1;"/>
@@ -221,31 +211,24 @@ path.combo {
 /* End Tabler Icons Cleanup */
 
 svg.keymap {
-  background-color: #444444 !important;  /* 薄グレー */
+  background-color: #444444 !important;
   font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
   font-size: 14px;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   text { fill: #000000; }
 }
-/* キーキャップの色と枠線 */
 rect.key {
-  fill: #FFFFFF;         /* ベース白 */
-  stroke: #F9F9F9 !important; /* 薄いグレー枠線 */
+  fill: #FFFFFF;
+  stroke: #F9F9F9 !important;
   stroke-width: 2.0;
 }
-/* 押下時の色 */
 rect.held, rect.combo.held {
   fill: #4FBF8F !important; 
   stroke: #93BF49 !important; 
   stroke-width: 2.0;
 }
-/* 側面を少し暗くして立体感を出す */
-rect.key_side {
-  /* fill: #B3DF69; */
-  /* fill: #E0E0E0; */
-}
-/* 最下段中央5キーのレジェンド（文字）を黒で強制表示 */
+rect.key_side {}
 .keypos-37 text,
 .keypos-38 text,
 .keypos-39 text,
@@ -256,29 +239,9 @@ rect.key_side {
   font-size: 13px;
   text-anchor: middle !important;
   dominant-baseline: middle !important;
-}
-  
-/* 回転キーのtextも確実に黒文字 */
-.keypos-37 text,
-.keypos-38 text,
-.keypos-39 text,
-.keypos-40 text,
-.keypos-41 text {
   paint-order: normal;
   stroke: none !important;
 }
-
-/* 最下段中央5キー押下時 */
-.keypos-37 .key.held,
-.keypos-38 .key.held,
-.keypos-39 .key.held,
-.keypos-40 .key.held,
-.keypos-41 .key.held {
-  fill: #4FBF8F !important; 
-  stroke: #93BF49 !important; 
-  stroke-width: 2.0;
-}
-/* 最下段中央5キーだけアップルグリーン（回転対応） */
 .keypos-37 rect.key,
 .keypos-38 rect.key,
 .keypos-39 rect.key,
@@ -288,17 +251,15 @@ rect.key_side {
   stroke: #C3EF79 !important;
   stroke-width: 2.0;
 }
-/* 回転キーの押下時もアップルグリーン系 */
-.keypos-37 rect.key.held,
-.keypos-38 rect.key.held,
-.keypos-39 rect.key.held,
-.keypos-40 rect.key.held,
-.keypos-41 rect.key.held {
+.keypos-37 .key.held,
+.keypos-38 .key.held,
+.keypos-39 .key.held,
+.keypos-40 .key.held,
+.keypos-41 .key.held {
   fill: #4FBF8F !important; 
   stroke: #93BF49 !important; 
   stroke-width: 2.0;
 }
-/* トラックボール専用：キー枠非表示 + use要素直接拡大 */
 .keypos-42 rect.key, 
 .keypos-42 rect.key_side {
   display: none !important;
@@ -306,50 +267,39 @@ rect.key_side {
 .keypos-42 use[href="#trackball"] {
   width: 185px !important;
   height: 158px !important;
-  x: 5px !important;   /* 左から中央へ */
-  y: -45px !important;   /* 上から中央へ */
+  x: 5px !important;
+  y: -45px !important;
   transform: translate(-8px, 30px) scale(1.8) !important;
 }
-
-/* ロータリーエンコーダー完全制御（SVG構造対応版） */
 .keypos-15 use[href="#rotaryencoder"] {
-  x: -30px !important;      /* -30 → 0で右30px移動 */
-  y: -40px !important;      /* -31 → 0で下31px移動 */
-  width: 58px !important; /* キーぴったり */
+  x: -30px !important;
+  y: -40px !important;
+  width: 58px !important;
   height: 54px !important;
-  transform: scale(0.8) !important; /* 中央配置 */
+  transform: scale(0.8) !important;
 }
-
-/* キー枠非表示 */
 .keypos-15 rect.key,
 .keypos-15 rect.key_side {
   display: none !important;
 }
-
-/* キー枠完全非表示 */
 svg.keymap g.key.keypos-15 rect.key,
 svg.keymap .keypos-15 rect.key,
 svg.keymap g.key.keypos-15 rect.key_side,
 svg.keymap .keypos-15 rect.key_side {
   display: none !important;
 }
-/* トラックボールとエンコーダーのレジェンド共通設定 */
 .keypos-15 text.hold, .keypos-42 text.hold {
   fill: #000000 !important;
   font-size: 12px !important;
   font-weight: bold !important;
   pointer-events: none;
 }
-
-/* トラックボール(42)のレジェンド位置調整 */
 .keypos-42 text.hold {
   display: block !important;
-  transform: translate(45px, -17px) !important; /* 画像に被るよう上に移動 */
+  transform: translate(45px, -17px) !important;
 }
-
-/* ロータリーエンコーダーのレジェンド位置調整 */
 .keypos-15 text.hold {
-  transform: translateY(-26px) !important; /* 「下すぎる」のを解消するため上に持ち上げる */
+  transform: translateY(-26px) !important;
 }
 </style>
 <g transform="translate(56, 0)" class="layer-default">
