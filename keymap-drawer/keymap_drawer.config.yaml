@@ -188,55 +188,72 @@ draw_config:
   # ---------------------------------------------------------------------------
   glyphs:
     trackball: |
-      <svg xmlns="http://www.w3.org/2000/svg" width="158" height="114" viewBox="-0.5 -0.5 158 114">
-        <defs>
-          <!-- Green gradient (ball) -->
-          <linearGradient id="tb-g1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#33CC33"/>
-            <stop offset="100%" stop-color="#B3FF66"/>
-          </linearGradient>
+      <svg xmlns="http://www.w3.org/2000/svg"
+        width="191" height="114"
+        viewBox="0 0 320 140">
 
-          <!-- Light gray gradient (outer right shape) -->
-          <linearGradient id="tb-g2" x1="100%" y1="0%" x2="0%" y2="0%">
-            <stop offset="0%" stop-color="#DADADA"/>
-            <stop offset="100%" stop-color="#FDFDFD"/>
-          </linearGradient>
+        <g transform="scale(1.325581395)">
+          <defs>
+            <linearGradient id="outerGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#FFFFFF" />
+              <stop offset="100%" stop-color="#D0D0D0" />
+            </linearGradient>
 
-          <!-- White gradient A (inner left shape) -->
-          <linearGradient id="tb-g3" x1="0%" y1="100%" x2="0%" y2="0%">
-            <stop offset="0%" stop-color="#DADADA"/>
-            <stop offset="100%" stop-color="#FFFFFF"/>
-          </linearGradient>
+            <linearGradient id="innerGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#FFFFFF" />
+              <stop offset="100%" stop-color="#F0F0F0" />
+            </linearGradient>
 
-          <!-- White gradient B (inner right shape) -->
-          <linearGradient id="tb-g4" x1="100%" y1="0%" x2="0%" y2="0%">
-            <stop offset="0%" stop-color="#DADADA"/>
-            <stop offset="100%" stop-color="#FFFFFF"/>
-          </linearGradient>
-        </defs>
+            <linearGradient id="greenBall" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#33CC33"/>
+              <stop offset="100%" stop-color="#B3FF66"/>
+            </linearGradient>
+          </defs>
 
-        <g>
-        <!-- Green ball -->
-          <ellipse cx="56" cy="56" rx="40" ry="40"
-            fill="url(#tb-g1)"
-            transform="rotate(225,56,56)"/>
+          <!-- 円 -->
+          <ellipse
+            cx="90"
+            cy="60"
+            rx="40"
+            ry="40"
+            fill="url(#greenBall)"
+            transform="rotate(225,90,60)"
+          />
 
-          <!-- Right outer shape -->
-          <path d="M 101 21 L 141 21 L 161 37 L 161 91 L 81 91 L 81 37 Z"
-            fill="url(#tb-g2)"
-            stroke="#fcfcfc"
-            transform="rotate(90,121,56)"/>
+          <!-- 外側 -->
+          <path
+            d="
+              M129 17
+              Q115 17 115 31
+        　　  L115 89
+　            Q115 103 129 103
+              L180 103
+              Q194 103 194 89
+              L194 31
+              Q194 17 180 17
+              Z
+            "
+            fill="url(#outerGrad)"
+          />
 
-          <!-- Left inner curved shape -->
-          <path d="M 87 15 L 107 15 Q 67 55 107 95 L 87 95 Q 47 55 87 15 Z"
-            fill="url(#tb-g3)"/>
-
-          <!-- Right inner rectangle -->
-          <path d="M 86 26 L 126 26 L 126 86 L 86 86 Z"
-            fill="url(#tb-g4)"
-            transform="rotate(90,106,56)"/>
+          <!-- 内側（左カーブなだらか版） -->
+          <path
+            d="M115 30
+               C105 50 105 70 115 90
+               C125 90 125 90 135 90
+               L170 90
+               C180 90 180 80 180 80
+               L180 40
+               C180 40 180 30 170 30
+               L135 30
+               C125 30 125 30 115 30
+               Z"
+            fill="url(#innerGrad)"
+          />
         </g>
+
       </svg>
+
 
     rotaryencoder: |
       <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="-0.5 -0.5 60 60">
