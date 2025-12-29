@@ -1,14 +1,8 @@
 # =============================================================================
 # keymap-drawer.config.yaml for moNa2
-# - Supports rotary encoder & trackball
-# - SVG glyphs embedded directly (keymap-drawer limitation)
-# - CSS and structure refactored for readability
 # =============================================================================
 
 draw_config:
-  # ---------------------------------------------------------------------------
-  # Layout & geometry
-  # ---------------------------------------------------------------------------
   n_columns: 1
   draw_key_sides: true
   append_colon_to_layer_header: true
@@ -32,9 +26,6 @@ draw_config:
   line_spacing: 1.2
   arc_radius: 10.0
 
-  # ---------------------------------------------------------------------------
-  # Key side rendering
-  # ---------------------------------------------------------------------------
   key_side_pars:
     rel_x: 0
     rel_y: 1
@@ -43,13 +34,7 @@ draw_config:
     rx: 2
     ry: 2
 
-  # ---------------------------------------------------------------------------
-  # CSS styling
-  # ---------------------------------------------------------------------------
   svg_extra_style: |
-    /* =========================================================================
-       Global theme
-       ========================================================================= */
     svg.keymap {
       background-color: #444444 !important;
       font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
@@ -71,9 +56,6 @@ draw_config:
       stroke-width: 2.0;
     }
 
-    /* =========================================================================
-       Highlighted thumb cluster (keypos 37–41)
-       ========================================================================= */
     .keypos-37 text,
     .keypos-38 text,
     .keypos-39 text,
@@ -97,9 +79,6 @@ draw_config:
       stroke-width: 2.0;
     }
 
-    /* =========================================================================
-       Trackball (keypos-42)
-       ========================================================================= */
     .keypos-42 rect.key,
     .keypos-42 rect.key_side {
       display: none !important;
@@ -119,16 +98,13 @@ draw_config:
       pointer-events: none;
     }
 
-    /* =========================================================================
-       Rotary encoder (keypos-15)
-       ========================================================================= */
     .keypos-15 rect.key,
     .keypos-15 rect.key_side {
       display: none !important;
     }
     .keypos-15 use[href="#rotaryencoder"] {
       x: -30px !important;
-      y: -37px !important; /* ← 元より3px下げた */
+      y: -37px !important;
       width: 58px !important;
       height: 54px !important;
       transform: scale(0.8) !important;
@@ -141,9 +117,6 @@ draw_config:
       pointer-events: none;
     }
 
-  # ---------------------------------------------------------------------------
-  # Legend settings
-  # ---------------------------------------------------------------------------
   legend_font_size: 12
   legend_hold_font_size: 10
   legend_shifted_font_size: 10
@@ -162,9 +135,6 @@ draw_config:
   combo_legend_max_height_ratio: 0.5
   combo_legend_line_spacing: 1.0
 
-  # ---------------------------------------------------------------------------
-  # Glyph settings
-  # ---------------------------------------------------------------------------
   glyph_font_size: 20
   glyph_hold_font_size: 16
   glyph_shifted_font_size: 16
@@ -183,9 +153,6 @@ draw_config:
   glyph_hold_size: 60
   glyph_shifted_size: 15
 
-  # ---------------------------------------------------------------------------
-  # Embedded SVG glyphs (整形済み)
-  # ---------------------------------------------------------------------------
   glyphs:
     trackball: |
       <svg xmlns="http://www.w3.org/2000/svg"
@@ -210,7 +177,6 @@ draw_config:
             </linearGradient>
           </defs>
 
-          <!-- 円 -->
           <ellipse
             cx="90"
             cy="60"
@@ -220,13 +186,12 @@ draw_config:
             transform="rotate(225,90,60)"
           />
 
-          <!-- 外側 -->
           <path
             d="
               M129 17
               Q115 17 115 31
-        　　  L115 89
-　            Q115 103 129 103
+              L115 89
+              Q115 103 129 103
               L180 103
               Q194 103 194 89
               L194 31
@@ -236,24 +201,24 @@ draw_config:
             fill="url(#outerGrad)"
           />
 
-          <!-- 内側（左カーブなだらか版） -->
           <path
-            d="M115 30
-               C105 50 105 70 115 90
-               C125 90 125 90 135 90
-               L170 90
-               C180 90 180 80 180 80
-               L180 40
-               C180 40 180 30 170 30
-               L135 30
-               C125 30 125 30 115 30
-               Z"
+            d="
+              M115 30
+              C105 50 105 70 115 90
+              C125 90 125 90 135 90
+              L170 90
+              C180 90 180 80 180 80
+              L180 40
+              C180 40 180 30 170 30
+              L135 30
+              C125 30 125 30 115 30
+              Z
+            "
             fill="url(#innerGrad)"
           />
         </g>
 
       </svg>
-
 
     rotaryencoder: |
       <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="-0.5 -0.5 60 60">
@@ -277,7 +242,6 @@ draw_config:
         </g>
       </svg>
 
-  # External glyph providers
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
     tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
@@ -285,10 +249,6 @@ draw_config:
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
   use_local_cache: true
-
-# =============================================================================
-# Parse configuration
-# =============================================================================
 
 parse_config:
   preprocess: true
@@ -301,9 +261,6 @@ parse_config:
     t: ▽
     type: trans
 
-  # ---------------------------------------------------------------------------
-  # ZMK keycode → legend mapping (JIS-friendly)
-  # ---------------------------------------------------------------------------
   zmk_keycode_map:
     EXCLAMATION: '!'
     AT: '"'
@@ -370,20 +327,15 @@ parse_config:
     'LG(LA(K))': 'MIC'
     LEFT_WIN: '⌘'
 
-  # ---------------------------------------------------------------------------
-  # Raw bindings (trackball & rotary encoder)
-  # ---------------------------------------------------------------------------
   raw_binding_map:
     '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
 
-    # Trackball
     '&TB_none':   { tap: '$$trackball$$' }
     '&TB_mouse':  { tap: '$$trackball$$', hold: 'Pointing' }
     '&TB_scroll': { tap: '$$trackball$$', hold: 'Scroll' }
 
-    # Rotary encoder
     '&RE_scroll':  { tap: '$$rotaryencoder$$', hold: '↑↓' }
     '&RE_alttab':  { tap: '$$rotaryencoder$$', hold: 'AltTab' }
     '&RE_volume':  { tap: '$$rotaryencoder$$', hold: 'Volume' }
