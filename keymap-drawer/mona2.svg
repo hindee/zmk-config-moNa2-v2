@@ -25,67 +25,62 @@
 </svg>
 <svg id="trackball">
 <svg xmlns="http://www.w3.org/2000/svg"
+  style="background: transparent;"
  
-  viewBox="0 0 320 140"
-  transform="scale(1.325581395)">
+  viewBox="-0.5 -0.5 158 114">
 
   <defs>
-    <linearGradient id="tb_outerGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#D0D0D0" />
-    </linearGradient>
-
-    <linearGradient id="tb_innerGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#F0F0F0" />
-    </linearGradient>
-
-    <linearGradient id="tb_greenBall" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- 緑の球体 -->
+    <linearGradient id="tb_ball" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#33CC33"/>
       <stop offset="100%" stop-color="#B3FF66"/>
     </linearGradient>
+
+    <!-- 外側の白〜グレー -->
+    <linearGradient id="tb_outer" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#DADADA"/>
+      <stop offset="100%" stop-color="#FDFDFD"/>
+    </linearGradient>
+
+    <!-- 内側の白〜グレー（縦方向） -->
+    <linearGradient id="tb_innerA" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#DADADA"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+
+    <!-- 内側の白〜グレー（横方向） -->
+    <linearGradient id="tb_innerB" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#DADADA"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
   </defs>
 
-  <ellipse
-    cx="90"
-    cy="60"
-    rx="40"
-    ry="40"
-    fill="url(#tb_greenBall)"
-    transform="rotate(225,90,60)"
-  />
+  <g>
+    <!-- 緑の球体 -->
+    <ellipse cx="56" cy="56" rx="40" ry="40"
+      fill="url(#tb_ball)"
+      transform="rotate(225,56,56)"
+      pointer-events="all"/>
 
-  <path
-    d="
-      M129 17
-      Q115 17 115 31
-      L115 89
-      Q115 103 129 103
-      L180 103
-      Q194 103 194 89
-      L194 31
-      Q194 17 180 17
-      Z
-    "
-    fill="url(#tb_outerGrad)"
-  />
+    <!-- 外側の大きいパーツ -->
+    <path d="M 101 21 L 141 21 L 161 37 L 161 91 L 81 91 L 81 37 Z"
+      fill="url(#tb_outer)"
+      stroke="#fcfcfc"
+      stroke-miterlimit="10"
+      transform="rotate(90,121,56)"
+      pointer-events="all"/>
 
-  <path
-    d="
-      M115 30
-      C105 50 105 70 115 90
-      C125 90 125 90 135 90
-      L170 90
-      C180 90 180 80 180 80
-      L180 40
-      C180 40 180 30 170 30
-      L135 30
-      C125 30 125 30 115 30
-      Z
-    "
-    fill="url(#tb_innerGrad)"
-  />
+    <!-- 左側のカーブパーツ -->
+    <path d="M 87 15 L 107 15 Q 67 55 107 95 L 87 95 Q 47 55 87 15 Z"
+      fill="url(#tb_innerA)"
+      pointer-events="all"/>
 
+    <!-- 内側の四角パーツ -->
+    <path d="M 86 26 L 126 26 L 126 86 L 86 86 Z"
+      fill="url(#tb_innerB)"
+      transform="rotate(90,106,56)"
+      pointer-events="all"/>
+  </g>
 </svg>
 
 </svg>
@@ -527,7 +522,7 @@ rect.held, rect.combo.held {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-42" y="-31" height="60" width="83.15789473684211" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
@@ -795,7 +790,7 @@ rect.held, rect.combo.held {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-42" y="-31" height="60" width="83.15789473684211" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
@@ -1020,7 +1015,7 @@ rect.held, rect.combo.held {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-42" y="-31" height="60" width="83.15789473684211" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
@@ -1261,7 +1256,7 @@ rect.held, rect.combo.held {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-42" y="-31" height="60" width="83.15789473684211" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
@@ -1493,7 +1488,7 @@ rect.held, rect.combo.held {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-42" y="-31" height="60" width="83.15789473684211" class="key tap glyph trackball"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 62%">Pointing</tspan></text>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-43">
@@ -1728,7 +1723,7 @@ rect.held, rect.combo.held {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-42" y="-31" height="60" width="83.15789473684211" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
@@ -1953,7 +1948,7 @@ rect.held, rect.combo.held {
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-42" y="-31" height="60" width="83.15789473684211" class="key tap glyph trackball"/>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 83%">Scroll</tspan></text>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-43">
