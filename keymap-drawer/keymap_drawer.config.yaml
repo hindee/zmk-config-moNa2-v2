@@ -10,7 +10,6 @@
 #   - SVG glyphs are externalized for easier customization.
 #   - CSS is organized by functional sections.
 # =============================================================================
-
 draw_config:
   # ---------------------------------------------------------------------------
   # Layout & geometry
@@ -50,17 +49,20 @@ draw_config:
     ry: 2
 
   # ---------------------------------------------------------------------------
-  # SVG styling (custom theme for moNa2)
+  # CSS styling
   # ---------------------------------------------------------------------------
   svg_extra_style: |
+    /* =========================================================================
+       Global theme
+       ========================================================================= */
     svg.keymap {
       background-color: #444444 !important;
       font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
       font-size: 14px;
       font-weight: bold;
       text-rendering: optimizeLegibility;
-      text { fill: #000000; }
     }
+    text { fill: #000000; }
 
     rect.key {
       fill: #FFFFFF;
@@ -74,9 +76,9 @@ draw_config:
       stroke-width: 2.0;
     }
 
-    rect.key_side {}
-
-    # Highlight specific key positions (37–41)
+    /* =========================================================================
+       Highlighted thumb cluster (keypos 37–41)
+       ========================================================================= */
     .keypos-37 text,
     .keypos-38 text,
     .keypos-39 text,
@@ -87,7 +89,6 @@ draw_config:
       font-size: 13px;
       text-anchor: middle !important;
       dominant-baseline: middle !important;
-      paint-order: normal;
       stroke: none !important;
     }
 
@@ -101,7 +102,9 @@ draw_config:
       stroke-width: 2.0;
     }
 
-    # Trackball (keypos-42)
+    /* =========================================================================
+       Trackball (keypos-42)
+       ========================================================================= */
     .keypos-42 rect.key,
     .keypos-42 rect.key_side {
       display: none !important;
@@ -113,34 +116,34 @@ draw_config:
       y: -45px !important;
       transform: translate(-8px, 30px) scale(1.8) !important;
     }
-
-    # Rotary encoder (keypos-15)
-    .keypos-15 use[href="#rotaryencoder"] {
-      x: -30px !important;
-      y: -40px !important;
-      width: 58px !important;
-      height: 54px !important;
-      transform: scale(0.8) !important;
-    }
-    .keypos-15 rect.key,
-    .keypos-15 rect.key_side {
-      display: none !important;
-    }
-
-    # Hold-text adjustments for special keys
-    .keypos-15 text.hold,
     .keypos-42 text.hold {
       fill: #000000 !important;
       font-size: 12px !important;
       font-weight: bold !important;
+      transform: translate(45px, -17px) !important;
       pointer-events: none;
     }
-    .keypos-42 text.hold {
-      display: block !important;
-      transform: translate(45px, -17px) !important;
+
+    /* =========================================================================
+       Rotary encoder (keypos-15)
+       ========================================================================= */
+    .keypos-15 rect.key,
+    .keypos-15 rect.key_side {
+      display: none !important;
+    }
+    .keypos-15 use[href="#rotaryencoder"] {
+      x: -30px !important;
+      y: -37px !important; /* ← 元より3px下げた */
+      width: 58px !important;
+      height: 54px !important;
+      transform: scale(0.8) !important;
     }
     .keypos-15 text.hold {
+      fill: #000000 !important;
+      font-size: 12px !important;
+      font-weight: bold !important;
       transform: translateY(-26px) !important;
+      pointer-events: none;
     }
 
   # ---------------------------------------------------------------------------
@@ -186,18 +189,12 @@ draw_config:
   glyph_shifted_size: 15
 
   # ---------------------------------------------------------------------------
-  # Embedded SVG glyphs (trackball & rotary encoder)
+  # External SVG glyphs
   # ---------------------------------------------------------------------------
   glyphs:
-    trackball: |
-      <svg ...>  # (内容は元ファイルのまま)
-      </svg>
+    trackball: !include glyphs/trackball.svg
+    rotaryencoder: !include glyphs/rotaryencoder.svg
 
-    rotaryencoder: |
-      <svg ...>  # (内容は元ファイルのまま)
-      </svg>
-
-  # External glyph providers
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
     tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
@@ -217,7 +214,6 @@ parse_config:
   sticky_label: sticky
   toggle_label: $$mdi:toggle-switch$$
 
-  # Transparent key legend
   trans_legend:
     t: ▽
     type: trans
