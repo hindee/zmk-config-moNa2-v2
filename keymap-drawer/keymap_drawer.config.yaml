@@ -157,7 +157,8 @@ draw_config:
     trackball: |
       <svg xmlns="http://www.w3.org/2000/svg"
         width="191" height="114"
-        viewBox="0 0 320 140">
+        viewBox="0 0 320 140"
+        transform="scale(1.325581395)">
 
         <defs>
           <linearGradient id="tb_outerGrad" x1="0" y1="0" x2="0" y2="1">
@@ -176,49 +177,46 @@ draw_config:
           </linearGradient>
         </defs>
 
-        <g transform="scale(1.325581395)">
+        <ellipse
+          cx="90"
+          cy="60"
+          rx="40"
+          ry="40"
+          fill="url(#tb_greenBall)"
+          transform="rotate(225,90,60)"
+        />
 
-          <ellipse
-            cx="90"
-            cy="60"
-            rx="40"
-            ry="40"
-            fill="url(#tb_greenBall)"
-            transform="rotate(225,90,60)"
-          />
+        <path
+          d="
+            M129 17
+            Q115 17 115 31
+            L115 89
+            Q115 103 129 103
+            L180 103
+            Q194 103 194 89
+            L194 31
+            Q194 17 180 17
+            Z
+          "
+          fill="url(#tb_outerGrad)"
+        />
 
-          <path
-            d="
-              M129 17
-              Q115 17 115 31
-              L115 89
-              Q115 103 129 103
-              L180 103
-              Q194 103 194 89
-              L194 31
-              Q194 17 180 17
-              Z
-            "
-            fill="url(#tb_outerGrad)"
-          />
+        <path
+          d="
+            M115 30
+            C105 50 105 70 115 90
+            C125 90 125 90 135 90
+            L170 90
+            C180 90 180 80 180 80
+            L180 40
+            C180 40 180 30 170 30
+            L135 30
+            C125 30 125 30 115 30
+            Z
+          "
+          fill="url(#tb_innerGrad)"
+        />
 
-          <path
-            d="
-              M115 30
-              C105 50 105 70 115 90
-              C125 90 125 90 135 90
-              L170 90
-              C180 90 180 80 180 80
-              L180 40
-              C180 40 180 30 170 30
-              L135 30
-              C125 30 125 30 115 30
-              Z
-            "
-            fill="url(#tb_innerGrad)"
-          />
-
-        </g>
       </svg>
 
     rotaryencoder: |
