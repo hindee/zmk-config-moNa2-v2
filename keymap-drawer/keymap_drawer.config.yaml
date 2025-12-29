@@ -1,15 +1,10 @@
 # =============================================================================
 # keymap-drawer.config.yaml for moNa2
-#
-# keypos reference (moNa2 physical layout):
-#   - keypos-15 : Rotary encoder (left thumb cluster)
-#   - keypos-42 : Trackball (right thumb cluster)
-#   - keypos 37–41 : Highlighted thumb keys (accent color)
-#
-# Notes:
-#   - SVG glyphs are externalized for easier customization.
-#   - CSS is organized by functional sections.
+# - Supports rotary encoder & trackball
+# - CSS and structure refactored for readability
+# - SVG glyphs should be pasted directly into the glyphs: section
 # =============================================================================
+
 draw_config:
   # ---------------------------------------------------------------------------
   # Layout & geometry
@@ -189,12 +184,16 @@ draw_config:
   glyph_shifted_size: 15
 
   # ---------------------------------------------------------------------------
-  # External SVG glyphs
+  # Embedded SVG glyphs (paste your SVGs here)
   # ---------------------------------------------------------------------------
   glyphs:
-    trackball: !include glyphs/trackball.svg
-    rotaryencoder: !include glyphs/rotaryencoder.svg
+    trackball: |
+      <!-- paste trackball.svg content here -->
 
+    rotaryencoder: |
+      <!-- paste rotaryencoder.svg content here -->
+
+  # External glyph providers
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
     tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
