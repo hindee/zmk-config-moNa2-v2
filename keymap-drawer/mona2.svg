@@ -53,7 +53,7 @@
 
   <g transform="scale(1.325581395)">
     <defs>
-      <linearGradient id="outerGrad" x1="0" y1="0" x2="0" y2="1" fill="#EEEEEE">
+      <linearGradient id="outerGrad" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%" stop-color="#FFFFFF" />
         <stop offset="100%" stop-color="#D0D0D0" />
       </linearGradient>
@@ -90,7 +90,7 @@
         Q194 17 180 17
         Z
       "
-      fill="url(#outerGrad)"
+      fill="#EEEEEE"
     />
 
     <path
