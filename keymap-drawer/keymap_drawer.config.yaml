@@ -236,7 +236,7 @@ draw_config:
             fill="url(#tb-g4)"
             transform="rotate(90,106,56)"/>
         </g>
-</svg>
+      </svg>
 
     rotaryencoder: |
       <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="-0.5 -0.5 60 60">
