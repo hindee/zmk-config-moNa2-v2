@@ -28,30 +28,31 @@
  
   viewBox="0 0 320 140">
 
+  <defs>
+    <linearGradient id="tb_outerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#D0D0D0" />
+    </linearGradient>
+
+    <linearGradient id="tb_innerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0F0F0" />
+    </linearGradient>
+
+    <linearGradient id="tb_greenBall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#33CC33"/>
+      <stop offset="100%" stop-color="#B3FF66"/>
+    </linearGradient>
+  </defs>
+
   <g transform="scale(1.325581395)">
-    <defs>
-      <linearGradient id="outerGrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="100%" stop-color="#D0D0D0" />
-      </linearGradient>
-
-      <linearGradient id="innerGrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="100%" stop-color="#F0F0F0" />
-      </linearGradient>
-
-      <linearGradient id="greenBall" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#33CC33"/>
-        <stop offset="100%" stop-color="#B3FF66"/>
-      </linearGradient>
-    </defs>
 
     <ellipse
       cx="90"
       cy="60"
       rx="40"
       ry="40"
-      fill="url(#greenBall)"
+      fill="url(#tb_greenBall)"
       transform="rotate(225,90,60)"
     />
 
@@ -67,7 +68,7 @@
         Q194 17 180 17
         Z
       "
-      fill="url(#outerGrad)"
+      fill="url(#tb_outerGrad)"
     />
 
     <path
@@ -83,10 +84,10 @@
         C125 30 125 30 115 30
         Z
       "
-      fill="url(#innerGrad)"
+      fill="url(#tb_innerGrad)"
     />
-  </g>
 
+  </g>
 </svg>
 
 </svg>
