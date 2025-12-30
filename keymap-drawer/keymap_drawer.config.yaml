@@ -29,7 +29,7 @@ draw_config:
     rx: 2
     ry: 2
 
-  # SVGスタイル（変更なし）
+  # SVGスタイル
   svg_extra_style: |
     svg.keymap {
       background-color: #444444 !important;
@@ -37,19 +37,20 @@ draw_config:
       font-size: 14px;
       font-weight: bold;
       text-rendering: optimizeLegibility;
-      text { fill: #000000; }
     }
+    text { fill: #000000; }
     rect.key {
       fill: #FFFFFF;
       stroke: #F9F9F9 !important;
       stroke-width: 2.0;
     }
     rect.held, rect.combo.held {
-      fill: #4FBF8F !important; 
-      stroke: #93BF49 !important; 
+      fill: #4FBF8F !important;
+      stroke: #93BF49 !important;
       stroke-width: 2.0;
     }
     rect.key_side {}
+
     .keypos-37 text,
     .keypos-38 text,
     .keypos-39 text,
@@ -77,27 +78,39 @@ draw_config:
     .keypos-39 .key.held,
     .keypos-40 .key.held,
     .keypos-41 .key.held {
-      fill: #4FBF8F !important; 
-      stroke: #93BF49 !important; 
+      fill: #4FBF8F !important;
+      stroke: #93BF49 !important;
       stroke-width: 2.0;
     }
-    .keypos-42 rect.key, 
+
+    /* Trackball */
+    .keypos-42 rect.key,
     .keypos-42 rect.key_side {
       display: none !important;
     }
     .keypos-42 use[href="#trackball"] {
-      width: 185px !important;
-      height: 158px !important;
-      x: 5px !important;
-      y: -45px !important;
-      transform: translate(-8px, 30px) scale(1.8) !important;
+      width: 145px !important;
+      height: 90px !important;
+      x: -13px !important;
+      y: -37px !important;
+      transform: scale(1.5) !important;
     }
+    .keypos-42 text.hold {
+      fill: #000000 !important;
+      font-size: 12px !important;
+      font-weight: bold !important;
+      pointer-events: none;
+      display: block !important;
+      transform: translate(45px, -17px) !important;
+    }
+
+    /* Rotary encoder */
     .keypos-15 use[href="#rotaryencoder"] {
-      x: -30px !important;
-      y: -40px !important;
+      x: -29px !important;
+      y: -38px !important;
       width: 58px !important;
-      height: 54px !important;
-      transform: scale(0.8) !important;
+      height: 58px !important;
+      transform: scale(0.9) !important;
     }
     .keypos-15 rect.key,
     .keypos-15 rect.key_side {
@@ -109,17 +122,11 @@ draw_config:
     svg.keymap .keypos-15 rect.key_side {
       display: none !important;
     }
-    .keypos-15 text.hold, .keypos-42 text.hold {
+    .keypos-15 text.hold {
       fill: #000000 !important;
       font-size: 12px !important;
       font-weight: bold !important;
       pointer-events: none;
-    }
-    .keypos-42 text.hold {
-      display: block !important;
-      transform: translate(45px, -17px) !important;
-    }
-    .keypos-15 text.hold {
       transform: translateY(-26px) !important;
     }
 
@@ -157,47 +164,44 @@ draw_config:
   # ----- Embedded glyphs -----
   glyphs:
     trackball: |
-      <svg xmlns="http://www.w3.org/2000/svg"
-        style="background: transparent; background-color: transparent;"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        version="1.1"
-        width="158px" height="114px"
-        viewBox="-0.5 -0.5 158 114">
+      <svg id="trackball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140">
         <defs>
-          <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_33cc33_ededed_-1-light-dark_b3ff66_004100_-1-e-0"><stop offset="0%" stop-color="#33CC33" stop-opacity="1" style="stop-color: light-dark(rgb(51, 204, 51), rgb(237, 237, 237)); stop-opacity: 1;"/>
-            <stop offset="100%" stop-color="#B3FF66" stop-opacity="1" style="stop-color: light-dark(rgb(179, 255, 102), rgb(0, 65, 0)); stop-opacity: 1;"/>
+          <!-- ユニークIDで衝突回避 -->
+          <linearGradient id="tb-outerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#D0D0D0"/>
           </linearGradient>
-          <linearGradient x1="100%" y1="0%" x2="0%" y2="0%" id="drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_fdfdfd_141414_-1-light-dark_dadada_323232_-1-e-0"><stop offset="0%" stop-color="#DADADA" stop-opacity="1" style="stop-color: light-dark(rgb(218, 218, 218), rgb(50, 50, 50)); stop-opacity: 1;"/>
-            <stop offset="100%" stop-color="#FDFDFD" stop-opacity="1" style="stop-color: light-dark(rgb(253, 253, 253), rgb(20, 20, 20)); stop-opacity: 1;"/>
+          <linearGradient id="tb-innerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#F0F0F0"/>
           </linearGradient>
-          <linearGradient x1="0%" y1="100%" x2="0%" y2="0%" id="drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_ffffff_121212_-1-light-dark_dadada_323232_-1-s-0"><stop offset="0%" stop-color="#DADADA" stop-opacity="1" style="stop-color: light-dark(rgb(218, 218, 218), rgb(50, 50, 50)); stop-opacity: 1;"/>
-            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="1" style="stop-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); stop-opacity: 1;"/>
-          </linearGradient>
-          <linearGradient x1="100%" y1="0%" x2="0%" y2="0%" id="drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_ffffff_121212_-1-light-dark_dadada_323232_-1-e-0">
-            <stop offset="0%" stop-color="#DADADA" stop-opacity="1" style="stop-color: light-dark(rgb(218, 218, 218), rgb(50, 50, 50)); stop-opacity: 1;"/>
-            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="1" style="stop-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); stop-opacity: 1;"/>
+          <linearGradient id="tb-greenBall" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#33CC33"/>
+            <stop offset="100%" stop-color="#B3FF66"/>
           </linearGradient>
         </defs>
-        <g>
-          <g>
-            <ellipse cx="56" cy="56" rx="40" ry="40" fill="url(#drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_33cc33_ededed_-1-light-dark_b3ff66_004100_-1-e-0)" stroke="none" transform="rotate(225,56,56)" pointer-events="all" style="fill: url(&quot;#drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_33cc33_ededed_-1-light-dark_b3ff66_004100_-1-e-0&quot;);"/>
-          </g>
-          <g>
-            <path d="M 101 21 L 141 21 L 161 37 L 161 91 L 81 91 L 81 37 Z" fill="url(#drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_fdfdfd_141414_-1-light-dark_dadada_323232_-1-e-0)" stroke="#fcfcfc" stroke-miterlimit="10" transform="rotate(90,121,56)" pointer-events="all" style="fill: url(&quot;#drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_fdfdfd_141414_-1-light-dark_dadada_323232_-1-e-0&quot;); stroke: light-dark(rgb(252, 252, 252), rgb(20, 20, 20));"/>
-          </g>
-          <g>
-            <path d="M 87 15 L 107 15 Q 67 55 107 95 L 87 95 Q 47 55 87 15 Z" fill="url(#drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_ffffff_121212_-1-light-dark_dadada_323232_-1-s-0)" stroke="none" pointer-events="all" style="fill: url(&quot;#drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_ffffff_121212_-1-light-dark_dadada_323232_-1-s-0&quot;);"/>
-          </g>
-          <g>
-            <path d="M 86 26 L 126 26 L 126 26 L 126 86 L 86 86 L 86 26 Z" fill="url(#drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_ffffff_121212_-1-light-dark_dadada_323232_-1-e-0)" stroke="none" transform="rotate(90,106,56)" pointer-events="all" style="fill: url(&quot;#drawio-svg-2hDeT7FeQpBLIdMbI1ku-gradient-light-dark_ffffff_121212_-1-light-dark_dadada_323232_-1-e-0&quot;);"/>
-          </g>
-        </g>
+
+        <!-- 明確な塗りつぶし指定でCSS継承を上書き -->
+        <ellipse cx="90" cy="60" rx="40" ry="40"
+                 fill="url(#tb-greenBall) !important"
+                 transform="scale(1.325581395) rotate(225 90 60)"
+                 style="fill: url(#tb-greenBall) !important;"/>
+
+        <path d="M129 17 Q115 17 115 31 L115 89 Q115 103 129 103 L180 103 Q194 103 194 89 L194 31 Q194 17 180 17 Z"
+              fill="url(#tb-outerGrad) !important"
+              transform="scale(1.325581395)"
+              style="fill: url(#tb-outerGrad) !important;"/>
+
+        <path d="M115 30 C105 50 105 70 115 90 C125 90 125 90 135 90 L170 90 C180 90 180 80 180 80 L180 40 C180 40 180 30 170 30 L135 30 C125 30 125 30 115 30 Z"
+              fill="url(#tb-innerGrad) !important"
+              transform="scale(1.325581395)"
+              style="fill: url(#tb-innerGrad) !important;"/>
       </svg>
-
-
+     
     rotaryencoder: |
-      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="-0.5 -0.5 60 60">
-        <!-- 外円（白系ラジアルグラデーション） -->
+      <svg xmlns="http://www.w3.org/2000/svg"
+        width="60" height="60"
+        viewBox="-0.5 -0.5 60 60">
         <defs>
           <radialGradient id="wheelgrad" cx="50%" cy="50%" r="60%">
             <stop offset="0%" stop-color="#FAFAFA"/>
@@ -205,14 +209,14 @@ draw_config:
             <stop offset="100%" stop-color="#E8E8E8"/>
           </radialGradient>
         </defs>
-        
-        <!-- 外円 -->
-        <circle cx="30" cy="30" r="29.5" fill="url(#wheelgrad)" stroke="#D8D8D8" stroke-width="0.5"/>
-        
-        <!-- 24本の等間隔回転ライン（15度間隔） -->
-        <g stroke-linecap="round" stroke-width="1.3" stroke="#C8C8C8" stroke-linejoin="round">
-          <!-- 0°から345°まで15°刻みで24本 -->
-          <line transform="rotate(0 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+
+        <circle cx="30" cy="30" r="29.5"
+          fill="url(#wheelgrad)"
+          stroke="#D8D8D8"
+          stroke-width="0.5"/>
+
+        <g stroke="#C8C8C8" stroke-width="1.3" stroke-linecap="round">
+          <line transform="rotate(0 30 30)" x1="30" y1="0" x2="32.12" y2="2.1 2"/>
           <line transform="rotate(15 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
           <line transform="rotate(30 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
           <line transform="rotate(45 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
@@ -336,13 +340,13 @@ parse_config:
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
 
     # Trackball bindings
-    '&TB_none': { tap: '$$trackball$$' }
-    '&TB_mouse': { tap: '$$trackball$$', hold: 'Pointing' }
+    '&TB_none':   { tap: '$$trackball$$' }
+    '&TB_mouse':  { tap: '$$trackball$$', hold: 'Pointing' }
     '&TB_scroll': { tap: '$$trackball$$', hold: 'Scroll' }
 
     # Rotary encoder bindings
-    '&RE_scroll': { tap: '$$rotaryencoder$$', hold: '↑↓' }
-    '&RE_alttab': { tap: '$$rotaryencoder$$', hold: 'AltTab' }
-    '&RE_volume': { tap: '$$rotaryencoder$$', hold: 'Volume' }
-    '&RE_ctltab': { tap: '$$rotaryencoder$$', hold: 'CtlTab' }
-    '&RE_sidesc': { tap: '$$rotaryencoder$$', hold: '←→' }
+    '&RE_scroll':  { tap: '$$rotaryencoder$$', hold: '↑↓' }
+    '&RE_alttab':  { tap: '$$rotaryencoder$$', hold: 'AltTab' }
+    '&RE_volume':  { tap: '$$rotaryencoder$$', hold: 'Volume' }
+    '&RE_ctltab':  { tap: '$$rotaryencoder$$', hold: 'CtlTab' }
+    '&RE_sidesc':  { tap: '$$rotaryencoder$$', hold: '←→' }
