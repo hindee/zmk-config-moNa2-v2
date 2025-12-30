@@ -18,7 +18,7 @@
     stroke-width="0.5"/>
 
   <g stroke="#C8C8C8" stroke-width="1.3" stroke-linecap="round">
-    <line transform="rotate(0 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
+    <line transform="rotate(0 30 30)" x1="30" y1="0" x2="32.12" y2="2.1 2"/>
     <line transform="rotate(15 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
     <line transform="rotate(30 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
     <line transform="rotate(45 30 30)" x1="30" y1="0" x2="32.12" y2="2.12"/>
@@ -48,57 +48,42 @@
 </svg>
 <svg id="trackball">
 <svg xmlns="http://www.w3.org/2000/svg"
- 
-  viewBox="0 0 320 140">
+    
+     viewBox="0 0 320 140">
 
-  <g transform="scale(1.325581395)">
-    <defs>
-      <linearGradient id="outerGrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="100%" stop-color="#D0D0D0" />
-      </linearGradient>
+  <!-- 独立グラデーション定義 -->
+  <defs>
+    <linearGradient id="outerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D0D0D0"/>
+    </linearGradient>
 
-      <linearGradient id="innerGrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="100%" stop-color="#F0F0F0" />
-      </linearGradient>
+    <linearGradient id="innerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0F0F0"/>
+    </linearGradient>
 
-      <linearGradient id="greenBall" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#33CC33"/>
-        <stop offset="100%" stop-color="#B3FF66"/>
-      </linearGradient>
-    </defs>
+    <linearGradient id="greenBall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#33CC33"/>
+      <stop offset="100%" stop-color="#B3FF66"/>
+    </linearGradient>
+  </defs>
 
-    <ellipse
-      cx="90"
-      cy="60"
-      rx="40"
-      ry="40"
-      fill="url(#greenBall)"
-      transform="rotate(225,90,60)"
-    />
+  <!-- 円（独立transform） -->
+  <ellipse cx="90" cy="60" rx="40" ry="40"
+           fill="url(#greenBall)"
+           transform="scale(1.325581395) rotate(225 90 60)"/>
 
-    <rect
-      x="115"
-      y="17"
-     
-     
-      rx="14"
-      ry="14"
-      fill="url(#outerGrad)"
-    />
+  <!-- 外側ケース -->
+  <path d="M129 17 Q115 17 115 31 L115 89 Q115 103 129 103 L180 103 Q194 103 194 89 L194 31 Q194 17 180 17 Z"
+        fill="url(#outerGrad)"
+        transform="scale(1.325581395)"/>
 
-    <rect
-      x="115"
-      y="30"
-     
-     
-      rx="12"
-      ry="12"
-      fill="url(#innerGrad)"
-    />
+  <!-- 内側窪み -->
+  <path d="M115 30 C105 50 105 70 115 90 C125 90 125 90 135 90 L170 90 C180 90 180 80 180 80 L180 40 C180 40 180 30 170 30 L135 30 C125 30 125 30 115 30 Z"
+        fill="url(#innerGrad)"
+        transform="scale(1.325581395)"/>
 
-  </g>
 </svg>
 
 </svg>
