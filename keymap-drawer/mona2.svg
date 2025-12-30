@@ -284,10 +284,10 @@ rect.key_side {}
 /* Rotary encoder */
 .keypos-15 use[href="#rotaryencoder"] {
   x: -29px !important;
-  y: -40px !important;
+  y: -39px !important;
   width: 58px !important;
   height: 58px !important;
-  transform: scale(1.0) !important;
+  transform: scale(0.9) !important;
 }
 .keypos-15 rect.key,
 .keypos-15 rect.key_side {
