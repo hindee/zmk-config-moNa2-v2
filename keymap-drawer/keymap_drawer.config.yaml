@@ -92,8 +92,8 @@ draw_config:
       width: 145px !important;
       height: 90px !important;
       x: 5px !important;
-      y: -5px !important;
-      transform: scale(1.0) !important;
+      y: -45px !important;
+      transform: scale(1.5) !important;
     }
     .keypos-42 text.hold {
       fill: #000000 !important;
