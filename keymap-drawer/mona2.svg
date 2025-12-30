@@ -266,11 +266,11 @@ rect.key_side {}
   display: none !important;
 }
 .keypos-42 use[href="#trackball"] {
-  width: 185px !important;
-  height: 158px !important;
+  width: 145px !important;
+  height: 90px !important;
   x: 5px !important;
-  y: -45px !important;
-  transform: translate(-8px, 30px) scale(1.8) !important;
+  y: -5px !important;
+  transform: scale(1.0) !important;
 }
 .keypos-42 text.hold {
   fill: #000000 !important;
