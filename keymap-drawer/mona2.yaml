@@ -267,7 +267,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$trackball$$
   - {t: ▽, type: trans}
   - $$trackball$$
   - {t: ▽, type: trans}
