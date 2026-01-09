@@ -311,13 +311,8 @@
         lt2_zh_kana: layer2_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LT2_ZH_KANA";
-            // 呼び出し時に渡す引数数：ここでは mo が1つ（レイヤ番号）だけ必要
-            #binding-cells = <1>;
-
-            // 「長押し=mo」「タップ=Mod-Morph」
+            #binding-cells = <2>; // 2に変更
             bindings = <&mo>, <&zh_kana>;
-
-            // layer-tap相当なので tap-preferred が扱いやすい
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
         };
@@ -367,7 +362,7 @@
 &kp Q                  &kp W         &kp E         &kp R                               &kp T                                          &kp Y        &kp U  &kp I      &kp O       &kp P
 &lt 1 A                &kp S         &kp D         &kp F                               &kp G        &RE_scroll         &kp ESC        &kp H        &kp J  &kp K      &kp L       &lt 6 SEMICOLON
 &mt_exit_AML LSHIFT Z  &kp X         &kp C         &kp V                               &kp B        &kp LSHIFT         &kp RSHIFT     &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
-&kp LCTRL              &kp LEFT_WIN  &kp LEFT_ALT  &mt_exit_AML LEFT_ALT INT_MUHENKAN  &lt 6 SPACE  &lt2_zh_kana 2     &kp BACKSPACE  &lt 3 ENTER  &TB_none          &mt RIGHT_CONTROL DEL
+&kp LCTRL              &kp LEFT_WIN  &kp LEFT_ALT  &mt_exit_AML LEFT_ALT INT_MUHENKAN  &lt 6 SPACE  &lt2_zh_kana 2 0   &kp BACKSPACE  &lt 3 ENTER  &TB_none          &mt RIGHT_CONTROL DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
