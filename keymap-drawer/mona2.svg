@@ -278,7 +278,7 @@ rect.key_side {}
   font-weight: bold !important;
   pointer-events: none;
   display: block !important;
-  transform: translate(45px, -17px) !important;
+  transform: translate(48px, -17px) !important;
 }
 
 /* Rotary encoder */
