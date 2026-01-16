@@ -105,6 +105,8 @@ draw_config:
     }
 
     /* Rotary encoder */
+
+    /* Rotary encoder */
     .keypos-15 use[href="#rotaryencoder"] {
       x: -29px !important;
       y: -38px !important;
