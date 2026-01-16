@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // -------------------- Constants --------------------
-
+#undef ZMK_POINTING_DEFAULT_SCRL_VAL
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 // Layer Indexes
