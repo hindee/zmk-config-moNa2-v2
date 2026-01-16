@@ -1,5 +1,4 @@
 # keymap_drawer.config.yaml for moNa2 with rotary encoder and trackball
-# keymap_drawer.config.yaml for moNa2 with rotary encoder and trackball
 draw_config:
   n_columns: 1
   draw_key_sides: true
@@ -74,8 +73,6 @@ draw_config:
     .keypos-39 rect.key,
     .keypos-40 rect.key,
     .keypos-41 rect.key {
-    .keypos-40 rect.key,
-    .keypos-41 rect.key {
       fill: #D3FF89 !important;
       stroke: #C3EF79 !important;
       stroke-width: 2.0;
@@ -87,19 +84,8 @@ draw_config:
     .keypos-41 .key.held {
       fill: #4FBF8F !important;
       stroke: #93BF49 !important;
-    .keypos-37 .key.held,
-    .keypos-38 .key.held,
-    .keypos-39 .key.held,
-    .keypos-40 .key.held,
-    .keypos-41 .key.held {
-      fill: #4FBF8F !important;
-      stroke: #93BF49 !important;
       stroke-width: 2.0;
     }
-
-    /* Trackball */
-    .keypos-42 rect.key,
-    .keypos-42 rect.key_side {
 
     /* Trackball */
     .keypos-42 rect.key,
@@ -121,8 +107,6 @@ draw_config:
       display: block !important;
       transform: translate(48px, -17px) !important;
     }
-
-    /* Rotary encoder */
 
     /* Rotary encoder */
     .keypos-15 use[href="#rotaryencoder"] {
