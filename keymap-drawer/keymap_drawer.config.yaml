@@ -6,10 +6,6 @@ draw_config:
   small_pad: 4.0
 
   # キーサイズ・レイアウト
-  append_colon_to_layer_header: true
-  small_pad: 4.0
-
-  # キーサイズ・レイアウト
   key_w: 60.0
   key_h: 56.0
   split_gap: 30.0
