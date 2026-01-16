@@ -289,7 +289,6 @@
             require-prior-idle-ms = <150>;
         };
 
-
         // --- Shift有無で「半角/全角」↔「かな」を切り替える ---
         zh_kana: zenkaku_hankaku_or_kana {
             compatible = "zmk,behavior-mod-morph";
