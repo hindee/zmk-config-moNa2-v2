@@ -278,8 +278,10 @@ rect.key_side {}
   font-weight: bold !important;
   pointer-events: none;
   display: block !important;
-  transform: translate(45px, -17px) !important;
+  transform: translate(48px, -17px) !important;
 }
+
+/* Rotary encoder */
 
 /* Rotary encoder */
 .keypos-15 use[href="#rotaryencoder"] {
@@ -1013,9 +1015,10 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(333, 247) rotate(20.0)" class="key held keypos-39">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key held side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key held"/>
+<g transform="translate(333, 247) rotate(20.0)" class="key trans keypos-39">
+<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
+<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
+<text x="0" y="-1" class="key trans tap">▽</text>
 </g>
 <g transform="translate(423, 247) rotate(-20.0)" class="key trans keypos-40">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>

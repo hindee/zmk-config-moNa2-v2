@@ -101,8 +101,10 @@ draw_config:
       font-weight: bold !important;
       pointer-events: none;
       display: block !important;
-      transform: translate(45px, -17px) !important;
+      transform: translate(48px, -17px) !important;
     }
+
+    /* Rotary encoder */
 
     /* Rotary encoder */
     .keypos-15 use[href="#rotaryencoder"] {
@@ -338,6 +340,7 @@ parse_config:
     '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
+    '&lt2_zh_kana': { tap: '半/全', hold: 'funcs_numpad' }
 
     # Trackball bindings
     '&TB_none':   { tap: '$$trackball$$' }
