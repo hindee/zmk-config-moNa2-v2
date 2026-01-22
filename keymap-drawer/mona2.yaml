@@ -40,7 +40,7 @@ layers:
   - {t: ⇥, h: mouse2}
   - {t: 無変換, h: Alt}
   - {t: ␣, h: scroll}
-  - {t: 半/全, h: funcs_numpad, s: かな}
+  - {t: 半/全, h: funcs_numpad}
   - ⌫
   - {t: ⏎, h: arrow}
   - $$trackball$$
@@ -85,7 +85,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LANGUAGE 1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$trackball$$
@@ -130,7 +130,7 @@ layers:
   - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$trackball$$
