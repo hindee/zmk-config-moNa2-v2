@@ -60,7 +60,7 @@ draw_config:
       font-weight: bold;
       font-size: 13px;
       text-anchor: middle !important;
-      dominant-baseline: middle !important;
+      /*dominant-baseline: middle !important;*/
       paint-order: normal;
       stroke: none !important;
     }
@@ -136,7 +136,7 @@ draw_config:
   legend_shifted_font_size: 10
   legend_tap_offset_y: -6
   legend_hold_offset_y: 10
-  legend_shifted_offset_y: 4
+  legend_shifted_offset_y: 20
   legend_max_width_ratio: 0.9
   legend_max_height_ratio: 0.35
   legend_line_spacing: 1.1
@@ -152,7 +152,7 @@ draw_config:
   glyph_shifted_font_size: 16
   glyph_tap_offset_y: -4
   glyph_hold_offset_y: 6
-  glyph_shifted_offset_y: 2
+  glyph_shifted_offset_y: 6
   glyph_max_width_ratio: 2.0
   glyph_max_height_ratio: 2.0
   glyph_line_spacing: 1.1
@@ -338,7 +338,7 @@ parse_config:
     '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
-    '&lt2_zh_kana': { tap: '半/全', hold: 'funcs_numpad' }
+    '&lt2_zh_kana': { tap: '半/全', hold: 'funcs_numpad', shifted: 'かな' }
 
     # Trackball bindings
     '&TB_none':   { tap: '$$trackball$$' }

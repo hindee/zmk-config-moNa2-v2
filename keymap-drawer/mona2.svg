@@ -237,7 +237,7 @@ rect.key_side {}
   font-weight: bold;
   font-size: 13px;
   text-anchor: middle !important;
-  dominant-baseline: middle !important;
+  /*dominant-baseline: middle !important;*/
   paint-order: normal;
   stroke: none !important;
 }
@@ -523,7 +523,8 @@ svg.keymap .keypos-15 rect.key_side {
 <text x="0" y="-1" class="key tap">半/全</text>
 <a href="#funcs_numpad">
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 62%">funcs_n…</tspan></text>
-</a></g>
+</a><text x="0" y="-24" class="key shifted">かな</text>
+</g>
 <g transform="translate(423, 247) rotate(-20.0)" class="key keypos-40">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
