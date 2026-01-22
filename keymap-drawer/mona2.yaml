@@ -37,7 +37,7 @@ layers:
   - {t: /, h: RIGHT SHIFT}
   - Ctrl
   - ⌘
-  - Alt
+  - {t: ⇥, h: mouse2}
   - {t: 無変換, h: Alt}
   - {t: ␣, h: scroll}
   - {t: 半/全, h: funcs_numpad}
@@ -314,6 +314,51 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: $$trackball$$, h: Scroll}
+  - {t: ▽, type: trans}
+  mouse2:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: $$rotaryencoder$$, h: CtlTab}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: $$trackball$$, h: Pointing}
   - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
