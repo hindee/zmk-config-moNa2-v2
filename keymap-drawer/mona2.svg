@@ -561,28 +561,28 @@ svg.keymap .keypos-15 rect.key_side {
 <text x="168" y="32" class="combo tap">Sft+⇥</text>
 </g>
 <g class="combo combopos-3">
-<path d="M140,179 l40,-22" class="combo"/>
-<path d="M140,179 l-40,22" class="combo"/>
-<rect rx="9" ry="9" x="126" y="166" width="28" height="26" class="combo"/>
-<text x="140" y="179" class="combo tap">Alt+B</text>
+<path d="M196,176 l39,-14" class="combo"/>
+<path d="M196,176 l-39,14" class="combo"/>
+<rect rx="9" ry="9" x="182" y="163" width="28" height="26" class="combo"/>
+<text x="196" y="176" class="combo tap">Alt+B</text>
 <a href="#bluetooth">
-<text x="140" y="188" class="combo hold layer-activator"><tspan style="font-size: 62%">bluetoo…</tspan></text>
+<text x="196" y="185" class="combo hold layer-activator"><tspan style="font-size: 62%">bluetoo…</tspan></text>
 </a></g>
 <g class="combo combopos-4">
 <rect rx="9" ry="9" x="631" y="22" width="28" height="26" class="combo"/>
 <text x="645" y="35" class="combo tap">-</text>
 </g>
 <g class="combo combopos-5">
-<rect rx="9" ry="9" x="574" y="19" width="28" height="26" class="combo"/>
-<text x="588" y="32" class="combo tap"><tspan style="font-size: 62%">&amp;copy_l…</tspan></text>
+<rect rx="9" ry="9" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap"><tspan style="font-size: 62%">&amp;copy_l…</tspan></text>
 </g>
 <g class="combo combopos-6">
-<rect rx="9" ry="9" x="518" y="82" width="28" height="26" class="combo"/>
-<text x="532" y="95" class="combo tap"><tspan style="font-size: 62%">&amp;copy_b…</tspan></text>
+<rect rx="9" ry="9" x="574" y="19" width="28" height="26" class="combo"/>
+<text x="588" y="32" class="combo tap"><tspan style="font-size: 62%">&amp;copy_b…</tspan></text>
 </g>
 <g class="combo combopos-7">
-<rect rx="9" ry="9" x="518" y="138" width="28" height="26" class="combo"/>
-<text x="532" y="151" class="combo tap"><tspan style="font-size: 62%">&amp;copy_a…</tspan></text>
+<rect rx="9" ry="9" x="574" y="131" width="28" height="26" class="combo"/>
+<text x="588" y="144" class="combo tap"><tspan style="font-size: 62%">&amp;copy_a…</tspan></text>
 </g>
 </g>
 </g>
@@ -1655,15 +1655,14 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
 <text x="0" y="-1" class="key tap">2</text>
 </g>
-<g transform="translate(196, 148)" class="key held keypos-25">
+<g transform="translate(196, 148)" class="key keypos-25">
+<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
+<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
+<text x="0" y="-1" class="key tap">3</text>
+</g>
+<g transform="translate(253, 155)" class="key held keypos-26">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key held side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key held"/>
-<text x="0" y="-1" class="key held tap">3</text>
-</g>
-<g transform="translate(253, 155)" class="key trans keypos-26">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
-<text x="0" y="-1" class="key trans tap">▽</text>
 </g>
 <g transform="translate(309, 168)" class="key trans keypos-27">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
@@ -1705,14 +1704,14 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(84, 210)" class="key held keypos-35">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key held side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key held"/>
-</g>
-<g transform="translate(140, 196)" class="key trans keypos-36">
+<g transform="translate(84, 210)" class="key trans keypos-35">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
+</g>
+<g transform="translate(140, 196)" class="key held keypos-36">
+<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key held side"/>
+<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key held"/>
 </g>
 <g transform="translate(208, 225)" class="key trans keypos-37">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>

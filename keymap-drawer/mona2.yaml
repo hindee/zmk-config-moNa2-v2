@@ -251,7 +251,8 @@ layers:
   - BT CLR ALL
   - '1'
   - '2'
-  - {t: '3', type: held}
+  - '3'
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -262,7 +263,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -370,18 +370,18 @@ combos:
 - p: [2, 3]
   k: Sft+⇥
   l: [default]
-- p: [25, 35]
+- p: [26, 36]
   k: {t: Alt+B, h: bluetooth}
   l: [default]
 - p: [7, 8]
   k: '-'
   l: [default]
-- p: [6, 7]
+- p: [18, 19]
   k: '&copy_line'
   l: [default]
-- p: [17, 18]
+- p: [6, 7]
   k: '&copy_before'
   l: [default]
-- p: [29, 30]
+- p: [30, 31]
   k: '&copy_after'
   l: [default]
