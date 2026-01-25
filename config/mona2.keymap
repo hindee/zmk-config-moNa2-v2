@@ -209,71 +209,6 @@
             tap-ms = <20>;
         };
 
-        // --- JIS Key Mod Morph Behaviors ---
-
-        jis_CRT_TLD: jis_CRT_TLD {
-            compatible = "zmk,behavior-mod-morph";
-            label = "^ ~";
-            #binding-cells = <0>;
-            bindings = <&kp JP_CARET>, <&kp JP_TILDE>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        jis_YEN_PIP: jis_YEN_PIP {
-            compatible = "zmk,behavior-mod-morph";
-            label = "\\ |";
-            #binding-cells = <0>;
-            bindings = <&kp JP_YEN>, <&kp JP_PIPE>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        jis_AT_BKQ: jis_AT_BKQ {
-            compatible = "zmk,behavior-mod-morph";
-            label = "@ `";
-            #binding-cells = <0>;
-            bindings = <&kp JP_AT>, <&kp JP_BACKQUOTE>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        jis_CLN_AST: jis_CLN_AST {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CLN AST";
-            #binding-cells = <0>;
-            bindings = <&kp JP_COLON>, <&kp JP_ASTERISK>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        jis_YEN_UNS: jis_YEN_UNS {
-            compatible = "zmk,behavior-mod-morph";
-            label = "\\ _";
-            #binding-cells = <0>;
-            bindings = <&kp JP_YEN>, <&kp JP_UNDERSCORE>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        jis_LBK_LBT: jis_LBK_LBT {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LBK LBT";
-            #binding-cells = <0>;
-            bindings = <&kp JP_LBRACKET>, <&kp JP_LBRACE>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        jis_RBK_RBT: jis_RBK_RBT {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RBK RBT";
-            #binding-cells = <0>;
-            bindings = <&kp JP_RBRACKET>, <&kp JP_RBRACE>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
         tog_off: toggle_layer_off {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
@@ -291,38 +226,6 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
-        };
-
-        // --- Shift有無で「半角/全角」↔「変換」を切り替える ---
-
-        zh_henkan: zenkaku_hankaku_or_henkan {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ZH_HNKN";
-            #binding-cells = <0>;
-
-            // デフォルト（Shiftなし）：半角/全角 → GRAVE
-            // Shiftあり：変換 → INT_HENKAN
-
-            bindings = <&kp GRAVE>, <&kp INT_HENKAN>;
-
-            // 左右Shiftのいずれかでモーフを発動
-
-            mods = <(MOD_LSFT | MOD_RSFT)>;
-
-            // Shiftを「かな」送出に載せたくないので 0（デフォルト）でOK
-            // keep-mods = <0>;
-        };
-
-        // --- 長押しでレイヤー2、タップ側は上のMod-Morph ---
-
-        lt2_zh_hk: layer2_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "lt2_zh_hk";
-            #binding-cells = <2>; // 2に変更
-            bindings = <&mo>, <&zh_henkan>;
-
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
         };
 
         TB_none: TB_none {
@@ -376,7 +279,7 @@
 &kp Q                  &kp W         &kp E      &kp R                               &kp T                                         &kp Y        &kp U     &kp I      &kp O       &kp P
 &lt 1 A                &kp S         &kp D      &kp F                               &kp G        &RE_scroll        &kp ESC        &kp H        &kp J     &kp K      &kp L       &lt 6 SEMICOLON
 &mt_exit_AML LSHIFT Z  &kp X         &kp C      &kp V                               &kp B        &kp LSHIFT        &kp RSHIFT     &kp N        &kp M     &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
-&kp LCTRL              &kp LEFT_WIN  &lt 7 TAB  &mt_exit_AML LEFT_ALT INT_MUHENKAN  &lt 6 SPACE  &lt2_zh_hk 2 0    &kp BACKSPACE  &lt 3 ENTER  &TB_none                         &mt RIGHT_CONTROL DEL
+&kp LCTRL              &kp LEFT_WIN  &lt 7 TAB  &mt_exit_AML LEFT_ALT INT_MUHENKAN  &lt 6 SPACE  &lt 2 JP_HANZEN   &kp BACKSPACE  &lt 3 ENTER  &TB_none                         &mt RIGHT_CONTROL DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -384,10 +287,10 @@
 
         symbols {
             bindings = <
-&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                                   &kp JP_LPAREN  &kp JP_RPAREN  &kp MINUS          &jis_CRT_TLD  &jis_YEN_PIP
-&trans           &trans         &trans    &trans      &kp JP_AMPERSAND  &RE_ctltab    &kp JP_QUOTE  &jis_LBK_LBT   &jis_RBK_RBT   &kp JP_PLUS        &jis_AT_BKQ   &jis_CLN_AST
-&trans           &trans         &trans    &trans      &trans            &kp DEL       &kp INSERT    &trans         &trans         &kp JP_UNDERSCORE  &trans        &trans
-&trans           &trans         &trans    &trans      &trans            &trans        &trans        &trans         &TB_none                                        &trans
+&kp EXCLAMATION  &kp JP_DQUOTE    &kp HASH     &kp DOLLAR  &kp PERCENT                                       &kp JP_LPAREN   &kp JP_RPAREN   &kp MINUS          &kp JP_CARET &kp JP_YEN
+&trans           &kp JP_QUOTE     &kp TAB      &kp LS(TAB) &kp JP_AMPERSAND  &RE_ctltab     &kp JP_AMPERSAND &kp JP_LBRACKET &kp JP_RBRACKET &kp JP_TILDE       &kp JP_AT    &kp JP_COLON
+&trans           &kp JP_BACKQUOTE &trans       &trans      &trans            &kp DEL        &kp INSERT       &kp JP_LBRACE   &kp JP_RBRACE   &kp JP_UNDERSCORE  &trans       &kp JP_PIPE
+&trans           &trans           &trans       &trans      &trans            &kp INT_HENKAN &trans           &trans         &TB_none                                         &trans
             >;
 
             sensor-bindings = <&tab_switcher>;
