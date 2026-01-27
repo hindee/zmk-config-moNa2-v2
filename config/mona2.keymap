@@ -146,21 +146,21 @@
         copy_before: copy_before {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp HOME &kp LS(END) &kp LC(C)>;
-            label = "COPY_BEFORE";
+            bindings = <&kp LS(HOME)>;
+            label = "COPY_LINE";
         };
 
         copy_line: copy_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(HOME) &kp LC(C)>;
-            label = "COPY_LINE";
+            bindings = <&kp HOME &kp LS(END)>;
+            label = "COPY_BEFORE";
         };
 
         copy_after: copy_after {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(END) &kp LC(C)>;
+            bindings = <&kp LS(END)>;
             label = "COPY_AFTER";
         };
     };
