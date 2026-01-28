@@ -128,3 +128,9 @@
     idle-reset-timeout-ms = <200>;
 
 };
+
+&pointer_accel {
+    input-type = <INPUT_EV_REL>;
+    codes = <INPUT_REL_X INPUT_REL_Y>;
+    // プリセット値が自動的に適用されます！
+};

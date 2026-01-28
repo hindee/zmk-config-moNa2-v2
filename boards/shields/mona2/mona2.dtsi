@@ -1,7 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-#include <behaviors/input_gestures_accel.dtsi>
 #include <physical_layouts.dtsi>
 
 / {
@@ -107,8 +106,7 @@
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,         //Y軸反転
             //<&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
             //<&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
-            <&pointer_accel>,                                     // アクセラレーションプロセッサ
-            <&zip_temp_layer 4 10000>;                            // オートマウスレイヤー
+            <&zip_temp_layer 4 10000>;                // オートマウスレイヤー
     };
 
     left_encoder: encoder_left {
@@ -129,9 +127,4 @@
         triggers-per-rotation = <6>;
     };
 
-    &pointer_accel {
-        input-type = <INPUT_EV_REL>;
-        codes = <INPUT_REL_X INPUT_REL_Y>;
-        // プリセット値が自動的に適用されます！
-    };
 };
