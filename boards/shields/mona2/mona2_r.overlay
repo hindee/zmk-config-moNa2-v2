@@ -80,6 +80,15 @@
     status = "okay";
     device = <&trackball_central>;
 
+    // 【設定2】レイヤー（7）専用の速度設定（スナイプモード等）
+    layer7_speed {
+        layers = <7>;
+        input-processors =
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&pointer_accel>,                                   // アクセラレーションプロセッサ
+            <&zip_xy_scaler 1 5>; // 速度を1/5 に
+    };
+
     scroller {
         layers = <6>;
         input-processors = 
@@ -90,9 +99,19 @@
             <&zip_scroll_snap>,                                 // scroll-snap を適用
             //<&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
             //<&pointer_accel>,                                   // アクセラレーションプロセッサ
-            <&zip_scroll_scaler 1 12>;                          //スクロール量を1/11倍
+            <&zip_scroll_scaler 1 11>;                          //スクロール量を1/11倍
     };
 
+    // 【設定1】オートマウスレイヤー（4）専用の速度設定
+    automouse_speed {
+        layers = <0>;
+        input-processors =
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&zip_xy_scaler 1 1>, // 速度を 1/2 に
+            <&pointer_accel>,                                   // アクセラレーションプロセッサ
+            <&zip_temp_layer 4 10000>;                // オートマウスレイヤー
+    };
+    
 };
 
 /* Optional: configure zip_scroll_snap parameters (override defaults). Adjust as needed. */
@@ -107,4 +126,5 @@
     lock-duration-ms = <200>;
     lock-for-next-n-events = <10>;
     idle-reset-timeout-ms = <200>;
+
 };

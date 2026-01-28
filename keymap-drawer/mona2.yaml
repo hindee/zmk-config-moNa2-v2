@@ -16,6 +16,7 @@ layers:
   - D
   - F
   - G
+  - {t: $$rotaryencoder$$, h: ↑↓}
   - ESC
   - H
   - J
@@ -36,7 +37,7 @@ layers:
   - {t: /, h: RIGHT SHIFT}
   - Ctrl
   - ⌘
-  - Alt
+  - {t: ⇥, h: mouse2}
   - {t: 無変換, h: Alt}
   - {t: ␣, h: scroll}
   - {t: 半/全, h: funcs_numpad}
@@ -53,37 +54,38 @@ layers:
   - (
   - )
   - '-'
-  - {t: ^, s: '~'}
-  - {t: ¥, s: '|'}
+  - ^
+  - ¥
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&'
   - ''''
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - +
-  - {t: '@', s: '`'}
-  - {t: ':', s: '*'}
+  - ⇥
+  - Sft+⇥
+  - '&'
+  - {t: $$rotaryencoder$$, h: CtlTab}
+  - '&'
+  - '['
+  - ']'
+  - '~'
+  - '@'
+  - ':'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DEL
   - INS
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '{'
+  - '}'
   - _
   - {t: ▽, type: trans}
+  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - 変換
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$trackball$$
@@ -104,6 +106,7 @@ layers:
   - F8
   - F9
   - F10
+  - {t: $$rotaryencoder$$, h: AltTab}
   - {t: ▽, type: trans}
   - /
   - '4'
@@ -148,6 +151,7 @@ layers:
   - Gui+→
   - Ctl+Gui+←
   - Ctl+Gui+→
+  - {t: $$rotaryencoder$$, h: Volume}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ←
@@ -192,6 +196,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: $$rotaryencoder$$, h: CtlTab}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
@@ -218,7 +223,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$trackball$$
+  - {t: $$trackball$$, h: Pointing}
   - {t: ▽, type: trans}
   bluetooth:
   - {t: ▽, type: trans}
@@ -236,6 +241,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: $$rotaryencoder$$, h: ←→}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -280,6 +286,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: $$rotaryencoder$$, h: ←→}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -306,7 +313,52 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$trackball$$
+  - {t: $$trackball$$, h: Scroll}
+  - {t: ▽, type: trans}
+  mouse2:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: $$rotaryencoder$$, h: CtlTab}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: $$trackball$$, h: Pointing}
   - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
@@ -318,18 +370,18 @@ combos:
 - p: [2, 3]
   k: Sft+⇥
   l: [default]
-- p: [25, 35]
+- p: [26, 36]
   k: {t: Alt+B, h: bluetooth}
   l: [default]
 - p: [7, 8]
   k: '-'
   l: [default]
-- p: [6, 7]
+- p: [18, 19]
   k: '&copy_line'
   l: [default]
-- p: [17, 18]
+- p: [6, 7]
   k: '&copy_before'
   l: [default]
-- p: [29, 30]
+- p: [30, 31]
   k: '&copy_after'
   l: [default]
