@@ -1,6 +1,7 @@
 #include "mona2.dtsi"
 #include <scroll-snap.dtsi>
 #include <input/processors.dtsi>
+#include <behaviors/input_gestures_accel.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 
@@ -88,6 +89,7 @@
             <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
             <&zip_scroll_snap>,                                 // scroll-snap を適用
             //<&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
+            //<&pointer_accel>,                                   // アクセラレーションプロセッサ
             <&zip_scroll_scaler 1 12>;                          //スクロール量を1/11倍
     };
 
