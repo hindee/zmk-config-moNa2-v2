@@ -131,7 +131,7 @@
 
 &pointer_accel {
     input-type = <INPUT_EV_REL>;
-    // codes = <INPUT_REL_X INPUT_REL_Y>;
+    codes = <INPUT_REL_X INPUT_REL_Y>;
     // プリセット値が自動的に適用されます！
     // 低速をゆっくりに
     min-factor = <80>;            // 低速側を下げる（例：0.8x相当）
