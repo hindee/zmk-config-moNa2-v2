@@ -130,7 +130,14 @@
 };
 
 &pointer_accel {
-    input-type = <INPUT_EV_REL>;
-    codes = <INPUT_REL_X INPUT_REL_Y>;
+    // input-type = <INPUT_EV_REL>;
+    // codes = <INPUT_REL_X INPUT_REL_Y>;
     // プリセット値が自動的に適用されます！
+    // 低速をゆっくりに
+    min-factor = <80>;            // 低速側を下げる（例：0.8x相当）
+    max-factor = <250>;           // 高速側は維持
+    speed-threshold = <120>;      // 低速扱いを少し広げる
+    speed-max = <300>;            // ここは今の感覚に合わせて
+    acceleration-exponent = <3>;  // 立ち上がりを抑えめに
+
 };
