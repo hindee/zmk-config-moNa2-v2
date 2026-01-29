@@ -130,7 +130,7 @@
 };
 
 &pointer_accel {
-    // input-type = <INPUT_EV_REL>;
+    input-type = <INPUT_EV_REL>;
     // codes = <INPUT_REL_X INPUT_REL_Y>;
     // プリセット値が自動的に適用されます！
     // 低速をゆっくりに
