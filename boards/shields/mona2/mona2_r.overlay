@@ -86,7 +86,7 @@
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&pointer_accel>,                                   // アクセラレーションプロセッサ
-            <&zip_xy_scaler 1 5>; // 速度を1/5 に
+            <&zip_xy_scaler 1 4>; // 速度を1/4 に
     };
 
     scroller {
@@ -134,9 +134,9 @@
     codes = <INPUT_REL_X INPUT_REL_Y>;
     // プリセット値が自動的に適用されます！
     // 低速をゆっくりに
-    min-factor = <50>;        // ← 低速の精度が一気に上がる
-    speed-threshold = <150>;  // ← 低速扱いが広がる → カクつき消失
+    min-factor = <25>;         // 0.5倍(50)から0.25倍(25)へ：移動量が半分になります
+    speed-threshold = <250>;   // 少しだけ低速維持範囲を広げる
+    
     acceleration-exponent = <3>;
     max-factor = <250>;
-    speed-max = <300>;
-};
+    speed-max = <300>;};
