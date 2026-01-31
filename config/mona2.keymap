@@ -21,7 +21,6 @@
 #define MOUSE 4
 #define BLUETOOTH 5
 #define SCROLL 6
-#define MOUSE2 7
 
 // -------------------- JIS Key Conversion Macros (日本語キーボード変換定義) --------------------
 
@@ -347,17 +346,6 @@
             >;
 
             sensor-bindings = <&scroll_right_left>;
-        };
-
-        mouse2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                        &trans  &trans     &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &RE_ctltab    &trans  &trans  &mkp MB1   &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans     &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &TB_mouse                      &trans
-            >;
-
-            sensor-bindings = <&tab_switcher>;
         };
     };
 };
