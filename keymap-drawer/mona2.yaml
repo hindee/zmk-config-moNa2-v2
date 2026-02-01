@@ -85,7 +85,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - 変換
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - $$trackball$$
