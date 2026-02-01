@@ -167,8 +167,8 @@ layers:
   - {t: ▽, type: trans}
   - PSCRN
   - Ctl+HOME
+  - {t: ▽, type: trans}
   - Ctl+END
-  - PAGE DOWN
   - ▤
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

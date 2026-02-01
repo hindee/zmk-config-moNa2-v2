@@ -1197,18 +1197,16 @@ svg.keymap .keypos-15 rect.key_side {
 <tspan x="0" dy="-0.6em">Ctl+</tspan><tspan x="0" dy="1.2em">HOME</tspan>
 </text>
 </g>
-<g transform="translate(617, 140)" class="key keypos-31">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<text x="0" y="-1" class="key tap">
-<tspan x="0" dy="-0.6em">Ctl+</tspan><tspan x="0" dy="1.2em">END</tspan>
-</text>
+<g transform="translate(617, 140)" class="key trans keypos-31">
+<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
+<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
+<text x="0" y="-1" class="key trans tap">▽</text>
 </g>
 <g transform="translate(673, 154)" class="key keypos-32">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
 <text x="0" y="-1" class="key tap">
-<tspan x="0" dy="-0.6em">PAGE</tspan><tspan x="0" dy="1.2em">DOWN</tspan>
+<tspan x="0" dy="-0.6em">Ctl+</tspan><tspan x="0" dy="1.2em">END</tspan>
 </text>
 </g>
 <g transform="translate(729, 175)" class="key keypos-33">
