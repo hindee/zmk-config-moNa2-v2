@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: symbols}
+  - A
   - S
   - D
   - F
@@ -56,7 +56,7 @@ layers:
   - '-'
   - ^
   - ¥
-  - {type: held}
+  - {t: ▽, type: trans}
   - ''''
   - ⇥
   - Sft+⇥
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - 変換
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - $$trackball$$
   - {t: ▽, type: trans}
