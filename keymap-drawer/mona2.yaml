@@ -37,12 +37,12 @@ layers:
   - {t: /, h: RIGHT SHIFT}
   - Ctrl
   - ⌘
-  - {t: ⇥, h: mouse2}
-  - {t: 無変換, h: Alt}
+  - {t: 無変換, h: ⇧}
+  - {t: '&kp_exit_AML GRAVE', h: Alt}
   - {t: ␣, h: scroll}
-  - {t: 半/全, h: funcs_numpad}
-  - ⌫
-  - {t: ⏎, h: arrow}
+  - {t: 変換, h: funcs_numpad}
+  - {t: ␣, h: symbols}
+  - {t: APP, h: arrow}
   - $$trackball$$
   - {t: DEL, h: RIGHT CONTROL}
   symbols:
@@ -136,40 +136,40 @@ layers:
   - $$trackball$$
   - {t: ▽, type: trans}
   arrow:
-  - {t: ▽, type: trans}
+  - ESC
   - Ctl+Sft+⇥
   - PRINTSCREEN
   - Ctl+⇥
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PAGE UP
   - HOME
   - ↑
-  - PAGE UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - END
+  - ⌫
+  - ⇥
   - Gui+←
   - Gui+→
   - Ctl+Gui+←
   - Ctl+Gui+→
   - {t: $$rotaryencoder$$, h: Volume}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PAGE DOWN
   - ←
   - ↓
   - →
+  - ⏎
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT SHIFT
   - Gui+Sft+←
   - Gui+Sft+→
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - END
-  - ↓
+  - PSCRN
+  - Ctl+HOME
+  - Ctl+END
   - PAGE DOWN
-  - {t: ▽, type: trans}
+  - APP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -315,51 +315,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: $$trackball$$, h: Scroll}
   - {t: ▽, type: trans}
-  mouse2:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: $$rotaryencoder$$, h: CtlTab}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB3'
-  - '&mkp MB2'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: $$trackball$$, h: Pointing}
-  - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
   k: ESC
@@ -377,11 +332,11 @@ combos:
   k: '-'
   l: [default]
 - p: [18, 19]
-  k: '&copy_line'
+  k: '&select_ line'
   l: [default]
 - p: [6, 7]
-  k: '&copy_before'
+  k: '&select_ before'
   l: [default]
 - p: [30, 31]
-  k: '&copy_after'
+  k: '&select_ after'
   l: [default]
