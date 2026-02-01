@@ -103,19 +103,19 @@
         };
 
         cpline {
-            bindings = <&select_　line>;
+            bindings = <&select_line>;
             key-positions = <18 19>;
             layers = <0>;
         };
 
         cpbef {
-            bindings = <&select_　before>;
+            bindings = <&select_before>;
             key-positions = <6 7>;
             layers = <0>;
         };
 
         cpaft {
-            bindings = <&select_　after>;
+            bindings = <&select_after>;
             key-positions = <30 31>;
             layers = <0>;
         };
@@ -142,25 +142,25 @@
             label = "KP_exit_AML";
         };
 
-        select_　before: select_　before {
+        select_before: select_before {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(HOME)>;
-            label = "select_　LINE";
+            label = "select_LINE";
         };
 
-        select_　line: select_　line {
+        select_line: select_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp HOME &kp LS(END)>;
-            label = "select_　BEFORE";
+            label = "select_BEFORE";
         };
 
-        select_　after: select_　after {
+        select_after: select_after {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(END)>;
-            label = "select_　AFTER";
+            label = "select_AFTER";
         };
     };
 
