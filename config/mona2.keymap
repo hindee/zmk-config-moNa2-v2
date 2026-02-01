@@ -312,7 +312,7 @@
             bindings = <
 &kp ESC  &trans              &kp LG(UP_ARROW)    &trans               &trans                        &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp BACKSPACE
 &kp TAB  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &RE_volume    &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
-&trans   &trans              &trans              &trans               &trans  &trans        &trans  &kp PSCRN      &kp LC(HOME)    &kp LC(END)     &kp PAGE_DOWN    &kp K_APP
+&trans   &trans              &trans              &trans               &trans  &trans        &trans  &kp PSCRN      &kp LC(HOME)    &trans          &kp RC(END)      &kp K_APP
 &trans   &trans              &trans              &trans               &trans  &trans        &trans  &trans         &TB_none                                         &trans
             >;
 
