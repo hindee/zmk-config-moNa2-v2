@@ -137,9 +137,9 @@ layers:
   - {t: ▽, type: trans}
   arrow:
   - ESC
-  - Ctl+Sft+⇥
+  - {t: ▽, type: trans}
   - Gui+↑
-  - Ctl+⇥
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAGE UP
   - HOME
@@ -148,9 +148,9 @@ layers:
   - ⌫
   - ⇥
   - Gui+←
+  - Gui+↓
   - Gui+→
-  - Ctl+Gui+←
-  - Ctl+Gui+→
+  - {t: ▽, type: trans}
   - {t: $$rotaryencoder$$, h: Volume}
   - {t: ▽, type: trans}
   - PAGE DOWN
@@ -160,8 +160,8 @@ layers:
   - ⏎
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+Sft+←
-  - Gui+Sft+→
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
