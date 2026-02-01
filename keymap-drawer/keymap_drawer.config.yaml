@@ -334,11 +334,13 @@ parse_config:
     LEFT_WIN: '⌘'
     INT_HENKAN: '変換'
     INT_MUHENKAN: '無変換'
+    K_APP: '▤'
+
 
   # ----- Raw bindings for encoders/trackball -----
   raw_binding_map:
     '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
-    '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
+    '&kp_exit_AML INT_HENKAN': { tap: '変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
     # '&lt2_zh_hk': { tap: '半/全', hold: 'funcs_numpad', shifted: '変換' }
 

@@ -38,11 +38,11 @@ layers:
   - Ctrl
   - ⌘
   - {t: 無変換, h: ⇧}
-  - {t: '&kp_exit_AML GRAVE', h: Alt}
-  - {t: ␣, h: scroll}
-  - {t: 変換, h: funcs_numpad}
-  - {t: ␣, h: symbols}
-  - {t: APP, h: arrow}
+  - {t: 変換, h: Alt}
+  - {t: Sft+␣, h: scroll}
+  - {t: 半/全, h: funcs_numpad}
+  - {t: ␣, h: arrow}
+  - {t: ⏎, h: symbols}
   - $$trackball$$
   - {t: DEL, h: RIGHT CONTROL}
   symbols:
@@ -86,8 +86,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - 変換
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - $$trackball$$
   - {t: ▽, type: trans}
   funcs_numpad:
@@ -138,7 +138,7 @@ layers:
   arrow:
   - ESC
   - Ctl+Sft+⇥
-  - PRINTSCREEN
+  - Gui+↑
   - Ctl+⇥
   - {t: ▽, type: trans}
   - PAGE UP
@@ -169,8 +169,7 @@ layers:
   - Ctl+HOME
   - Ctl+END
   - PAGE DOWN
-  - APP
-  - {t: ▽, type: trans}
+  - ▤
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -178,6 +177,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - $$trackball$$
   - {t: ▽, type: trans}
   mouse:
@@ -262,9 +262,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -325,7 +325,7 @@ combos:
 - p: [2, 3]
   k: Sft+⇥
   l: [default]
-- p: [26, 36]
+- p: [26, 38]
   k: {t: Alt+B, h: bluetooth}
   l: [default]
 - p: [7, 8]
