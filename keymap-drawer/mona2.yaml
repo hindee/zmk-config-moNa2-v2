@@ -332,11 +332,11 @@ combos:
   k: '-'
   l: [default]
 - p: [18, 19]
-  k: '&select_ line'
+  k: '&select_line'
   l: [default]
 - p: [6, 7]
-  k: '&select_ before'
+  k: '&select_before'
   l: [default]
 - p: [30, 31]
-  k: '&select_ after'
+  k: '&select_after'
   l: [default]
