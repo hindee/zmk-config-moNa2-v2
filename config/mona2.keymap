@@ -60,7 +60,7 @@
 &lt {
     tapping-term-ms = <250>;
 
-    //quick-tap-ms = <100>;
+    quick-tap-ms = <100>;
 
     require-prior-idle-ms = <100>;
     flavor = "balanced";
@@ -148,14 +148,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(HOME)>;
-            label = "select_LINE";
+            label = "select_BEFORE";
         };
 
         select_line: select_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp HOME &kp LS(END)>;
-            label = "select_BEFORE";
+            label = "select_LINE";
         };
 
         select_after: select_after {
@@ -223,7 +223,7 @@
             bindings = <&kp>, <&kp_exit_AML>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             flavor = "tap-preferred";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <0>;
