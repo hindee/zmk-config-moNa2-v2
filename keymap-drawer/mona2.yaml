@@ -22,7 +22,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: scroll}
+  - {t: ;, h: scroll, s: +}
   - {t: Z, h: ⇧}
   - X
   - C
@@ -32,19 +32,19 @@ layers:
   - ⇧
   - N
   - M
-  - ','
-  - .
-  - {t: /, h: RIGHT SHIFT}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, h: ⇧, s: '?'}
   - Ctrl
   - ⌘
-  - {t: 無変換, h: ⇧}
-  - {t: 変換, h: Alt}
+  - {t: ⏎, h: ⇧}
+  - {t: 無変換, h: Alt}
   - {t: Sft+␣, h: scroll}
-  - {t: 半/全, h: funcs_numpad}
-  - {t: ␣, h: arrow}
-  - {t: ⏎, h: symbols}
+  - {t: 半/全, h: symbols}
+  - {t: ␣, h: funcs_numpad}
+  - {t: 変換, h: arrow}
   - $$trackball$$
-  - {t: DEL, h: RIGHT CONTROL}
+  - {t: DEL, h: Ctrl}
   symbols:
   - '!'
   - '"'
@@ -53,21 +53,21 @@ layers:
   - '%'
   - (
   - )
-  - '-'
-  - ^
-  - ¥
-  - {t: ▽, type: trans}
+  - {t: '-', s: '='}
+  - {t: ^, s: '~'}
+  - {t: ¥, s: '|'}
+  - '|'
   - ''''
-  - ⇥
-  - Sft+⇥
+  - Tab
+  - Sft+Tab
   - '&'
   - {t: $$rotaryencoder$$, h: CtlTab}
   - '&'
   - '['
   - ']'
   - '~'
-  - '@'
-  - ':'
+  - {t: '@', s: '`'}
+  - {t: ':', s: '*'}
   - {t: ▽, type: trans}
   - '`'
   - {t: ▽, type: trans}
@@ -79,8 +79,6 @@ layers:
   - '}'
   - _
   - {t: ▽, type: trans}
-  - '|'
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -88,6 +86,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - $$trackball$$
   - {t: ▽, type: trans}
   funcs_numpad:
@@ -100,7 +100,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - +
+  - ⌫
   - F6
   - F7
   - F8
@@ -108,11 +108,11 @@ layers:
   - F10
   - {t: $$rotaryencoder$$, h: AltTab}
   - {t: ▽, type: trans}
-  - /
+  - {t: /, s: '?'}
   - '4'
   - '5'
   - '6'
-  - '-'
+  - ⏎
   - F11
   - F12
   - {t: ▽, type: trans}
@@ -124,14 +124,14 @@ layers:
   - '1'
   - '2'
   - '3'
-  - '0'
+  - ▤
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - $$trackball$$
   - {t: ▽, type: trans}
@@ -146,7 +146,7 @@ layers:
   - ↑
   - END
   - ⌫
-  - ⇥
+  - Tab
   - Gui+←
   - Gui+↓
   - Gui+→
@@ -176,8 +176,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - $$trackball$$
   - {t: ▽, type: trans}
   mouse:
@@ -320,16 +320,16 @@ combos:
   k: ESC
   l: [default]
 - p: [1, 2]
-  k: ⇥
+  k: Tab
   l: [default]
 - p: [2, 3]
-  k: Sft+⇥
+  k: Sft+Tab
   l: [default]
 - p: [26, 38]
   k: {t: Alt+B, h: bluetooth}
   l: [default]
 - p: [7, 8]
-  k: '-'
+  k: {t: '-', s: '='}
   l: [default]
 - p: [18, 19]
   k: '&select_line'

@@ -278,23 +278,23 @@ parse_config:
     ASTERISK: '('
     LEFT_PARENTHESIS: ')'
     RIGHT_PARENTHESIS: '('
-    EQUAL: '^'
+    EQUAL: {t: '^', s: '~'}
     PLUS: '~'
-    MINUS: '-'
+    MINUS: {t: '-', s: '='}
     UNDERSCORE: '='
-    SLASH: '/'
+    SLASH: {t: '/', s: '?'}
     QUESTION: '?'
     BACKSLASH: ']'
     PIPE: '}'
-    SEMICOLON: ';'
+    SEMICOLON: {t: ';', s: '+'}
     COLON: '+'
     DOUBLE_QUOTES: '*'
-    SINGLE_QUOTE: ':'
-    COMMA: ','
-    PERIOD: '.'
+    SINGLE_QUOTE: {t: ":", s: '*'}
+    COMMA: {t: ',', s: '<'}
+    PERIOD: {t: '.', s: '>'}
     LESS_THAN: '<'
     GREATER_THAN: '>'
-    LEFT_BRACKET: '@'
+    LEFT_BRACKET: {t: '@', s: '`'}
     RIGHT_BRACKET: '['
     LEFT_BRACE: '`'
     RIGHT_BRACE: '{'
@@ -303,7 +303,7 @@ parse_config:
     SPACE: '␣'
     BACKSPACE: '⌫'
     ENTER: '⏎'
-    TAB: '⇥'
+    TAB: 'Tab'
     ESCAPE: '⎋'
     LSHIFT: '⇧'
     RSHIFT: '⇧'
@@ -326,7 +326,7 @@ parse_config:
     JIS_YEN: '¥'
     JIS_PIPE: '|'
     JIS_UNDERSCORE: '_'
-    '0x89': '¥'
+    '0x89': {t: '¥', s: '|'}
     'LS(0x89)': '|'
     'LS(0x87)': '_'
     INSERT: 'INS'
@@ -339,8 +339,8 @@ parse_config:
 
   # ----- Raw bindings for encoders/trackball -----
   raw_binding_map:
-    '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
-    '&kp_exit_AML INT_HENKAN': { tap: '変換', hold: 'ALT' }
+    # '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
+    '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
     # '&lt2_zh_hk': { tap: '半/全', hold: 'funcs_numpad', shifted: '変換' }
 
