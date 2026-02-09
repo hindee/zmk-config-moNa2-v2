@@ -1,6 +1,6 @@
 # keymap_drawer.config.yaml for moNa2 with rotary encoder and trackball
 draw_config:
-  n_columns: 1
+  n_columns: 2
   draw_key_sides: true
   append_colon_to_layer_header: true
   small_pad: 4.0
