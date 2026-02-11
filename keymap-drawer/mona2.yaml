@@ -40,8 +40,8 @@ layers:
   - {t: ⏎, h: ⇧}
   - {t: 無変換, h: Alt}
   - {t: Sft+␣, h: scroll}
-  - {t: 半/全, h: symbols}
-  - {t: ␣, h: funcs_numpad}
+  - {t: 半/全, h: funcs_numpad}
+  - {t: ␣, h: symbols}
   - {t: 変換, h: arrow}
   - $$trackball$$
   - {t: DEL, h: Ctrl}
@@ -85,8 +85,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - $$trackball$$
   - {t: ▽, type: trans}
@@ -130,8 +130,8 @@ layers:
   - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$trackball$$
   - {t: ▽, type: trans}
