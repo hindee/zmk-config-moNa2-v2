@@ -64,6 +64,15 @@
     };
 };
 
+// rgbled_adapter LED alias
+/ {
+    aliases {
+        led-red   = &led0;
+        led-green = &led1;
+        led-blue  = &led2;
+    };
+};
+
 &zip_temp_layer {
     excluded-positions = <
         17 // J

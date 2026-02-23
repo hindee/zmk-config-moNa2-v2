@@ -14,3 +14,14 @@
 &left_encoder {
     status = "okay";
 };
+
+// rgbled_adapter LED alias
+// seeeduino_xiao_ble.dts defines: led0: led_0, led1: led_1, led2: led_2
+// so &led0, &led1, &led2 are the correct phandles
+/ {
+    aliases {
+        led-red   = &led0;
+        led-green = &led1;
+        led-blue  = &led2;
+    };
+};
