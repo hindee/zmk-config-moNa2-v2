@@ -37,7 +37,7 @@ layers:
   - {t: /, h: ⇧, s: '?'}
   - Ctrl
   - ⌘
-  - {t: ⏎, h: ⇧}
+  - {t: Tab, h: ⇧}
   - {t: 無変換, h: Alt}
   - {t: Sft+␣, h: scroll}
   - {t: 半/全, h: funcs_numpad}
@@ -132,7 +132,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '0'
   - $$trackball$$
   - {t: ▽, type: trans}
   arrow:
