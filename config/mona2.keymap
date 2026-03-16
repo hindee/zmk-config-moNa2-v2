@@ -328,7 +328,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &TB_mouse                      &trans
             >;
 
-            sensor-bindings = <&tab_switcher>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         bluetooth {
