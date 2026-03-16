@@ -78,10 +78,10 @@
 
 &zip_temp_layer {
     excluded-positions = <
-        17 // J
-        18 // K
-        19 // L
-        21 // LSHIFT,Z
+        18 // J
+        19 // K
+        20 // L
+        22 // LSHIFT,Z
         34 // Ctrl
     >;
 };
