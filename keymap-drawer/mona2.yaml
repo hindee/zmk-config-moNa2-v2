@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: symbols}
   - S
   - D
   - F
@@ -56,7 +56,7 @@ layers:
   - {t: '-', s: '='}
   - {t: ^, s: '~'}
   - {t: ¥, s: '|'}
-  - '|'
+  - {type: held}
   - ''''
   - Tab
   - Sft+Tab
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$trackball$$
   - {t: ▽, type: trans}
@@ -289,9 +289,9 @@ layers:
   - {t: $$rotaryencoder$$, h: ←→}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
