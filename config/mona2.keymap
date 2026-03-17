@@ -195,7 +195,7 @@
         alt_tab: alt_tab {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp TAB>, <&kp  LS(TAB)>;
+            bindings = <&kp  LS(TAB)>, <&kp TAB>;
 
             tap-ms = <20>;
         };
