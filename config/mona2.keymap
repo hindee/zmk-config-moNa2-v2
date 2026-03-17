@@ -61,7 +61,7 @@
 };
 
 &lt {
-    tapping-term-ms = <250>;
+    tapping-term-ms = <200>;
     quick-tap-ms = <100>;
     require-prior-idle-ms = <100>;
     flavor = "balanced";
@@ -112,14 +112,26 @@
         };
 
         cpbef {
-            bindings = <&select_before>;
+            bindings = <&kp LS(HOME)>;
             key-positions = <6 7>;
             layers = <0>;
         };
 
         cpaft {
-            bindings = <&select_after>;
+            bindings = <&kp LS(END)>;
             key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <22 23>;  // Z + X
+            layers = <0>;
+        };
+
+        redo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <23 24>;  // X + C
             layers = <0>;
         };
     };
@@ -145,25 +157,11 @@
             label = "KP_exit_AML";
         };
 
-        select_before: select_before {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(HOME)>;
-            label = "select_BEFORE";
-        };
-
         select_line: select_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp HOME &kp LS(END)>;
             label = "select_LINE";
-        };
-
-        select_after: select_after {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(END)>;
-            label = "select_AFTER";
         };
     };
 
@@ -177,15 +175,6 @@
 
             tap-ms = <20>;
         };
-
-        //        scroll_up_down: mouse_wheel_up_down {
-        //            compatible = "zmk,behavior-sensor-rotate";
-        //            #sensor-binding-cells = <0>;
-        //            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        //
-        //
-        //            tap-ms = <20>;
-        //        };
 
         scroll_right_left: mouse_wheel_right_left {
             compatible = "zmk,behavior-sensor-rotate";
@@ -225,7 +214,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <0>;
         };
