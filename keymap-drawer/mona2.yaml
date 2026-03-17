@@ -335,8 +335,14 @@ combos:
   k: '&select_line'
   l: [default]
 - p: [6, 7]
-  k: '&select_before'
+  k: Sft+HOME
   l: [default]
 - p: [30, 31]
-  k: '&select_after'
+  k: Sft+END
+  l: [default]
+- p: [22, 23]
+  k: Ctl+Z
+  l: [default]
+- p: [23, 24]
+  k: Ctl+Y
   l: [default]
