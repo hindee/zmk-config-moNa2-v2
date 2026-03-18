@@ -28,7 +28,7 @@ layers:
   - C
   - V
   - B
-  - ⇧
+  - '&td_shift_cw'
   - ⇧
   - N
   - M
