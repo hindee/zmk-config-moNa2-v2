@@ -228,6 +228,13 @@
             require-prior-idle-ms = <0>;
         };
 
+        td_shift_cw: tap_dance_shift_capsword {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHIFT>, <&caps_word>;
+        };
+
         TB_none: TB_none {
             compatible = "zmk,behavior-none";
             #binding-cells = <0>;
@@ -278,7 +285,7 @@
             bindings = <
 &kp Q                  &kp W         &kp E           &kp R                               &kp T                                            &kp Y             &kp U     &kp I      &kp O       &kp P
 &lt_finger 1 A         &kp S         &kp D           &kp F                               &kp G            &RE_scroll         &kp ESC      &kp H             &kp J     &kp K      &kp L       &lt_finger 6 SEMICOLON
-&mt_exit_AML LSHIFT Z  &kp X         &kp C           &kp V                               &kp B            &kp LSHIFT         &kp RSHIFT   &kp N             &kp M     &kp COMMA  &kp PERIOD  &mt RSHIFT SLASH
+&mt_exit_AML LSHIFT Z  &kp X         &kp C           &kp V                               &kp B            &td_shift_cw       &kp RSHIFT   &kp N             &kp M     &kp COMMA  &kp PERIOD  &mt RSHIFT SLASH
 &kp LCTRL              &kp LEFT_WIN  &mt LSHIFT TAB  &mt_exit_AML LEFT_ALT INT_MUHENKAN  &lt 6 LS(SPACE)  &lt 2 JP_HANZEN    &lt 1 SPACE  &lt 3 INT_HENKAN  &TB_none                         &mt RCTRL DEL
             >;
 
