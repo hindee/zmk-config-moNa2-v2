@@ -228,11 +228,28 @@
             require-prior-idle-ms = <0>;
         };
 
+        ht_home: hold_tap_home {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_HOME";
+            flavor = "balanced";
+            tapping-term-ms = <160>;
+            quick-tap-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&kp>, <&kp>;
+            #binding-cells = <2>;
+        };
+
+        caps_word_jis: caps_word_jis {
+            compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
+            continue-list = <UNDERSCORE INT_RO BACKSPACE DELETE MINUS>;
+        };
+
         td_shift_cw: tap_dance_shift_capsword {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&caps_word>;
+            bindings = <&kp LSHIFT>, <&caps_word_jis>;
         };
 
         TB_none: TB_none {
@@ -283,10 +300,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W         &kp E           &kp R                               &kp T                                            &kp Y             &kp U     &kp I      &kp O       &kp P
-&lt_finger 1 A         &kp S         &kp D           &kp F                               &kp G            &RE_scroll         &kp ESC      &kp H             &kp J     &kp K      &kp L       &lt_finger 6 SEMICOLON
-&mt_exit_AML LSHIFT Z  &kp X         &kp C           &kp V                               &kp B            &td_shift_cw       &kp RSHIFT   &kp N             &kp M     &kp COMMA  &kp PERIOD  &mt RSHIFT SLASH
-&kp LCTRL              &kp LEFT_WIN  &mt LSHIFT TAB  &mt_exit_AML LEFT_ALT INT_MUHENKAN  &lt 6 LS(SPACE)  &lt 2 JP_HANZEN    &lt 1 SPACE  &lt 3 INT_HENKAN  &TB_none                         &mt RCTRL DEL
+&kp Q                  &kp W         &kp E                &kp R                           &kp T                                            &kp Y             &kp U     &kp I      &kp O       &kp P
+&lt_finger 1 A         &kp S         &kp D                &kp F                           &kp G            &RE_scroll         &kp ESC      &kp H             &kp J     &kp K      &kp L       &lt_finger 6 SEMICOLON
+&mt_exit_AML LSHIFT Z  &kp X         &kp C                &kp V                           &kp B            &td_shift_cw       &kp RSHIFT   &kp N             &kp M     &kp COMMA  &kp PERIOD  &mt RSHIFT SLASH
+&kp LCTRL              &kp LEFT_WIN  &ht_home LSHIFT TAB  &ht_home LEFT_ALT INT_MUHENKAN  &lt 6 LS(SPACE)  &lt 2 JP_HANZEN    &lt 1 SPACE  &lt 3 INT_HENKAN  &TB_none                         &ht_home RCTRL DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
