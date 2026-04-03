@@ -69,7 +69,7 @@
             , <&key_physical_attrs 100 100  763  480 (-1000)     0   350>
 
             , <&key_physical_attrs 100 100 1200  337       0     0     0>
-            , <&key_physical_attrs 250 200  871  480       0     0     0>
+            , <&key_physical_attrs 250 160 1000  300       0     0     0>
 
             ;
     };
@@ -102,11 +102,6 @@
     trackball_central_listener: trackball_central_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
-        input-processors = 
-            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,         //Y軸反転
-            //<&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
-            //<&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
-            <&zip_temp_layer 4 10000>;                // オートマウスレイヤー
     };
 
     left_encoder: encoder_left {

@@ -1,4 +1,5 @@
 #include "mona2.dtsi"
+#include <behaviors/battery_history_request.dtsi>
 
 &kscan0 {
         col-gpios
@@ -15,41 +16,13 @@
     status = "okay";
 };
 
-/* トラボとエンコーダー用のダミー */
-/* {
-    behaviors {
-        TB_none: TB_none {
-            compatible = "zmk,behavior-none";
-            #binding-cells = <0>;
-        };
-        TB_mouse: TB_mouse {
-            compatible = "zmk,behavior-none";
-            #binding-cells = <0>;
-        };
-        TB_scroll: TB_scroll {
-            compatible = "zmk,behavior-none";
-            #binding-cells = <0>;
-        };
-
-        RE_scroll: RE_scroll {
-            compatible = "zmk,behavior-none";
-            #binding-cells = <0>;
-        };
-        RE_alttab: RE_alttab {
-            compatible = "zmk,behavior-none";
-            #binding-cells = <0>;
-        };
-        RE_volume: RE_volume {
-            compatible = "zmk,behavior-none";
-            #binding-cells = <0>;
-        };
-        RE_ctltab: RE_ctltab {
-            compatible = "zmk,behavior-none";
-            #binding-cells = <0>;
-        };
-        RE_sidesc: RE_sidesc {
-            compatible = "zmk,behavior-none";
-            #binding-cells = <0>;
-        };
+// rgbled_adapter LED alias
+// seeeduino_xiao_ble.dts defines: led0: led_0, led1: led_1, led2: led_2
+// so &led0, &led1, &led2 are the correct phandles
+/ {
+    aliases {
+        led-red   = &led0;
+        led-green = &led1;
+        led-blue  = &led2;
     };
-};*/
+};
