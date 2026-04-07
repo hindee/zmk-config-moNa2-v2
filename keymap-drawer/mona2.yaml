@@ -137,9 +137,9 @@ layers:
   - {t: ▽, type: trans}
   arrow:
   - ESC
-  - {t: ▽, type: trans}
+  - Ctl+Z
   - Gui+↑
-  - {t: ▽, type: trans}
+  - Ctl+Y
   - {t: ▽, type: trans}
   - PAGE UP
   - HOME
@@ -319,10 +319,10 @@ combos:
 - p: [0, 1]
   k: ESC
   l: [default]
-- p: [1, 2]
+- p: [10, 11]
   k: Tab
   l: [default]
-- p: [2, 3]
+- p: [11, 12]
   k: Sft+Tab
   l: [default]
 - p: [26, 38]
@@ -341,8 +341,9 @@ combos:
   k: Sft+END
   l: [default]
 - p: [22, 23]
-  k: Ctl+Z
+  k: Sft+Z
   l: [default]
-- p: [23, 24]
-  k: Ctl+Y
-  l: [default]
+- p: [8, 9]
+  k: ⌫
+- p: [20, 21]
+  k: ⏎
