@@ -87,7 +87,7 @@
             timeout-ms = <70>;
             slow-release;
             bindings = <&kp TAB>;
-            key-positions = <1 2>;
+            key-positions = <10 11>;
             layers = <0>;
         };
 
@@ -95,7 +95,7 @@
             timeout-ms = <70>;
             slow-release;
             bindings = <&kp LS(TAB)>;
-            key-positions = <2 3>;
+            key-positions = <11 12>;
             layers = <0>;
         };
 
@@ -139,20 +139,21 @@
             layers = <0>;
         };
 
-        undo {
-            timeout-ms = <70>;
-            slow-release;
-            bindings = <&kp LC(Z)>;
+
+        ShiftZ {
+            bindings = <&kp LS(Z)>;
             key-positions = <22 23>;  // Z + X
             layers = <0>;
         };
 
-        redo {
-            timeout-ms = <70>;
-            slow-release;
-            bindings = <&kp LC(Y)>;
-            key-positions = <23 24>;  // X + C
-            layers = <0>;
+        BS {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+        };
+
+        ENT {
+            bindings = <&kp ENTER>;
+            key-positions = <20 21>;
         };
     };
 
@@ -191,12 +192,14 @@
         lt_finger: lt_finger {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             flavor = "balanced";
             quick-tap-ms = <100>;
             require-prior-idle-ms = <100>;
         };
+
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -256,6 +259,7 @@
             quick-tap-ms = <150>;
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
         };
 
@@ -353,7 +357,7 @@
 
         arrow {
             bindings = <
-&kp ESC  &trans              &kp LG(UP_ARROW)    &trans               &trans                        &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp BACKSPACE
+&kp ESC  &kp LC(Z)           &kp LG(UP_ARROW)    &kp LC(Y)            &trans                        &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp BACKSPACE
 &kp TAB  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &RE_volume    &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
 &trans   &trans              &trans              &trans               &trans  &trans        &trans  &kp PSCRN      &kp LC(HOME)    &trans          &kp RC(END)      &kp K_APP
 &trans   &trans              &trans              &trans               &trans  &trans        &trans  &trans         &TB_none                                         &trans
@@ -384,10 +388,10 @@
 
         scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &trans  &trans      &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &RE_sidesc    &trans  &trans  &mkp MB1    &mkp MB3 &mkp MB2 &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans      &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &TB_scroll                    &trans
+&trans  &trans  &trans  &trans  &trans                        &trans  &trans      &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &RE_sidesc    &trans  &trans  &mkp MB1    &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans      &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &TB_scroll                      &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
