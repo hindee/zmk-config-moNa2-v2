@@ -534,12 +534,12 @@ svg.keymap .keypos-15 rect.key_side {
 <a href="#symbols">
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 71%">symbols</tspan></text>
 </a></g>
-<g transform="translate(485, 230) rotate(-10.0)" class="key keypos-41">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
+<g transform="translate(485, 232) rotate(-10.0)" class="key keypos-41">
+<rect rx="9" ry="9" x="-56" y="-19" width="111" height="39" class="key side"/>
+<rect rx="2" ry="2" x="-50" y="-16" width="101" height="31" class="key"/>
 <text x="0" y="-1" class="key tap">変換</text>
 <a href="#arrow">
-<text x="0" y="24" class="key hold layer-activator">arrow</text>
+<text x="0" y="15" class="key hold layer-activator">arrow</text>
 </a></g>
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
@@ -822,9 +822,9 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(485, 230) rotate(-10.0)" class="key trans keypos-41">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
+<g transform="translate(485, 232) rotate(-10.0)" class="key trans keypos-41">
+<rect rx="9" ry="9" x="-56" y="-19" width="111" height="39" class="key trans side"/>
+<rect rx="2" ry="2" x="-50" y="-16" width="101" height="31" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
 <g transform="translate(547, 231)" class="key keypos-42">
@@ -1056,9 +1056,9 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(485, 230) rotate(-10.0)" class="key keypos-41">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
+<g transform="translate(485, 232) rotate(-10.0)" class="key keypos-41">
+<rect rx="9" ry="9" x="-56" y="-19" width="111" height="39" class="key side"/>
+<rect rx="2" ry="2" x="-50" y="-16" width="101" height="31" class="key"/>
 <text x="0" y="-1" class="key tap">0</text>
 </g>
 <g transform="translate(547, 231)" class="key keypos-42">
@@ -1298,9 +1298,9 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(485, 230) rotate(-10.0)" class="key held keypos-41">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key held side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key held"/>
+<g transform="translate(485, 232) rotate(-10.0)" class="key held keypos-41">
+<rect rx="9" ry="9" x="-56" y="-19" width="111" height="39" class="key held side"/>
+<rect rx="2" ry="2" x="-50" y="-16" width="101" height="31" class="key held"/>
 </g>
 <g transform="translate(547, 231)" class="key keypos-42">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
@@ -1537,9 +1537,9 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(485, 230) rotate(-10.0)" class="key trans keypos-41">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
+<g transform="translate(485, 232) rotate(-10.0)" class="key trans keypos-41">
+<rect rx="9" ry="9" x="-56" y="-19" width="111" height="39" class="key trans side"/>
+<rect rx="2" ry="2" x="-50" y="-16" width="101" height="31" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
 <g transform="translate(547, 231)" class="key keypos-42">
@@ -1779,9 +1779,9 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(485, 230) rotate(-10.0)" class="key trans keypos-41">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
+<g transform="translate(485, 232) rotate(-10.0)" class="key trans keypos-41">
+<rect rx="9" ry="9" x="-56" y="-19" width="111" height="39" class="key trans side"/>
+<rect rx="2" ry="2" x="-50" y="-16" width="101" height="31" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
 <g transform="translate(547, 231)" class="key keypos-42">
@@ -2018,9 +2018,9 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(485, 230) rotate(-10.0)" class="key trans keypos-41">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
+<g transform="translate(485, 232) rotate(-10.0)" class="key trans keypos-41">
+<rect rx="9" ry="9" x="-56" y="-19" width="111" height="39" class="key trans side"/>
+<rect rx="2" ry="2" x="-50" y="-16" width="101" height="31" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
 <g transform="translate(547, 231)" class="key keypos-42">
