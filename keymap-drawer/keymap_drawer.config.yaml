@@ -157,7 +157,7 @@ draw_config:
   # ----- Embedded glyphs -----
   glyphs:
     trackball: |
-      <svg id="trackball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140">
+      <svg id="trackball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 210">
         <defs>
           <!-- ユニークIDで衝突回避 -->
           <linearGradient id="tb-outerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
