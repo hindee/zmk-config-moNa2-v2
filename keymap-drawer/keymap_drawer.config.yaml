@@ -88,13 +88,14 @@ draw_config:
     .keypos-42 rect.key_side {
       display: none !important;
     }
+/*
     .keypos-42 use[href="#trackball"] {
       width: 145px !important;
       height: 90px !important;
       x: -13px !important;
       y: -37px !important;
       transform: scale(1.5) !important;
-    }
+    }*/
     .keypos-42 text.hold {
       fill: #000000 !important;
       font-size: 12px !important;
