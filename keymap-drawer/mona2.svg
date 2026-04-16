@@ -47,7 +47,7 @@
 
 </svg>
 <svg id="trackball">
-<svg id="trackball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 210">
+<svg id="trackball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258 135">
   <defs>
     <!-- ユニークIDで衝突回避 -->
     <linearGradient id="tb-outerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -264,6 +264,12 @@ rect.key_side {}
 .keypos-42 rect.key,
 .keypos-42 rect.key_side {
   display: none !important;
+}
+.keypos-42 use[href="#trackball"] {
+  width: 145px !important;
+  height: 90px !important;
+  transform: scale(1.5) !important;
+  x: -72px !important;
 }
 .keypos-42 text.hold {
   fill: #000000 !important;
@@ -537,7 +543,7 @@ svg.keymap .keypos-15 rect.key_side {
 <g transform="translate(628, 224)" class="key keypos-42">
 <rect rx="9" ry="9" x="-70" y="-42" width="139" height="84" class="key side"/>
 <rect rx="2" ry="2" x="-64" y="-39" width="129" height="76" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-57" y="-31" height="60" width="114.66666666666667" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
@@ -823,7 +829,7 @@ svg.keymap .keypos-15 rect.key_side {
 <g transform="translate(628, 224)" class="key keypos-42">
 <rect rx="9" ry="9" x="-70" y="-42" width="139" height="84" class="key side"/>
 <rect rx="2" ry="2" x="-64" y="-39" width="129" height="76" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-57" y="-31" height="60" width="114.66666666666667" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
@@ -1057,7 +1063,7 @@ svg.keymap .keypos-15 rect.key_side {
 <g transform="translate(628, 224)" class="key keypos-42">
 <rect rx="9" ry="9" x="-70" y="-42" width="139" height="84" class="key side"/>
 <rect rx="2" ry="2" x="-64" y="-39" width="129" height="76" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-57" y="-31" height="60" width="114.66666666666667" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
@@ -1298,7 +1304,7 @@ svg.keymap .keypos-15 rect.key_side {
 <g transform="translate(628, 224)" class="key keypos-42">
 <rect rx="9" ry="9" x="-70" y="-42" width="139" height="84" class="key side"/>
 <rect rx="2" ry="2" x="-64" y="-39" width="129" height="76" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-57" y="-31" height="60" width="114.66666666666667" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
@@ -1538,7 +1544,7 @@ svg.keymap .keypos-15 rect.key_side {
 <g transform="translate(628, 224)" class="key keypos-42">
 <rect rx="9" ry="9" x="-70" y="-42" width="139" height="84" class="key side"/>
 <rect rx="2" ry="2" x="-64" y="-39" width="129" height="76" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-57" y="-31" height="60" width="114.66666666666667" class="key tap glyph trackball"/>
 <text x="0" y="38" class="key hold"><tspan style="font-size: 62%">Pointing</tspan></text>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-43">
@@ -1780,7 +1786,7 @@ svg.keymap .keypos-15 rect.key_side {
 <g transform="translate(628, 224)" class="key keypos-42">
 <rect rx="9" ry="9" x="-70" y="-42" width="139" height="84" class="key side"/>
 <rect rx="2" ry="2" x="-64" y="-39" width="129" height="76" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-57" y="-31" height="60" width="114.66666666666667" class="key tap glyph trackball"/>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-43">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
@@ -2019,7 +2025,7 @@ svg.keymap .keypos-15 rect.key_side {
 <g transform="translate(628, 224)" class="key keypos-42">
 <rect rx="9" ry="9" x="-70" y="-42" width="139" height="84" class="key side"/>
 <rect rx="2" ry="2" x="-64" y="-39" width="129" height="76" class="key"/>
-<use href="#trackball" xlink:href="#trackball" x="-69" y="-31" height="60" width="137.14285714285714" class="key tap glyph trackball"/>
+<use href="#trackball" xlink:href="#trackball" x="-57" y="-31" height="60" width="114.66666666666667" class="key tap glyph trackball"/>
 <text x="0" y="38" class="key hold"><tspan style="font-size: 83%">Scroll</tspan></text>
 </g>
 <g transform="translate(729, 231)" class="key trans keypos-43">
