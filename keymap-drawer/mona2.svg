@@ -152,25 +152,25 @@ text.footer {
 }
 
 /* styling for combo tap, and key non-tap label text */
-text.combo, text.hold, text.shifted, text.left, text.right {
+text.combo, text.hold, text.shifted, text.left, text.right, text.tl, text.tr, text.bl, text.br {
     font-size: 11px;
 }
 
-text.hold {
+text.hold, text.bl, text.br {
     text-anchor: middle;
     dominant-baseline: auto;
 }
 
-text.shifted {
+text.shifted, text.tl, text.tr {
     text-anchor: middle;
     dominant-baseline: hanging;
 }
 
-text.left {
+text.left, text.tl, text.bl {
     text-anchor: start;
 }
 
-text.right {
+text.right, text.tr, text.br {
     text-anchor: end;
 }
 
@@ -348,7 +348,9 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
 <text x="0" y="-1" class="key tap">I</text>
-</g>
+<a href="#scroll">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 83%">scroll</tspan></text>
+</a></g>
 <g transform="translate(673, 42)" class="key keypos-8">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
@@ -421,8 +423,8 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
 <text x="0" y="-1" class="key tap">;</text>
-<a href="#scroll">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 83%">scroll</tspan></text>
+<a href="#mouse">
+<text x="0" y="24" class="key hold layer-activator">mouse</text>
 </a><text x="0" y="-24" class="key shifted">+</text>
 </g>
 <g transform="translate(28, 175)" class="key keypos-22">
@@ -1436,10 +1438,9 @@ svg.keymap .keypos-15 rect.key_side {
 <tspan x="0" dy="-0.6em">&amp;mkp</tspan><tspan x="0" dy="1.2em">MB2</tspan>
 </text>
 </g>
-<g transform="translate(729, 119)" class="key trans keypos-21">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
-<text x="0" y="-1" class="key trans tap">▽</text>
+<g transform="translate(729, 119)" class="key held keypos-21">
+<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key held side"/>
+<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key held"/>
 </g>
 <g transform="translate(28, 175)" class="key trans keypos-22">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
@@ -1841,10 +1842,9 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(617, 28)" class="key trans keypos-7">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
-<text x="0" y="-1" class="key trans tap">▽</text>
+<g transform="translate(617, 28)" class="key held keypos-7">
+<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key held side"/>
+<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key held"/>
 </g>
 <g transform="translate(673, 42)" class="key trans keypos-8">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
@@ -1918,9 +1918,10 @@ svg.keymap .keypos-15 rect.key_side {
 <tspan x="0" dy="-0.6em">&amp;mkp</tspan><tspan x="0" dy="1.2em">MB2</tspan>
 </text>
 </g>
-<g transform="translate(729, 119)" class="key held keypos-21">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key held side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key held"/>
+<g transform="translate(729, 119)" class="key trans keypos-21">
+<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
+<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
+<text x="0" y="-1" class="key trans tap">▽</text>
 </g>
 <g transform="translate(28, 175)" class="key trans keypos-22">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>

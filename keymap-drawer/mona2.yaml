@@ -8,7 +8,7 @@ layers:
   - T
   - Y
   - U
-  - I
+  - {t: I, h: scroll}
   - O
   - P
   - {t: A, h: symbols}
@@ -22,7 +22,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: scroll, s: +}
+  - {t: ;, h: mouse, s: +}
   - {t: Z, h: ⇧}
   - X
   - C
@@ -202,7 +202,7 @@ layers:
   - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -278,7 +278,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -292,7 +292,7 @@ layers:
   - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
