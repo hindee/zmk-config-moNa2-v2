@@ -302,8 +302,7 @@ parse_config:
     SPACE: '␣'
     BACKSPACE: '⌫'
     ENTER: '⏎'
-    TAB: 'Tab'
-    ESCAPE: '⎋'
+j    ESCAPE: '⎋'
     LSHIFT: '⇧'
     RSHIFT: '⇧'
     LCTRL: 'Ctrl'
@@ -330,10 +329,16 @@ parse_config:
     'LS(0x87)': '_'
     INSERT: 'INS'
     'LG(LA(K))': 'MIC'
-    LEFT_WIN: '⌘'
     INT_HENKAN: '変換'
+    LEFT_WIN: '⌘'
     INT_MUHENKAN: '無変換'
     K_APP: '▤'
+    UP_ARROW: '▲'
+    DOWN_ARROW: '▼'
+    LEFT_ARROW: '◀'
+    RIGHT_ARROW: '▶'
+    TAB: '↹'
+
 
 
   # ----- Raw bindings for encoders/trackball -----
