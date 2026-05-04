@@ -42,7 +42,7 @@
     flavor = "balanced";
 };
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 4 2000>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 4 5000>; };
 
 / {
     // -------- Combos --------
@@ -125,18 +125,27 @@
         };
 
         Ctrl_d {
+            timeout-ms = <70>;
+            slow-release;
             bindings = <&kp LC(X)>;
             key-positions = <2 3>;
+            layers = <0>;
         };
 
         Ctrl_C {
+            timeout-ms = <70>;
+            slow-release;
             bindings = <&kp LC(C)>;
             key-positions = <12 13>;
+            layers = <0>;
         };
 
         Ctrl_v {
+            timeout-ms = <70>;
+            slow-release;
             bindings = <&kp LC(V)>;
             key-positions = <25 24>;
+            layers = <0>;
         };
     };
 
@@ -310,7 +319,7 @@
 &kp Q                  &kp W         &kp E                &kp R                    &kp T                                              &kp Y             &kp U     &lt_finger 6 I  &kp O       &kp P
 &lt_finger 1 A         &kp S         &kp D                &kp F                    &kp G        &RE_scroll          &kp ESC           &kp H             &kp J     &kp K           &kp L       &lt_finger 4 SEMICOLON
 &mt_exit_AML LSHIFT Z  &kp X         &kp C                &kp V                    &kp B        &td_shift_cw        &kp RSHIFT        &kp N             &kp M     &kp COMMA       &kp PERIOD  &mt RSHIFT SLASH
-&kp LCTRL              &kp LEFT_WIN  &ht_home LSHIFT TAB  &ht_home LEFT_ALT LC(C)  &lt 6 SPACE  &lt 2 LANGUAGE_2    &lt 1 LANGUAGE_1  &lt 3 INT_HENKAN  &TB_none                              &ht_home RCTRL DEL
+&kp LCTRL              &kp LEFT_WIN  &ht_home LSHIFT TAB  &ht_home LEFT_ALT F7     &lt 6 SPACE  &lt 2 LANGUAGE_2    &lt 2 LANGUAGE_1  &lt 3 INT_HENKAN  &TB_none                              &ht_home RCTRL DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -319,7 +328,7 @@
         symbols {
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR   &kp PERCENT                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp CARET  &kp CARET
-&trans           &kp SQT            &kp TAB   &kp LS(TAB)  &kp AMPERSAND  &RE_ctltab    &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE       &kp AT     &kp COLON
+&trans           &kp SQT            &kp TAB   &kp LS(TAB)  &kp AMPERSAND  &RE_sidesc    &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE       &kp AT     &kp COLON
 &trans           &kp GRAVE          &trans    &trans       &trans         &kp DEL       &kp INSERT     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &trans     &trans
 &trans           &trans             &trans    &trans       &trans         &trans        &trans         &trans                &TB_none                                          &trans
             >;
