@@ -670,7 +670,9 @@ svg.keymap .keypos-15 rect.key_side {
 <g transform="translate(729, 63)" class="key keypos-9">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<text x="0" y="-1" class="key tap">&amp;</text>
+<text x="0" y="-1" class="key tap">
+<tspan x="0" dy="-1.2em" style="font-size: 62%">NON</tspan><tspan x="0" dy="1.2em" style="font-size: 62%">US</tspan><tspan x="0" dy="1.2em" style="font-size: 62%">BACKSLA…</tspan>
+</text>
 </g>
 <g transform="translate(28, 119)" class="key held keypos-10">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key held side"/>
@@ -884,7 +886,7 @@ svg.keymap .keypos-15 rect.key_side {
 <g transform="translate(504, 43)" class="key keypos-5">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<text x="0" y="-1" class="key tap">(</text>
+<text x="0" y="-1" class="key tap">MUTE</text>
 </g>
 <g transform="translate(560, 35)" class="key keypos-6">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
@@ -945,8 +947,9 @@ svg.keymap .keypos-15 rect.key_side {
 <g transform="translate(504, 99)" class="key keypos-17">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<text x="0" y="-1" class="key tap">/</text>
-<text x="0" y="-24" class="key shifted">?</text>
+<text x="0" y="-1" class="key tap">
+<tspan x="0" dy="-0.6em">Alt+</tspan><tspan x="0" dy="1.2em">Gui+K</tspan>
+</text>
 </g>
 <g transform="translate(560, 92)" class="key keypos-18">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
@@ -993,10 +996,10 @@ svg.keymap .keypos-15 rect.key_side {
 <rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
 <text x="0" y="-1" class="key trans tap">▽</text>
 </g>
-<g transform="translate(309, 168)" class="key keypos-27">
-<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key side"/>
-<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key"/>
-<text x="0" y="-1" class="key tap">MIC</text>
+<g transform="translate(309, 168)" class="key trans keypos-27">
+<rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>
+<rect rx="2" ry="2" x="-22" y="-25" width="45" height="48" class="key trans"/>
+<text x="0" y="-1" class="key trans tap">▽</text>
 </g>
 <g transform="translate(448, 168)" class="key trans keypos-28">
 <rect rx="9" ry="9" x="-28" y="-28" width="55" height="56" class="key trans side"/>

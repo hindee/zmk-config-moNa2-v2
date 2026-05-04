@@ -55,7 +55,7 @@ layers:
   - (
   - {t: '-', s: '='}
   - '&'
-  - '&'
+  - NON US BACKSLASH
   - {type: held}
   - SQT
   - ↹
@@ -96,7 +96,7 @@ layers:
   - F3
   - F4
   - F5
-  - (
+  - MUTE
   - '7'
   - '8'
   - '9'
@@ -108,7 +108,7 @@ layers:
   - F10
   - {t: $$rotaryencoder$$, h: AltTab}
   - {t: ▽, type: trans}
-  - {t: /, s: '?'}
+  - Alt+Gui+K
   - '4'
   - '5'
   - '6'
@@ -118,7 +118,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - MIC
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
   - '1'
