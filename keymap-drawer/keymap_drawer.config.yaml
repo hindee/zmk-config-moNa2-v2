@@ -302,7 +302,7 @@ parse_config:
     SPACE: '␣'
     BACKSPACE: '⌫'
     ENTER: '⏎'
-j    ESCAPE: '⎋'
+    ESCAPE: '⎋'
     LSHIFT: '⇧'
     RSHIFT: '⇧'
     LCTRL: 'Ctrl'
