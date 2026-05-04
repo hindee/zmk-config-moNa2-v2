@@ -37,47 +37,47 @@ layers:
   - {t: /, h: ⇧, s: '?'}
   - Ctrl
   - ⌘
-  - {t: Tab, h: ⇧}
-  - {t: 無変換, h: Alt}
-  - {t: Sft+␣, h: scroll}
-  - {t: 半/全, h: funcs_numpad}
-  - {t: ␣, h: symbols}
+  - {t: ↹, h: ⇧}
+  - {t: F7, h: Alt}
+  - {t: ␣, h: scroll}
+  - {t: LANGUAGE 2, h: funcs_numpad}
+  - {t: LANGUAGE 1, h: funcs_numpad}
   - {t: 変換, h: arrow}
   - $$trackball$$
   - {t: DEL, h: Ctrl}
   symbols:
   - '!'
-  - '"'
+  - '*'
   - '#'
   - $
   - '%'
-  - (
   - )
+  - (
   - {t: '-', s: '='}
-  - {t: ^, s: '~'}
-  - {t: ¥, s: '|'}
+  - '&'
+  - '&'
   - {type: held}
+  - SQT
+  - ↹
+  - Sft+↹
   - ''''
-  - Tab
-  - Sft+Tab
-  - '&'
-  - {t: $$rotaryencoder$$, h: CtlTab}
-  - '&'
-  - '['
-  - ']'
-  - '~'
+  - {t: $$rotaryencoder$$, h: ←→}
+  - ''''
   - {t: '@', s: '`'}
-  - {t: ':', s: '*'}
+  - '['
+  - '~'
+  - '"'
+  - +
   - {t: ▽, type: trans}
-  - '`'
+  - 半/全
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DEL
   - INS
+  - '`'
   - '{'
-  - '}'
-  - _
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -96,7 +96,7 @@ layers:
   - F3
   - F4
   - F5
-  - '*'
+  - (
   - '7'
   - '8'
   - '9'
@@ -138,25 +138,25 @@ layers:
   arrow:
   - ESC
   - Ctl+Z
-  - Gui+↑
+  - Gui+▲
   - Ctl+Y
   - {t: ▽, type: trans}
   - PAGE UP
   - HOME
-  - ↑
+  - ▲
   - END
   - ⌫
-  - Tab
-  - Gui+←
-  - Gui+↓
-  - Gui+→
+  - ↹
+  - Gui+◀
+  - Gui+▼
+  - Gui+▶
   - {t: ▽, type: trans}
   - {t: $$rotaryencoder$$, h: Volume}
   - {t: ▽, type: trans}
   - PAGE DOWN
-  - ←
-  - ↓
-  - →
+  - ◀
+  - ▼
+  - ▶
   - ⏎
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -316,14 +316,14 @@ layers:
   - {t: $$trackball$$, h: Scroll}
   - {t: ▽, type: trans}
 combos:
-- p: [0, 1]
+- p: [0, 10]
   k: ESC
   l: [default]
 - p: [10, 11]
-  k: Tab
+  k: ↹
   l: [default]
 - p: [11, 12]
-  k: Sft+Tab
+  k: Sft+↹
   l: [default]
 - p: [26, 38]
   k: {t: Alt+B, h: bluetooth}
@@ -340,10 +340,16 @@ combos:
 - p: [30, 31]
   k: Sft+END
   l: [default]
-- p: [22, 23]
-  k: Sft+Z
-  l: [default]
-- p: [8, 9]
+- p: [9, 21]
   k: ⌫
 - p: [20, 21]
   k: ⏎
+- p: [2, 3]
+  k: Ctl+X
+  l: [default]
+- p: [12, 13]
+  k: Ctl+C
+  l: [default]
+- p: [25, 24]
+  k: Ctl+V
+  l: [default]
