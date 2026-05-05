@@ -242,7 +242,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: $$rotaryencoder$$, h: ←→}
-  - {t: ▽, type: trans}
+  - '&tog_ls'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
