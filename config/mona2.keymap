@@ -298,12 +298,12 @@
             #binding-cells = <0>;
         };
 
-        RE_ctltab: RE_ctltab {
+        RE_pg_ud: RE_pg_ud {
             compatible = "zmk,behavior-none";
             #binding-cells = <0>;
         };
 
-        RE_sidesc: RE_sidesc {
+        RE_scr_lr: RE_scr_lr {
             compatible = "zmk,behavior-none";
             #binding-cells = <0>;
         };
@@ -328,7 +328,7 @@
         symbols {
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR   &kp PERCENT                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp CARET  &kp BACKSLASH
-&trans           &kp SQT            &kp TAB   &kp LS(TAB)  &kp AMPERSAND  &RE_sidesc    &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE       &kp AT     &kp COLON
+&trans           &kp SQT            &kp TAB   &kp LS(TAB)  &kp AMPERSAND  &RE_scr_lr    &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE       &kp AT     &kp COLON
 &trans           &kp GRAVE          &trans    &trans       &trans         &kp DEL       &kp INSERT     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &trans     &trans
 &trans           &trans             &trans    &trans       &trans         &trans        &trans         &trans                &TB_none                                          &trans
             >;
@@ -361,7 +361,7 @@
         mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                        &trans  &trans     &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &RE_ctltab    &trans  &trans  &mkp MB1   &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &RE_scr_lr    &trans  &trans  &mkp MB1   &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans     &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &TB_mouse                      &trans
             >;
@@ -372,8 +372,8 @@
         bluetooth {
             bindings = <
 &trans          &trans  &trans  &trans  &trans                             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&bt BT_CLR      &trans  &trans  &trans  &trans  &RE_sidesc        &tog_ls  &trans        &trans        &trans        &trans        &trans
-&bt BT_CLR_ALL  &kp N1  &kp N2  &kp N3  &trans  &studio_unlock    &trans   &trans        &trans        &trans        &trans        &trans
+&bt BT_CLR      &trans  &trans  &trans  &trans  &RE_scroll        &trans   &trans        &trans        &trans        &trans        &trans
+&bt BT_CLR_ALL  &kp N1  &kp N2  &kp N3  &trans  &studio_unlock    &tog_ls  &trans        &trans        &trans        &trans        &trans
 &trans          &trans  &trans  &trans  &trans  &trans            &trans   &trans        &TB_none                                  &trans
             >;
         };
@@ -381,7 +381,7 @@
         scroll {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                        &trans  &trans      &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &RE_sidesc    &trans  &trans  &mkp MB1    &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &RE_pg_ud     &trans  &trans  &mkp MB1    &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans      &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &TB_scroll                      &trans
             >;

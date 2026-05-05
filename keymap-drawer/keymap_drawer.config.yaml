@@ -267,79 +267,77 @@ parse_config:
 
   # ----- ZMK keycode mapping -----
   zmk_keycode_map:
-    EXCLAMATION: '!'
-    AT: '"'
-    HASH: '#'
-    DOLLAR: '$'
-    PERCENT: '%'
-    CARET: '&'
-    AMPERSAND: "'"
-    ASTERISK: '('
-    LEFT_PARENTHESIS: ')'
-    RIGHT_PARENTHESIS: '('
-    EQUAL: {t: '^', s: '~'}
-    PLUS: '~'
-    MINUS: {t: '-', s: '='}
-    UNDERSCORE: '='
-    SLASH: {t: '/', s: '?'}
-    QUESTION: '?'
-    BACKSLASH: ']'
-    PIPE: '}'
-    SEMICOLON: {t: ';', s: '+'}
-    COLON: '+'
-    DOUBLE_QUOTES: '*'
-    SINGLE_QUOTE: {t: ":", s: '*'}
-    COMMA: {t: ',', s: '<'}
-    PERIOD: {t: '.', s: '>'}
-    LESS_THAN: '<'
-    GREATER_THAN: '>'
-    LEFT_BRACKET: {t: '@', s: '`'}
-    RIGHT_BRACKET: '['
-    LEFT_BRACE: '`'
-    RIGHT_BRACE: '{'
-    GRAVE: '半/全'
-    TILDE: '~'
-    SPACE: '␣'
+    '0x89': {t: '¥', s: '|'}
+    'LG(LA(K))': 'MIC'
+    'LS(0x87)': '_'
+    'LS(0x89)': '|'
+    AMPERSAND: '&'
+    ASTERISK: '*'
+    AT: '@'
+    BACKSLASH: '\'
     BACKSPACE: '⌫'
+    CARET: '^'
+    COLON: ':'
+    COMMA: {t: ',', s: '<'}
+    DOLLAR: '$'
+    DOUBLE_QUOTES: '"'
+
+    DOWN_ARROW: '▼'
     ENTER: '⏎'
+    # EQUAL: {t: '^', s: '~'}
+    EQUAL: '='
     ESCAPE: '⎋'
-    LSHIFT: '⇧'
-    RSHIFT: '⇧'
-    LCTRL: 'Ctrl'
-    RCTRL: 'Ctrl'
-    LEFT_ALT: 'Alt'
-    RIGHT_ALT: 'Alt'
-    LGUI: '⌘'
-    RGUI: '⌘'
-    # UP_ARROW: '↑'
-    # DOWN_ARROW: '↓'
-    # LEFT_ARROW: '←'
-    # RIGHT_ARROW: '→'
-    YEN_PIP: '¥'
-    YEN_UNS: '¥'
-    JP_YEN: '¥'
-    JP_PIP: '|'
-    JP_UNS: '_'
-    JPY: '¥'
-    JIS_YEN: '¥'
+    EXCLAMATION: '!'
+    GRAVE: '`'
+    GREATER_THAN: '>'
+    HASH: '#'
+    INSERT: 'INS'
+    INT_HENKAN: '変換'
+    INT_MUHENKAN: '無変換'
     JIS_PIPE: '|'
     JIS_UNDERSCORE: '_'
-    '0x89': {t: '¥', s: '|'}
-    'LS(0x89)': '|'
-    'LS(0x87)': '_'
-    INSERT: 'INS'
-    'LG(LA(K))': 'MIC'
-    INT_HENKAN: '変換'
-    LEFT_WIN: '⌘'
-    INT_MUHENKAN: '無変換'
+    JIS_YEN: '¥'
+    JPY: '¥'
+    JP_PIP: '|'
+    JP_UNS: '_'
+    JP_YEN: '¥'
     K_APP: '▤'
-    UP_ARROW: '▲'
-    DOWN_ARROW: '▼'
+    LCTRL: 'Ctrl'
+    LEFT_ALT: 'Alt'
     LEFT_ARROW: '◀'
+    LEFT_BRACE: '{'
+    LEFT_BRACKET: '['
+    LEFT_PARENTHESIS: '('
+    LEFT_WIN: '⌘'
+    LESS_THAN: '<'
+    LGUI: '⌘'
+    LSHIFT: '⇧'
+    MINUS: {t: '-', s: '='}
+    PERCENT: '%'
+    PERIOD: {t: '.', s: '>'}
+    PIPE: '|'
+    PLUS: '+'
+    QUESTION: '?'
+    RCTRL: 'Ctrl'
+    RGUI: '⌘'
+    RIGHT_ALT: 'Alt'
     RIGHT_ARROW: '▶'
+    RIGHT_BRACE: '}'
+    RIGHT_BRACKET: ']'
+    RIGHT_PARENTHESIS: ')'
+    RSHIFT: '⇧'
+    SEMICOLON: {t: ';', s: '+'}
+    SINGLE_QUOTE: "'"
+    SQT: "'"
+    SLASH: {t: '/', s: '?'}
+    SPACE: '␣'
     TAB: '↹'
-
-
+    TILDE: '~'
+    UNDER: '='        # JISで = が出力される
+    UNDERSCORE: '_'
+    UP_ARROW: '▲'
+    YEN_PIP: {t: '\', s: '|'}
+    YEN_UNS: {t: '\', s: '_'}
 
   # ----- Raw bindings for encoders/trackball -----
   raw_binding_map:
@@ -350,12 +348,12 @@ parse_config:
 
     # Trackball bindings
     '&TB_none':   { tap: '$$trackball$$' }
-    '&TB_mouse':  { tap: '$$trackball$$', hold: 'Pointing' }
+    '&TB_mouse':  { tap: '$$trackball$$', hold: 'Mouse' }
     '&TB_scroll': { tap: '$$trackball$$', hold: 'Scroll' }
 
     # Rotary encoder bindings
     '&RE_scroll':  { tap: '$$rotaryencoder$$', hold: '↑↓' }
     '&RE_alttab':  { tap: '$$rotaryencoder$$', hold: 'AltTab' }
-    '&RE_volume':  { tap: '$$rotaryencoder$$', hold: 'Volume' }
-    '&RE_ctltab':  { tap: '$$rotaryencoder$$', hold: 'CtlTab' }
-    '&RE_sidesc':  { tap: '$$rotaryencoder$$', hold: '←→' }
+    '&RE_volume':  { tap: '$$rotaryencoder$$', hold: 'Vol↑↓' }
+    '&RE_pg_ud':   { tap: '$$rotaryencoder$$', hold: 'PG↑↓' }
+    '&RE_scr_lr':  { tap: '$$rotaryencoder$$', hold: '←→' }
