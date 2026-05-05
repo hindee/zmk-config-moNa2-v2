@@ -100,7 +100,7 @@ draw_config:
       font-weight: bold !important;
       pointer-events: none;
       display: block !important;
-      transform: translate(48px, -17px) !important;
+      transform: translate(-35px, -17px) !important;
     }
 
     /* Rotary encoder */
@@ -126,7 +126,7 @@ draw_config:
       font-size: 12px !important;
       font-weight: bold !important;
       pointer-events: none;
-      transform: translateY(-26px) !important;
+      transform: translate(0px, -26px) !important;
     }
 
   # レジェンド設定
@@ -336,15 +336,17 @@ parse_config:
     UNDER: '='        # JISで = が出力される
     UNDERSCORE: '_'
     UP_ARROW: '▲'
-    YEN_PIP: {t: '\', s: '|'}
-    YEN_UNS: {t: '\', s: '_'}
-
   # ----- Raw bindings for encoders/trackball -----
   raw_binding_map:
     # '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     # '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
     # '&lt2_zh_hk': { tap: '半/全', hold: 'funcs_numpad', shifted: '変換' }
+    '&yen_pipe': {tap: '¥', shifted: '|'}
+    '&car_til': {tap: '^', shifted: '~'}
+    '&yen_uns': {tap: '¥', shifted: '_'}
+    '&semi_plus': {tap: ';', shifted: '+'}
+    '&col_ast': {tap: ":", shifted: '*'}
 
     # Trackball bindings
     '&TB_none':   { tap: '$$trackball$$' }
