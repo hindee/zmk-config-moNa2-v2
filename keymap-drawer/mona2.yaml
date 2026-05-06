@@ -47,37 +47,37 @@ layers:
   - {t: DEL, h: Ctrl}
   symbols:
   - '!'
-  - '*'
+  - '"'
   - '#'
   - $
   - '%'
-  - )
   - (
+  - )
   - {t: '-', s: '='}
-  - '&'
-  - ']'
+  - {t: ^, s: '~'}
+  - {t: ¥, s: '|'}
   - {type: held}
-  - SQT
+  - ''''
   - ↹
   - Sft+↹
-  - ''''
+  - '&'
   - {t: $$rotaryencoder$$, h: ←→}
-  - ''''
-  - {t: '@', s: '`'}
+  - '&'
   - '['
+  - ']'
   - '~'
-  - '"'
-  - +
+  - '@'
+  - {t: ':', s: '*'}
   - {t: ▽, type: trans}
-  - 半/全
+  - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DEL
   - INS
-  - '`'
   - '{'
-  - '='
+  - '}'
+  - _
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -151,7 +151,7 @@ layers:
   - Gui+▼
   - Gui+▶
   - {t: ▽, type: trans}
-  - {t: $$rotaryencoder$$, h: Volume}
+  - {t: $$rotaryencoder$$, h: Vol↑↓}
   - {t: ▽, type: trans}
   - PAGE DOWN
   - ◀
@@ -196,7 +196,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: $$rotaryencoder$$, h: CtlTab}
+  - {t: $$rotaryencoder$$, h: ←→}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
@@ -223,7 +223,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: $$trackball$$, h: Pointing}
+  - {t: $$trackball$$, h: Mouse}
   - {t: ▽, type: trans}
   bluetooth:
   - {t: ▽, type: trans}
@@ -241,8 +241,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: $$rotaryencoder$$, h: ←→}
-  - '&tog_ls'
+  - {t: $$rotaryencoder$$, h: ↑↓}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -254,7 +254,7 @@ layers:
   - '3'
   - {type: held}
   - '&studio_unlock'
-  - {t: ▽, type: trans}
+  - '&tog_ls'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -286,7 +286,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: $$rotaryencoder$$, h: ←→}
+  - {t: $$rotaryencoder$$, h: PG↑↓}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
