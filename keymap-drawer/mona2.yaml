@@ -22,7 +22,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: mouse, s: +}
+  - {t: ;, h: Mouse, s: +}
   - {t: Z, h: ⇧}
   - X
   - C
@@ -44,7 +44,7 @@ layers:
   - {t: LANGUAGE 1, h: funcs_numpad}
   - {t: 変換, h: arrow}
   - $$trackball$$
-  - {t: DEL, h: Ctrl}
+  - {t: ⌦, h: Ctrl}
   symbols:
   - '!'
   - '"'
@@ -73,7 +73,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DEL
+  - ⌦
   - INS
   - '{'
   - '}'
@@ -202,7 +202,7 @@ layers:
   - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
