@@ -190,7 +190,7 @@
         yen_pipe: yen_pipe {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp JP_YEN>, <&kp PIPE>;
+            bindings = <&kp BACKSLASH>, <&kp PIPE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         car_til: caret_tilde {
