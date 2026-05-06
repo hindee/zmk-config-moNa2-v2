@@ -39,6 +39,10 @@ draw_config:
       text-rendering: optimizeLegibility;
     }
     text { fill: #000000; }
+    /* 既存のスタイルの後に追加 */
+    text.tap { transform: translateY(5px); }
+    text.shifted { transform: translateY(12px); }
+
     rect.key {
       fill: #FFFFFF;
       stroke: #F9F9F9 !important;
@@ -279,12 +283,11 @@ parse_config:
     CARET: '^'
     COLON: ':'
     COMMA: {t: ',', s: '<'}
+    DEL: '⌦'
     DOLLAR: '$'
     DOUBLE_QUOTES: '"'
-
     DOWN_ARROW: '▼'
     ENTER: '⏎'
-    # EQUAL: {t: '^', s: '~'}
     EQUAL: '='
     ESCAPE: '⎋'
     EXCLAMATION: '!'
@@ -298,9 +301,6 @@ parse_config:
     JIS_UNDERSCORE: '_'
     JIS_YEN: '¥'
     JPY: '¥'
-    JP_PIP: '|'
-    JP_UNS: '_'
-    JP_YEN: '¥'
     K_APP: '▤'
     LCTRL: 'Ctrl'
     LEFT_ALT: 'Alt'
@@ -342,11 +342,11 @@ parse_config:
     # '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
     # '&lt2_zh_hk': { tap: '半/全', hold: 'funcs_numpad', shifted: '変換' }
-    '&yen_pipe': {tap: '¥', shifted: '|'}
-    '&car_til': {tap: '^', shifted: '~'}
-    '&yen_uns': {tap: '¥', shifted: '_'}
-    '&semi_plus': {tap: ';', shifted: '+'}
-    '&col_ast': {tap: ":", shifted: '*'}
+    '&yen_pipe': { tap: '¥', shifted: '|' }
+    '&car_til': { tap: '^', shifted: '~' }
+    '&yen_uns': { tap: '¥', shifted: '_' }
+    '&lt_semi': { tap: ';', shifted: '+', hold: 'Mouse' }
+    '&col_ast': { tap: ':', shifted: '*' }
 
     # Trackball bindings
     '&TB_none':   { tap: '$$trackball$$' }
