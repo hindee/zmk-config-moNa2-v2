@@ -40,8 +40,8 @@ draw_config:
     }
     text { fill: #000000; }
     /* 既存のスタイルの後に追加 */
-    text.tap { transform: translateY(5px); }
-    text.shifted { transform: translateY(12px); }
+    text.tap { transform: translateY(0px); }
+    text.shifted { transform: translateY(10px); }
 
     rect.key {
       fill: #FFFFFF;
