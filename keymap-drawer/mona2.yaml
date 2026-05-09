@@ -37,12 +37,12 @@ layers:
   - {t: /, h: ⇧, s: '?'}
   - ^
   - LEFT WIN
-  - {t: ⇥, h: ⇧}
+  - {t: ESC, h: symbols}
   - {t: F7, h: LEFT ALT}
   - {t: ␣, h: scroll}
   - {t: A, h: funcs_numpad}
-  - {t: あ, h: funcs_numpad}
-  - {t: 変換, h: arrow}
+  - {t: あ, h: arrow}
+  - {t: 変換, h: funcs_numpad}
   - $$trackball$$
   - {t: ⌦, h: RCTRL}
   symbols:
@@ -72,8 +72,8 @@ layers:
   - '`'
   - VOL UP
   - VOL DN
-  - {t: ▽, type: trans}
-  - ⌦
+  - 🔇
+  - 🎤
   - INS
   - '{'
   - '}'
@@ -96,11 +96,11 @@ layers:
   - F3
   - F4
   - F5
-  - 🔇
+  - +
   - '7'
   - '8'
   - '9'
-  - ⌫
+  - '*'
   - F6
   - F7
   - F8
@@ -108,11 +108,11 @@ layers:
   - F10
   - {t: $$rotaryencoder$$, h: AltTab}
   - {t: ▽, type: trans}
-  - 🎤
+  - {t: '-', s: '='}
   - '4'
   - '5'
   - '6'
-  - ⏎
+  - {t: /, s: '?'}
   - F11
   - F12
   - {t: ▽, type: trans}
@@ -124,21 +124,21 @@ layers:
   - '1'
   - '2'
   - '3'
-  - ▤
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PrtScr
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - '0'
+  - {t: ▽, type: trans}
   - $$trackball$$
   - {t: ▽, type: trans}
   arrow:
   - ESC
   - ⌃+Z
-  - ⌘+▲
+  - ⌃+▲
   - ⌃+Y
   - {t: ▽, type: trans}
   - PAGE UP
@@ -147,9 +147,9 @@ layers:
   - END
   - ⌫
   - ⇥
-  - ⌘+◀
-  - ⌘+▼
-  - ⌘+▶
+  - ⌃+◀
+  - ⌃+▼
+  - ⌃+▶
   - {t: ▽, type: trans}
   - {t: $$rotaryencoder$$, h: Vol↑↓}
   - {t: ▽, type: trans}
@@ -176,8 +176,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - $$trackball$$
   - {t: ▽, type: trans}
   mouse:
