@@ -2,7 +2,6 @@ name: "Draw Keymap"
 
 on:
   workflow_dispatch:
-  # push時に自動で実行する場合は、以下のコメントアウトを外す
   push:
     paths:
       - "config/mona2.keymap"
@@ -11,14 +10,31 @@ on:
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@f9cf9d3677368a7fb1dc505c51b8156fafa66fe2
+    runs-on: ubuntu-latest
     permissions:
       contents: write
-    with:
-      commit_message: "[Draw] ${{ github.event.head_commit.message || 'Update keymap drawing' }}"
-      amend_commit: false
-      keymap_patterns: "config/*.keymap"
-      json_path: "config"
-      config_path: "keymap-drawer/keymap_drawer.config.yaml" # config file, ignored if not exists
-      output_folder: "keymap-drawer"
-      destination: "both"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install keymap-drawer
+        run: pip install keymap-drawer
+
+      - name: Parse keymap
+        run: |
+          keymap -c keymap-drawer/keymap_drawer.config.yaml parse \
+            -z config/mona2.keymap > keymap-drawer/mona2.yaml
+
+      - name: Draw SVG
+        run: |
+          keymap -c keymap-drawer/keymap_drawer.config.yaml draw \
+            keymap-drawer/mona2.yaml > keymap-drawer/mona2.svg
+
+      - name: Commit SVG only
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # .gitignore に記載されていても強制的にステージング
+          git add --force keymap-drawer/mona2.svg
+          # mona2.yaml は add しない → コミットされない
+          git diff --cached --quiet || git commit -m "[Draw] ${{ github.event.head_commit.message || 'Update keymap drawing' }}"
+          git push
