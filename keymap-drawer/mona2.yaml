@@ -28,23 +28,23 @@ layers:
   - C
   - V
   - B
-  - '&td_shift_cw'
+  - {t: ⇧, s: CapsWd}
   - ⇧
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, h: ⇧, s: '?'}
-  - Ctrl
-  - ⌘
-  - {t: ↹, h: ⇧}
-  - {t: F7, h: Alt}
+  - ^
+  - LEFT WIN
+  - {t: ⇥, h: ⇧}
+  - {t: F7, h: LEFT ALT}
   - {t: ␣, h: scroll}
-  - {t: LANGUAGE 2, h: funcs_numpad}
-  - {t: LANGUAGE 1, h: funcs_numpad}
+  - {t: A, h: funcs_numpad}
+  - {t: あ, h: funcs_numpad}
   - {t: 変換, h: arrow}
   - $$trackball$$
-  - {t: ⌦, h: Ctrl}
+  - {t: ⌦, h: RCTRL}
   symbols:
   - '!'
   - '"'
@@ -58,8 +58,8 @@ layers:
   - {t: ¥, s: '|'}
   - {type: held}
   - ''''
-  - ↹
-  - Sft+↹
+  - ⇥
+  - ⇤
   - '&'
   - {t: $$rotaryencoder$$, h: ←→}
   - '&'
@@ -96,7 +96,7 @@ layers:
   - F3
   - F4
   - F5
-  - MUTE
+  - 🔇
   - '7'
   - '8'
   - '9'
@@ -108,7 +108,7 @@ layers:
   - F10
   - {t: $$rotaryencoder$$, h: AltTab}
   - {t: ▽, type: trans}
-  - Alt+Gui+K
+  - 🎤
   - '4'
   - '5'
   - '6'
@@ -127,7 +127,7 @@ layers:
   - ▤
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PRINTSCREEN
+  - PrtScr
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -137,19 +137,19 @@ layers:
   - {t: ▽, type: trans}
   arrow:
   - ESC
-  - Ctl+Z
-  - Gui+▲
-  - Ctl+Y
+  - ⌃+Z
+  - ⌘+▲
+  - ⌃+Y
   - {t: ▽, type: trans}
   - PAGE UP
   - HOME
   - ▲
   - END
   - ⌫
-  - ↹
-  - Gui+◀
-  - Gui+▼
-  - Gui+▶
+  - ⇥
+  - ⌘+◀
+  - ⌘+▼
+  - ⌘+▶
   - {t: ▽, type: trans}
   - {t: $$rotaryencoder$$, h: Vol↑↓}
   - {t: ▽, type: trans}
@@ -166,9 +166,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PSCRN
-  - Ctl+HOME
+  - ⌃+HOME
   - {t: ▽, type: trans}
-  - Ctl+END
+  - ⌃+END
   - ▤
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -253,8 +253,8 @@ layers:
   - '2'
   - '3'
   - {type: held}
-  - '&studio_unlock'
-  - '&tog_ls'
+  - DYA-UNLK
+  - JIS/US
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -320,36 +320,36 @@ combos:
   k: ESC
   l: [default]
 - p: [10, 11]
-  k: ↹
+  k: ⇥
   l: [default]
 - p: [11, 12]
-  k: Sft+↹
+  k: ⇤
   l: [default]
 - p: [26, 38]
-  k: {t: Alt+B, h: bluetooth}
+  k: {t: ⌥+B, h: bluetooth}
   l: [default]
 - p: [7, 8]
   k: {t: '-', s: '='}
   l: [default]
 - p: [18, 19]
-  k: '&select_line'
+  k: Line
   l: [default]
 - p: [6, 7]
-  k: Sft+HOME
+  k: CpBef
   l: [default]
 - p: [30, 31]
-  k: Sft+END
+  k: CpAft
   l: [default]
 - p: [9, 21]
   k: ⌫
 - p: [20, 21]
   k: ⏎
 - p: [2, 3]
-  k: Ctl+X
+  k: Del
   l: [default]
 - p: [12, 13]
-  k: Ctl+C
+  k: Copy
   l: [default]
 - p: [25, 24]
-  k: Ctl+V
+  k: Past
   l: [default]
