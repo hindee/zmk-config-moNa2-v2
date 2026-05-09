@@ -59,7 +59,7 @@ layers:
   - {type: held}
   - ''''
   - BRI UP
-  - ⇧+BRI DN
+  - BRI DN
   - '&'
   - {t: $$rotaryencoder$$, h: ←→}
   - '&'
