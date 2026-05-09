@@ -369,10 +369,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W         &kp E                &kp R                 &kp T                                              &kp Y             &kp U     &lt_finger 6 I  &kp O       &kp P
-&lt_finger 1 A         &kp S         &kp D                &kp F                 &kp G        &RE_scroll          &kp ESC           &kp H             &kp J     &kp K           &kp L       &lt_semi 4 0
-&mt_exit_AML LSHIFT Z  &kp X         &kp C                &kp V                 &kp B        &td_shift_cw        &kp RSHIFT        &kp N             &kp M     &kp COMMA       &kp PERIOD  &mt RSHIFT SLASH
-&kp LCTRL              &kp LEFT_WIN  &ht_home LSHIFT TAB  &ht_home LEFT_ALT F7  &lt 6 SPACE  &lt 2 LANGUAGE_2    &lt 2 LANGUAGE_1  &lt 3 INT_HENKAN  &TB_none                              &ht_home RCTRL DEL
+&kp Q                  &kp W         &kp E      &kp R                 &kp T                                              &kp Y             &kp U     &lt_finger 6 I  &kp O       &kp P
+&lt_finger 1 A         &kp S         &kp D      &kp F                 &kp G        &RE_scroll          &kp ESC           &kp H             &kp J     &kp K           &kp L       &lt_semi 4 0
+&mt_exit_AML LSHIFT Z  &kp X         &kp C      &kp V                 &kp B        &td_shift_cw        &kp RSHIFT        &kp N             &kp M     &kp COMMA       &kp PERIOD  &mt RSHIFT SLASH
+&kp LCTRL              &kp LEFT_WIN  &lt 1 ESC  &ht_home LEFT_ALT F7  &lt 6 SPACE  &lt 2 LANGUAGE_2    &lt 3 LANGUAGE_1  &lt 2 INT_HENKAN  &TB_none                              &ht_home RCTRL DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -380,10 +380,10 @@
 
         symbols {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &car_til   &yen_pipe
-&trans           &kp SQT            &kp C_BRI_UP  &kp C_BRI_DN  &kp AMPERSAND  &RE_scr_lr    &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE       &kp AT     &col_ast
-&trans           &kp GRAVE          &kp C_VOL_UP  &kp C_VOL_DN  &trans         &kp DEL       &kp INSERT     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &kp EQUAL  &kp PIPE
-&trans           &trans             &trans        &trans        &trans         &trans        &trans         &trans                &TB_none                                          &kp ASTERISK
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT                                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &car_til   &yen_pipe
+&trans           &kp SQT            &kp C_BRI_UP  &kp C_BRI_DN  &kp AMPERSAND  &RE_scr_lr       &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE       &kp AT     &col_ast
+&trans           &kp GRAVE          &kp C_VOL_UP  &kp C_VOL_DN  &kp C_MUTE     &kp LA(LG(K))    &kp INSERT     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &kp EQUAL  &kp PIPE
+&trans           &trans             &trans        &trans        &trans         &trans           &trans         &trans                &TB_none                                          &kp ASTERISK
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -391,10 +391,10 @@
 
         funcs_numpad {
             bindings = <
-&kp F1   &kp F2   &kp F3           &kp F4  &kp F5                         &kp C_MUTE     &kp N7    &kp N8  &kp N9  &kp BACKSPACE
-&kp F6   &kp F7   &kp F8           &kp F9  &kp F10  &RE_alttab    &trans  &kp LA(LG(K))  &kp N4    &kp N5  &kp N6  &kp ENTER
-&kp F11  &kp F12  &trans           &trans  &trans   &trans        &trans  &kp N0         &kp N1    &kp N2  &kp N3  &kp K_APP
-&trans   &trans   &kp PRINTSCREEN  &trans  &trans   &trans        &trans  &kp N0         &TB_none                  &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                         &kp PLUS   &kp N7    &kp N8  &kp N9  &kp ASTERISK
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &RE_alttab    &trans  &kp MINUS  &kp N4    &kp N5  &kp N6  &kp SLASH
+&kp F11  &kp F12  &trans  &trans  &trans   &trans        &trans  &kp N0     &kp N1    &kp N2  &kp N3  &kp N0
+&trans   &trans   &trans  &trans  &trans   &trans        &trans  &trans     &TB_none                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LA(TAB) LA(LS(TAB))>;
@@ -402,8 +402,8 @@
 
         arrow {
             bindings = <
-&kp ESC  &kp LC(Z)           &kp LG(UP_ARROW)    &kp LC(Y)            &trans                        &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp BACKSPACE
-&kp TAB  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &RE_volume    &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
+&kp ESC  &kp LC(Z)           &kp LC(UP_ARROW)    &kp LC(Y)            &trans                        &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp BACKSPACE
+&kp TAB  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(RIGHT_ARROW)  &trans  &RE_volume    &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
 &trans   &trans              &trans              &trans               &trans  &trans        &trans  &kp PSCRN      &kp LC(HOME)    &trans          &kp RC(END)      &kp K_APP
 &trans   &trans              &trans              &trans               &trans  &trans        &trans  &trans         &TB_none                                         &trans
             >;
