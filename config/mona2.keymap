@@ -230,7 +230,8 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&semi_plus>;
- // ここで &semi_plus を呼び出す
+
+            // ここで &semi_plus を呼び出す
         };
 
         lt_finger: lt_finger {
@@ -379,10 +380,10 @@
 
         symbols {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR        &kp PERCENT                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &car_til   &yen_pipe
-&trans           &kp SQT            &kp C_BRI_UP  &kp LS(C_BRI_DN)  &kp AMPERSAND  &RE_scr_lr    &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE       &kp AT     &col_ast
-&trans           &kp GRAVE          &kp C_VOL_UP  &kp C_VOL_DN      &trans         &kp DEL       &kp INSERT     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &kp EQUAL  &kp PIPE
-&trans           &trans             &trans        &trans            &trans         &trans        &trans         &trans                &TB_none                                          &kp ASTERISK
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &car_til   &yen_pipe
+&trans           &kp SQT            &kp C_BRI_UP  &kp C_BRI_DN  &kp AMPERSAND  &RE_scr_lr    &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE       &kp AT     &col_ast
+&trans           &kp GRAVE          &kp C_VOL_UP  &kp C_VOL_DN  &trans         &kp DEL       &kp INSERT     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &kp EQUAL  &kp PIPE
+&trans           &trans             &trans        &trans        &trans         &trans        &trans         &trans                &TB_none                                          &kp ASTERISK
             >;
 
             sensor-bindings = <&scroll_right_left>;
