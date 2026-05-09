@@ -9,7 +9,7 @@ draw_config:
   key_w: 60.0
   key_h: 56.0
   split_gap: 30.0
-  combo_w: 28.0
+  combo_w: 30.0
   combo_h: 26.0
   key_rx: 9.0
   key_ry: 9.0
@@ -40,8 +40,10 @@ draw_config:
     }
     text { fill: #000000; }
     /* 既存のスタイルの後に追加 */
-    text.tap { transform: translateY(0px); }
-    text.shifted { transform: translateY(10px); }
+    text.tap { transform: translateY(4px); }
+    text.shifted { transform: translateY(7px); }
+    text.hold { transform: translateY(0px); font-size: 9px;}
+    text.combo { transform: translateY(0px); font-size: 9px;}
 
     rect.key {
       fill: #FFFFFF;
@@ -133,32 +135,7 @@ draw_config:
       transform: translate(0px, -26px) !important;
     }
 
-  # レジェンド設定
-  legend_font_size: 12
-  legend_hold_font_size: 10
-  legend_shifted_font_size: 10
-  legend_tap_offset_y: -6
-  legend_hold_offset_y: 10
-  legend_shifted_offset_y: 20
-  legend_max_width_ratio: 0.9
-  legend_max_height_ratio: 0.35
-  legend_line_spacing: 1.1
-  combo_legend_font_size: 10
-  combo_legend_offset_y: 0
-  combo_legend_max_width_ratio: 0.9
-  combo_legend_max_height_ratio: 0.5
-  combo_legend_line_spacing: 1.0
-
   # グリフ設定
-  glyph_font_size: 20
-  glyph_hold_font_size: 16
-  glyph_shifted_font_size: 16
-  glyph_tap_offset_y: -4
-  glyph_hold_offset_y: 6
-  glyph_shifted_offset_y: 6
-  glyph_max_width_ratio: 2.0
-  glyph_max_height_ratio: 2.0
-  glyph_line_spacing: 1.1
   shrink_wide_legends: 5
   glyph_tap_size: 60
   glyph_hold_size: 60
@@ -302,15 +279,15 @@ parse_config:
     JIS_YEN: '¥'
     JPY: '¥'
     K_APP: '▤'
-    LCTRL: 'Ctrl'
-    LEFT_ALT: 'Alt'
+    LCTRL: '^'
     LEFT_ARROW: '◀'
     LEFT_BRACE: '{'
     LEFT_BRACKET: '['
     LEFT_PARENTHESIS: '('
-    LEFT_WIN: '⌘'
     LESS_THAN: '<'
-    LGUI: '⌘'
+    # LEFT_ALT: 'Alt'
+    # LEFT_WIN: '⌘'
+    # LGUI: '⌘'
     LSHIFT: '⇧'
     MINUS: {t: '-', s: '='}
     PERCENT: '%'
@@ -318,9 +295,10 @@ parse_config:
     PIPE: '|'
     PLUS: '+'
     QUESTION: '?'
-    RCTRL: 'Ctrl'
-    RGUI: '⌘'
-    RIGHT_ALT: 'Alt'
+    # RCTRL: 'Ctrl'
+    # LG: '⌘'
+    # RGUI: '⌘'
+    # RIGHT_ALT: 'Alt'
     RIGHT_ARROW: '▶'
     RIGHT_BRACE: '}'
     RIGHT_BRACKET: ']'
@@ -331,13 +309,38 @@ parse_config:
     SQT: "'"
     SLASH: {t: '/', s: '?'}
     SPACE: '␣'
-    TAB: '↹'
+    TAB: '⇥'
     TILDE: '~'
-    UNDER: '='        # JISで = が出力される
+    UNDER: '='
     UNDERSCORE: '_'
     UP_ARROW: '▲'
+    'LS(TAB)': "⇤"
+    'LA(LG(K))': "🎤"
+    C_MUTE: '🔇'
+    'LS(HOME)': "CpBef"
+    'LS(END)': "CpAft"
+    PRINTSCREEN: 'PrtScr'
+    'LC(X)': "Del"
+    'LC(C)': "Copy"
+    'LC(V)': "Past"
+    LANGUAGE_2: 'A'
+    LANGUAGE_1: 'あ'
+  modifier_fn_map:
+    left_gui: "⌘"
+    right_gui: "⌘"
+    left_shift: "⇧"
+    right_shift: "⇧"
+    left_ctrl: "⌃"
+    right_ctrl: "⌃"
+    left_alt: "⌥"
+    right_alt: "⌥"
+
   # ----- Raw bindings for encoders/trackball -----
   raw_binding_map:
+    '&td_shift_cw': {tap: '⇧' , shifted: 'CapsWd'}
+    '&select_line': "Line"
+    '&studio_unlock': "DYA-UNLK"
+    '&tog_ls': "JIS/US"
     # '&kp_exit_AML RIGHT_SHIFT': { tap: '/', hold: '⇧' }
     # '&kp_exit_AML INT_MUHENKAN': { tap: '無変換', hold: 'ALT' }
     '&kp_exit_AML Z': { tap: 'Z', hold: '⇧' }
