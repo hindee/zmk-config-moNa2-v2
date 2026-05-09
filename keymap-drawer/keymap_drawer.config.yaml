@@ -41,7 +41,7 @@ draw_config:
     text { fill: #000000; }
     /* 既存のスタイルの後に追加 */
     text.tap { transform: translateY(4px); }
-    text.shifted { transform: translateY(7px); }
+    text.shifted { transform: translateY(10px); }
     text.hold { transform: translateY(0px); font-size: 9px;}
     text.combo { transform: translateY(0px); font-size: 9px;}
 
