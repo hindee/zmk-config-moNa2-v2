@@ -58,8 +58,8 @@ layers:
   - {t: ¥, s: '|'}
   - {type: held}
   - ''''
-  - ⇥
-  - ⇤
+  - BRI UP
+  - ⇧+BRI DN
   - '&'
   - {t: $$rotaryencoder$$, h: ←→}
   - '&'
@@ -70,16 +70,16 @@ layers:
   - {t: ':', s: '*'}
   - {t: ▽, type: trans}
   - '`'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - VOL UP
+  - VOL DN
   - {t: ▽, type: trans}
   - ⌦
   - INS
   - '{'
   - '}'
   - _
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '='
+  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -89,7 +89,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$trackball$$
-  - {t: ▽, type: trans}
+  - '*'
   funcs_numpad:
   - F1
   - F2
