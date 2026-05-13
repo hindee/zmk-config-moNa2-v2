@@ -350,6 +350,7 @@ parse_config:
     '&yen_uns': { tap: '¥', shifted: '_' }
     '&lt_semi': { tap: ';', shifted: '+', hold: 'Mouse' }
     '&col_ast': { tap: ':', shifted: '*' }
+    '&hyp_equ': { tap: '-', shifted: '=' }
 
     # Trackball bindings
     '&TB_none':   { tap: '$$trackball$$' }
