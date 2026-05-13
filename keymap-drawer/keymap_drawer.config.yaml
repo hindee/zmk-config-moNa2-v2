@@ -363,3 +363,4 @@ parse_config:
     '&RE_volume':  { tap: '$$rotaryencoder$$', hold: 'Vol↑↓' }
     '&RE_pg_ud':   { tap: '$$rotaryencoder$$', hold: 'PG↑↓' }
     '&RE_scr_lr':  { tap: '$$rotaryencoder$$', hold: '←→' }
+    
