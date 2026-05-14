@@ -22,12 +22,15 @@ jobs:
       - name: Parse keymap
         run: |
           keymap -c keymap-drawer/keymap_drawer.config.yaml parse \
-            -z config/mona2.keymap > keymap-drawer/mona2.yaml
+            -z config/mona2.keymap \
+            > keymap-drawer/mona2.yaml
 
       - name: Draw SVG
         run: |
           keymap -c keymap-drawer/keymap_drawer.config.yaml draw \
-            keymap-drawer/mona2.yaml > keymap-drawer/mona2.svg
+            -d boards/shields/mona2/mona2.dtsi \
+            keymap-drawer/mona2.yaml \
+            > keymap-drawer/mona2.svg
 
       - name: Commit SVG only
         run: |
