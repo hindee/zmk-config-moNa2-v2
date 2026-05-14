@@ -58,8 +58,8 @@ layers:
   - {t: ¥, s: '|'}
   - {type: held}
   - ''''
-  - BRI UP
-  - BRI DN
+  - 🔆
+  - 🔊
   - '&'
   - {t: $$rotaryencoder$$, h: ←→}
   - '&'
@@ -70,8 +70,8 @@ layers:
   - {t: ':', s: '*'}
   - {t: ▽, type: trans}
   - '`'
-  - VOL UP
-  - VOL DN
+  - 🔅
+  - 🔈
   - 🔇
   - 🎤
   - INS
@@ -100,7 +100,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - '*'
+  - ⌫
   - F6
   - F7
   - F8
@@ -112,7 +112,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - {t: /, s: '?'}
+  - ⏎
   - F11
   - F12
   - {t: ▽, type: trans}
