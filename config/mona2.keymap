@@ -360,6 +360,17 @@
             compatible = "zmk,behavior-none";
             #binding-cells = <0>;
         };
+
+        hyp_equ: hyp_equ {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp MINUS>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "HYP_EQU";
+            
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>; 
+        };
     };
 
     // -------- Keymaps --------
@@ -380,7 +391,7 @@
 
         symbols {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT                                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &car_til   &yen_pipe
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT                                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &hyp_equ        &car_til   &yen_pipe
 &trans           &kp SQT            &kp C_BRI_UP  &kp C_VOL_UP  &kp AMPERSAND  &RE_scr_lr       &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE       &kp AT     &col_ast
 &trans           &kp GRAVE          &kp C_BRI_DN  &kp C_VOL_DN  &kp C_MUTE     &kp LA(LG(K))    &kp INSERT     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &kp EQUAL  &kp PIPE
 &trans           &trans             &trans        &trans        &trans         &trans           &trans         &trans                &TB_none                                          &kp ASTERISK
